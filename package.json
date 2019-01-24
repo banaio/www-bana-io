@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "markdown-it-footnote": "^3.0.1",
+    "markdown-it-katex": "^2.0.3",
+    "vuepress": "^v1.0.0-alpha.40"
+  },
+  "license": "MIT"
+}
