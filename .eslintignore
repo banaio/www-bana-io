@@ -1,0 +1,25 @@
+**/node_modules
+
+!docs/.vuepress
+!docs/.vuepress/
+!docs/.vuepress/*
+!docs/.vuepress/**
+!docs/.vuepress/**/*
+!./docs/.vuepress
+!./docs/.vuepress/
+!./docs/.vuepress/*
+!./docs/.vuepress/**
+!./docs/.vuepress/**/*
+
+# !.*js
+# !./.*js
+
+# eslint ignores hidden files by default
+# !.*.json
+# !.*.js
+# !.vscode/*.json
+# !.vscode/*.json
+
+.eslintrc.js
+tsconfig.json
+jsconfig.json

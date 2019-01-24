@@ -1,0 +1,42 @@
+---
+home: true
+title: BanaIO
+heroText: BanaIO
+heroImage: /logo/logo.webp
+# tagline: The Builder—البناء
+# features:
+# - title: Full Stack Senior Software Engineer
+#   details: |
+#     <b>Technologies:</b></br>
+#     Golang, Go and Go 1.11+,
+#     Vue.js,
+#     Docker, Docker-Compose and Kubernetes, Google Cloud Platform (GCP), Linux and tinkering with Rust.
+#     <b>Interested in Roles:</b></br>
+#     Remote Senior Software Engineer:** Golang, Vue.js, Linux, Docker, Docker-Compose, Kubernetes, Cloud Computing and tinkering with Rust
+# - title: Contact
+#   details: |
+#     [mailto:m@bana.io](mailto:m@bana.io)
+#     <a href="mailto:m@bana.io">m@bana.io</a>
+actionText: CV
+actionLink: ./resume/cv
+footer: MIT Licensed | Copyright © 2020-present | Mohamed Bana
+---
+
+<div class="features">
+  <div class="feature">
+    <h2>Full Stack Senior Software Engineer</h2>
+    <p>
+      Golang, Go and Go 1.11+,
+      Vue.js,
+      Docker, Docker-Compose and Kubernetes, Google Cloud Platform (GCP), Linux and tinkering with Rust.
+    </p>
+  </div>
+  <div class="feature">
+    <h2>Interested in Roles</h2>
+    <p><b>Remote Senior Software Engineer</b>: Golang, Vue.js, Linux, Docker, Docker-Compose, Kubernetes, Cloud Computing and tinkering with Rust</p>
+  </div>
+  <div class="feature">
+    <h2>Contact</h2>
+    <p><a href="mailto:m@bana.io" target="_blank" rel="noopener noreferrer">m@bana.io</a></p>
+  </div>
+</div>

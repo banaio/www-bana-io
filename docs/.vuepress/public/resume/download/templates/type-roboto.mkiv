@@ -1,0 +1,328 @@
+% ConTeXt MkIV typescript for Google’s Roboto font clan
+% see https://fonts.google.com/?query=Roboto
+% 2020 by Henning Hraban Ramm, hraban@fiee.net
+% public domain
+
+\definefontfeature[robotofeatures][
+  mode=node,
+  ccmp=yes, % character composition
+  liga=yes, tlig=yes, % ligatures
+  pnum=yes,
+  cpsp=yes, % capital spacing
+  kern=yes,
+  language=dflt,
+  protrusion=quality,
+  expansion=quality,
+]
+
+\definefontfeature[robotoseriffeatures][robotofeatures][
+  % frac=yes, % convert text fractions
+  onum=yes,
+]
+
+\definefontfeature[robotomonofeatures][robotofeatures][
+  % Make Mono as mono as possible
+  pnum=no,
+  liga=no, tlig=no,
+]
+
+\definefontfeature[smallcaps][ % use with \addff
+  smcp=yes, % smallcaps
+  % c2sc=yes, % caps to smallcaps
+]
+
+\definefontfeature[fractions][ % use with \addff
+  frac=yes, % convert e.g. 1/2, 3/4 into fractions; not reliable
+  % you could address numr and dnom separately
+]
+
+\definefontfeature[oldstyle][ % use with \addff
+  frac=no,  % collisions!
+  smcp=yes, % smallcaps
+  onum=yes, % oldstyle numbers
+]
+
+\definefontfeature[tablenumbers][ % use with \addff
+  pnum=no,
+  tnum=yes,
+]
+
+\definefontfeature[alt][ % use with \addff
+  %dlig=yes, % st ligature in italic
+  %ss01=yes, % Antiqua g
+  %ss02=yes, % ?
+  %ss03=yes, % R with round leg
+  %ss04=yes, % other k and K
+  %ss05=yes, % different K
+  %ss06=yes, % wider/rounder g, G, o, O, e
+  %ss07=yes, % more open e and g
+]
+
+
+% SANS
+
+\starttypescript[sans][roboto,robotosans]
+\definefontsynonym[Roboto-Regular][name:robotoregular]
+\definefontsynonym[Roboto-Black][name:robotoblack]
+\definefontsynonym[Roboto-BlackItalic][name:robotoblackitalic]
+\definefontsynonym[Roboto-Bold][name:robotobold]
+\definefontsynonym[Roboto-BoldItalic][name:robotobolditalic]
+\definefontsynonym[Roboto-Italic][name:robotoitalic]
+\definefontsynonym[Roboto-Light][name:robotolight]
+\definefontsynonym[Roboto-LightItalic][name:robotolightitalic]
+\definefontsynonym[Roboto-Medium][name:robotomedium]
+\definefontsynonym[Roboto-MediumItalic][name:robotomediumitalic]
+\definefontsynonym[Roboto-Italic][name:robotoitalic]
+\definefontsynonym[Roboto-Regular][name:robotoregular]
+\definefontsynonym[Roboto-Thin][name:robotothin]
+\definefontsynonym[Roboto-ThinItalic][name:robotothinitalic]
+\stoptypescript
+
+\starttypescript[sans][roboto,robotosans][name]
+\definefontsynonym [SansThin]         [Roboto-Thin]        [features=robotofeatures]
+\definefontsynonym [SansThinItalic]   [Roboto-ThinItalic]  [features=robotofeatures]
+\definefontsynonym [SansThinSlanted]  [Roboto-ThinItalic]  [features=robotofeatures]
+\definefontsynonym [SansLight]        [Roboto-Light]       [features=robotofeatures]
+\definefontsynonym [SansLightItalic]  [Roboto-LightItalic] [features=robotofeatures]
+\definefontsynonym [SansLightSlanted] [Roboto-LightItalic] [features=robotofeatures]
+\definefontsynonym [Sans]             [Roboto-Regular]     [features=robotofeatures]
+\definefontsynonym [SansItalic]       [Roboto-Italic]      [features=robotofeatures]
+\definefontsynonym [SansSlanted]      [Roboto-Italic]      [features=robotofeatures]
+\definefontsynonym [SansCaps]         [Roboto-Regular]     [features={robotofeatures,smallcaps}]
+\definefontsynonym [SansMedium]       [Roboto-Medium]      [features=robotofeatures]
+\definefontsynonym [SansMediumItalic] [Roboto-MediumItalic][features=robotofeatures]
+\definefontsynonym [SansMediumSlanted][Roboto-MediumItalic][features=robotofeatures]
+\definefontsynonym [SansBold]         [Roboto-Bold]        [features=robotofeatures]
+\definefontsynonym [SansBoldItalic]   [Roboto-BoldItalic]  [features=robotofeatures]
+\definefontsynonym [SansBoldSlanted]  [Roboto-BoldItalic]  [features=robotofeatures]
+\definefontsynonym [SansBlack]        [Roboto-Black]       [features=robotofeatures]
+\definefontsynonym [SansBlackItalic]  [Roboto-BlackItalic] [features=robotofeatures]
+\definefontsynonym [SansBlackSlanted] [Roboto-BlackItalic] [features=robotofeatures]
+\stoptypescript
+
+\starttypescript[sans][roboto-light][name]
+\definefontsynonym [Sans]             [Roboto-Light]         [features=robotofeatures]
+\definefontsynonym [SansItalic]       [Roboto-LightItalic]   [features=robotofeatures]
+\definefontsynonym [SansSlanted]      [Roboto-LightItalic]   [features=robotofeatures]
+\definefontsynonym [SansCaps]         [Roboto-Light]         [features={robotofeatures,smallcaps}]
+\definefontsynonym [SansBold]         [Roboto-Medium]        [features=robotofeatures]
+\definefontsynonym [SansBoldItalic]   [Roboto-MediumItalic]  [features=robotofeatures]
+\definefontsynonym [SansBoldSlanted]  [Roboto-MediumItalic]  [features=robotofeatures]
+\stoptypescript
+
+\starttypescript[sans][roboto-medium][name]
+\definefontsynonym [Sans]             [Roboto-Medium]     [features=robotofeatures]
+\definefontsynonym [SansItalic]       [Roboto-MediumItalic]      [features=robotofeatures]
+\definefontsynonym [SansSlanted]      [Roboto-MediumItalic]      [features=robotofeatures]
+\definefontsynonym [SansCaps]         [Roboto-Medium]     [features={robotofeatures,smallcaps}]
+\definefontsynonym [SansBold]         [Roboto-Black]        [features=robotofeatures]
+\definefontsynonym [SansBoldItalic]   [Roboto-BlackItalic]  [features=robotofeatures]
+\definefontsynonym [SansBoldSlanted]  [Roboto-BlackItalic]  [features=robotofeatures]
+\stoptypescript
+
+
+% SANS CONDENSED
+
+\starttypescript[sans][robotocondensed]
+\definefontsynonym[RobotoCondensed-Regular][name:robotocondensedregular]
+\definefontsynonym[RobotoCondensed-Italic][name:robotocondenseditalic]
+\definefontsynonym[RobotoCondensed-Bold][name:robotocondensedbold]
+\definefontsynonym[RobotoCondensed-BoldItalic][name:robotocondensedbolditalic]
+\definefontsynonym[RobotoCondensed-Light][name:robotocondensedlight]
+\definefontsynonym[RobotoCondensed-LightItalic][name:robotocondensedlightitalic]
+\stoptypescript
+
+\starttypescript[sans][robotocondensed,robotocondensed-medium][name]
+\definefontsynonym [Sans]             [RobotoCondensed-Regular]     [features=robotofeatures]
+\definefontsynonym [SansItalic]       [RobotoCondensed-Italic]      [features=robotofeatures]
+\definefontsynonym [SansSlanted]      [RobotoCondensed-Italic]      [features=robotofeatures]
+\definefontsynonym [SansBold]         [RobotoCondensed-Bold]        [features=robotofeatures]
+\definefontsynonym [SansBoldItalic]   [RobotoCondensed-BoldItalic]  [features=robotofeatures]
+\definefontsynonym [SansBoldSlanted]  [RobotoCondensed-BoldItalic]  [features=robotofeatures]
+\definefontsynonym [SansCaps]         [RobotoCondensed-Regular]     [features={robotofeatures,smallcaps}]
+\definefontsynonym [SansLight]        [RobotoCondensed-Light]       [features=robotofeatures]
+\definefontsynonym [SansLightItalic]  [RobotoCondensed-LightItalic] [features=robotofeatures]
+\definefontsynonym [SansLightSlanted] [RobotoCondensed-LightItalic] [features=robotofeatures]
+\stoptypescript
+
+\starttypescript[sans][robotocondensed-light][name]
+\definefontsynonym [Sans]             [RobotoCondensed-Light]       [features=robotofeatures]
+\definefontsynonym [SansItalic]       [RobotoCondensed-LightItalic] [features=robotofeatures]
+\definefontsynonym [SansSlanted]      [RobotoCondensed-LightItalic] [features=robotofeatures]
+\definefontsynonym [SansBold]         [RobotoCondensed-Regular]     [features=robotofeatures]
+\definefontsynonym [SansBoldItalic]   [RobotoCondensed-Italic]      [features=robotofeatures]
+\definefontsynonym [SansBoldSlanted]  [RobotoCondensed-Italic]      [features=robotofeatures]
+\definefontsynonym [SansCaps]         [RobotoCondensed-Light]       [features={robotofeatures,smallcaps}]
+\stoptypescript
+
+
+% SERIF
+
+\starttypescript[serif][roboto,robotoslab]
+\definefontsynonym[RobotoSlab-Black][name:robotoslabblack]
+\definefontsynonym[RobotoSlab-Bold][name:robotoslabbold]
+\definefontsynonym[RobotoSlab-ExtraBold][name:robotoslabextrabold]
+\definefontsynonym[RobotoSlab-ExtraLight][name:robotoslabextralight]
+\definefontsynonym[RobotoSlab-Light][name:robotoslablight]
+\definefontsynonym[RobotoSlab-Medium][name:robotoslabmedium]
+\definefontsynonym[RobotoSlab-Regular][name:robotoslabregular]
+\definefontsynonym[RobotoSlab-Regular][name:robotoslabregular]
+\definefontsynonym[RobotoSlab-SemiBold][name:robotoslabsemibold]
+\definefontsynonym[RobotoSlab-Thin][name:robotoslabthin]
+\stoptypescript
+
+\starttypescript[serif][roboto,robotoslab][name]
+% There are no italics; we use italic to switch one level bolder and slanted one level lighter
+\definefontsynonym [SerifThin]         [RobotoSlab-Thin]        [features=robotoseriffeatures]
+\definefontsynonym [SerifThinItalic]   [RobotoSlab-ExtraLight]  [features=robotoseriffeatures]
+\definefontsynonym [SerifThinSlanted]  [RobotoSlab-ExtraLight]  [features=robotoseriffeatures]
+
+\definefontsynonym [SerifExtraLight]        [RobotoSlab-ExtraLight][features=robotoseriffeatures]
+\definefontsynonym [SerifExtraLightItalic]  [RobotoSlab-Light]  [features=robotoseriffeatures]
+\definefontsynonym [SerifExtraLightSlanted] [RobotoSlab-Thin]   [features=robotoseriffeatures]
+
+\definefontsynonym [SerifLight]        [RobotoSlab-Light]       [features=robotoseriffeatures]
+\definefontsynonym [SerifLightItalic]  [RobotoSlab-Regular]     [features=robotoseriffeatures]
+\definefontsynonym [SerifLightSlanted] [RobotoSlab-ExtraLight]  [features=robotoseriffeatures]
+
+\definefontsynonym [Serif]             [RobotoSlab-Regular]     [features=robotoseriffeatures]
+\definefontsynonym [SerifRegular]      [RobotoSlab-Regular]     [features=robotoseriffeatures]
+\definefontsynonym [SerifItalic]       [RobotoSlab-Medium]      [features=robotoseriffeatures]
+\definefontsynonym [SerifSlanted]      [RobotoSlab-Light]       [features=robotoseriffeatures]
+\definefontsynonym [SerifCaps]         [RobotoSlab-Regular]     [features={robotoseriffeatures,smallcaps}]
+
+\definefontsynonym [SerifMedium]       [RobotoSlab-Medium]      [features=robotoseriffeatures]
+\definefontsynonym [SerifMediumItalic] [RobotoSlab-Bold]        [features=robotoseriffeatures]
+\definefontsynonym [SerifMediumSlanted][RobotoSlab-Regular]     [features=robotoseriffeatures]
+
+\definefontsynonym [SerifSemiBold]         [RobotoSlab-SemiBold][features=robotoseriffeatures]
+\definefontsynonym [SerifSemiBoldItalic]   [RobotoSlab-Bold]    [features=robotoseriffeatures]
+\definefontsynonym [SerifSemiBoldSlanted]  [RobotoSlab-Medium]  [features=robotoseriffeatures]
+
+\definefontsynonym [SerifBold]         [RobotoSlab-Bold]        [features=robotoseriffeatures]
+\definefontsynonym [SerifBoldItalic]   [RobotoSlab-ExtraBold]   [features=robotoseriffeatures]
+\definefontsynonym [SerifBoldSlanted]  [RobotoSlab-Medium]      [features=robotoseriffeatures]
+
+\definefontsynonym [SerifExtraBold]         [RobotoSlab-ExtraBold][features=robotoseriffeatures]
+\definefontsynonym [SerifExtraBoldItalic]   [RobotoSlab-Black]  [features=robotoseriffeatures]
+\definefontsynonym [SerifExtraBoldSlanted]  [RobotoSlab-Bold]   [features=robotoseriffeatures]
+
+\definefontsynonym [SerifBlack]        [RobotoSlab-Black]       [features=robotoseriffeatures]
+\definefontsynonym [SerifBlackItalic]  [RobotoSlab-BlackItalic] [features=robotoseriffeatures]
+\definefontsynonym [SerifBlackSlanted] [RobotoSlab-BlackItalic] [features=robotoseriffeatures]
+\stoptypescript
+
+\starttypescript[serif][roboto-light][name]
+% There are no italics; we use italic to switch one level bolder and slanted one level lighter
+\definefontsynonym [Serif]             [RobotoSlab-Light]       [features=robotoseriffeatures]
+\definefontsynonym [SerifRegular]      [RobotoSlab-Light]       [features=robotoseriffeatures]
+\definefontsynonym [SerifItalic]       [RobotoSlab-Regular]     [features=robotoseriffeatures]
+\definefontsynonym [SerifSlanted]      [RobotoSlab-ExtraLight]  [features=robotoseriffeatures]
+\definefontsynonym [SerifCaps]         [RobotoSlab-Light]       [features={robotoseriffeatures,smallcaps}]
+
+\definefontsynonym [SerifBold]         [RobotoSlab-Medium]      [features=robotoseriffeatures]
+\definefontsynonym [SerifBoldItalic]   [RobotoSlab-SemiBold]    [features=robotoseriffeatures]
+\definefontsynonym [SerifBoldSlanted]  [RobotoSlab-ExtraLight]  [features=robotoseriffeatures]
+\stoptypescript
+
+
+\starttypescript[serif][roboto-medium][name]
+% There are no italics; we use italic to switch one level bolder and slanted one level lighter
+\definefontsynonym [Serif]             [RobotoSlab-Medium]      [features=robotoseriffeatures]
+\definefontsynonym [SerifRegular]      [RobotoSlab-Medium]      [features=robotoseriffeatures]
+\definefontsynonym [SerifItalic]       [RobotoSlab-SemiBold]    [features=robotoseriffeatures]
+\definefontsynonym [SerifSlanted]      [RobotoSlab-Regular]     [features=robotoseriffeatures]
+\definefontsynonym [SerifCaps]         [RobotoSlab-Medium]      [features={robotoseriffeatures,smallcaps}]
+
+\definefontsynonym [SerifBold]         [RobotoSlab-ExtraBold]   [features=robotoseriffeatures]
+\definefontsynonym [SerifBoldItalic]   [RobotoSlab-Black]       [features=robotoseriffeatures]
+\definefontsynonym [SerifBoldSlanted]  [RobotoSlab-SemiBold]    [features=robotoseriffeatures]
+\stoptypescript
+
+
+% MONO
+
+\starttypescript[mono][roboto,robotomono]
+\definefontsynonym[RobotoMono-Regular][name:robotomonoregular]
+\definefontsynonym[RobotoMono-Bold][name:robotomonobold]
+\definefontsynonym[RobotoMono-BoldItalic][name:robotomonobolditalic]
+\definefontsynonym[RobotoMono-Italic][name:robotomonoitalic]
+\definefontsynonym[RobotoMono-Light][name:robotomonolight]
+\definefontsynonym[RobotoMono-LightItalic][name:robotomonolightitalic]
+\definefontsynonym[RobotoMono-Medium][name:robotomonomedium]
+\definefontsynonym[RobotoMono-MediumItalic][name:robotomonomediumitalic]
+\definefontsynonym[RobotoMono-Italic][name:robotomonoitalic]
+\definefontsynonym[RobotoMono-Regular][name:robotomonoregular]
+\definefontsynonym[RobotoMono-Thin][name:robotomonothin]
+\definefontsynonym[RobotoMono-ThinItalic][name:robotomonothinitalic]
+\stoptypescript
+
+\starttypescript[mono][roboto,robotomono][name]
+\definefontsynonym [Mono]             [RobotoMono-Regular]     [features=robotomonofeatures]
+\definefontsynonym [MonoItalic]       [RobotoMono-Italic]      [features=robotomonofeatures]
+\definefontsynonym [MonoSlanted]      [RobotoMono-Italic]      [features=robotomonofeatures]
+\definefontsynonym [MonoBold]         [RobotoMono-Bold]        [features=robotomonofeatures]
+\definefontsynonym [MonoBoldItalic]   [RobotoMono-BoldItalic]  [features=robotomonofeatures]
+\definefontsynonym [MonoBoldSlanted]  [RobotoMono-BoldItalic]  [features=robotomonofeatures]
+\definefontsynonym [MonoCaps]         [RobotoMono-Regular]     [features={robotomonofeatures,smallcaps}]
+\definefontsynonym [MonoThin]         [RobotoMono-Thin]        [features=robotomonofeatures]
+\definefontsynonym [MonoThinItalic]   [RobotoMono-ThinItalic]  [features=robotomonofeatures]
+\definefontsynonym [MonoThinSlanted]  [RobotoMono-ThinItalic]  [features=robotomonofeatures]
+\definefontsynonym [MonoLight]        [RobotoMono-Light]       [features=robotomonofeatures]
+\definefontsynonym [MonoLightItalic]  [RobotoMono-LightItalic] [features=robotomonofeatures]
+\definefontsynonym [MonoLightSlanted] [RobotoMono-LightItalic] [features=robotomonofeatures]
+\definefontsynonym [MonoMedium]       [RobotoMono-Medium]      [features=robotomonofeatures]
+\definefontsynonym [MonoMediumItalic] [RobotoMono-MediumItalic][features=robotomonofeatures]
+\definefontsynonym [MonoMediumSlanted][RobotoMono-MediumItalic][features=robotomonofeatures]
+\stoptypescript
+
+\starttypescript[mono][roboto-light][name]
+\definefontsynonym [Mono]             [RobotoMono-Light]        [features=robotomonofeatures]
+\definefontsynonym [MonoItalic]       [RobotoMono-LightItalic]  [features=robotomonofeatures]
+\definefontsynonym [MonoSlanted]      [RobotoMono-LightItalic]  [features=robotomonofeatures]
+\definefontsynonym [MonoBold]         [RobotoMono-Regular]      [features=robotomonofeatures]
+\definefontsynonym [MonoBoldItalic]   [RobotoMono-Italic]       [features=robotomonofeatures]
+\definefontsynonym [MonoBoldSlanted]  [RobotoMono-Italic]       [features=robotomonofeatures]
+\definefontsynonym [MonoCaps]         [RobotoMono-Light]        [features={robotomonofeatures,smallcaps}]
+\stoptypescript
+
+\starttypescript[mono][roboto-medium][name]
+\definefontsynonym [Mono]             [RobotoMono-Medium]        [features=robotomonofeatures]
+\definefontsynonym [MonoItalic]       [RobotoMono-MediumItalic]  [features=robotomonofeatures]
+\definefontsynonym [MonoSlanted]      [RobotoMono-MediumItalic]  [features=robotomonofeatures]
+\definefontsynonym [MonoBold]         [RobotoMono-Bold]          [features=robotomonofeatures]
+\definefontsynonym [MonoBoldItalic]   [RobotoMono-BoldItalic]    [features=robotomonofeatures]
+\definefontsynonym [MonoBoldSlanted]  [RobotoMono-BoldItalic]    [features=robotomonofeatures]
+\definefontsynonym [MonoCaps]         [RobotoMono-Medium]        [features={robotomonofeatures,smallcaps}]
+\stoptypescript
+
+
+% FAMILY
+
+\starttypescript[roboto]
+\definetypeface [roboto] [rm] [serif] [roboto] [default]
+\definetypeface [roboto] [ss] [sans]  [roboto] [default]
+\definetypeface [roboto] [tt] [mono]  [roboto] [default]
+\definetypeface [roboto] [mm] [math]  [default][default]
+\stoptypescript
+
+\starttypescript[roboto-condensed]
+\definetypeface [roboto-condensed] [rm] [serif] [roboto] [default]
+\definetypeface [roboto-condensed] [ss] [sans]  [roboto-condensed] [default]
+\definetypeface [roboto-condensed] [tt] [mono]  [roboto] [default]
+\definetypeface [roboto-condensed] [mm] [math]  [default][default]
+\stoptypescript
+
+\starttypescript[roboto-light]
+\definetypeface [roboto-light] [rm] [serif] [roboto-light] [default]
+\definetypeface [roboto-light] [ss] [sans]  [roboto-light] [default]
+\definetypeface [roboto-light] [tt] [mono]  [roboto-light] [default]
+\definetypeface [roboto-light] [mm] [math]  [default][default]
+\stoptypescript
+
+\starttypescript[roboto-medium]
+\definetypeface [roboto-medium] [rm] [serif] [roboto-medium] [default]
+\definetypeface [roboto-medium] [ss] [sans]  [roboto-medium] [default]
+\definetypeface [roboto-medium] [tt] [mono]  [roboto-medium] [default]
+\definetypeface [roboto-medium] [mm] [math]  [default][default]
+\stoptypescript

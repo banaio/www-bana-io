@@ -1,0 +1,59 @@
+/* https://fonts.google.com/?subset=arabic&sort=popularity&preview.text=%D9%85%D8%AD%D9%85%D8%AF+%D8%A8%D8%A7%D9%86%D8%A7+-+The+Builder%E2%80%94%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1+-+Mohamed+Bana&preview.text_type=custom */
+
+---
+To embed a font, copy the code into the <head> of your html
+
+<link>@import
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@200;300;400;600;700;900&family=Changa:wght@200;300;400;500;523;600;700;800&family=El+Messiri:wght@400;500;600;700&family=Jomhuria&family=Katibeh&family=Lalezar&family=Lateef&family=Lemonada:wght@300;400;500;515;600;700&family=Mada:wght@200;300;400;500;600;700;900&family=Markazi+Text:wght@400;500;562;600;700&family=Mirza:wght@400;500;600;700&family=Rakkas&family=Reem+Kufi&family=Scheherazade:wght@400;700&family=Tajawal:wght@200;300;400;500;700;800;900&family=Vibes&display=swap" rel="stylesheet">
+CSS rules to specify families
+
+font-family: 'Almarai', sans-serif;
+font-family: 'Amiri', serif;
+font-family: 'Aref Ruqaa', serif;
+font-family: 'Cairo', sans-serif;
+font-family: 'Changa', sans-serif;
+font-family: 'El Messiri', sans-serif;
+font-family: 'Jomhuria', cursive;
+font-family: 'Katibeh', cursive;
+font-family: 'Lalezar', cursive;
+font-family: 'Lateef', cursive;
+font-family: 'Lemonada', cursive;
+font-family: 'Mada', sans-serif;
+font-family: 'Markazi Text', serif;
+font-family: 'Mirza', cursive;
+font-family: 'Rakkas', cursive;
+font-family: 'Reem Kufi', sans-serif;
+font-family: 'Scheherazade', serif;
+font-family: 'Tajawal', sans-serif;
+font-family: 'Vibes', cursive;
+---
+To embed a font, copy the code into the <head> of your html
+
+<link>@import
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@200;300;400;600;700;900&family=Changa:wght@200;300;400;500;523;600;700;800&family=El+Messiri:wght@400;500;600;700&family=Jomhuria&family=Katibeh&family=Lalezar&family=Lateef&family=Lemonada:wght@300;400;500;515;600;700&family=Mada:wght@200;300;400;500;600;700;900&family=Markazi+Text:wght@400;500;562;600;700&family=Mirza:wght@400;500;600;700&family=Rakkas&family=Reem+Kufi&family=Scheherazade:wght@400;700&family=Tajawal:wght@200;300;400;500;700;800;900&family=Vibes&display=swap');
+</style>
+CSS rules to specify families
+
+font-family: 'Almarai', sans-serif;
+font-family: 'Amiri', serif;
+font-family: 'Aref Ruqaa', serif;
+font-family: 'Cairo', sans-serif;
+font-family: 'Changa', sans-serif;
+font-family: 'El Messiri', sans-serif;
+font-family: 'Jomhuria', cursive;
+font-family: 'Katibeh', cursive;
+font-family: 'Lalezar', cursive;
+font-family: 'Lateef', cursive;
+font-family: 'Lemonada', cursive;
+font-family: 'Mada', sans-serif;
+font-family: 'Markazi Text', serif;
+font-family: 'Mirza', cursive;
+font-family: 'Rakkas', cursive;
+font-family: 'Reem Kufi', sans-serif;
+font-family: 'Scheherazade', serif;
+font-family: 'Tajawal', sans-serif;
+font-family: 'Vibes', cursive;
+---
+https://developers.google.com/fonts/docs/css2
+---
