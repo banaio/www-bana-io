@@ -18,7 +18,7 @@ sidebar: auto
 
 ## Objectives
 
-My main interests are in Golang or Go in the area of the [Language Server protocol](https://langserver.org), see my contributions to <https://github.com/saibing/bingo> in my fork <https://github.com/banaio/bingo>. The Language Server, `bingo` in this case, is used by [`vscode-go`](https://github.com/Microsoft/vscode-go) to provide Golang language support in the IDE. I am passionate about (developer) tooling.
+My main interests are in Rust. And also Golang/Go in the area of the [Language Server protocol](https://langserver.org), see my contributions to <https://github.com/saibing/bingo> in my fork <https://github.com/banaio/bingo>. The Language Server, `bingo` in this case, is used by [`vscode-go`](https://github.com/Microsoft/vscode-go) to provide Golang language support in the IDE. I am passionate about (developer) tooling.
 
 I am a well-rounded Software Engineer, and I understand what it takes to release a product having worked on the back-end, front-end, testing and finally the deployment aspect of several products.
 

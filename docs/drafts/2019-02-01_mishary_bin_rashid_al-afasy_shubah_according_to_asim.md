@@ -2,7 +2,7 @@
 title: "برواية شعبة بصوت القارئ الشيخ مشارى بن راشد العفاسى"
 date: "2019-02-01"
 tags: ["blog"]
-type: post
+# type: post
 permalink: /blog/mishary_bin_rashid_al-afasy/shubah_according_to_asim
 ---
 # Shu'bah according to 'Asim by Mishary bin Rashid Al-Afasy <Badge text="WIP" type="warn"/>
