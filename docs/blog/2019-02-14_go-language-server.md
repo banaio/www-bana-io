@@ -5,6 +5,7 @@ tags: ["blog"]
 type: post
 permalink: /blog/go-language-server
 ---
+
 # Go Language Server: using golsp or bingo <Badge text="needs updating" type="warn"/>
 
 How to setup `vscode-go` to use [`golsp`](https://github.com/golang/tools/tree/master/cmd/gopls) or [`bingo`](https://github.com/saibing/bingo).
