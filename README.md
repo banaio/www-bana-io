@@ -11,5 +11,6 @@
 ## run
 
 ```sh
+yarn install --frozen-lockfile --non-interactive
 yarn docs:dev
 ```

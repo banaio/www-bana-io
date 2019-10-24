@@ -26,29 +26,29 @@ I'll post benchmarks later.
 
 ### AMD Ryzen 9 3900X Processor
 
-* https://www.amd.com/en/products/cpu/amd-ryzen-9-3900x
-* https://www.amazon.co.uk/gp/product/B07SXMZLP9/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1 - AMD Ryzen 9 3900X Processor (12C/24T, 70MB Cache, 4.6 GHz Max Boost), bought at £693.24.
+* <https://www.amd.com/en/products/cpu/amd-ryzen-9-3900x
+* <https://www.amazon.co.uk/gp/product/B07SXMZLP9/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1 - AMD Ryzen 9 3900X Processor (12C/24T, 70MB Cache, 4.6 GHz Max Boost), bought at £693.24.
 
 ### CPU Cooler
 
 #### be quiet! DARK ROCK PRO 4
 
-* https://www.bequiet.com/en/cpucooler/1378
-* https://www.amazon.co.uk/QUIET-Dark-Silent-Wings-Cooler/dp/B07BY6F8D9/ref=pd_sbs_147_17?_encoding=UTF8&pd_rd_i=B07BY6F8D9&pd_rd_r=b0eb3d34-fbcf-4c51-9b40-b6c8a374d5f1&pd_rd_w=VjELX&pd_rd_wg=D4Vt1&pf_rd_p=cc188cba-1892-42b3-956f-6c67d0ab7a00&pf_rd_r=EVT99FP42GTJDRYSX05D&psc=1&refRID=EVT99FP42GTJDRYSX05D - BE QUIET Dark Rock Pro 4 135 mm Silent Wings Fan CPU Cooler - Black, bought at £70.60.
+* <https://www.bequiet.com/en/cpucooler/1378>.
+* <https://www.amazon.co.uk/QUIET-Dark-Silent-Wings-Cooler/dp/B07BY6F8D9/ref=pd_sbs_147_17?_encoding=UTF8&pd_rd_i=B07BY6F8D9&pd_rd_r=b0eb3d34-fbcf-4c51-9b40-b6c8a374d5f1&pd_rd_w=VjELX&pd_rd_wg=D4Vt1&pf_rd_p=cc188cba-1892-42b3-956f-6c67d0ab7a00&pf_rd_r=EVT99FP42GTJDRYSX05D&psc=1&refRID=EVT99FP42GTJDRYSX05D> - BE QUIET Dark Rock Pro 4 135 mm Silent Wings Fan CPU Cooler - Black, bought at £70.60.
 
 #### Thermal Paste
 
 #### Noctua NT-H2 3.5G
 
-* https://noctua.at/en/nt-h2-3-5g
-* https://www.amazon.co.uk/gp/product/B07MZ45X9G/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1, noctua NT-H2 3.5g High Performance Thermal Paste - Includes 3 Cleaning Wipes, bought at £11.49.
+* <https://noctua.at/en/nt-h2-3-5g>.
+* <https://www.amazon.co.uk/gp/product/B07MZ45X9G/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1>, noctua NT-H2 3.5g High Performance Thermal Paste - Includes 3 Cleaning Wipes, bought at £11.49.
 
 ## Motherboard
 
 ## MSI PRESTIGE X570 CREATION
 
-* https://www.msi.com/Motherboard/PRESTIGE-X570-CREATION
-* https://www.amazon.co.uk/MSI-PRESTIGE-X570-CREATION-Motherboard/dp/B07TCP7VM2/ref=pd_sbs_147_44?_encoding=UTF8&pd_rd_i=B07TCP7VM2&pd_rd_r=e16c7f42-a67a-4918-9a74-15b96478f55d&pd_rd_w=h8VzR&pd_rd_wg=WJw4w&pf_rd_p=cc188cba-1892-42b3-956f-6c67d0ab7a00&pf_rd_r=GS4BX86PA7RNM4P7H5FP&psc=1&refRID=GS4BX86PA7RNM4P7H5FP - MSI PRESTIGE X570 CREATION AMD AM4 DDR4 SLI/CF M.2 USB 3.2 Gen 2 Wi-Fi 6 E-ATX Motherboard, bought at £449.99.
+* <https://www.msi.com/Motherboard/PRESTIGE-X570-CREATION>
+* <https://www.amazon.co.uk/MSI-PRESTIGE-X570-CREATION-Motherboard/dp/B07TCP7VM2/ref=pd_sbs_147_44?_encoding=UTF8&pd_rd_i=B07TCP7VM2&pd_rd_r=e16c7f42-a67a-4918-9a74-15b96478f55d&pd_rd_w=h8VzR&pd_rd_wg=WJw4w&pf_rd_p=cc188cba-1892-42b3-956f-6c67d0ab7a00&pf_rd_r=GS4BX86PA7RNM4P7H5FP&psc=1&refRID=GS4BX86PA7RNM4P7H5FP> - MSI PRESTIGE X570 CREATION AMD AM4 DDR4 SLI/CF M.2 USB 3.2 Gen 2 Wi-Fi 6 E-ATX Motherboard, bought at £449.99.
 
 Superb board. Has 10-Gigabit LAN and includes a M.2 XPANDER-Z GEN4 which allows you to mount 2 x PCIe 4.0 M.2 additional drives.
 
@@ -66,8 +66,8 @@ In my opinion a premium X570 boards should at least come with 1 Thunderbolt™ 3
 
 ## MSI Radeon RX 5700 XT GAMING X
 
-* https://www.msi.com/Graphics-card/Radeon-RX-5700-XT-GAMING-X
-* https://www.amazon.co.uk/gp/product/B07XSJ2F8S/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&psc=1 - Radeon RX 5700 XT GAMING X 8GB DDR3 256-bit 1610MHz PCI Express 4.0 Enthusiast Graphics Card, bough at £500.69.
+* <https://www.msi.com/Graphics-card/Radeon-RX-5700-XT-GAMING-X>.
+* <https://www.amazon.co.uk/gp/product/B07XSJ2F8S/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&psc=1> - Radeon RX 5700 XT GAMING X 8GB DDR3 256-bit 1610MHz PCI Express 4.0 Enthusiast Graphics Card, bough at £500.69.
 
 Superb GPU.
 
@@ -75,8 +75,8 @@ Superb GPU.
 
 ### NZXT H510i
 
-* https://www.nzxt.com/products/h510i
-* https://www.amazon.co.uk/gp/product/B07S8ZZJTW/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1 - NZXT H510i - Compact ATX Mid-Tower PC Gaming Case - Front I/O USB Type-C Port - Vertical GPU Mount - Tempered Glass Side Panel - Integrated RGB Lighting- Water-Cooling Ready - Black/Red, bought at £109.90.
+* <https://www.nzxt.com/products/h510i>.
+* <https://www.amazon.co.uk/gp/product/B07S8ZZJTW/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1> - NZXT H510i - Compact ATX Mid-Tower PC Gaming Case - Front I/O USB Type-C Port - Vertical GPU Mount - Tempered Glass Side Panel - Integrated RGB Lighting- Water-Cooling Ready - Black/Red, bought at £109.90.
 
 Just barely fits the MSI PRESTIGE X570 CREATION which is an E-ATX.
 
@@ -84,15 +84,15 @@ Just barely fits the MSI PRESTIGE X570 CREATION which is an E-ATX.
 
 ### Currently Installed
 
-* https://www.corsair.com/uk/en/Categories/Products/Memory/vengeance-lpx-black/p/CMK32GX4M1D3000C16
-* https://www.amazon.co.uk/gp/product/B07VRKX537/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1 - 2 x CORSAIR VENGEANCE LPX 32GB (1 x 32GB) DDR4 3000 (PC4-24000) C16 Desktop Memory - Black, bought each for £188.29.
+* <https://www.corsair.com/uk/en/Categories/Products/Memory/vengeance-lpx-black/p/CMK32GX4M1D3000C16>.
+* <https://www.amazon.co.uk/gp/product/B07VRKX537/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1> - 2 x CORSAIR VENGEANCE LPX 32GB (1 x 32GB) DDR4 3000 (PC4-24000) C16 Desktop Memory - Black, bought each for £188.29.
 
 ### Near Future
 
 I will most likely purchase the _CORSAIR VENGEANCE LPX 64GB (2 x 32GB) DDR4 3000 (PC4-24000) C16 1.35V Desktop Memory - Black_ again so I get 128MB of RAM.
 
-* https://www.corsair.com/uk/en/Categories/Products/Memory/vengeance-lpx-black/p/CMK64GX4M2D3000C16
-* https://www.amazon.co.uk/gp/product/B07VQJ9NPB/ref=ox_sc_act_title_2?smid=A3P5ROKL5A1OLE&psc=1 - CORSAIR VENGEANCE LPX 64GB (2 x 32GB) DDR4 3000 (PC4-24000) C16 1.35V Desktop Memory - Black
+* <https://www.corsair.com/uk/en/Categories/Products/Memory/vengeance-lpx-black/p/CMK64GX4M2D3000C16>.
+* <https://www.amazon.co.uk/gp/product/B07VQJ9NPB/ref=ox_sc_act_title_2?smid=A3P5ROKL5A1OLE&psc=1> - CORSAIR VENGEANCE LPX 64GB (2 x 32GB) DDR4 3000 (PC4-24000) C16 1.35V Desktop Memory - Black
 
 If I cannot find that I will get 2 more sticks of my current ram - _CORSAIR VENGEANCE LPX 32GB (1 x 32GB) DDR4 3000 (PC4-24000) C16 Desktop Memory - Black_ - so that the total memory is 128MB.
 
@@ -102,8 +102,8 @@ If I cannot find that I will get 2 more sticks of my current ram - _CORSAIR VENG
 
 #### 2 x 2TB Rocket Nvme PCIe 4.0 M.2 2280 Internal SSD Maximum Performance Solid State Drive
 
-* https://www.sabrent.com/product/SB-ROCKET-NVMe4-2TB/2tb-rocket-nvme-pcie-4-0-m-2-2280-internal-ssd-maximum-performance-solid-state-drive/
-* https://www.amazon.co.uk/gp/product/B07TN1MNJ4/ref=ppx_yo_dt_b_asin_title_o06_s01?ie=UTF8&psc=1 - Sabrent 2TB Rocket Nvme PCIe 4.0 M.2 2280 Internal SSD Maximum Performance Solid State Drive (SB-ROCKET-NVMe4-2TB), bought each for ~£399.99.
+* <https://www.sabrent.com/product/SB-ROCKET-NVMe4-2TB/2tb-rocket-nvme-pcie-4-0-m-2-2280-internal-ssd-maximum-performance-solid-state-drive/>.
+* <https://www.amazon.co.uk/gp/product/B07TN1MNJ4/ref=ppx_yo_dt_b_asin_title_o06_s01?ie=UTF8&psc=1> - Sabrent 2TB Rocket Nvme PCIe 4.0 M.2 2280 Internal SSD Maximum Performance Solid State Drive (SB-ROCKET-NVMe4-2TB), bought each for ~£399.99.
 
 Very quick is all I am saying for now. It took almost no time to install Linux.
 
@@ -127,8 +127,8 @@ When the price of NVMe PCIe 4.0 M.2 2280 drives the drops, I am planning on addi
 
 ### 4 x Noctua NF-F12 INDUSTRIALPPC-24V-3000 Q100 IP67 PWM
 
-* https://noctua.at/en/nf-f12-industrialppc-24v-3000-q100-ip67-pwm
-* https://www.amazon.co.uk/gp/product/B075DP96W7/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1, Noctua NF-F12 iPPC-24V-3000 Q100 IP67 PWM, Heavy Duty Cooling Fan, 4-Pin, 3000 RPM, 24V Version (120mm, Black), bought at £26.99 each.
+* <https://noctua.at/en/nf-f12-industrialppc-24v-3000-q100-ip67-pwm>.
+* <https://www.amazon.co.uk/gp/product/B075DP96W7/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1>, Noctua NF-F12 iPPC-24V-3000 Q100 IP67 PWM, Heavy Duty Cooling Fan, 4-Pin, 3000 RPM, 24V Version (120mm, Black), bought at £26.99 each.
 
 I am not sure if these fans are making a difference to the overall temperature in this case or not. The reason I say this is because I've tried setting all fans to full speed only to observe that the temperature remains fairly static and doesn't change much at all.
 
@@ -136,8 +136,8 @@ I am not sure if these fans are making a difference to the overall temperature i
 
 ### CORSAIR HX1000 Modular ATX PSU - 1000 W
 
-* https://www.corsair.com/uk/en/Categories/Products/Power-Supply-Units/hxi-series-2017-config/p/CP-9020139-UK
-* https://www.currys.co.uk/gbuk/computing-accessories/components-upgrades/power-supplies/corsair-hx1000-modular-atx-psu-1000-w-10191501-pdt.html - CORSAIR HX1000 Modular ATX PSU - 1000 W, bought at £170.00.
+* <https://www.corsair.com/uk/en/Categories/Products/Power-Supply-Units/hxi-series-2017-config/p/CP-9020139-UK>.
+* <https://www.currys.co.uk/gbuk/computing-accessories/components-upgrades/power-supplies/corsair-hx1000-modular-atx-psu-1000-w-10191501-pdt.html> - CORSAIR HX1000 Modular ATX PSU - 1000 W, bought at £170.00.
 
 ## Operating Systems
 
@@ -215,6 +215,6 @@ Go to [SUPPORT FOR PRESTIGE X570 CREATION](https://www.msi.com/Motherboard/suppo
 
 <!-- [Download Windows 10 Disc Image (ISO File)](https://www.microsoft.com/en-gb/software-download/windows10ISO) -->
 
-## Benchmarks
+## Benchmarks <Badge text="TODO" type="error"/>
 
-## Conclusion
+## Conclusion <Badge text="TODO" type="error"/>
