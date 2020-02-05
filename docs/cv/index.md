@@ -5,7 +5,10 @@ sidebar: auto
 ---
 # Mohamed Bana
 
-📱: [+447960-045-281](tel:+447960-045-281)<br>
+📱: [+44-7960-045-281](tel:+44-7960-045-281) (UK Mobile)<br>
+📱: [+212-624-846935](tel:+212-624-846935) (Moroccan Mobile)<br>
+📱: [+212-80-8526830](tel:+212-80-8526830) (Moroccan Home Landline)<br>
+📧: [m@bana.io](mailto:m@bana.io)<br>
 📧: [b@bana.io](mailto:b@bana.io)<br>
 
 <https://bana.io><br>
@@ -18,7 +21,18 @@ sidebar: auto
 
 ## Objectives
 
-My main interests are in Rust. And also Golang/Go in the area of the [Language Server protocol](https://langserver.org), see my contributions to <https://github.com/saibing/bingo> in my fork <https://github.com/banaio/bingo>. The Language Server, `bingo` in this case, is used by [`vscode-go`](https://github.com/Microsoft/vscode-go) to provide Golang language support in the IDE. I am passionate about (developer) tooling.
+Please, *_ONLY_* contact me about remote roles that meet these conditions:
+
+* Golang/Go roles.
+* Vue.js roles.
+* I am up for learning more of Rust. It's just a hobby at the moment.
+* Roles where Linux, Google Cloud Platform or Azure, Docker and Open Banking are being used.
+
+I kindly request that you respect my requests and do not spam me about roles that don't fit these criteria.
+
+My main interests are in Rust, Golang/Go and Vue.js.
+
+<!-- My main interests are in Rust. And also Golang/Go in the area of the [Language Server protocol](https://langserver.org), see my contributions to <https://github.com/saibing/bingo> in my fork <https://github.com/banaio/bingo>. The Language Server, `bingo` in this case, is used by [`vscode-go`](https://github.com/Microsoft/vscode-go) to provide Golang language support in the IDE. I am passionate about (developer) tooling. -->
 
 I am a well-rounded Software Engineer, and I understand what it takes to release a product having worked on the back-end, front-end, testing and finally the deployment aspect of several products.
 
