@@ -1,23 +1,32 @@
 ---
-title: "CV"
+title: "Mohamed Bana - CV"
 tags: ["resume", "cv"]
 sidebar: auto
 ---
-# Mohamed Bana
 
-📱: [+44-7960-045-281](tel:+44-7960-045-281) (UK Mobile)<br>
-📱: [+212-624-846935](tel:+212-624-846935) (Moroccan Mobile)<br>
-📱: [+212-80-8526830](tel:+212-80-8526830) (Moroccan Home Landline)<br>
-📧: [m@bana.io](mailto:m@bana.io)<br>
-📧: [b@bana.io](mailto:b@bana.io)<br>
+<!-- # Mohamed Bana -->
 
-<https://bana.io><br>
-<https://github.com/banaio><br>
-<https://uk.linkedin.com/in/mbana><br>
-<https://bana.io/cv><br>
+### `Mohamed_Bana-CV.pdf` <a href="/cv/Mohamed_Bana-CV-LinkedIn_Profile.pdf"><Badge text="Download" type="info" vertical="middle"/></a>
+
+---
+
+📱: [+447960045281](tel:+447960045281) (UK Mobile)</br>
+📱: [+212624846935](tel:+212624846935) (Moroccan Mobile)</br>
+📱: [+212808526830](tel:+212808526830) (Moroccan Home Landline)</br>
+📧: [m@bana.io](mailto:m@bana.io)</br>
+📧: [b@bana.io](mailto:b@bana.io)</br>
+
+<https://bana.io></br>
+<https://github.com/banaio></br>
+<https://uk.linkedin.com/in/mbana></br>
+<https://bana.io/cv></br>
 <!-- <https://www-bana-io-vue-js.netlify.com/cv/><br> -->
 
 <!--more-->
+
+<!-- ## Download
+
+[Mohamed_Bana-CV-LinkedIn_Profile.pdf](/cv/Mohamed_Bana-CV-LinkedIn_Profile.pdf). -->
 
 ## Objectives
 
@@ -25,8 +34,8 @@ Please, *_ONLY_* contact me about remote roles that meet these conditions:
 
 * Golang/Go roles.
 * Vue.js roles.
-* I am up for learning more of Rust. It's just a hobby at the moment.
 * Roles where Linux, Google Cloud Platform or Azure, Docker and Open Banking are being used.
+* I am up for learning more of Rust. It's just a hobby at the moment.
 
 I kindly request that you respect my requests and do not spam me about roles that don't fit these criteria.
 
@@ -65,8 +74,7 @@ Embeds Monaco Editor into Polymer v2.0, <https://github.com/banaio/monaco-editor
 
 ## Work Experience
 
-<!-- ### Node.js Developer (contractor), Open Banking, 2 Thomas More St, St Katharine's & Wapping, London E1W 1YN - 08/05/2018–29/03/2019 -->
-### Full Stack Node.js Developer (contractor), Open Banking Limited, St Katharine's & Wapping, London - 08/05/2018–Present
+### Full Stack Go and Vue.js Developer, Open Banking Limited, St Katharine's & Wapping, London - 08/05/2018–01/01/2020
 
 Working as a full stack developer at Open Banking on a tool that will validate a bank’s implementation of the OpenBanking API spec, see:
 
@@ -75,7 +83,6 @@ Working as a full stack developer at Open Banking on a tool that will validate a
 
 **Tech:** Go, Golang, Node.js, [Vue.js](https://vuejs.org/), [Vuex](https://vuex.vuejs.org/), Jest, Docker, Docker Compose, Kubernetes, [OpenID Connect](https://openid.net/connect/), [JSON Web Token (JWT)](https://jwt.io/), [Kompose](http://kompose.io/), [CircleCI](https://circleci.com/), [Swagger](https://swagger.io/), WebSocket, Bitbucket Pipelines, OpenAPI 3.0.
 
-<!-- ### Senior Engineer (contractor), Ninety Percent Of Everything Limited, 7th Floor, Portman House, 2 Portman Street, London, United Kingdom, W1H 6DU - 01/02/2018–20/04/2018 -->
 ### Senior Engineer (contractor), Ninety Percent Of Everything Limited, Marble Arch, London - 01/02/2018–20/04/2018
 
 Worked at startup specialising in software that runs on ship on two projects that were heavily Go-based.
@@ -216,9 +223,10 @@ User Acceptance Testing of the latest release of Thomson Reuter's 3000 Extra, th
 
 ### Misc
 
-Full UK driving licence.
+* I have a British passport.
+* Full UK driving licence.
 
-### Languages:
+### Languages
 
 * English and Swahili: Native.
 * Arabic: Basic to intermediate.

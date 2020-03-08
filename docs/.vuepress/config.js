@@ -41,35 +41,35 @@ module.exports = {
                 text: 'Blog',
                 link: '/blog/'
             },
-            {
-                text: 'Projects',
-                items: [
-                    {
-                        text: 'openbankingforgerock',
-                        link: 'https://github.com/banaio/openbankingforgerock',
-                    },
-                    {
-                        text: 'go-gdax',
-                        link: 'https://github.com/banaio/go-gdax',
-                    },
-                    {
-                        text: 'go_gdax_fix',
-                        link: 'https://github.com/banaio/go_gdax_fix',
-                    },
-                    {
-                        text: 'vue_js_samples',
-                        link: 'https://github.com/banaio/vue_js_samples',
-                    },
-                    {
-                        text: 'go_samples',
-                        link: 'https://github.com/banaio/go_samples',
-                    },
-                    {
-                        text: 'www-bana-io-vue-js',
-                        link: 'https://github.com/banaio/www-bana-io-vue-js',
-                    },
-                ]
-            },
+            // {
+            //     text: 'Projects',
+            //     items: [
+            //         {
+            //             text: 'openbankingforgerock',
+            //             link: 'https://github.com/banaio/openbankingforgerock',
+            //         },
+            //         {
+            //             text: 'go-gdax',
+            //             link: 'https://github.com/banaio/go-gdax',
+            //         },
+            //         {
+            //             text: 'go_gdax_fix',
+            //             link: 'https://github.com/banaio/go_gdax_fix',
+            //         },
+            //         {
+            //             text: 'vue_js_samples',
+            //             link: 'https://github.com/banaio/vue_js_samples',
+            //         },
+            //         {
+            //             text: 'go_samples',
+            //             link: 'https://github.com/banaio/go_samples',
+            //         },
+            //         {
+            //             text: 'www-bana-io-vue-js',
+            //             link: 'https://github.com/banaio/www-bana-io-vue-js',
+            //         },
+            //     ]
+            // },
             {
                 text: 'b@bana.io',
                 link: 'mailto:b@bana.io'
@@ -82,10 +82,10 @@ module.exports = {
                 text: 'GitHub - BanaIO',
                 link: 'https://github.com/banaio'
             },
-            {
-                text: 'Twitter',
-                link: 'https://twitter.com/m_bana/'
-            },
+            // {
+            //     text: 'Twitter',
+            //     link: 'https://twitter.com/m_bana/'
+            // },
             {
                 text: 'LinkedIn',
                 link: 'https://uk.linkedin.com/in/mbana'

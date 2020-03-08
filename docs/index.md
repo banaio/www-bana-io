@@ -49,7 +49,7 @@ actionLink: ./cv/index.md
   </div>
   <div class="feature">
     <h2>Interests</h2>
-    <p>Golang, Rust Lang</p>
+    <p>Golang, Vue.js and Rust Lang</p>
   </div>
   <div class="feature">
     <h2>Contact</h2>

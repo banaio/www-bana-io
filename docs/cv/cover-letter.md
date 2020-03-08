@@ -2,7 +2,9 @@
 title: "Cover Letter"
 tags: ["resume", "cover letter"]
 sidebar: auto
+draft: true
 ---
+
 A role involving web technologies hosted on a cloud-based backend. I’ve worked on all the tiers of a software product, so I can appreciate the different concerns expressed at each level. I feel the latest trend in web technologies; quick prototyping, large selection of libraries, ease of programming and its cross-platform support is where the future is heading. This, distributed systems and big data algorithms are where I am focusing my current efforts—all of which are equally interesting to me.
 
 ---

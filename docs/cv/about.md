@@ -1,7 +1,9 @@
 ---
 title: "About"
 sidebar: auto
+draft: true
 ---
+
 My name is Mohamed Bana and I am mainly interested in the following areas:
 
 * Web technologies.
