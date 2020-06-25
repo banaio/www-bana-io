@@ -14,3 +14,22 @@
 yarn install --frozen-lockfile --non-interactive
 yarn docs:dev
 ```
+
+## `VuePress`
+
+```sh
+# Scaffold VuePress site
+yarn create vuepress [directoryName]
+# OR npx create-vuepress [directoryName]
+
+# Navigate to your new VuePress directory
+cd [directoryName]
+
+# Start local dev server
+yarn dev
+# OR npm run dev
+
+# Build static files
+yarn build
+# OR npm run build
+```

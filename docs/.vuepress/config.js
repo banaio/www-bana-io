@@ -136,7 +136,8 @@ module.exports = {
             warnings: false,
             errors: true,
         },
-        open: 'Google Chrome',
+        open: 'google-chrome',
+        // open: 'Google Chrome',
     },
 
     // https://cli.vuejs.org/config/#configurewebpack

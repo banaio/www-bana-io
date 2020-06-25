@@ -8,5 +8,12 @@
     "markdown-it-katex": "^2.0.3",
     "vuepress": "^v1.0.0-alpha.40"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "acorn": "^6.4.1",
+    "kind-of": "^6.0.3",
+    "minimist": "^1.2.3",
+    "serialize-javascript": "^2.1.1",
+    "websocket-extensions": "^0.1.4"
+  }
 }
