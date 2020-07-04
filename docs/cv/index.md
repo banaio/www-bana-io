@@ -6,7 +6,10 @@ sidebar: auto
 
 <!-- # Mohamed Bana -->
 
-### `Mohamed_Bana-CV.pdf` <a href="/cv/Mohamed_Bana-CV-LinkedIn_Profile.pdf"><Badge text="Download" type="info" vertical="middle"/></a>
+# PDFs
+
+* `Mohamed_Bana-Resume-LinkedIn.pdf`: <a href="/cv/Mohamed_Bana-Resume-LinkedIn.pdf"><Badge text="Download" type="info" vertical="middle"/></a>
+* `Mohamed_Bana-CV-LinkedIn_Profile.pdf`: <a href="/cv/Mohamed_Bana-CV-LinkedIn_Profile.pdf"><Badge text="Download" type="info" vertical="middle"/></a>
 
 ---
 

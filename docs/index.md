@@ -43,13 +43,12 @@ actionLink: ./cv/index.md
       <p>
             Golang, Go and Go 1.11+,
             Vue.js,
-            Language Server protocol,
-            Docker, Docker-Compose and Kubernetes, Google Cloud Platform (GCP) and Linux.
+            Docker, Docker-Compose and Kubernetes, Google Cloud Platform (GCP), Linux and tinkering with Rust.
       </p>
   </div>
   <div class="feature">
-    <h2>Interests</h2>
-    <p>Golang, Vue.js and Rust Lang</p>
+    <h2>Interested in Roles</h2>
+    <p><b>Remote Senior Software Engineer</b>: Golang, Vue.js, Linux, Docker, Kubernetes and Cloud Computing</p>
   </div>
   <div class="feature">
     <h2>Contact</h2>
