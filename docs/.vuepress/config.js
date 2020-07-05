@@ -11,11 +11,18 @@ module.exports = {
                 href: '/favicon.ico',
             }
         ],
+        // [
+        //     'link',
+        //     {
+        //         rel: 'stylesheet',
+        //         href: 'https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext',
+        //     }
+        // ],
         [
             'link',
             {
                 rel: 'stylesheet',
-                href: 'https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext',
+                href: 'https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap',
             }
         ],
         // ['link', { rel: 'icon', href: 'favicon.png' }],
@@ -37,10 +44,6 @@ module.exports = {
     themeConfig: {
         logo: 'favicon.png',
         nav: [
-            {
-                text: 'Blog',
-                link: '/blog/'
-            },
             // {
             //     text: 'Projects',
             //     items: [
@@ -75,12 +78,12 @@ module.exports = {
                 link: 'mailto:b@bana.io'
             },
             {
-                text: 'GitHub - mbana',
-                link: 'https://github.com/mbana'
-            },
-            {
                 text: 'GitHub - BanaIO',
                 link: 'https://github.com/banaio'
+            },
+            {
+                text: 'GitHub - mbana',
+                link: 'https://github.com/mbana'
             },
             // {
             //     text: 'Twitter',
@@ -93,6 +96,14 @@ module.exports = {
             {
                 text: 'CV',
                 link: '/cv/'
+            },
+            {
+                text: 'Blog',
+                link: '/blog/'
+            },
+            {
+                text: 'The Quran',
+                link: '/the-quran/'
             },
         ],
         sidebar: 'auto',

@@ -232,8 +232,13 @@ User Acceptance Testing of the latest release of Thomson Reuter's 3000 Extra, th
 ### Languages
 
 * English and Swahili: Native.
-* Arabic: Basic to intermediate.
+* Arabic: Basic to intermediate. I own an apartment in Marrakech, Morocco, I have lived in Cairo, Egpyt and have travelled several times to the UAE.
 
 ### Tech
 
 I’ve played with Scala when it was in its infancy. I wrote an Eclipse plug-in, <https://github.com/mbana/MOODMetricsPlug-in>, which calculates the set of metrics called MOOD (Paper: [An Evaluation of the MOOD Set of Object-Oriented Software Metrics](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.196.7613)) on Java soure code. The plug-in works by using Eclipse’s internal compiler API to get an AST of the Java code and calculating the metrics.
+
+## Miscellaneous
+
+* [Cover Letter](./cover-letter)
+* [About](./about)
