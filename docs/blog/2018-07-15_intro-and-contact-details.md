@@ -6,6 +6,7 @@ type: post
 sidebar: false
 permalink: /blog/intro-and-contact-details
 ---
+
 # Intro and Contact Details
 
 Hi and welcome to BanaIO.

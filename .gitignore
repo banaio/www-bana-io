@@ -59,3 +59,15 @@ typings/
 
 # next.js build output
 .next
+
+############
+# VuePress #
+docs/.cache
+docs/.temp
+docs/.cache/
+docs/.temp/
+./docs/.cache
+./docs/.temp
+./docs/.cache/
+./docs/.temp/
+############

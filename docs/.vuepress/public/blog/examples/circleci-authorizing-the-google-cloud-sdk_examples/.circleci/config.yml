@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  build:
+    machine:
+      enabled: true
+      docker_layer_caching: true
+    resource_class: xlarge
+    working_directory: ~/circleci-google-cloud-sdk
+    steps:
+      - checkout:
+          path: ~/circleci-google-cloud-sdk
+      - run:
+          name: pushing images
+          environment:
+            # output of this command:
+            # $ cat key-file.json | awk '{print}' ORS=' '
+            GCLOUD_SERVICE_KEY: GCLOUD_SERVICE_KEY
+          command: |
+            set -ueo pipefail
+            make zones
+            make pods
+workflows:
+  version: 2
+  test-deploy:
+    jobs:
+      - build:

@@ -1,0 +1,22 @@
+{
+    debug
+    admin :8433
+    experimental_http3
+}
+
+http://0.0.0.0:8080, http://localhost:8080 {
+    #bind 192.168.1.5
+    root ./docs/.vuepress/dist
+    file_server browse
+    encode zstd gzip
+    #timeouts 0
+    #timeouts none
+    log {
+        output stdout
+    }
+}
+
+#0.0.0.0:8080/read-write-api-site3/, localhost:8080/read-write-api-site3/ {
+#	gzip
+#	root .
+#}

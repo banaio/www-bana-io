@@ -29,15 +29,11 @@ tagline: البناء—The Builder
 #       , َوَاحْلُلْ عُقْدَةً مِّن لِّسَانِي
 #       يَفْقَهُوا قَوْلِي
 actionText: CV
-actionLink: ./cv/index.md
+actionLink: ./resume/cv
 # footer: سورة طه
 ---
 
-<!-- <div style="text-align: center">
-  <Bit/>
-</div> -->
-
- <div class="features">
+<div class="features">
   <div class="feature">
       <h2>Full Stack Senior Software Engineer</h2>
       <p>
@@ -55,21 +51,3 @@ actionLink: ./cv/index.md
     <p><a href="mailto:b@bana.io">b@bana.io</a></p>
   </div>
 </div>
-
-<!-- [[toc]]
-
-# level_1.1
-## level_2.1_1.1
-### level_3.1_2.1_1.1
-
-# level_1.2
-## level_2.1_1.2
-### level_3.1_2.1_1.2
-
-Hi and welcome to BanaIO.
-
-I will be writing about Computer Science (CS) and explaining novel algorithms using interactive visualisations. An interview [Princeton Startup TV Interview with Robert Sedgewick](https://youtu.be/7gPuewMWWYI) worth watching 'cause it's Sedgewick and the points mentioned about research papers lacking implementations and them not being printed at conferences which suggests another means of presenting algorithms is required.
-
-If you find any errors on the site, or simply want to say thanks or add something, you can reach me on [b@bana.io](mailto:b@bana.io).
-
-Mohamed Bana -->
