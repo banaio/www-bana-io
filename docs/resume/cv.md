@@ -1,43 +1,15 @@
 ---
-title: "Mohamed Bana - CV"
+title: "Mohamed Bana — Full Stack Senior Software Engineer — CV"
 tags: ["resume", "cv"]
 sidebar: auto
+sidebarDepth: 3
+prev: /resume/
+next: ./cv-download
 ---
 
-<!-- # Mohamed Bana -->
-
-# PDFs
-
-<!-- * `Mohamed_Bana-CV-LinkedIn.pdf`: &nbsp;<a href="/cv/Mohamed_Bana-CV-LinkedIn.pdf"><Badge text="Download" type="info" vertical="middle"/></a>
-* `Mohamed_Bana-CV-LinkedIn_Profile.pdf`: &nbsp;<a href="/cv/Mohamed_Bana-CV-LinkedIn_Profile.pdf"><Badge text="Download" type="info" vertical="middle"/></a> -->
-
-<!-- * `Mohamed_Bana-CV-LinkedIn.pdf`: &nbsp;<a href="./Mohamed_Bana-CV-LinkedIn.pdf"><Badge text="Download" type="info" vertical="middle"/></a>
-* `Mohamed_Bana-CV-LinkedIn_Profile.pdf`: &nbsp;<a href="./Mohamed_Bana-CV-LinkedIn_Profile.pdf"><Badge text="Download" type="info" vertical="middle"/></a> -->
-
-<!-- * [`me.json`](./me.json) -->
-
-* [`Mohamed_Bana-CV-LinkedIn.pdf`](./Mohamed_Bana-CV-LinkedIn.pdf)
-* [`Mohamed_Bana-CV-LinkedIn_Profile.pdf`](./Mohamed_Bana-CV-LinkedIn_Profile.pdf)
-
----
-
-📱: [+447960045281](tel:+447960045281) (UK Mobile)</br>
-📱: [+212624846935](tel:+212624846935) (Moroccan Mobile)</br>
-📱: [+212808526830](tel:+212808526830) (Moroccan Home Landline)</br>
-📧: [m@bana.io](mailto:m@bana.io)</br>
-📧: [b@bana.io](mailto:b@bana.io)</br>
-
-<https://bana.io></br>
-<https://github.com/banaio></br>
-<https://uk.linkedin.com/in/mbana></br>
-<https://bana.io/resume></br>
-<!-- <https://www-bana-io-vue-js.netlify.com/cv/><br> -->
-
-<!--more-->
-
-<!-- ## Download
-
-[Mohamed_Bana-CV-LinkedIn_Profile.pdf](/cv/Mohamed_Bana-CV-LinkedIn_Profile.pdf). -->
+| Contact                                                                                                                                                                                                                                           	|                                                                               Web                                                                              	|                                                                                                                                                        Address 	|
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|:--------------------------------------------------------------------------------------------------------------------------------------------------------------:	|---------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
+| 📱: [+447960045281](tel:+447960045281) (UK Mobile)<br>📱: [+212624846935](tel:+212624846935) (Moroccan Mobile)<br>📱: [+212808526830](tel:+212808526830) (Moroccan Landline)<br>📧: [m@bana.io](mailto:m@bana.io)<br>📧: [b@bana.io](mailto:b@bana.io) 	| [https://bana.io](https://bana.io)<br>[https://github.com/banaio](https://github.com/banaio)<br>[https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) 	| Mohamed Omar Bana<br>LES TRIOS SABLES 15<br>Apartment 13, Stage 3<br>Arset Bem Gueliz, Arset Ben Chekroune, El Hay Hassania, N°4<br>Marrakech 40000<br>Morocco 	|
 
 ## Objectives
 
@@ -52,36 +24,9 @@ I kindly request that you respect my requests and do not spam me about roles tha
 
 My main interests are in Rust, Golang/Go and Vue.js.
 
-<!-- My main interests are in Rust. And also Golang/Go in the area of the [Language Server protocol](https://langserver.org), see my contributions to <https://github.com/saibing/bingo> in my fork <https://github.com/banaio/bingo>. The Language Server, `bingo` in this case, is used by [`vscode-go`](https://github.com/Microsoft/vscode-go) to provide Golang language support in the IDE. I am passionate about (developer) tooling. -->
-
 I am a well-rounded Software Engineer, and I understand what it takes to release a product having worked on the back-end, front-end, testing and finally the deployment aspect of several products.
 
 I am looking for a role involving web technologies hosted on a cloud-based backend. I’ve worked on all the tiers of a software product, so I can appreciate the different concerns expressed at each level. I feel the latest trend in web technologies; quick prototyping, large selection of libraries, ease of programming and its cross-platform support is where the future is heading. This, distributed systems and big data algorithms are where I am focusing my current efforts—all of which are equally interesting to me.
-
-<!-- I want to move to Dubai, Abu Dhabi or Kuwait. I have been thinking about this for a while and I think now is the perfect time to move. I would have moved earlier but I felt like I didn’t have enough experience. I am only looking for new opportunities in the UAE, or in other Gulf States, with my preference being Dubai, Abu Dhabi then Kuwait. I should add I can speak formal Arabic which I learnt in an Arabic school in Egypt.
-
-It shouldn't be difficult for me to move to the UAE. I have no children or dependants. I am also single. My family are very supportive and are constantly encouraging me to apply for jobs in the UAE, I feel the time is now right hence I've decided to apply. I have been to Dubai twice, once in 2002 and again in 2010. On the second visit I marvelled at how fast the country had developed, and I also managed to visit Abu Dhabi. I enjoyed both visits so much that I began pondering if I should move there. I have very close connections in Dubai and in nearby countries; I have one friend in Dubai, two friends in Qatar, three friends in Saudi Arabia. In summary: The task of moving will be laborious but not difficult for me as I’ve wanted to move and I have the support of my family and friends to help me do so as well. In addition to this, I have lived in Egypt for four (4) months and I’ve visited the UAE three times. -->
-
-<!-- ## Projects
-
-Added WebSocket (WS) as a transport to [`vscode-languageserver-node`](https://github.com/Microsoft/vscode-languageserver-node), the language client, [Visual Studio Code](https://code.visualstudio.com/) uses to provide rich IDE features, such as completion, hover, definition, etc.  I’ve managed to get the native IDE, vscode, to support WS which required modifying Go code. This project allows the online version of the IDE, [`monaco-editor`](https://microsoft.github.io/monaco-editor/), to talk the Language Server Protocol (LSP) via WS instead of just `stdio` and `tcp` meaning the LSP could be a process running in the cloud.
-
-#### [monaco-go](https://cloud.bana.io/monaco-go)
-
-Big piece of work that is detailed above. Uses Docker heavily and added features to original [`go-langserver`](https://github.com/sourcegraph/go-langserver):
-
-* <https://github.com/banaio/monaco-go>
-* <https://github.com/banaio/go-langserver>
-* <https://github.com/banaio/jsonrpc2>
-
-#### [monaco-editor-polymer](https://banaio.github.io/monaco-editor-polymer)
-
-Embeds Monaco Editor into Polymer v2.0, <https://github.com/banaio/monaco-editor-polymer>. -->
-
-## Education
-
-* 2008-2009 — MSc Software Systems Engineering (Attended), University College London, and Trading & Financial Market Structure module, London Business School.
-* 2005-2008 — BSc Computer Science (2.1), City, University of London.
 
 ## Work Experience
 
@@ -89,8 +34,8 @@ Embeds Monaco Editor into Polymer v2.0, <https://github.com/banaio/monaco-editor
 
 Working as a full stack developer at Open Banking on a tool that will validate a bank’s implementation of the OpenBanking API spec, see:
 
-* <https://bitbucket.org/openbankingteam/conformance-suite>
-* <https://hub.docker.com/u/openbanking/>
+* [https://bitbucket.org/openbankingteam/conformance-suite](https://bitbucket.org/openbankingteam/conformance-suite)
+* [https://hub.docker.com/u/openbanking/](https://hub.docker.com/u/openbanking/)
 
 **Tech:** Go, Golang, Node.js, [Vue.js](https://vuejs.org/), [Vuex](https://vuex.vuejs.org/), Jest, Docker, Docker Compose, Kubernetes, [OpenID Connect](https://openid.net/connect/), [JSON Web Token (JWT)](https://jwt.io/), [Kompose](http://kompose.io/), [CircleCI](https://circleci.com/), [Swagger](https://swagger.io/), WebSocket, Bitbucket Pipelines, OpenAPI 3.0.
 
@@ -140,7 +85,6 @@ Worked as a full stack Node.js developer on the [Minds for Life](https://mindsfo
 
 **Monitoring/Devops/Misc:**
 
-* <https://github.com/banaio/cf-utils>.
 * Splunk and sending logs via (<https://en.wikipedia.org/wiki/Syslog>) a LogDrain service available on Bluemix.
 * Gerrit for managing code.
 CI:
@@ -230,23 +174,15 @@ One of four developers working on a search and navigation interface to Global Pr
 
 User Acceptance Testing of the latest release of Thomson Reuter's 3000 Extra, then called UTAH, now called Eikon. UTAH combines the data from Thomson and Reuters. My primary responsibilities were to validate the end product against pre-defined requirements/workflows. 1. Worked on Thomson Reuters project UTAH as part of a large team. 2. Tasks included testing, observing, documenting software bugs, issues and errors before final release of Utah. 3. Testing was done over multiple iterations.
 
+## Education
+
+| 2005-2008                                               	| 2008-2009                                                                                                                                        	|
+|---------------------------------------------------------	|--------------------------------------------------------------------------------------------------------------------------------------------------	|
+| BSc Computer Science (2.1), City, University of London. 	| MSc Software Systems Engineering (Attended), University College London, and Trading & Financial Market Structure module, London Business School. 	|
+
 ## Additional Info
 
-### Misc
-
-* I have a British passport.
-* Full UK driving licence.
-
-### Languages
-
-* English and Swahili: Native.
-* Arabic: Basic to intermediate. I own an apartment in Marrakech, Morocco, I have lived in Cairo, Egpyt and have travelled several times to the UAE.
-
-### Tech
-
-I’ve played with Scala when it was in its infancy. I wrote an Eclipse plug-in, <https://github.com/mbana/MOODMetricsPlug-in>, which calculates the set of metrics called MOOD (Paper: [An Evaluation of the MOOD Set of Object-Oriented Software Metrics](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.196.7613)) on Java soure code. The plug-in works by using Eclipse’s internal compiler API to get an AST of the Java code and calculating the metrics.
-
-## Miscellaneous
-
-* [Cover Letter](./cover-letter)
-* [About Me](./about-me)
+| Misc                       	| Languages                                                                                                                                     	|
+|----------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------	|
+| I have a British Passport. 	| **English and Swahili:** Native.                                                                                                              	|
+| Full UK Driving Licence.   	| **Arabic:** Intermediate. I own an apartment in Marrakech, Morocco. I have lived in Cairo, Egpyt and have travelled several times to the UAE. 	|

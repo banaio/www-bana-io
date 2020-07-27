@@ -7,7 +7,7 @@ const devServer = require('./config/devserver');
 module.exports = {
     // https://vuepress.vuejs.org/config/#basic-config
     title: 'BanaIO',
-    // description: 'Just playing around'
+    description: 'Mohamed Bana—The Builder',
     head,
     themeConfig: {
         logo: 'favicon.png',
@@ -34,22 +34,22 @@ module.exports = {
     //     '@vuepress/pagination': {},
     // },
     markdown,
-    cache: false,
+    // cache: false,
     // https://vuepress.vuejs.org/config/#extrawatchfiles
-    extraWatchFiles: [
-        '.vuepress/config.js',
-        '.vuepress/enhanceApp.js',
-        './docs/.vuepress/enhanceApp.js',
-        'docs/.vuepress/enhanceApp.js',
-        '.vuepress/config/**',
-        'docs/.vuepress/config/*.js',
-        './docs/.vuepress/config/*.js',
-        // '**/*.pdf',
-        // './resume/*.pdf',
-        // './resume/**.pdf',
-        // './resume/Mohamed_Bana-CV-LinkedIn.pdf',
-        // './resume/Mohamed_Bana-CV-LinkedIn_Profile.pdf',
-    ],
+    // extraWatchFiles: [
+    //     '.vuepress/config.js',
+    //     // '.vuepress/enhanceApp.js',
+    //     // './docs/.vuepress/enhanceApp.js',
+    //     // 'docs/.vuepress/enhanceApp.js',
+    //     '.vuepress/config/**',
+    //     'docs/.vuepress/config/*.js',
+    //     './docs/.vuepress/config/*.js',
+    //     // '**/*.pdf',
+    //     // './resume/*.pdf',
+    //     // './resume/**.pdf',
+    //     // './resume/Mohamed_Bana-CV-LinkedIn.pdf',
+    //     // './resume/Mohamed_Bana-CV-LinkedIn_Profile.pdf',
+    // ],
     devServer,
     // https://cli.vuejs.org/config/#configurewebpack
     // https://vuepress.vuejs.org/config/#configurewebpack
@@ -155,13 +155,13 @@ const copyStaticFilesToPublic = () => {
         new RegExp(/^.*\.cache$/),
         new RegExp(/^.*\.temp$/),
     ];
-    console.error('copyStaticFilesToPublic - copyFileNames=%O', copyFileNames);
-    console.error('copyStaticFilesToPublic - doNotCopyFolderNames=%O', doNotCopyFolderNames);
+    // console.error('copyStaticFilesToPublic - copyFileNames=%O', copyFileNames);
+    // console.error('copyStaticFilesToPublic - doNotCopyFolderNames=%O', doNotCopyFolderNames);
 
     const pathToPublicFolder = path.resolve(__dirname, "public");
     const pathToSrcFolder = path.resolve(__dirname, "../");
-    console.error('copyStaticFilesToPublic - pathToPublicFolder=%o', pathToPublicFolder);
-    console.error('copyStaticFilesToPublic - pathToSrcFolder=%o', pathToSrcFolder);
+    // console.error('copyStaticFilesToPublic - pathToPublicFolder=%o', pathToPublicFolder);
+    // console.error('copyStaticFilesToPublic - pathToSrcFolder=%o', pathToSrcFolder);
 
     // if (fs.existsSync(pathToPublicFolder)) {
     //     fs.rmdirSync(pathToPublicFolder, { recursive: true }); // Requires latest version of node.
@@ -220,20 +220,21 @@ const copyStaticFilesToPublic = () => {
     };
 
     copyAllStaticFiles(pathToSrcFolder, pathToPublicFolder);
-    const publicTree = allFilesSync(pathToPublicFolder);
-    console.error('----------------------------------------');
-    console.error(util.formatWithOptions({
-        getters: true,
-        showHidden: true,
-        depth: Infinity,
-        colors: true,
-        customInspect: true,
-        showProxy: true,
-        maxArrayLength: Infinity,
-        maxStringLength: null,
-        breakLength: Infinity,
-        compact: false,
-        sorted: false,
-    }, 'copyAllStaticFiles - FINISHED publicTree=%O', publicTree));
-    console.error('----------------------------------------');
+    allFilesSync(pathToPublicFolder);
+    // const publicTree = allFilesSync(pathToPublicFolder);
+    // console.error('----------------------------------------');
+    // console.error(util.formatWithOptions({
+    //     getters: true,
+    //     showHidden: true,
+    //     depth: Infinity,
+    //     colors: true,
+    //     customInspect: true,
+    //     showProxy: true,
+    //     maxArrayLength: Infinity,
+    //     maxStringLength: null,
+    //     breakLength: Infinity,
+    //     compact: false,
+    //     sorted: false,
+    // }, 'copyAllStaticFiles - FINISHED publicTree=%O', publicTree));
+    // console.error('----------------------------------------');
 };

@@ -5,7 +5,7 @@
 module.exports = {
     // string = 'info': 'silent' | 'trace' | 'debug' | 'info' | 'warn' | 'error' | 'none' | 'warning'
     clientLogLevel: 'info',
-    compress: true,
+    // compress: true,
     // compress: false,
     // https://webpack.js.org/configuration/dev-server/#devserveroverlay
     overlay: {
@@ -16,13 +16,13 @@ module.exports = {
     // open: 'Google Chrome',// Mac
     open: 'google-chrome', // Linux
     // https://webpack.js.org/configuration/dev-server/#devserveropenpage
-    openPage: [
-        'the-quran',
-        'resume/about-me',
-        'resume/cv',
-        'cv',
-        '',
-    ],
+    // openPage: [
+    //     // 'the-quran',
+    //     // 'resume/about-me',
+    //     // 'resume/cv',
+    //     'resume',
+    //     // '',
+    // ],
     // https://webpack.js.org/configuration/dev-server/#devserverhistoryapifallback
     // historyApiFallback: true,
     // https://webpack.js.org/configuration/dev-server/#devserverserveindex

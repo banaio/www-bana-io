@@ -1,7 +1,8 @@
 {
   "scripts": {
-    "docs:dev": "FORCE_COLOR=3 NODE_ENV=development VUEPRESS_ENV=developer vuepress dev docs --cache docs/.cache --temp docs/.temp --no-clear-screen --no-cache --debug",
-    "docs:dev2": "VUE_CLI_MODERN_MODE=true VUE_CLI_MODERN_BUILD=true VUE_APP_NODE_ENV=development NODE_DEBUG=webpack FORCE_COLOR=3 NODE_ENV=development VUEPRESS_ENV=developer vuepress dev docs --cache docs/.cache --temp docs/.temp --no-clear-screen --debug",
+    "docs:dev": "vuepress dev docs --cache docs/.cache --temp docs/.temp --no-clear-screen --no-cache --debug",
+    "docs:dev2": "FORCE_COLOR=3 NODE_ENV=development VUEPRESS_ENV=developer vuepress dev docs --cache docs/.cache --temp docs/.temp --no-clear-screen --no-cache --debug",
+    "docs:dev3": "VUE_CLI_MODERN_MODE=true VUE_CLI_MODERN_BUILD=true VUE_APP_NODE_ENV=development NODE_DEBUG=webpack FORCE_COLOR=3 NODE_ENV=development VUEPRESS_ENV=developer vuepress dev docs --cache docs/.cache --temp docs/.temp --no-clear-screen --debug",
     "docs:build": "vuepress build docs --no-cache --debug"
   },
   "devDependencies": {

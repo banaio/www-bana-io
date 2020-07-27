@@ -29,8 +29,8 @@ module.exports = [
     //     ],
     // },
     {
-        text: 'b@bana.io',
-        link: 'mailto:b@bana.io',
+        text: 'm@bana.io',
+        link: 'mailto:m@bana.io',
     },
     {
         text: 'GitHub',
@@ -75,6 +75,10 @@ module.exports = [
                 link: '/resume/cv',
             },
             {
+                text: 'CV Download',
+                link: '/resume/cv-download',
+            },
+            {
                 text: 'Cover Letter',
                 link: '/resume/cover-letter',
             },
@@ -83,6 +87,10 @@ module.exports = [
                 link: '/resume/about-me',
             },
         ]
+    },
+    {
+        text: 'CV Download',
+        link: '/resume/cv-download',
     },
     {
         text: 'Blog',

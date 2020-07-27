@@ -2,7 +2,8 @@
 title: "Cover Letter"
 tags: ["resume", "cover letter"]
 sidebar: auto
-draft: true
+prev: ./cv-download
+next: ./about-me
 ---
 
 ## Background

@@ -60,6 +60,23 @@ typings/
 # next.js build output
 .next
 
+#######
+# Dev #
+.ignore/
+.ignore
+#######
+
+#######
+# TeX #
+*.tuc
+docs/resume/cv/*.log
+docs/resume/cv/*.tuc
+docs/resume/download/*.log
+docs/resume/download/*.tuc
+docs/resume/*.log
+docs/resume/*.tuc
+#######
+
 ############
 # VuePress #
 docs/.cache

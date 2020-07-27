@@ -1,7 +1,9 @@
 ---
 title: "About Me"
-sidebar: auto
-draft: true
+tags: ["resume", "about me"]
+sidebar: false
+prev: ./cover-letter
+next: /resume/
 ---
 
 <!-- ![me.jpeg](./me.jpeg) -->

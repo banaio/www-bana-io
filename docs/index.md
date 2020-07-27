@@ -3,7 +3,7 @@ home: true
 title: BanaIO
 heroText: BanaIO
 heroImage: /favicon.jpg
-tagline: البناء—The Builder
+tagline: The Builder—البناء
 # features:
 # - title: Full Stack Senior Software Engineer
 #   details: |
@@ -44,10 +44,10 @@ actionLink: ./resume/cv
   </div>
   <div class="feature">
     <h2>Interested in Roles</h2>
-    <p><b>Remote Senior Software Engineer</b>: Golang, Vue.js, Linux, Docker, Kubernetes and Cloud Computing</p>
+    <p><b>Remote Senior Software Engineer</b>: Golang, Vue.js, Linux, Docker, Docker-Compose, Kubernetes, Cloud Computing and tinkering with Rust</p>
   </div>
   <div class="feature">
     <h2>Contact</h2>
-    <p><a href="mailto:b@bana.io">b@bana.io</a></p>
+    <p><a href="mailto:m@bana.io">m@bana.io</a></p>
   </div>
 </div>
