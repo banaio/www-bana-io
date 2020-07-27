@@ -33,8 +33,9 @@ Enumeration and preferences:
 
 I have a British passport but I mainly live in Marrakech, Morocco. I can come to London at most once every four weeks.
 
+I am back in London until, hopefully, the 28nd of August. I'll be free shortly after this date. I can talk on UK mobile number, +447960045281.
+
 I've have a limited company called BANAIO LTD which I started in March 2017 and I've been a contractor since then.
 
-Regards,
-
-Bana
+Kind regards,
+Mohamed Bana
