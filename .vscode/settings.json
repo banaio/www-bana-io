@@ -37,5 +37,5 @@
     "search.smartCase": true,
     "search.sortOrder": "countDescending",
     "scm.defaultViewMode": "tree",
-    "workbench.tree.indent": 16,
+    "workbench.tree.indent": 32,
 }

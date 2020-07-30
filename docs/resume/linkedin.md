@@ -4,11 +4,17 @@ tags: ["resume", "cv"]
 sidebar: auto
 ---
 
+I can talk on UK mobile number; +44-7960-045-281.
+
+Most of what I said below is up for discussion.
+
+---
+
 CV et al.:
 
-* https://bana.io/cv
 * https://bana.io/resume/cv
 * https://bana.io/resume/cover-letter
+* https://linkedin.com/in/mbana
 
 I am available immediately. I went to Marrakech, Morocco on the 4th of January to buy a flat and I stayed until the 22nd of July 2020 mainly due to Morocco closing the borders due to COVID-19.
 
@@ -26,13 +32,8 @@ I'd like to know:
 
 Contact details are below but since I am in Morocco at the moment it's best to reach me on the second number unless you want to send me a message or call me on WhatsApp:
 
-* UK WhatsApp number: +447960045281
-* Morocco Telecom mobile number:+212624846935
+* UK WhatsApp number: +44-7960-045-281
+* Morocco Telecom mobile number: +212-624-846-935
 
 Kind regards,
 Bana
-
----
-
-https://uk.linkedin.com/in/mbana
-https://bana.io/resume/
