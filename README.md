@@ -11,8 +11,57 @@
 ## run
 
 ```sh
+./dev.sh
+```
+
+or
+
+```sh
 yarn install --frozen-lockfile --non-interactive
 yarn docs:dev
+```
+
+## Node.js
+
+```json
+{
+  "name": "www-bana-io-vue-js",
+  "description": "https://bana.io",
+  "private": true,
+  "engines": {
+    "node": ">=14.5.0"
+  },
+  "homepage": "https://github.com/banaio/www-bana-io-vue-js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:banaio/www-bana-io-vue-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/banaio/www-bana-io-vue-js/issues"
+  },
+  "author": "Mohamed Bana <m@bana.io> and contributors",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs --cache docs/.cache --temp docs/.temp --no-clear-screen --no-cache --debug",
+    "docs:dev2": "FORCE_COLOR=3 NODE_ENV=development VUEPRESS_ENV=developer vuepress dev docs --cache docs/.cache --temp docs/.temp --no-clear-screen --no-cache --debug",
+    "docs:dev3": "VUE_CLI_MODERN_MODE=true VUE_CLI_MODERN_BUILD=true VUE_APP_NODE_ENV=development NODE_DEBUG=webpack FORCE_COLOR=3 NODE_ENV=development VUEPRESS_ENV=developer vuepress dev docs --cache docs/.cache --temp docs/.temp --no-clear-screen --debug",
+    "docs:build": "vuepress build docs --no-cache --debug"
+  },
+  "devDependencies": {
+    "@vue/cli": "^4.4.6",
+    "@vue/cli-service-global": "^4.4.6",
+    "markdown-it-footnote": "^3.0.1",
+    "markdown-it-katex": "^2.0.3",
+    "vuepress": "^v1.0.0-alpha.40"
+  },
+  "dependencies": {
+    "acorn": "^6.4.1",
+    "kind-of": "^6.0.3",
+    "minimist": "^1.2.3",
+    "serialize-javascript": "^2.1.1",
+    "websocket-extensions": "^0.1.4"
+  }
+}
 ```
 
 ## `VuePress`

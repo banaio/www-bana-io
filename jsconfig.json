@@ -1,5 +1,31 @@
 {
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "commonjs",
+    "target": "es6",
+    "checkJs": true,
+    "lib": [
+      "esnext",
+      "es6"
+    ]
+  },
   "include": [
-    "./docs/**/*.js",
+    "docs/**/*.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*",
+
+    "dist",
+    "dist/",
+    "dist/**/*",
+
+    "docs/.temp",
+    "docs/.temp/",
+    "docs/.temp/**/*",
+
+    "docs/.cache",
+    "docs/.cache/",
+    "docs/.cache/**/*"
   ]
 }

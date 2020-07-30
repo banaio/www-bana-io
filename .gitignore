@@ -80,11 +80,11 @@ docs/resume/*.tuc
 ############
 # VuePress #
 docs/.cache
-docs/.temp
 docs/.cache/
-docs/.temp/
 ./docs/.cache
-./docs/.temp
 ./docs/.cache/
+docs/.temp
+docs/.temp/
+./docs/.temp
 ./docs/.temp/
 ############

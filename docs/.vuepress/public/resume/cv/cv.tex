@@ -1,0 +1,153 @@
+\preloadtypescripts
+
+% Enable Unicode fonts
+\enableregime[utf]
+\setuppapersize[A4][A4]
+%% enable the page frame
+\setupbackgrounds[page][frame=on]
+
+% Enable Capital Letter use
+\setupcapitals[sc=yes]
+
+\usetypescriptfile[type-roboto]
+\usetypescript[roboto]
+% \setupbodyfont[roboto,serif,10pt]
+% \setupbodyfont[roboto,10pt]
+\setupbodyfont[roboto]
+
+\usemodule[markdown]
+% \def\markdownRendererTildePrototype{%
+%   Packages can specify token renderer prototypes.%
+% }
+% \starttext
+% \startmarkdown
+% ~
+% \stopmarkdown
+
+% \def\markdownRendererTilde{%
+%   User-defined token renderers take precedence.%
+% }
+% \startmarkdown
+% ~
+% \stopmarkdown
+% \stoptext
+
+% \setuppagenumbering[location=]
+% \setupheader[state=empty]
+% \setuplayout [header=0pt]
+
+\setupheader
+  [text]
+  [before={\startframed[frame=off,bottomframe=on,framecolor=blue,]},
+   after={\stopframed},
+  ]
+\setupheadertexts[Text left][Text right]
+\setuphead[part][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+\setuphead[chapter][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+\setuphead[section][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+\setuphead[subsection][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+\setuphead[subsubsection][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+\setuphead[title][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+\setuphead[subject][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+
+% conversion	numbers characters Characters romannumerals Romannumerals
+% style	normal bold slanted boldslanted type cap small smallbold ... command
+% \setuppagenumbering[location={footer,inright},style=small,conversion=romannumerals]
+\setuppagenumbering[
+    state=start,
+    % alternative=doublesided,
+    style=smallcaps,
+    conversion=romannumerals]
+
+\setupfootertexts
+	[]
+	[{\framed[offset=3pt]{Version: Fall 2007}}]
+	[{\framed[offset=3pt]{Version: Fall 2007}}]
+	[]
+
+% \startnotmode[light,medium]
+% \setupbodyfont[roboto,ss,12pt]
+% \stopnotmode
+% \startmode[light]
+% \setupbodyfont[roboto-light,ss,12pt]
+% \stopmode
+% \startmode[medium]
+% \setupbodyfont[roboto-medium,ss,12pt]
+% \stopmode
+
+% \usetypescript[palatino]
+% \setupbodyfont[palatino,10pt]
+
+% \usetypescriptfile[type-one]
+% % \usetypescriptfile[type-otf]
+% % \usetypescript[iwona][ec]
+% % texnansi,ec,8r,t2a
+% \usetypescript[iwona][texnansi,ec,qx,t5,default]
+% % \usetypescript[times][ec]
+% \setupbodyfont[iwona,sans]
+
+\def\MyLength{4pt}
+
+% \setuplayout[style=cap,grid=yes,location=duplex,marking=on]
+\setuplayout[
+    top=\MyLength, 
+    topdistance=\MyLength,
+    bottom=\MyLength, 
+    bottomdistance=\MyLength,
+    topspace=\dimexpr(\topheight + \topdistance),
+    headerdistance=\MyLength,
+    footerdistance=\MyLength,
+    % leftmargin=\MyLength,
+    % rightmargin=\MyLength,
+    height=fit,
+    width=fit,
+    % grid=yes,
+    % location=duplex,
+    marking=on
+    ]
+\setupfooter[style=\smallcaps]
+
+\setupinterlinespace[12pt]
+
+\setupwhitespace[small]
+% \setupindenting[small]
+% \setupblank[small]
+
+\starttext
+\showframe[edge]
+\processmarkdownfile{../cv.md}
+\page
+
+\showgrid
+\page
+
+\page
+\showframe[margin]
+\page
+\showstruts
+\page
+\showsetups
+\page
+\showlayout
+\page
+\showframe[edge]
+\page
+\showfontstrip
+\page
+\showbodyfont
+\page
+\showbodyfontenvironment
+\page
+
+% \showmakeup
+% \page
+\showboxes
+\page
+
+\showframe
+\page
+
+\showlayoutcomponents
+\page
+
+\stoptext

@@ -6,4 +6,5 @@ set -x
 # set -euo pipefail
 #set -euxo pipefail
 
+./dev.sh
 caddy run --config ./docs/.vuepress/server/Caddyfile --adapter caddyfile 
