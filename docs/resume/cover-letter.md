@@ -1,10 +1,36 @@
 ---
-title: "Cover Letter"
+title: "Mohamed Bana — Full Stack Senior Software Engineer — Cover Letter"
 tags: ["resume", "cover letter"]
 sidebar: auto
 prev: ./cv-download
 next: ./about-me
+
+fontsize: 11pt
+mainfont: Alegreya
+sansfont: Alegreya Sans
+monofont: DejaVuSansMono
+mathfont: TeXGyreDejaVuMath-Regular
+fontfamily: Alegreya
+lang: en-GB
+papersize: a4
+pagenumbering: location={footer,middle},style=smallcaps,conversion=romannumerals
+indenting: small
+layout: marking=on,height=fit,width=fit,leftmargin=0mm,rightmargin=0mm,top=0mm,topspace=0mm,topdistance=0mm,bottom=0mm,bottomdistance=0mm,headerdistance=0mm,footerdistance=0mm,topspace=8mm,header=0mm,footer=0mm,backspace=8mm
 ---
+
+<!-- geometry: left=1.5cm,right=1.5cm,top=2cm,bottom=2cm
+margin-left: 0.2cm
+margin-right: 0.2cm
+margin-top: 0.2cm
+margin-bottom: 0.2cm -->
+<!-- indenting: small -->
+<!-- interlinespace: 10pt -->
+<!-- % \setuppagenumbering[location={footer,inright},style=small,conversion=romannumerals]
+\setuppagenumbering[
+    state=start,
+    % alternative=doublesided,
+    style=smallcaps,
+    conversion=romannumerals] -->
 
 ## Intro
 
@@ -42,12 +68,17 @@ I'm flexible in terms of the choice of framework used, however, my ideal role wi
 * **Start Date:** I’m available to start immediately.
 * **Job Type:** I've a limited company called BANAIO LTD which I started in March 2017 and I've been a contractor since then. I would prefer to stick to contracting but I will also consider a permanent position.
 
-## Misc
+<!-- ## Misc
 
 I have a British passport but I mainly live in Marrakech, Morocco. I can come to London at most once every four weeks.
 
-I am back in London until, hopefully, the 28nd of August at which point I will travel to Marrakech, Morocco for one week.
+I am back in London until, hopefully, the 28nd of August at which point I will travel to Marrakech, Morocco for one week. -->
+
 
 Kind regards,
 
-Mohamed Bana
+Mohamed Bana 
+
+---
+
+[`https://bana.io`](https://bana.io) — [m@bana.io](mailto:m@bana.io) — +44-7960-045-281

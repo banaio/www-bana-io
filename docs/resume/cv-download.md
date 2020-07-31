@@ -10,6 +10,7 @@ next: ./cover-letter
 
 * [`Mohamed_Bana-CV-LinkedIn.pdf`](./Mohamed_Bana-CV-LinkedIn.pdf)
 * [`Mohamed_Bana-CV-LinkedIn_Profile.pdf`](./Mohamed_Bana-CV-LinkedIn_Profile.pdf)
+* [`Mohamed_Bana-Cover-Letter.pdf`](./cover-letter.pdf)
 
 ## Miscellaneous
 

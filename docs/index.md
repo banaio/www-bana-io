@@ -2,7 +2,7 @@
 home: true
 title: BanaIO
 heroText: BanaIO
-heroImage: /logo/logo.svg
+heroImage: /logo/logo.png
 tagline: The Builder—البناء
 # features:
 # - title: Full Stack Senior Software Engineer
