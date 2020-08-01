@@ -16,7 +16,7 @@ http://0.0.0.0:8080, http://localhost:8080 {
     }
 }
 
-#0.0.0.0:8080/read-write-api-site3/, localhost:8080/read-write-api-site3/ {
+#0.0.0.0:8080/, localhost:8080/ {
 #	gzip
 #	root .
 #}

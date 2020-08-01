@@ -16,11 +16,16 @@
     "docs:dev": "vuepress dev docs --cache docs/.cache --temp docs/.temp --no-clear-screen --no-cache --debug",
     "docs:dev2": "FORCE_COLOR=3 NODE_ENV=development VUEPRESS_ENV=developer vuepress dev docs --cache docs/.cache --temp docs/.temp --no-clear-screen --no-cache --debug",
     "docs:dev3": "VUE_CLI_MODERN_MODE=true VUE_CLI_MODERN_BUILD=true VUE_APP_NODE_ENV=development NODE_DEBUG=webpack FORCE_COLOR=3 NODE_ENV=development VUEPRESS_ENV=developer vuepress dev docs --cache docs/.cache --temp docs/.temp --no-clear-screen --debug",
-    "docs:build": "vuepress build docs --no-cache --debug"
+    "docs:build": "vuepress build docs --no-cache --debug",
+    "lint-md:wording": "textlint ./docs/**/*.md",
+    "lint-md:style": "remark --frail .",
+    "lint-md": "EXIT_STATUS=0; yarn lint-md:style || EXIT_STATUS=$?; yarn lint-md:wording || EXIT_STATUS=$?; exit $EXIT_STATUS"
   },
   "devDependencies": {
     "@vue/cli": "^4.4.6",
     "@vue/cli-service-global": "^4.4.6",
+    "@vuepress/plugin-back-to-top": "^1.5.2",
+    "@vuepress/plugin-nprogress": "^1.5.2",
     "markdown-it-footnote": "^3.0.1",
     "markdown-it-katex": "^2.0.3",
     "vuepress": "^v1.0.0-alpha.40"

@@ -1,16 +1,17 @@
-// https://github.com/ycmjason/ycmjason.com/blob/master/.vuepress/config.js
+/**
+ * VuePress config file: `docs/.vuepress/config.js`.
+ * Documentation: https://vuepress.vuejs.org/config/.
+ * https://github.com/ycmjason/ycmjason.com/blob/master/.vuepress/config.js
+ */
+
 module.exports = {
     // https://vuepress.vuejs.org/config/#basic-config
     title: 'BanaIO',
     description: 'Mohamed Bana—The Builder',
+    // https://vuepress.vuejs.org/config/#head
     head: [
-        [
-            'link',
-            {
-                rel: 'icon',
-                href: '/favicon.ico',
-            }
-        ],
+        ['link', { rel: 'icon', href: '/favicon.ico' }],
+        ['link', { rel: 'manifest', href: '/manifest.json' }],
         // [
         //     'link',
         //     {
@@ -41,6 +42,7 @@ module.exports = {
         //     }
         // ],
     ],
+    // https://vuepress.vuejs.org/theme/default-theme-config.html
     themeConfig: {
         logo: 'favicon.png',
         nav: [
@@ -149,8 +151,15 @@ module.exports = {
         sidebar: 'auto',
         sidebarDepth: 0,
         displayAllHeaders: true,
+
+        // https://vuepress.vuejs.org/theme/default-theme-config.html#search-box
+        searchMaxSuggestions: 20,
+        // https://vuepress.vuejs.org/theme/default-theme-config.html#smooth-scrolling
+        smoothScroll: false,
+        // https://vuepress.vuejs.org/theme/default-theme-config.html#last-updated
+        // lastUpdated: true,
         lastUpdated: 'Last Updated',
-        smoothScroll: true,
+
         // serviceWorker: {
         //     updatePopup: {
         //         message: "New content is available.",
@@ -160,21 +169,75 @@ module.exports = {
     },
     // serviceWorker: true,
     // permalink: ':slug',
-    // plugins: {
-    //     '@vuepress/blog': {
-    //         postsDir: 'blog',
-    //         permalink: ':regular',
-    //     },
-    //     '@vuepress/pagination': {},
-    // },
+    plugins: [
+        // https://vuepress.vuejs.org/plugin/official/plugin-back-to-top.html
+        '@vuepress/back-to-top',
+        // https://vuepress.vuejs.org/plugin/official/plugin-nprogress.html
+        '@vuepress/nprogress',
+        // '@vuepress/blog': {
+        //     postsDir: 'blog',
+        //     permalink: ':regular',
+        // },
+        // '@vuepress/pagination': {},
+    ],
     markdown: {
-        lineNumbers: true,
+        // https://vuepress.vuejs.org/config/#markdown-linenumbers
+        lineNumbers: false,
+        // options for markdown-it-anchor
+        anchor: {
+            permalinkBefore: true,
+            permalink: true,
+            level: [
+                // We don't want to include the top-level header, so remove level 1.
+                // 1,
+                2,
+                3,
+                4,
+                5,
+                6,
+            ],
+            // callback: (args) => {
+            //     console.log('markdown:anchor:callback args=', args);
+            // },
+            // format: (args) => {
+            //     console.log('markdown:anchor:format args=', args);
+            // },
+        },
         // options for markdown-it-toc
-        toc: { includeLevel: [1, 2, 3] },
+        toc: {
+            includeLevel: [
+                // We don't want to include the top-level header, so remove level 1.
+                // 1,
+                2,
+                3,
+                4,
+                5,
+                6,
+            ],
+            // If you want to debug this, e.g., to compare it again Confluence, uncomment line below
+            // and the table of contents will be numbered (ol=ordered list) instead of being
+            // un-numbered (ul=unordered list).
+            // 'listType': 'ol',
+
+            // callback: (args) => {
+            //     console.log('markdown:toc:callback args=', args);
+            // },
+            // format: (args) => {
+            //     console.log('markdown:toc:formatormat args=', args);
+            // },
+        },
         extendMarkdown: md => {
             // use more markdown-it plugins!
+            // Converts '\n' in paragraphs into <br>
+            // md.set({ breaks: true });
+            // console.log('markdown:extendMarkdown md=', md);
             md.use(require('markdown-it-katex'));
             md.use(require('markdown-it-footnote'));
+        },
+        // https://vuepress.vuejs.org/plugin/option-api.html#chainmarkdown
+        chainMarkdown: (config) => {
+            // console.log('markdown:chainMarkdown config=', config);
+            return config;
         },
     },
     // cache: false,
@@ -302,6 +365,10 @@ module.exports = {
     css: {
         sourceMap: true,
     },
+    // https://vuepress.vuejs.org/config/#evergreen
+    // This will disable ES5 transpilation and polyfills for IE, and result in faster builds and smaller files.
+    // Set to true, if we want to support IE.
+    evergreen: true,
 };
 
 const fs = require('fs');

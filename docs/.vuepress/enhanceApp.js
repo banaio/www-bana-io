@@ -1,4 +1,5 @@
 // https://vuepress.vuejs.org/guide/basic-config.html#app-level-enhancements
+
 export default ({ router }) => {
     router.addRoutes([
         // { path: '/cv/', redirect: '/resume/cv' },

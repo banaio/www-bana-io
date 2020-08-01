@@ -2,11 +2,11 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5d30d5d2-c9b6-433d-9a47-691a83a7704e/deploy-status)](https://app.netlify.com/sites/www-bana-io-vue-js/deploys)
 
-* [`https://www-bana-io`](https://www.bana.io)
-* [`https://bana-io`](https://bana.io)
-* [`http://bana-io`](http://bana.io)
-* [`http://www-bana-io`](http://www.bana.io)
-* [`www-bana-io-vue-js`](https://www-bana-io-vue-js.netlify.com/)
+* [`https://bana.io`](https://bana.io)
+* [`https://www.bana.io`](https://www.bana.io)
+* [`http://bana.io`](http://bana.io)
+* [`http://www.bana.io`](http://www.bana.io)
+* [`https://www-bana-io-vue-js.netlify.com/`](https://www-bana-io-vue-js.netlify.com/)
 
 ## run
 
@@ -19,6 +19,8 @@ or
 ```sh
 yarn install --frozen-lockfile --non-interactive
 yarn docs:dev
+... # Make changes
+yarn lint-md
 ```
 
 ## Node.js
@@ -48,6 +50,28 @@ yarn docs:dev
     "docs:build": "vuepress build docs --no-cache --debug"
   },
   "devDependencies": {
+    // old
+    "@textlint-rule/textlint-rule-no-unmatched-pair": "^1.0.7",
+    "@types/markdown-it": "^0.0.8",
+    "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
+    "@vuepress/plugin-nprogress": "^1.0.0-rc.1",
+    "@vuepress/plugin-search": "^1.0.0-rc.1",
+    "markdown-it": "^9.1.0",
+    "remark-cli": "^7.0.0",
+    "remark-lint": "^6.0.5",
+    "remark-preset-lint-consistent": "^2.0.3",
+    "remark-preset-lint-recommended": "^3.0.3",
+    "textlint": "^11.3.1",
+    "textlint-filter-rule-comments": "^1.2.2",
+    "textlint-rule-apostrophe": "^1.0.0",
+    "textlint-rule-common-misspellings": "^1.0.1",
+    "textlint-rule-diacritics": "^1.0.0",
+    "textlint-rule-en-capitalization": "^2.0.2",
+    "textlint-rule-stop-words": "^1.0.17",
+    "textlint-rule-terminology": "^1.1.30",
+    "textlint-rule-write-good": "^1.6.2",
+    "vuepress": "^1.1.0",
+    // new
     "@vue/cli": "^4.4.6",
     "@vue/cli-service-global": "^4.4.6",
     "markdown-it-footnote": "^3.0.1",
@@ -63,6 +87,8 @@ yarn docs:dev
   }
 }
 ```
+
+---
 
 ## `VuePress`
 
