@@ -10,6 +10,7 @@
     ]
   },
   "include": [
+    "./docs/**/*.js",
     "docs/**/*.js"
   ],
   "exclude": [
