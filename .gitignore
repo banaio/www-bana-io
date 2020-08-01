@@ -64,6 +64,8 @@ typings/
 # Dev #
 .ignore/
 .ignore
+stratch/commit-msg.md
+./stratch/commit-msg.md
 #######
 
 #######

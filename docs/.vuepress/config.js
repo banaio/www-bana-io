@@ -4,10 +4,176 @@
  * https://github.com/ycmjason/ycmjason.com/blob/master/.vuepress/config.js
  */
 
+const fs = require('fs');
+const path = require('path');
+const util = require('util');
+// https://www.npmjs.com/package/debug
+const debug = require('debug');
+const debug_config = require('debug')('config');
+const debug_vuepress = require('debug')('config:vuepress');
+const debug_copy = require('debug')('config:copy');
+const inspect_options = { compact: true, depth: 1, breakLength: Infinity /*80*/, showHidden: false, colors: true, sorted: true, getters: true };
+
+console.log('config.js: debug.enabled=%o', debug.enabled);
+
+// // https://github.com/visionmedia/debug/issues/582#issuecomment-418185850
+// // https://github.com/visionmedia/debug/issues/582
+const log_original = debug.log;
+function log_new(args) {
+    const STACK_INDEX = 3;
+
+    const stack = (new Error()).stack.split('\n');
+    // get text between two parentheses
+    // '    at copyAllStaticFiles (/home/mbana/dev/bana-io/www-bana-io-vue-js/docs/.vuepress/config.js:134:13)'
+    // ->
+    //
+    // Match 1
+    // Full match	26-102	(/home/mbana/dev/bana-io/www-bana-io-vue-js/docs/.vuepress/config.js:134:13)
+    // Group 1.	27-101	/home/mbana/dev/bana-io/www-bana-io-vue-js/docs/.vuepress/config.js:134:13
+    const line = stack[STACK_INDEX].match(/\(([^)]+)\)/)[1];
+    const func_name = stack[STACK_INDEX].match(/at (.*?) /)[1];
+
+    // args = [args, debug.colors[5] + '(' + func_name + ':' + line + ')' + debug.colors[5]].join(' ');
+    args = [args, '\u001b[38;5;201;1m(' + func_name + ':' + line+ ')\u001b[0m'].join(' ');
+    log_original(args);
+};
+debug.log = log_new;
+debug_config.log = log_new;
+debug_vuepress.log = log_new;
+debug_copy.log = log_new;
+
+// https://gist.github.com/kethinov/6658166
+// List all files in a directory in Node.js recursively in a synchronous fashion
+const allFilesSync = (dir, fileList = []) => {
+    fs.readdirSync(dir).forEach(file => {
+        const filePath = path.join(dir, file);
+        fileList.push(
+            fs.statSync(filePath).isDirectory()
+                ? { [file]: allFilesSync(filePath) }
+                : file
+        );
+    });
+    return fileList;
+};
+
+const copyStaticFilesToPublic = () => {
+    // const doNotCopyFilenames = [
+    //     // new RegExp("^.*\\.md$"),
+    //     new RegExp(/^.*\.(md)(\?.*)?$/),
+    // ];
+    const copyFileNames = [
+        // new RegExp("^.*\\.pdf$"),
+        // new RegExp(/^.*\.(pdf)(\?.*)?$/),
+        // /^.*(?<!\.md)$/gi,
+
+        // NB:
+        // Negative Lookbehind (?<!\.(md|png|jpe?g|gif|webp|svg|mp4|webm|ogg|mp3|wav|flac|aac|woff2?|eot|ttf|otf))
+        // Assert that the Regex below does not match
+        // new RegExp(/^.*(?<!\.(md|mp4|webm|ogg|mp3|wav|flac|aac|woff2?|eot|ttf|otf))$/iug),
+        new RegExp(/^.*(?<!\.(md|mp4|webm|ogg|mp3|wav|flac|aac|woff2?|eot|ttf|otf))$/iu),
+
+        // new RegExp(/^.*(?<!\.(md|png|jpe?g|gif|webp|svg|mp4|webm|ogg|mp3|wav|flac|aac|woff2?|eot|ttf|otf))$/i),
+    ];
+    const doNotCopyFolderNames = [
+        new RegExp(/^.*\.vuepress$/iug),
+        new RegExp(/^.*\.cache$/iug),
+        new RegExp(/^.*\.temp$/iug),
+        new RegExp(/^.*dist$/iug),
+    ];
+    // debug_copy('copyFileNames=%o', copyFileNames);
+    // debug_copy('doNotCopyFolderNames=%o', doNotCopyFolderNames);
+
+    const pathToPublicFolder = path.resolve(__dirname, "public");
+    const pathToSrcFolder = path.resolve(__dirname, "../");
+    // debug_copy('pathToPublicFolder=%o', pathToPublicFolder);
+    // debug_copy('pathToSrcFolder=%o', pathToSrcFolder);
+
+    // if (fs.existsSync(pathToPublicFolder)) {
+    //     fs.rmdirSync(pathToPublicFolder, { recursive: true }); // Requires latest version of node.
+    // }
+
+    const copyAllStaticFiles = (pathToSourceFolder, pathToDestinationFolder) => {
+        // debug_copy('pathToSourceFolder=%O', pathToSrcFolder);
+        // debug_copy('pathToDestinationFolder=%O', pathToDestinationFolder);
+
+        if (!fs.existsSync(pathToDestinationFolder)) {
+            debug_copy('!fs.existsSync(pathToDestinationFolder) - CREATING pathToDestinationFolder=%o', pathToDestinationFolder);
+            fs.mkdirSync(pathToDestinationFolder);
+        } else {
+            debug_copy('fs.existsSync(pathToDestinationFolder) - SKIPPING pathToDestinationFolder=%o', pathToDestinationFolder);
+        }
+
+        const names = fs.readdirSync(
+            pathToSourceFolder
+        );
+        // debug_copy('readdirSync names=%O', names);
+
+        for (const name of names) {
+            const pathToSource = path.resolve(
+                pathToSourceFolder,
+                name
+            );
+            const pathToDestination = path.resolve(
+                pathToDestinationFolder,
+                name
+            );
+            debug_copy('resolve name=%o', name);
+            debug_copy('resolve pathToSource=%o', pathToSource);
+            debug_copy('resolve pathToDestination=%o', pathToDestination);
+
+            if (fs.lstatSync(pathToSource).isDirectory()) {
+                if (doNotCopyFolderNames.some(regexp => regexp.test(name))) {
+                    debug_copy('fs.lstatSync(pathToSource).isDirectory() - SKIPPING doNotCopyFolderNames name=%o', name);
+                } else {
+                    const isEmptyDir = fs.readdirSync(pathToSource).length === 0;
+                    if (!isEmptyDir) {
+                        debug_copy('fs.lstatSync(pathToSource).isDirectory() - !isEmptyDir - RECURSE doNotCopyFolderNames name=%o', name);
+                        copyAllStaticFiles(pathToSource, pathToDestination);
+                    } else {
+                        debug_copy('fs.lstatSync(pathToSource).isDirectory() - isEmptyDir - RECURSE doNotCopyFolderNames name=%o', name);
+                    }
+                }
+            } else {
+                if (copyFileNames.some(regexp => regexp.test(name))) {
+                    debug_copy('copyFileNames.some(regexp => regexp.test(name)) - CREATE copyFileNames name=%o', name);
+                    fs.copyFileSync(pathToSource, pathToDestination);
+                } else {
+                    debug_copy('copyFileNames.some(regexp => regexp.test(name)) - SKIPPING copyFileNames name=%o', name);
+                }
+
+                // old
+                // if (!doNotCopyFilenames.some(regexp => regexp.test(name))) {
+                //     fs.copyFileSync(pathToSource, pathToDestination);
+                // }
+            }
+        }
+    };
+
+    copyAllStaticFiles(pathToSrcFolder, pathToPublicFolder);
+    allFilesSync(pathToPublicFolder);
+    // const publicTree = allFilesSync(pathToPublicFolder);
+    // debug_copy('----------------------------------------');
+    // debug_copy(util.formatWithOptions({
+    //     getters: true,
+    //     showHidden: true,
+    //     depth: Infinity,
+    //     colors: true,
+    //     customInspect: true,
+    //     showProxy: true,
+    //     maxArrayLength: Infinity,
+    //     maxStringLength: null,
+    //     breakLength: Infinity,
+    //     compact: false,
+    //     sorted: false,
+    // }, 'copyAllStaticFiles - FINISHED publicTree=%o', publicTree));
+    // debug_copy('----------------------------------------');
+};
+
 module.exports = {
     // https://vuepress.vuejs.org/config/#basic-config
     title: 'BanaIO',
-    description: 'Mohamed Bana—The Builder',
+    description: 'The Builder',
+    // description: 'Mohamed Bana—The Builder',
     // https://vuepress.vuejs.org/config/#head
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -143,6 +309,10 @@ module.exports = {
                 text: 'Blog',
                 link: '/blog/',
             },
+            {
+                text: 'Rust',
+                link: '/rust/',
+            },
             // {
             //     text: 'The Quran',
             //     link: '/the-quran/',
@@ -152,8 +322,8 @@ module.exports = {
         sidebarDepth: 0,
         displayAllHeaders: true,
 
-        // https://vuepress.vuejs.org/theme/default-theme-config.html#search-box
-        searchMaxSuggestions: 20,
+        // // https://vuepress.vuejs.org/theme/default-theme-config.html#search-box
+        // searchMaxSuggestions: 20,
         // https://vuepress.vuejs.org/theme/default-theme-config.html#smooth-scrolling
         smoothScroll: false,
         // https://vuepress.vuejs.org/theme/default-theme-config.html#last-updated
@@ -182,7 +352,7 @@ module.exports = {
     ],
     markdown: {
         // https://vuepress.vuejs.org/config/#markdown-linenumbers
-        lineNumbers: false,
+        lineNumbers: true,
         // options for markdown-it-anchor
         anchor: {
             permalinkBefore: true,
@@ -197,10 +367,10 @@ module.exports = {
                 6,
             ],
             // callback: (args) => {
-            //     console.log('markdown:anchor:callback args=', args);
+            //     debug('markdown:anchor:callback args=', args);
             // },
             // format: (args) => {
-            //     console.log('markdown:anchor:format args=', args);
+            //     debug('markdown:anchor:format args=', args);
             // },
         },
         // options for markdown-it-toc
@@ -220,27 +390,29 @@ module.exports = {
             // 'listType': 'ol',
 
             // callback: (args) => {
-            //     console.log('markdown:toc:callback args=', args);
+            //     debug('markdown:toc:callback args=', args);
             // },
             // format: (args) => {
-            //     console.log('markdown:toc:formatormat args=', args);
+            //     debug('markdown:toc:formatormat args=', args);
             // },
         },
-        extendMarkdown: md => {
+        extendMarkdown: (md) => {
+            debug_vuepress('markdown:extendMarkdown - md=', util.inspect(md, inspect_options));
             // use more markdown-it plugins!
             // Converts '\n' in paragraphs into <br>
-            // md.set({ breaks: true });
-            // console.log('markdown:extendMarkdown md=', md);
+            md.set({ breaks: true });
             md.use(require('markdown-it-katex'));
             md.use(require('markdown-it-footnote'));
+            return md;
         },
         // https://vuepress.vuejs.org/plugin/option-api.html#chainmarkdown
         chainMarkdown: (config) => {
-            // console.log('markdown:chainMarkdown config=', config);
+            debug_vuepress('markdown:extendMarkdown - config=', util.inspect(config, inspect_options));
             return config;
         },
     },
-    // cache: false,
+    // https://vuepress.vuejs.org/config/#cache
+    cache: false,
     // https://vuepress.vuejs.org/config/#extrawatchfiles
     // extraWatchFiles: [
     //     '.vuepress/config.js',
@@ -307,28 +479,28 @@ module.exports = {
         //     .use('file-loader')
         //     .loader('file-loader')
         //     .options({
-        //         // console.error('pdf - options=%O', options);
+        //         // debug('pdf - options=%O', options);
         //         // const optionsDefault = {
         //         //     name: `assets/pdf/[path][name].[ext]`,
         //         // };
         //         // const opts = { ...options, ...optionsDefault };
-        //         // console.error('pdf - opts=%O', opts);
+        //         // debug('pdf - opts=%O', opts);
         //         // return opts;
         //         name: `[path][name].[ext]`,
         //     })
         //     .end();
 
         copyStaticFilesToPublic();
-        // console.error('pdf - options=%s', config.toString());
+        // debug('pdf - options=%s', config.toString());
     },
     // https://vuepress.vuejs.org/config/#evergreen
     // evergreen: true,
     // https://cli.vuejs.org/config/#chainwebpack
     // https://vuepress.vuejs.org/config/#chainwebpack
     configureWebpack: (config, isServer) => {
-        // console.error('configureWebpack - options=%s', config.toString());
+        // debug('configureWebpack - options=%s', config.toString());
 
-        // console.log('configureWebpack - isServer=%s, config.module=', isServer, config.module);
+        // debug('configureWebpack - isServer=%s, config.module=', isServer, config.module);
 
         // Inline fonts and images so we don't do another fetch for them.
         // If we set `limit` to zero, all the fonts and images are inlined.
@@ -365,139 +537,8 @@ module.exports = {
     css: {
         sourceMap: true,
     },
-    // https://vuepress.vuejs.org/config/#evergreen
-    // This will disable ES5 transpilation and polyfills for IE, and result in faster builds and smaller files.
-    // Set to true, if we want to support IE.
-    evergreen: true,
-};
-
-const fs = require('fs');
-const path = require('path');
-const util = require('util');
-
-// https://gist.github.com/kethinov/6658166
-// List all files in a directory in Node.js recursively in a synchronous fashion
-const allFilesSync = (dir, fileList = []) => {
-    fs.readdirSync(dir).forEach(file => {
-        const filePath = path.join(dir, file);
-        fileList.push(
-            fs.statSync(filePath).isDirectory()
-                ? { [file]: allFilesSync(filePath) }
-                : file
-        );
-    });
-    return fileList;
-};
-
-const copyStaticFilesToPublic = () => {
-    // const doNotCopyFilenames = [
-    //     // new RegExp("^.*\\.md$"),
-    //     new RegExp(/^.*\.(md)(\?.*)?$/),
-    // ];
-    const copyFileNames = [
-        // new RegExp("^.*\\.pdf$"),
-        // new RegExp(/^.*\.(pdf)(\?.*)?$/),
-        // /^.*(?<!\.md)$/gi,
-
-        // NB:
-        // Negative Lookbehind (?<!\.(md|png|jpe?g|gif|webp|svg|mp4|webm|ogg|mp3|wav|flac|aac|woff2?|eot|ttf|otf))
-        // Assert that the Regex below does not match
-        // new RegExp(/^.*(?<!\.(md|mp4|webm|ogg|mp3|wav|flac|aac|woff2?|eot|ttf|otf))$/iug),
-        new RegExp(/^.*(?<!\.(md|mp4|webm|ogg|mp3|wav|flac|aac|woff2?|eot|ttf|otf))$/iu),
-
-        // new RegExp(/^.*(?<!\.(md|png|jpe?g|gif|webp|svg|mp4|webm|ogg|mp3|wav|flac|aac|woff2?|eot|ttf|otf))$/i),
-    ];
-    const doNotCopyFolderNames = [
-        new RegExp(/^.*\.vuepress$/iug),
-        new RegExp(/^.*\.cache$/iug),
-        new RegExp(/^.*\.temp$/iug),
-        new RegExp(/^.*dist$/iug),
-    ];
-    // console.error('copyStaticFilesToPublic - copyFileNames=%O', copyFileNames);
-    // console.error('copyStaticFilesToPublic - doNotCopyFolderNames=%O', doNotCopyFolderNames);
-
-    const pathToPublicFolder = path.resolve(__dirname, "public");
-    const pathToSrcFolder = path.resolve(__dirname, "../");
-    // console.error('copyStaticFilesToPublic - pathToPublicFolder=%o', pathToPublicFolder);
-    // console.error('copyStaticFilesToPublic - pathToSrcFolder=%o', pathToSrcFolder);
-
-    // if (fs.existsSync(pathToPublicFolder)) {
-    //     fs.rmdirSync(pathToPublicFolder, { recursive: true }); // Requires latest version of node.
-    // }
-
-    const copyAllStaticFiles = (pathToSourceFolder, pathToDestinationFolder) => {
-        // console.error('copyAllStaticFiles - pathToSourceFolder=%O', pathToSrcFolder);
-        // console.error('copyAllStaticFiles - pathToDestinationFolder=%O', pathToDestinationFolder);
-
-        if (!fs.existsSync(pathToDestinationFolder)) {
-            console.error('copyAllStaticFiles - !fs.existsSync(pathToDestinationFolder) - CREATING pathToDestinationFolder=%o', pathToDestinationFolder);
-            fs.mkdirSync(pathToDestinationFolder);
-        } else {
-            console.error('copyAllStaticFiles - fs.existsSync(pathToDestinationFolder) - SKIPPING pathToDestinationFolder=%O', pathToDestinationFolder);
-        }
-
-        const names = fs.readdirSync(
-            pathToSourceFolder
-        );
-        // console.error('copyAllStaticFiles - readdirSync names=%O', names);
-
-        for (const name of names) {
-            const pathToSource = path.resolve(
-                pathToSourceFolder,
-                name
-            );
-            const pathToDestination = path.resolve(
-                pathToDestinationFolder,
-                name
-            );
-            console.error('copyAllStaticFiles - resolve name=%O', name);
-            console.error('copyAllStaticFiles - resolve pathToSource=%O', pathToSource);
-            console.error('copyAllStaticFiles - resolve pathToDestination=%O', pathToDestination);
-
-            if (fs.lstatSync(pathToSource).isDirectory()) {
-                if (doNotCopyFolderNames.some(regexp => regexp.test(name))) {
-                    console.error('copyAllStaticFiles - fs.lstatSync(pathToSource).isDirectory() - SKIPPING doNotCopyFolderNames name=%O', name);
-                } else {
-                    const isEmptyDir = fs.readdirSync(pathToSource).length === 0;
-                    if (!isEmptyDir) {
-                        console.error('copyAllStaticFiles - fs.lstatSync(pathToSource).isDirectory() - !isEmptyDir - RECURSE doNotCopyFolderNames name=%o', name);
-                        copyAllStaticFiles(pathToSource, pathToDestination);
-                    } else {
-                        console.error('copyAllStaticFiles - fs.lstatSync(pathToSource).isDirectory() - isEmptyDir - RECURSE doNotCopyFolderNames name=%o', name);
-                    }
-                }
-            } else {
-                if (copyFileNames.some(regexp => regexp.test(name))) {
-                    console.error('copyAllStaticFiles - copyFileNames.some(regexp => regexp.test(name)) - CREATE copyFileNames name=%o', name);
-                    fs.copyFileSync(pathToSource, pathToDestination);
-                } else {
-                    console.error('copyAllStaticFiles - copyFileNames.some(regexp => regexp.test(name)) - SKIPPING copyFileNames name=%O', name);
-                }
-
-                // old
-                // if (!doNotCopyFilenames.some(regexp => regexp.test(name))) {
-                //     fs.copyFileSync(pathToSource, pathToDestination);
-                // }
-            }
-        }
-    };
-
-    copyAllStaticFiles(pathToSrcFolder, pathToPublicFolder);
-    allFilesSync(pathToPublicFolder);
-    // const publicTree = allFilesSync(pathToPublicFolder);
-    // console.error('----------------------------------------');
-    // console.error(util.formatWithOptions({
-    //     getters: true,
-    //     showHidden: true,
-    //     depth: Infinity,
-    //     colors: true,
-    //     customInspect: true,
-    //     showProxy: true,
-    //     maxArrayLength: Infinity,
-    //     maxStringLength: null,
-    //     breakLength: Infinity,
-    //     compact: false,
-    //     sorted: false,
-    // }, 'copyAllStaticFiles - FINISHED publicTree=%O', publicTree));
-    // console.error('----------------------------------------');
+    // // https://vuepress.vuejs.org/config/#evergreen
+    // // This will disable ES5 transpilation and polyfills for IE, and result in faster builds and smaller files.
+    // // Set to true, if we want to support IE.
+    // evergreen: true,
 };
