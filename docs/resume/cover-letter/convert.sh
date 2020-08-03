@@ -8,6 +8,37 @@ set -x
 
 ls -1 .
 
+
+\usemodule[filter]
+
+\defineexternalfilter
+  [markdown]
+  [
+    filter={ pandoc --from=markdown --to=context --output=\externalfilteroutputfile },
+    directory=output/
+  ]
+
+\starttext
+\startmarkdown
+Does **markdown** _work_?
+\stopmarkdown
+\stoptext
+\endinput
+
+
+# # pandoc -f markdown -t context+ntb -o test.tex test.md
+
+# pandoc --from=markdown --to=context --output=cover-letter_include.tex ../cover-letter.md
+# %% how to translate markdown in this doc
+# \usemodule[filter]
+
+# \defineexternalfilter
+#   [markdown]
+#   [
+#     filtercommand={pandoc --from=markdown --to=context --output=cover-letter_include.tex ../cover-letter.md},
+#     directory=output
+#   ]
+
 # --trace --verbose \
 pandoc \
   --fail-if-warnings \

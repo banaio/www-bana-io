@@ -1,0 +1,387 @@
+\preloadtypescripts
+
+\enableregime[utf]
+\setuppapersize[A4][A4]
+% \showframe
+% \setupbackgrounds[page][frame=on]
+% \showframe[edge]
+% \showlayout
+
+% % Enable Unicode fonts
+% \enableregime[utf]
+% \setuppapersize[A4][A4]
+% % enable the page frame
+
+% % make chapter, section bookmarks visible when opening document
+% \placebookmarks[chapter, section, subsection, subsubsection, subsubsubsection, subsubsubsubsection][chapter, section]
+% \setupinteractionscreen[option=bookmark]
+% \setuptagging[state=start]
+
+
+% % use microtypography
+% \definefontfeature[default][default][script=latn, protrusion=quality, expansion=quality, itlc=yes, textitalics=yes, onum=yes, pnum=yes]
+% \definefontfeature[smallcaps][script=latn, protrusion=quality, expansion=quality, smcp=yes, onum=yes, pnum=yes]
+% \setupalign[hz,hanging]
+% \setupitaliccorrection[global, always]
+
+% \setupbodyfontenvironment[default][em=italic] % use italic as em, not slanted
+
+% \definefallbackfamily[mainface][rm][CMU Serif][preset=range:greek, force=yes]
+% \definefontfamily[mainface][rm][Alegreya]
+% \definefontfamily[mainface][mm][TeXGyreDejaVuMath-Regular]
+% \definefontfamily[mainface][ss][Alegreya Sans]
+% \definefontfamily[mainface][tt][DejaVuSansMono][features=none]
+% \setupbodyfont[mainface]
+
+% \setupwhitespace[medium]
+
+% Enable Capital Letter use
+\setupcapitals[sc=yes]
+
+\usetypescriptfile[type-alegreya]
+\usetypescript[alegreya]
+% \setupbodyfont[roboto,serif,10pt]
+% \setupbodyfont[roboto,10pt]
+\setupbodyfont[alegreya]
+\setupbodyfont[10pt]
+% % \setupalign[hz,hanging,tolerant]
+% % % \setuplayout[grid=yes]
+% \setuppagenumbering[location={footer,middle},style=smallcaps,conversion=romannumerals]
+% \setupwhitespace[small]
+% \setupindenting[small]
+% \setupindenting[yes, small]
+% \setupblank[small]
+% % \setupfooter[style=\smallcaps]
+% % \setupinterlinespace[12pt]
+% \setuplayout[
+%   marking=on,
+%   height=fit,
+%   width=fit,
+%   % leftmargin=2mm,
+%   % rightmargin=2mm,
+%   top=2mm,
+%   topspace=2mm,
+%   topdistance=2mm,
+%   bottom=2mm,
+%   bottomdistance=0mm,
+%   % headerdistance=0mm,
+%   % footerdistance=0mm,
+%   % topspace=8mm,
+%   % header=0mm,
+%   % footer=0mm,
+%   % backspace=8mm
+%   ]
+% \setuphead[part][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,before={\blank[small]},after={\blank[small]\nowhitespace\hairline}]
+% \setuphead[chapter][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,before={\blank[small]},after={\blank[small]\nowhitespace\hairline}]
+% \setuphead[section][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,before={\blank[small]},after={\blank[small]\nowhitespace\hairline}]
+% \setuphead[subsection][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,before={\blank[small]},after={\blank[small]\nowhitespace\hairline}]
+% \setuphead[subsubsection][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,before={\blank[small]},after={\blank[small]\nowhitespace\hairline}]
+% \setuphead[title][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,before={\blank[small]},after={\blank[small]\nowhitespace\hairline}]
+% \setuphead[subject][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,before={\blank[small]},after={\blank[small]\nowhitespace\hairline}]
+
+% \setupheader
+%   [text]
+%   [before={\startframed[frame=off,bottomframe=on,framecolor=blue,]},
+%    after={\stopframed},
+%   ]
+% \setupheadertexts[Text left][Text right]
+
+\usemodule[filter]
+\traceexternalfilters
+
+\defineexternalfilter
+  [markdown]
+  [filter={pandoc --fail-if-warnings --pdf-engine=context -w context -o \externalfilteroutputfile }]
+
+% [filter={pandoc --fail-if-warnings --standalone --pdf-engine=context -w context -o \externalfilteroutputfile }]
+% pandoc -f markdown -t context+ntb -o test.tex test.md
+
+
+\starttext
+% \placetitle
+% \title
+% \startmixedcolumns[balance=yes]
+\processmarkdownfile{../cover-letter.md}
+% \stopmixedcolumns
+\stoptext
+
+% \preloadtypescripts
+% \usemodule[markdown]
+
+% % Enable Unicode fonts
+% \enableregime[utf]
+% \setuppapersize[A4][A4]
+
+% \definefontfeature
+%   [default][default]
+%   [
+%     protrusion=quality,
+%     expansion=quality,
+%     onum=yes,
+%   ]
+
+% % \setupbodyfont[pagella]
+% % \setupbodyfont[roboto,10pt]
+% \setupbodyfont[10pt]
+
+% \setupalign[hz,hanging,tolerant]
+
+% % \setuplayout[grid=yes]
+% \setuppagenumbering[location={footer,middle},style=smallcaps,conversion=romannumerals]
+% \setupwhitespace[small]
+% \setupindenting[small]
+% \setupblank[small]
+% \setuplayout[marking=on,height=fit,width=fit,leftmargin=0mm,rightmargin=0mm,top=0mm,topspace=0mm,topdistance=0mm,bottom=0mm,bottomdistance=0mm,headerdistance=0mm,footerdistance=0mm,topspace=8mm,header=0mm,footer=0mm,backspace=8mm]
+
+% \definenarrower
+%   [quote]
+%   [left=8pt,
+%    right=8pt]
+
+% % \defineheadalternative
+% %   [centered]
+% %   [alternative=vertical,
+% %    renderingsetup=headrenderings:centered]
+% \setuphead[part][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+% \setuphead[chapter][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+% \setuphead[section][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+% \setuphead[subsection][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+% \setuphead[subsubsection][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+% \setuphead[title][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+% \setuphead[subject][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+
+% % \startsetups headrenderings:centered
+% %     \vbox {
+% %         \headsetupspacing
+% %         \veryraggedcenter
+% %         \ifconditional\headshownumber
+% %             \headnumbercontent
+% %             \kern\headnumberdistance
+% %         \fi
+% %         \begstrut
+% %         \headtextcontent
+% %         \endstrut
+% %     }
+% % \stopsetups
+
+% \setuphead[alternative=centered]
+
+% % \starttexdefinition unexpanded placetitle
+% %   \ifgridsnapping\startlinecorrection\fi
+% %     \blank[2em,force]
+% %     \startalignment[center]
+% %       {\tfb\documentvariable{metadata:title}\par}
+% %       \blank[1.5em]
+% %       {\tfa\documentvariable{metadata:author}\par}
+% %       \blank[1em]
+% %       {\tfa\documentvariable{metadata:date}\par}
+% %     \stopalignment
+% %     \blank[1.5em,force]
+% %   \ifgridsnapping\stoplinecorrection\fi
+% % \stoptexdefinition
+
+% \startdocument
+%   % [
+%   %   metadata:title={Some Title Lipsum},
+%   %   metadata:author={Cicero},
+%   %   metadata:date={December 21, 2016},
+%   % ]
+
+% % \placetitle
+
+% \showframe[edge]
+
+% \startmixedcolumns[balance=yes]
+% \processmarkdownfile{../cover-letter.md}
+
+%   % \input knuth
+
+%   % \startquote
+%   %   Some Text in a quote environment
+%   % \stopquote
+
+%   % \startsection[title={One Section}]
+
+%   %   \input knuth\footnote{Some Footnote}
+
+%   %   \startsubsection[title={A Subsection}]
+
+%   %     \startitemize[n]
+%   %     \item Some List
+%   %     \item Next Item
+%   %       \startitemize[a]
+%   %       \item Next Level
+%   %       \item Next Item
+%   %       \stopitemize
+%   %     \stopitemize
+
+%   %   \stopsubsection
+
+%   % \stopsection
+
+%   % \startsection[title={A Header}]
+
+%   %   \input knuth
+
+%   %   \startsubsection[title={A Subsection}]
+
+%   %     \input knuth
+
+%   %   \stopsubsection
+
+%   % \stopsection
+
+% \stopmixedcolumns
+
+% \stopdocument
+
+
+
+% % %% enable the page frame
+% % \setupbackgrounds[page][frame=on]
+
+% % % Enable Capital Letter use
+% % \setupcapitals[sc=yes]
+
+% % \usetypescriptfile[type-roboto]
+% % \usetypescript[roboto]
+% % % \setupbodyfont[roboto,serif,10pt]
+% % % \setupbodyfont[roboto,10pt]
+% % \setupbodyfont[roboto]
+
+% % % \def\markdownRendererTildePrototype{%
+% % %   Packages can specify token renderer prototypes.%
+% % % }
+% % % \starttext
+% % % \startmarkdown
+% % % ~
+% % % \stopmarkdown
+
+% % % \def\markdownRendererTilde{%
+% % %   User-defined token renderers take precedence.%
+% % % }
+% % % \startmarkdown
+% % % ~
+% % % \stopmarkdown
+% % % \stoptext
+
+% % % \setuppagenumbering[location=]
+% % % \setupheader[state=empty]
+% % % \setuplayout [header=0pt]
+
+% % \setupheader
+% %   [text]
+% %   [before={\startframed[frame=off,bottomframe=on,framecolor=blue,]},
+% %    after={\stopframed},
+% %   ]
+% % \setupheadertexts[Text left][Text right]
+% % \setuphead[part][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+% % \setuphead[chapter][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+% % \setuphead[section][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+% % \setuphead[subsection][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+% % \setuphead[subsubsection][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+% % \setuphead[title][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+% % \setuphead[subject][numberstyle=smallcaps,style=bold,textstyle=smallcaps,page=no,continue=yes,after=\nowhitespace\hairline]
+
+% % % conversion	numbers characters Characters romannumerals Romannumerals
+% % % style	normal bold slanted boldslanted type cap small smallbold ... command
+% % % \setuppagenumbering[location={footer,inright},style=small,conversion=romannumerals]
+% % \setuppagenumbering[
+% %     state=start,
+% %     % alternative=doublesided,
+% %     style=smallcaps,
+% %     conversion=romannumerals]
+
+% % \setupfootertexts
+% % 	[]
+% % 	[{\framed[offset=3pt]{Version: Fall 2007}}]
+% % 	[{\framed[offset=3pt]{Version: Fall 2007}}]
+% % 	[]
+
+% % % \startnotmode[light,medium]
+% % % \setupbodyfont[roboto,ss,12pt]
+% % % \stopnotmode
+% % % \startmode[light]
+% % % \setupbodyfont[roboto-light,ss,12pt]
+% % % \stopmode
+% % % \startmode[medium]
+% % % \setupbodyfont[roboto-medium,ss,12pt]
+% % % \stopmode
+
+% % % \usetypescript[palatino]
+% % % \setupbodyfont[palatino,10pt]
+
+% % % \usetypescriptfile[type-one]
+% % % % \usetypescriptfile[type-otf]
+% % % % \usetypescript[iwona][ec]
+% % % % texnansi,ec,8r,t2a
+% % % \usetypescript[iwona][texnansi,ec,qx,t5,default]
+% % % % \usetypescript[times][ec]
+% % % \setupbodyfont[iwona,sans]
+
+% % \def\MyLength{4pt}
+
+% % % \setuplayout[style=cap,grid=yes,location=duplex,marking=on]
+% % \setuplayout[
+% %     top=\MyLength,
+% %     topdistance=\MyLength,
+% %     bottom=\MyLength,
+% %     bottomdistance=\MyLength,
+% %     topspace=\dimexpr(\topheight + \topdistance),
+% %     headerdistance=\MyLength,
+% %     footerdistance=\MyLength,
+% %     % leftmargin=\MyLength,
+% %     % rightmargin=\MyLength,
+% %     height=fit,
+% %     width=fit,
+% %     % grid=yes,
+% %     % location=duplex,
+% %     marking=on
+% %     ]
+
+% % \setupfooter[style=\smallcaps]
+
+% % \setupinterlinespace[12pt]
+
+% % \setupwhitespace[small]
+% % % \setupindenting[small]
+% % % \setupblank[small]
+
+% % \starttext
+% % \showframe[edge]
+% % \processmarkdownfile{../cv.md}
+% % \page
+
+% % \showgrid
+% % \page
+
+% % \page
+% % \showframe[margin]
+% % \page
+% % \showstruts
+% % \page
+% % \showsetups
+% % \page
+% % \showlayout
+% % \page
+% % \showframe[edge]
+% % \page
+% % \showfontstrip
+% % \page
+% % \showbodyfont
+% % \page
+% % \showbodyfontenvironment
+% % \page
+
+% % % \showmakeup
+% % % \page
+% % \showboxes
+% % \page
+
+% % \showframe
+% % \page
+
+% % \showlayoutcomponents
+% % \page
+
+% % \stoptext

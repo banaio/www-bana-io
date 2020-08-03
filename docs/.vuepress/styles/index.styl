@@ -1,3 +1,7 @@
+/**
+ * https://vuepress.vuejs.org/config/#index-styl
+ */
+
 // @require './palette.styl';
 
 /* https://www.256kilobytes.com/content/show/4399/get-these-dependencies-off-my-lawn-5-tasks-you-didnt-know-could-be-done-with-pure-html-and-css */
@@ -12,6 +16,110 @@ html, body {
   -webkit-font-smoothing: subpixel-antialiased;
   // scroll-behavior: smooth;
 }
+
+.content {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 14px;
+}
+
+h1, h2 {
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+// #app > div.theme-container.no-sidebar > header > div.links > nav > div:nth-child(1) > a
+.links > .nav-links > .nav-item > .nav-link {
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+main > header > .description {
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// * {
+//   border: 1px solid grey;
+// }
+
+// // // $contentClass = '.theme-default-content';
+
+// // @media (min-width: 959px) {
+// @media (min-width: 1107px) {
+//   {$contentClass}:not(.custom) {
+//     // Make this elements fill the entire width.
+//     // max-width: calc(100% - 6.5rem);
+//     // max-width: calc(740px + 300px);
+//     max-width: 64%;
+//   }
+// }
+
+// @media (min-width: 959px) {
+//   {$contentClass}:not(.custom) {
+//     box-sizing: border-box;
+//     // margin: 0 !important;
+//     // max-width: 64%;
+//     max-width: -(20rem);
+//     // max-width: "calc(100% - %s)" % (20rem);
+//   }
+// }
+
+// {$contentClass}:not(.custom) {
+//   // box-sizing: border-box;
+//   box-sizing: content-box;
+// }
+
+// // #app > div.theme-container > main > footer
+// @media (min-width: 959px) {
+//   .page-edit {
+//     max-width: calc(100% - 9rem);
+//   }
+// }
+
+// // .#app > div.theme-container > main > div.page-nav
+// @media (min-width: 959px) {
+//   .page-nav {
+//     max-width: calc(100% - 9rem);
+//   }
+// }
+
+
+// .theme-default-content:not(.custom) {
+//     margin: 0 !important;
+// }
+
+// .theme-default-content:not(.custom) {
+//     max-width: 740px;
+//     margin: 0 auto;
+//     padding: 2rem 2.5rem;
+// }
+
+// @media (max-width: 419px)
+// .theme-default-content:not(.custom) {
+//     padding: 1.5rem;
+// }
+
+// @media (max-width: 959px)
+// .theme-default-content:not(.custom) {
+//     padding: 2rem;
+// }
+
+// .page {
+//   .page-nav, .theme-default-content:not(.custom) {
+//     // Make this elements fill the entire width.
+//     min-width: 64%;
+//   }
+// }
 
 // html, body, #app, .theme-container {
 //   height: 100%;
@@ -39,23 +147,10 @@ html, body {
 //   max-width: 100%;
 // }
 
-.content {
-  font-family: 'Alegreya Sans', sans-serif;
-  font-size: 14px;
-}
 
-h1, h2 {
-  font-family: 'Alegreya Sans SC', sans-serif;
-}
 
-// #app > div.theme-container.no-sidebar > header > div.links > nav > div:nth-child(1) > a
-.links > .nav-links > .nav-item > .nav-link {
-  font-family: 'Alegreya Sans SC', sans-serif;
-}
 
-main > header > .description {
-  font-family: 'Alegreya Sans SC', sans-serif;
-}
+
 
 // /* .nav-item > a
 //   text-transform: uppercase;
