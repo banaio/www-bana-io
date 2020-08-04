@@ -2,10 +2,10 @@
 title: "Rust Lang Projects"
 tags: ["blog", "programming", "software", "rust", "rust lang"]
 date: "2020-08-01"
-sidebar: auto
+sidebar: false
 type: post
-prev: /rust/
-next: ./install
+prev: ./install
+next: /rust/
 ---
 
 [Repositories written in Rust on GitHub](https://github.com/banaio?q=&type=&language=rust):

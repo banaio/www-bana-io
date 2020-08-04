@@ -10,6 +10,7 @@ next: ./cover-letter
 
 * [`mohamed-bana_cv.pdf`](./download/mohamed-bana_cv.pdf)
 * [`mohamed-bana_cover-letter.pdf`](./download/mohamed-bana_cover-letter.pdf)
+* [`mohamed-bana_cv_cover-letter.pdf`](./download/mohamed-bana_cv_cover-letter.pdf)
 
 ## ODT
 

@@ -8,16 +8,6 @@ prev: /linux/
 next: false
 ---
 
-[./setup.sh](./setup.sh).
+[./setup.sh](./setup.sh):
 
-### `./setup.sh`
-
-<<< @./setup.sh >>>
-
-### `/docs/.vuepress/public/linux/setup.sh`
-
-<<< @docs/.vuepress/public/linux/setup.sh >>>
-
-### `/docs/linux/setup.sh`
-
-<<< @/docs/linux/setup.sh >>>
+<<< @/docs/linux/setup.sh

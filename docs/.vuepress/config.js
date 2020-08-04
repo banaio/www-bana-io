@@ -310,10 +310,6 @@ module.exports = {
                 link: '/blog/',
             },
             {
-                text: 'Rust',
-                link: '/rust/',
-            },
-            {
               text: 'Rust Lang',
               link: '/rust/',
               items: [

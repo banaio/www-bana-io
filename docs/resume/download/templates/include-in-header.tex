@@ -37,11 +37,16 @@
   backspace=8pt,
   ]
 
-\setupwhitespace[flexible]
-% \setupindenting[small]
+% \setupwhitespace[flexible]
+\setupwhitespace[small]
+\setupblank[small]
+
+% \setupindenting[32pt]
 % \indenting[yes,next]
 % \setupindenting[yes,big]
-% \setupblank[big]
+
+% \setupitemize[autointro]    % prevent orphan list intro
+% \setupitemize[indentnext=no]
 
 % \setupheader[style=\smallcaps]
 % \setupfooter[style=\smallcaps]
@@ -51,7 +56,7 @@
   [
     number=yes,
     page=no,
-    % continue=yes,
+    continue=yes,
     % header=empty,
     % align=middle,
     align={middle, hyphenated, verytolerant},
@@ -73,7 +78,7 @@
   [
     number=yes,
     page=no,
-    % continue=yes,
+    continue=yes,
     % header=empty,
     % align={flushleft, nothyphenated, verytolerant},
     align={middle, hyphenated, verytolerant},
@@ -96,7 +101,47 @@
   [
     number=yes,
     page=no,
-    % continue=yes,
+    continue=yes,
+    align={flushleft, hyphenated, verytolerant},
+    tolerance=verytolerant,
+    numberstyle=smallcaps,
+    style=bold,
+    textstyle=smallcaps,
+    % command=\StyleSection,
+    % after={\startsectioncolumns},
+    % aftersection={\stopsectioncolumns},
+    before={\blank[none]},
+    % before={\nowhitespace},
+    after={\blank[none]},
+    beforesubsubsection={\blank[none]},
+    aftersubsubsection={\blank[none]},
+  ]
+\setuphead
+  [subsubsubsection]
+  [
+    number=yes,
+    page=no,
+    continue=yes,
+    align={flushleft, hyphenated, verytolerant},
+    tolerance=verytolerant,
+    numberstyle=smallcaps,
+    style=bold,
+    textstyle=smallcaps,
+    % command=\StyleSection,
+    % after={\startsectioncolumns},
+    % aftersection={\stopsectioncolumns},
+    before={\blank[none]},
+    % before={\nowhitespace},
+    after={\blank[none]},
+    beforesubsubsection={\blank[none]},
+    aftersubsubsection={\blank[none]},
+  ]
+\setuphead
+  [subsubsubsubsection]
+  [
+    number=yes,
+    page=no,
+    continue=yes,
     align={flushleft, hyphenated, verytolerant},
     tolerance=verytolerant,
     numberstyle=smallcaps,
@@ -120,3 +165,14 @@
 %   [{\bf{Last Updated: }}{\currentdate[weekday,month,day,{, },year]}]
 
 \setuppagenumbering[location={footer,middle},style=smallcaps,conversion=romannumerals]
+
+% For \url:
+\setupurl
+   [color=red,
+    style=\tf]
+
+% For \goto and \from:
+\setupinteraction
+   [state=start,
+    color=red,
+    style=\tf]

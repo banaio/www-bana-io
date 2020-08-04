@@ -7,7 +7,7 @@ next: ./about-me
 
 subtitle: "Full Stack Senior Software Engineer"
 author: Mohamed Bana
-fontsize: 12pt
+fontsize: 11pt
 # indenting: small
 # interlinespace: small
 linkcolor: red
@@ -62,4 +62,4 @@ Mohamed Bana
 
 ---
 
-[`https://bana.io`](https://bana.io) — [m@bana.io](mailto:m@bana.io) — [+44-7960-045-281](tel:+44-7960-045-281)
+[https://bana.io](https://bana.io) — [m@bana.io](mailto:m@bana.io) — [+44-7960-045-281](tel:+44-7960-045-281)

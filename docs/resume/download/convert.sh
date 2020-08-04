@@ -9,7 +9,8 @@ set -euf -o pipefail
 # DATE_TIME="$(date --utc)"
 DATE_TIME="$(date --utc +'%A, %d %B %Y, %H:%M:%S %Z')"
 # OUTPUT_DIR="./docs/resume/download"
-OUTPUT_DIR="./download"
+# OUTPUT_DIR="./download"
+OUTPUT_DIR="$(pwd)"
 
 pandoc \
   --fail-if-warnings \
@@ -23,21 +24,24 @@ pandoc \
   --output="${OUTPUT_DIR}/mohamed-bana_cv.pdf" \
   ../cv.md
 echo "----"
+  # --include-before-body=./templates/include-before-body.tex \
+  # --include-after-body=./templates/include-after-body.tex \
 pandoc \
   --fail-if-warnings \
   --from=markdown \
   --standalone \
   --pdf-engine=context \
   --include-in-header=./templates/include-in-header.tex \
-  --include-before-body=./templates/include-before-body.tex \
-  --include-after-body=./templates/include-after-body.tex \
   --variable=date:"${DATE_TIME}" \
   --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" \
   ../cover-letter.md
 echo "----"
 
-xdg-open "${OUTPUT_DIR}/mohamed-bana_cv.pdf" || open "${OUTPUT_DIR}/mohamed-bana_cv.pdf"
-xdg-open "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" || open "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf"
+pdfunite "${OUTPUT_DIR}/mohamed-bana_cv.pdf" "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
+
+xdg-open "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
+# xdg-open "${OUTPUT_DIR}/mohamed-bana_cv.pdf" || open "${OUTPUT_DIR}/mohamed-bana_cv.pdf"
+# xdg-open "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" || open "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf"
 
 
 # https://pandoc.org/MANUAL.html#general-options

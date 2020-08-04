@@ -18,7 +18,6 @@ linkstyle: boldslanted
 lof: false
 lot: false
 toc: false
-whitespace: small
 includesource: true
 ---
 

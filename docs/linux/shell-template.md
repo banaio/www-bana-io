@@ -10,32 +10,12 @@ next: /linux/
 
 ## Bash
 
-[./shell-script-template-bash.sh](./shell-script-template-bash.sh).
+[./shell-script-template-bash.sh](./shell-script-template-bash.sh):
 
-### `./shell-script-template-bash.sh`
-
-<<< @./shell-script-template-bash.sh >>>
-
-### `/docs/.vuepress/public/linux/shell-script-template-bash.sh`
-
-<<< @docs/.vuepress/public/linux/shell-script-template-bash.sh >>>
-
-### `/docs/linux/shell-script-template-bash.sh`
-
-<<< @/docs/linux/shell-script-template-bash.sh >>>
+<<< @/docs/linux/shell-script-template-bash.sh
 
 ## ZSH
 
-[./shell-script-template-zsh.sh](./shell-script-template-zsh.sh).
+[./shell-script-template-zsh.sh](./shell-script-template-zsh.sh):
 
-### `./shell-script-template-zsh.sh`
-
-<<< @./shell-script-template-zsh.sh >>>
-
-### `/docs/.vuepress/public/linux/shell-script-template-zsh.sh`
-
-<<< @docs/.vuepress/public/linux/shell-script-template-zsh.sh >>>
-
-### `/docs/linux/shell-script-template-zsh.sh`
-
-<<< @/docs/linux/shell-script-template-zsh.sh >>>
+<<< @/docs/linux/shell-script-template-zsh.sh
