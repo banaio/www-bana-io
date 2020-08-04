@@ -1,22 +1,33 @@
 ---
-title: "Mohamed Bana — Full Stack Senior Software Engineer — Cover Letter"
+title: "Cover Letter"
 tags: ["resume", "cover letter"]
 sidebar: auto
 prev: ./cv-download
 next: ./about-me
----
 
-<!-- fontsize: 11pt
+subtitle: "Full Stack Senior Software Engineer"
+author: Mohamed Bana
+fontsize: 12pt
+# indenting: small
+# interlinespace: small
+# layout: marking=on,height=fit,width=fit,leftmargin=0mm,rightmargin=0mm,top=0mm,topspace=0mm,topdistance=0mm,bottom=0mm,bottomdistance=0mm,headerdistance=0mm,footerdistance=0mm,topspace=8mm,header=0mm,footer=0mm,backspace=8mm
+linkcolor: red
+contrastcolor: blue
+linkstyle: boldslanted
+lof: false
+lot: false
 mainfont: Alegreya
 sansfont: Alegreya Sans
 monofont: DejaVuSansMono
 mathfont: TeXGyreDejaVuMath-Regular
 fontfamily: Alegreya
+# pagenumbering: location={footer,left},style=smallcaps,conversion=romannumerals
+papersize: A4
+toc: false
+whitespace: small
+includesource: true
 lang: en-GB
-papersize: a4
-pagenumbering: location={footer,middle},style=smallcaps,conversion=romannumerals
-indenting: small
-layout: marking=on,height=fit,width=fit,leftmargin=0mm,rightmargin=0mm,top=0mm,topspace=0mm,topdistance=0mm,bottom=0mm,bottomdistance=0mm,headerdistance=0mm,footerdistance=0mm,topspace=8mm,header=0mm,footer=0mm,backspace=8mm -->
+---
 
 ## Intro
 
@@ -60,4 +71,4 @@ Mohamed Bana
 
 ---
 
-[`https://bana.io`](https://bana.io) — [m@bana.io](mailto:m@bana.io) — +44-7960-045-281
+[`https://bana.io`](https://bana.io) — [m@bana.io](mailto:m@bana.io) — [+44-7960-045-281](tel:+44-7960-045-281)
