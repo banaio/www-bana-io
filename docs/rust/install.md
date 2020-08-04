@@ -5,9 +5,21 @@ date: "2020-08-01"
 sidebar: auto
 type: post
 prev: /rust/
-next: false
+next: ./projects
 ---
 
 ## Install
 
 [./install.sh](./install.sh).
+
+### `./install.sh`
+
+<<< @./install.sh >>>
+
+### `/docs/.vuepress/public/rust/install.sh`
+
+<<< @docs/.vuepress/public/rust/install.sh >>>
+
+### `/docs/rust/install.sh`
+
+<<< @/docs/rust/install.sh >>>

@@ -1,6 +1,6 @@
 ---
-title: "Rust Lang"
-tags: ["blog", "programming", "software", "rust", "rust lang"]
+title: "Golang"
+tags: ["blog", "programming", "software", "go", "golang"]
 date: "2020-08-01"
 sidebar: false
 type: post
@@ -11,4 +11,3 @@ next: ./projects
 ## Pages
 
 * [Projects](./projects)
-* [Install](./install)

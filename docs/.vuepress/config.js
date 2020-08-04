@@ -313,6 +313,28 @@ module.exports = {
                 text: 'Rust',
                 link: '/rust/',
             },
+            {
+              text: 'Rust Lang',
+              link: '/rust/',
+              items: [
+                  {
+                      text: 'Rust Lang',
+                      link: '/rust/',
+                  },
+                  {
+                      text: 'Rust Lang projects',
+                      link: '/rust/projects',
+                  },
+                  {
+                      text: 'Install',
+                      link: '/rust/install',
+                  },
+              ]
+          },
+            {
+                text: 'Linux',
+                link: '/linux/',
+            },
             // {
             //     text: 'The Quran',
             //     link: '/the-quran/',

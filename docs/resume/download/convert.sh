@@ -5,16 +5,22 @@ set -euf -o pipefail
 # set -euo pipefail
 # set -euxo pipefail
 
+# DATE_TIME="$(date --iso-8601='s')"
+# DATE_TIME="$(date --utc)"
+DATE_TIME="$(date --utc +'%A, %d %B %Y, %H:%M:%S %Z')"
+# OUTPUT_DIR="./docs/resume/download"
+OUTPUT_DIR="./download"
+
 pandoc \
   --fail-if-warnings \
   --from=markdown \
   --standalone \
   --pdf-engine=context \
-  --include-in-header=templates/include-in-header.tex \
+  --include-in-header=./templates/include-in-header.tex \
   --include-before-body=./templates/include-before-body.tex \
   --include-after-body=./templates/include-after-body.tex \
-  --variable=date:"$(date --utc +'%A, %d %B %Y, %H:%M:%S %Z')" \
-  --output=../pdf/mohamed-bana_cv.pdf \
+  --variable=date:"${DATE_TIME}" \
+  --output="${OUTPUT_DIR}/mohamed-bana_cv.pdf" \
   ../cv.md
 echo "----"
 pandoc \
@@ -22,27 +28,20 @@ pandoc \
   --from=markdown \
   --standalone \
   --pdf-engine=context \
-  --include-in-header=templates/include-in-header.tex \
+  --include-in-header=./templates/include-in-header.tex \
   --include-before-body=./templates/include-before-body.tex \
   --include-after-body=./templates/include-after-body.tex \
-  --variable=date:"$(date --utc +'%A, %d %B %Y, %H:%M:%S %Z')" \
-  --output=../pdf/mohamed-bana_cover-letter.pdf \
+  --variable=date:"${DATE_TIME}" \
+  --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" \
   ../cover-letter.md
 echo "----"
 
-cp -v ../pdf/mohamed-bana_cv.pdf ../mohamed-bana_cv.pdf
-cp -v ../pdf/mohamed-bana_cover-letter.pdf ../mohamed-bana_cover-letter.pdf
+xdg-open "${OUTPUT_DIR}/mohamed-bana_cv.pdf" || open "${OUTPUT_DIR}/mohamed-bana_cv.pdf"
+xdg-open "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" || open "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf"
 
-# xdg-open ../pdf/mohamed-bana_cv.pdf
-# xdg-open ../pdf/mohamed-bana_cover-letter.pdf
 
 # https://pandoc.org/MANUAL.html#general-options
-# $ pandoc -D context --print-default-template context > template.tex
-
-# --trace --verbose \
-  # --template=./template.tex \
-  # --variable=date:"$(date --iso-8601='s')" \
-  # --variable=date:"$(date --utc)" \
+# $ pandoc -D context --print-default-template context > default-template-context.tex
 
 # # https://pandoc.org/MANUAL.html#specifying-formats
 # # Supported input and output formats are listed below under Options (see -f for input formats and -t for output formats). You can also use pandoc --list-input-formats and pandoc --list-output-formats to print lists of supported formats.

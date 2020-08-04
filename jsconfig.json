@@ -16,15 +16,12 @@
   "exclude": [
     "node_modules",
     "**/node_modules/*",
-
     "dist",
     "dist/",
     "dist/**/*",
-
     "docs/.temp",
     "docs/.temp/",
     "docs/.temp/**/*",
-
     "docs/.cache",
     "docs/.cache/",
     "docs/.cache/**/*"

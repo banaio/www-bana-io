@@ -10,23 +10,14 @@ author: Mohamed Bana
 fontsize: 12pt
 # indenting: small
 # interlinespace: small
-# layout: marking=on,height=fit,width=fit,leftmargin=0mm,rightmargin=0mm,top=0mm,topspace=0mm,topdistance=0mm,bottom=0mm,bottomdistance=0mm,headerdistance=0mm,footerdistance=0mm,topspace=8mm,header=0mm,footer=0mm,backspace=8mm
 linkcolor: red
 contrastcolor: blue
 linkstyle: boldslanted
 lof: false
 lot: false
-mainfont: Alegreya
-sansfont: Alegreya Sans
-monofont: DejaVuSansMono
-mathfont: TeXGyreDejaVuMath-Regular
-fontfamily: Alegreya
-# pagenumbering: location={footer,left},style=smallcaps,conversion=romannumerals
-papersize: A4
 toc: false
 whitespace: small
 includesource: true
-lang: en-GB
 ---
 
 ## Intro

@@ -26,9 +26,9 @@ I've a limited company called BANAIO LTD which I started in March 2017 and I've 
 
 I'd like to know:
 
-* Is this fully remote?
-* What is the pay?
-* Is it a contracting role or a permanent one? I don't mind so much as long as it is a remote role.
+1. Is this fully remote?
+2. What is the pay?
+3. Is it a contracting role or a permanent one? I don't mind so much as long as it is a remote role.
 
 Contact details are below but since I am in Morocco at the moment it's best to reach me on the second number unless you want to send me a message or call me on WhatsApp:
 

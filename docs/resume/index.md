@@ -6,7 +6,7 @@ prev: false
 next: ./cv
 ---
 
-## Miscellaneous
+## Pages
 
 * [CV](./cv)
 * [CV Download](./cv-download.md)

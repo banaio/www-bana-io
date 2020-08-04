@@ -1,8 +1,8 @@
 [
-    "Stylus",
-    "VuePress",
-    [
-        "front[- ]matter",
-        "frontmatter"
-    ]
+  "Stylus",
+  "VuePress",
+  [
+    "front[- ]matter",
+    "frontmatter"
+  ]
 ]

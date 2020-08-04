@@ -1,9 +1,9 @@
 module.exports = {
-    "plugins": [
-        "preset-lint-recommended",
-        "preset-lint-consistent",
+  "plugins": [
+    "preset-lint-recommended",
+    "preset-lint-consistent",
 
-        ["lint-list-item-indent", "space"],
-        ["lint-heading-style", false]
-    ]
+    ["lint-list-item-indent", "space"],
+    ["lint-heading-style", false]
+  ]
 };

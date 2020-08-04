@@ -1,23 +1,33 @@
 ---
-title: "Mohamed Bana - CV Download"
+title: "CV Download"
 tags: ["resume", "cv"]
 sidebar: false
 prev: ./cv
 next: ./cover-letter
 ---
 
-# PDFs
+## PDFs
 
-* [`Mohamed-Bana_CV.pdf`](./mohamed-bana_cv.pdf)
-* [`Mohamed-Bana_Cover-Letter.pdf`](./mohamed-bana_cover-letter.pdf)
+* [`mohamed-bana_cv.pdf`](./download/mohamed-bana_cv.pdf)
+* [`mohamed-bana_cover-letter.pdf`](./download/mohamed-bana_cover-letter.pdf)
 
-### Old
+## ODT
 
-* [`Mohamed_Bana-CV-LinkedIn.pdf`](./Mohamed_Bana-CV-LinkedIn.pdf)
-* [`Mohamed_Bana-CV-LinkedIn_Profile.pdf`](./Mohamed_Bana-CV-LinkedIn_Profile.pdf)
+WIP.
 
-## Miscellaneous
+## MS Word
+
+WIP.
+
+## Pages
 
 * [CV](./cv)
 * [Cover Letter](./cover-letter)
 * [About Me](./about-me)
+
+---
+
+### Old
+
+* [`Mohamed_Bana-CV-LinkedIn.pdf`](./download/Mohamed_Bana-CV-LinkedIn.pdf)
+* [`Mohamed_Bana-CV-LinkedIn_Profile.pdf`](./download/Mohamed_Bana-CV-LinkedIn_Profile.pdf)
