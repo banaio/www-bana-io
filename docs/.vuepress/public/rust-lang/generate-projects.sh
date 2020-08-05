@@ -7,7 +7,16 @@ set -euf -o pipefail
 # setopt -s nocaseglob # Case insensitive globs
 # setopt -s globstar   # Allow ** for recursive matches ('lib/**/*.rb' => 'lib/a/b/c.rb')
 
+echo "" >> projects.md
 wget -O repos.json 'https://api.github.com/orgs/banaio/repos'
-cat repos.json | jq -r '.[] | select(.language == "Rust") | ("* **" + .description + ":** [" + .html_url + "]" + "(" + .html_url + ")")'
-# * **Open Banking client written in Rust Programming Language.:** [https://github.com/banaio/openbanking.rs](https://github.com/banaio/openbanking.rs)
-# * **All things written in Rust Programming Language.:** [https://github.com/banaio/bana.rs](https://github.com/banaio/bana.rs)
+# NB: Remove spaces from beginning and end of description string
+cat repos.json | jq -r \
+  '
+.[] |
+select(.language == "Rust") |
+if (.description != null) then
+  ("* **" + (.description | gsub("(^\\s+)|(\\s+$)";"")) + ":** [" + .html_url + "]" + "(" + .html_url + ")")
+else
+  ("* [" + .html_url + "]" + "(" + .html_url + ")")
+end
+' >> projects.md

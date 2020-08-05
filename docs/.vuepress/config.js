@@ -177,7 +177,15 @@ module.exports = {
     // https://vuepress.vuejs.org/config/#head
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }],
+        // ['link', { rel: 'icon', href: 'favicon.png' }],
         ['link', { rel: 'manifest', href: '/manifest.json' }],
+        // https://stackoverflow.com/a/56423507
+        // https://stackoverflow.com/questions/12316501/including-google-web-fonts-link-or-import
+        ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com/' /*, crossorigin: true*/ }],
+        ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com/' /*, crossorigin: true*/ }],
+        // https://3perf.com/blog/link-rels/
+        ['link', { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com/' }],
+        ['link', { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com/' }],
         // [
         //     'link',
         //     {
@@ -192,7 +200,6 @@ module.exports = {
                 href: 'https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap',
             }
         ],
-        // ['link', { rel: 'icon', href: 'favicon.png' }],
         // [
         //     'link',
         //     {
