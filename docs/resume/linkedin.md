@@ -15,12 +15,13 @@ CV et al.:
 * https://bana.io/resume/cv
 * https://bana.io/resume/cover-letter
 * https://linkedin.com/in/mbana
+* https://github.com/banaio
 
 I am available immediately. I went to Marrakech, Morocco on the 4th of January to buy a flat and I stayed until the 22nd of July 2020 mainly due to Morocco closing the borders due to COVID-19.
 
 I am back in London until, hopefully, the 28nd of August. I'll be free shortly after this date. I can talk on UK mobile number, +447960045281.
 
-I have a British passport but I mainly live in Marrakech, Morocco. I can come to London at most once every four weeks.
+I have a British passport and I live between London and Marrakech, Morocco. I can come to London at most once every four weeks.
 
 I've a limited company called BANAIO LTD which I started in March 2017 and I've been a contractor since then.
 

@@ -18,7 +18,7 @@
                                 {
                                     "browse": {},
                                     "handler": "file_server",
-                                    "root": "./dist"
+                                    "root": "./docs/.vuepress/dist"
                                 }
                             ]
                         }

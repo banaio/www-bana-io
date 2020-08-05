@@ -34,7 +34,7 @@ function log_new(args) {
     const func_name = stack[STACK_INDEX].match(/at (.*?) /)[1];
 
     // args = [args, debug.colors[5] + '(' + func_name + ':' + line + ')' + debug.colors[5]].join(' ');
-    args = [args, '\u001b[38;5;201;1m(' + func_name + ':' + line+ ')\u001b[0m'].join(' ');
+    args = [args, '\u001b[38;5;201;1m(' + func_name + ':' + line + ')\u001b[0m'].join(' ');
     log_original(args);
 };
 debug.log = log_new;
@@ -212,35 +212,6 @@ module.exports = {
     themeConfig: {
         logo: 'favicon.png',
         nav: [
-            // {
-            //     text: 'Projects',
-            //     items: [
-            //         {
-            //             text: 'openbankingforgerock',
-            //             link: 'https://github.com/banaio/openbankingforgerock',
-            //         },
-            //         {
-            //             text: 'go-gdax',
-            //             link: 'https://github.com/banaio/go-gdax',
-            //         },
-            //         {
-            //             text: 'go_gdax_fix',
-            //             link: 'https://github.com/banaio/go_gdax_fix',
-            //         },
-            //         {
-            //             text: 'vue_js_samples',
-            //             link: 'https://github.com/banaio/vue_js_samples',
-            //         },
-            //         {
-            //             text: 'go_samples',
-            //             link: 'https://github.com/banaio/go_samples',
-            //         },
-            //         {
-            //             text: 'www-bana-io-vue-js',
-            //             link: 'https://github.com/banaio/www-bana-io-vue-js',
-            //         },
-            //     ],
-            // },
             {
                 text: 'm@bana.io',
                 link: 'mailto:m@bana.io',
@@ -257,27 +228,6 @@ module.exports = {
                         link: 'https://github.com/mbana',
                     },
                 ]
-            },
-            // {
-            //     text: 'GitHub',
-            //     items: [
-            //         {
-            //             text: 'LinkedIn',
-            //             link: 'https://uk.linkedin.com/in/mbana',
-            //         },
-            //         {
-            //             text: 'Twitter',
-            //             link: 'https://twitter.com/m_bana/',
-            //         },
-            //     ]
-            // },
-            // {
-            //     text: 'Twitter',
-            //     link: 'https://twitter.com/m_bana/',
-            // },
-            {
-                text: 'LinkedIn',
-                link: 'https://uk.linkedin.com/in/mbana',
             },
             {
                 text: 'Resume',
@@ -299,6 +249,14 @@ module.exports = {
                         text: 'About Me',
                         link: '/resume/about-me',
                     },
+                    {
+                        text: 'LinkedIn',
+                        link: 'https://uk.linkedin.com/in/mbana',
+                    },
+                    {
+                        text: 'Twitter',
+                        link: 'https://twitter.com/m_bana/',
+                    },
                 ]
             },
             {
@@ -308,28 +266,71 @@ module.exports = {
             {
                 text: 'Blog',
                 link: '/blog/',
-            },
-            {
-              text: 'Rust Lang',
-              link: '/rust/',
-              items: [
-                  {
-                      text: 'Rust Lang',
-                      link: '/rust/',
-                  },
-                  {
-                      text: 'Rust Lang projects',
-                      link: '/rust/projects',
-                  },
-                  {
-                      text: 'Install',
-                      link: '/rust/install',
-                  },
-              ]
-          },
-            {
-                text: 'Linux',
-                link: '/linux/',
+                items: [
+                    {
+                        text: 'Blog',
+                        link: '/blog/',
+                    },
+                    {
+                        text: 'Linux',
+                        link: '/linux/',
+                    },
+                    {
+
+                        text: 'Rust Lang',
+                        link: '/rust-lang/',
+                        // items: [
+                        //     {
+                        //         text: 'Rust Lang',
+                        //         link: '/rust-lang/',
+                        //     },
+                        //     {
+                        //         text: 'Rust Lang projects',
+                        //         link: '/rust-lang/projects',
+                        //     },
+                        //     {
+                        //         text: 'Install',
+                        //         link: '/rust-lang/install',
+                        //     },
+                        // ]
+                    },
+                    {
+                        text: 'Golang',
+                        link: '/golang/',
+                        items: [
+                            {
+                                text: 'Golang',
+                                link: '/golang/',
+                            },
+                            {
+                                text: 'Golang Projects',
+                                link: '/golang/projects',
+                                items: [
+                                    {
+                                        text: 'Golang Projects',
+                                        link: '/golang/projects',
+                                    },
+                                    {
+                                        text: 'openbankingforgerock',
+                                        link: 'https://github.com/banaio/openbankingforgerock',
+                                    },
+                                    {
+                                        text: 'go-gdax',
+                                        link: 'https://github.com/banaio/go-gdax',
+                                    },
+                                    {
+                                        text: 'go_gdax_fix',
+                                        link: 'https://github.com/banaio/go_gdax_fix',
+                                    },
+                                    {
+                                        text: 'go_samples',
+                                        link: 'https://github.com/banaio/go_samples',
+                                    },
+                                ],
+                            },
+                        ]
+                    },
+                ],
             },
             // {
             //     text: 'The Quran',
@@ -337,9 +338,8 @@ module.exports = {
             // },
         ],
         sidebar: 'auto',
-        sidebarDepth: 0,
+        sidebarDepth: 10,
         displayAllHeaders: true,
-
         // // https://vuepress.vuejs.org/theme/default-theme-config.html#search-box
         // searchMaxSuggestions: 20,
         // https://vuepress.vuejs.org/theme/default-theme-config.html#smooth-scrolling
@@ -545,8 +545,8 @@ module.exports = {
         //         name: `[path][name].[ext]`
         //     });
     },
-    // https://cli.vuejs.org/config/#runtimecompiler
-    runtimeCompiler: true,
+    // // https://cli.vuejs.org/config/#runtimecompiler
+    // runtimeCompiler: true,
     // https://cli.vuejs.org/config/#productionsourcemap
     productionSourceMap: true,
     // https://cli.vuejs.org/config/#parallel
@@ -555,8 +555,8 @@ module.exports = {
     css: {
         sourceMap: true,
     },
-    // // https://vuepress.vuejs.org/config/#evergreen
-    // // This will disable ES5 transpilation and polyfills for IE, and result in faster builds and smaller files.
-    // // Set to true, if we want to support IE.
-    // evergreen: true,
+    // https://vuepress.vuejs.org/config/#evergreen
+    // This will disable ES5 transpilation and polyfills for IE, and result in faster builds and smaller files.
+    // Set to true, if we want to support IE.
+    evergreen: true,
 };

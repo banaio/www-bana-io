@@ -12,6 +12,8 @@
 
 ```sh
 ./dev.sh
+# or
+make dev
 ```
 
 or
