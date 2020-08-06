@@ -60,7 +60,7 @@
 
     "workbench.editor.labelFormat": "medium",
     "workbench.tree.indent": 16,
-    "workbench.sideBar.location": "left",
+    // "workbench.sideBar.location": "left",
     "workbench.colorCustomizations": {
       "editorCursor.foreground": "#D50000",
       "editorIndentGuide.activeBackground": "#EF9A9A"
@@ -147,4 +147,17 @@
     //         "language": "vue-html"
     //     }
     // ],
+
+    "cSpell.checkLimit": 9007199254740991,
+    "cSpell.language": "en-GB",
+    // "cSpell.maxDuplicateProblems": 9007199254740991,
+    // "cSpell.maxNumberOfProblems": 9007199254740991,
+    "cSpell.minWordLength": 1,
+    // "cSpell.numSuggestions": 9007199254740991,
+
+    "markdownlint.run": "onSave",
+    "cSpell.words": [
+        "Bana",
+        "Marrakech"
+    ],
 }

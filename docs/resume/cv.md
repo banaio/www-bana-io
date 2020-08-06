@@ -98,7 +98,7 @@ CI:
 
 Did a fair amount of architectural UI work:
 
-* JWT-based authentication: Implemented most, if not all, of the authentication related UI features. Polymer didn’t have an authentication module as it’s fairly new requiring me to reimplement this feature.
+* JWT-based authentication: Implemented most, if not all, of the authentication related UI features. Polymer didn’t have an authentication module as it’s fairly new requiring me to re-implement this feature.
 * API interactions: I introduced Swagger JS and did the conversion from plain XHR to Promises, and ensured API was in-sync with the state of the authentication.
 * Updates via the Web Socket for notifications and async task updates: STOMP Over WebSocket.
 * Bootstrapped the testing using Web Component Tester.
@@ -177,7 +177,7 @@ User Acceptance Testing of the latest release of Thomson Reuter's 3000 Extra, th
 
 ## Education
 
-| 2005-2008                                               	| 2008-2009                                                                                                                                        	|
+| **2005-2008**                                               	| **2008-2009**                                                                                                                                        	|
 |---------------------------------------------------------	|--------------------------------------------------------------------------------------------------------------------------------------------------	|
 | BSc Computer Science (2.1), City, University of London. 	| MSc Software Systems Engineering (Attended), University College London, and Trading & Financial Market Structure module, London Business School. 	|
 
@@ -203,7 +203,39 @@ I'm flexible in terms of the choice of framework used, however, my ideal role wi
 
 ## Additional Information
 
-| Misc                       	| Languages                                                                                                                                     	|
+### Misc
+
+* **Passport/Nationality:** I have a British Passport.
+* **Drivers Licence:** Full UK Driving Licence.
+* **Background/Criminal Check:**
+  * [Basic Disclosure and Barring Service (DBS) check](https://www.gov.uk/request-copy-criminal-record): Certificate was issued on 31 July 2020.
+
+     > **Police Records of Convictions, Cautions, Reprimands and Warnings:**
+     >
+     > NONE RECORDED
+
+  * [Police Certificates - ACRO Criminal Records Office](https://www.acro.police.uk/police_certificates.aspx): Certificate was issued on 18 February 2020.
+
+     > **Summary of convictions and reprimands/warnings/cautions/impending prosecutions/under investigations held on UK police databases and disclosed in accordance with the ACRO stepdown model:**
+     >
+     > NO TRACE.
+
+     I have requested a new certificate and this should arrive between the 15th/28th of August 2020.
+
+<!-- Police records check
+DBS ID Number: P0000GBYC03
+DBS ID Number: POOOOGBYCO3
+Basic Disclosure and Barring Service (DBS) check application reference number is E0933200906.
+Application reference number: E0933200906
+Your basic DBS check result is clear. Your check on 31/07/2020 revealed no information. -->
+  <!-- ** [Basic Disclosure and Barring Service (DBS) check](https://www.gov.uk/request-copy-criminal-record): Certificate was issued on 31 July 2020 and your certificate number is: 000975926595. -->
+
+### Languages
+
+* **English and Swahili:** Native.
+* **Arabic:** Intermediate. I own an apartment in Marrakech, Morocco. I have lived in Cairo, Egypt and have travelled several times to the UAE.
+
+<!-- | **Misc**                    	| **Languages**                                                                                                                                   	|
 |----------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------	|
 | I have a British Passport. 	| **English and Swahili:** Native.                                                                                                              	|
-| Full UK Driving Licence.   	| **Arabic:** Intermediate. I own an apartment in Marrakech, Morocco. I have lived in Cairo, Egpyt and have travelled several times to the UAE. 	|
+| Full UK Driving Licence.   	| **Arabic:** Intermediate. I own an apartment in Marrakech, Morocco. I have lived in Cairo, Egypt and have travelled several times to the UAE. 	| -->

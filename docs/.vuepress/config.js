@@ -425,7 +425,7 @@ module.exports = {
             debug_vuepress('markdown:extendMarkdown - md=', util.inspect(md, inspect_options));
             // use more markdown-it plugins!
             // Converts '\n' in paragraphs into <br>
-            md.set({ breaks: true });
+            // md.set({ breaks: true });
             md.use(require('markdown-it-katex'));
             md.use(require('markdown-it-footnote'));
             return md;
