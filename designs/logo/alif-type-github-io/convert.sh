@@ -3,6 +3,10 @@
 set -euf -o pipefail
 # set -x
 
+# sudo apt-get install webp
+
+# docs/logo
+
 dir_name="converted"
 
 echo 'ORIGINAL'

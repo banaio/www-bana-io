@@ -2,7 +2,7 @@
 home: true
 title: BanaIO
 heroText: BanaIO
-heroImage: /logo/logo.png
+heroImage: /logo/logo.webp
 # tagline: The Builder—البناء
 # features:
 # - title: Full Stack Senior Software Engineer
@@ -37,6 +37,6 @@ footer: MIT Licensed | Copyright © 2020-present | Mohamed Bana
   </div>
   <div class="feature">
     <h2>Contact</h2>
-    <p><a href="mailto:m@bana.io">m@bana.io</a></p>
+    <p><a href="mailto:m@bana.io" target="_blank" rel="noopener noreferrer">m@bana.io</a></p>
   </div>
 </div>
