@@ -149,16 +149,16 @@ Worked with two developers and one QA member on a new Swing UI, ACLite, that use
 
 Spent one year with Run The Business (RTB) team, a team set-up to fix critical bugs that Customers encounter. A very challenging role which requires all-around product knowledge, good debugging skills and being able to liaise with our Support staff in dealing with the Customers. Prior to this I was one of three developers working in the Transactions and Latency Monitoring team (part of the backend team) doing core C++. We wrote and maintained the following plug-ins that are part of the Geneos suite:
 
-1. FIX-Analyser: Monitors FIX (protocol) messages.
-2. Feed Latency Monitor: Monitors feeds and calculates latency of instruments and fields across the monitored feeds.
-3. Message Tracker: Tracks, generally, FIX messages across several checkpoints.
-4. Market Data Reliability: See below. And bespoke plug-ins written for specific firms.
+1. [Geneos FIX plug-in](https://docs.itrsgroup.com/docs/geneos/5.1.0/Netprobe/trading_fix/fix.html): Monitors FIX (protocol) messages.
+2. [Feed Latency Monitoring Plug-In](https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/market_data_monitoring/feedadapter_ug.html): Monitors feeds and calculates latency of instruments and fields across the monitored feeds.
+3. [Latency Monitoring - Message Tracker FIX adapter](https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/latency_monitoring/message_tracker/fix_adapter.html): Tracks, generally, FIX messages across several checkpoints.
+4. [Market Data Monitor](https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/market_data_monitoring/mdm_ug.html): See below. And bespoke plug-ins written for specific firms.
 
 We also maintained several non-finance specific plug-ins. I ported another bespoke plug-in called Price Latency Monitor (provides latency figures for bonds) to MS VC++ when I worked on this team.
 Projects:
 
 * I converted the Windows version of the entire product suite from Visual Studio 2005 to 2010.
-* I wrote the Market Data Reliability plug-in. This plug-in connects to the Patsystem's Trading API  (www.patsystems.com) to monitor commodity prices, using their C API, to determine if prices are 'stale'.
+* I wrote the Market Data Reliability plug-in. This plug-in connects to the Patsystem's Trading API  (<www.patsystems.com>) to monitor commodity prices, using their C API, to determine if prices are 'stale'.
 * I ported a significant part of our product to Solaris x86-64 (64-bit non-sparc architecture).
 
 **Tech:** C++, STL, Boost, Visual Studio, Linux/Unix, GDB, DBX, Make, Configure, XML, XPath, CPPUnit, [Financial Information eXchange (FIX) protocol](https://en.wikipedia.org/wiki/Financial_Information_eXchange), [Geneos FIX plug-in](https://docs.itrsgroup.com/docs/geneos/5.1.0/Netprobe/trading_fix/fix.html), [Feed Latency Monitoring Plug-In](https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/market_data_monitoring/feedadapter_ug.html), [Latency Monitoring - Message Tracker FIX adapter](https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/latency_monitoring/message_tracker/fix_adapter.html), [Market Data Monitor](https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/market_data_monitoring/mdm_ug.html), [Geneos PATS-STATUS Plug-In](https://docs.itrsgroup.com/docs/geneos/5.1.0/Netprobe/trading_pats/pats-status.html), [Patsystem's Trading API](www.patsystems.com).

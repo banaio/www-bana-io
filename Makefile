@@ -63,3 +63,9 @@ lint:
 init:
 	@printf "%b" "${GREEN}" "  ---> initialising " "${RESET}" "\n"
 	yarn install --frozen-lockfile --non-interactive
+
+.PHONY: commit
+commit:
+	@printf "%b" "${GREEN}" "  ---> committing " "${RESET}" "\n"
+	git commit -m "$(shell cat stratch/commit-msg.md)"
+	git log -n1

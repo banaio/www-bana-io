@@ -30,12 +30,16 @@ DATE_TIME := $(shell date --utc +'%A, %d %B %Y, %H:%M:%S %Z')
 # OUTPUT_DIR="./download"
 OUTPUT_DIR := $(shell pwd)
 
-.PHONY: cv cover_letter combine
-all: cv cover_letter combine
+.PHONY: cv_tex cv_all cover_letter_all combine
+all: cv_tex cv_all cover_letter_all combine
 
-.PHONY: cv
-cv:
+# .PHONY: cv cover_letter combine
+# all: cv cover_letter combine
+
+.PHONY: cv_tex
+cv_tex:
 	@printf "%b" "${GREEN}" "  ---> ${OUTPUT_DIR}/mohamed-bana_cv.pdf" "${RESET}" "\n"
+		@# --variable=date:"${DATE_TIME}" \
 	pandoc \
 		--fail-if-warnings \
 		--from=markdown \
@@ -44,13 +48,47 @@ cv:
 		--include-in-header=./templates/include-in-header.tex \
 		--include-before-body=./templates/include-before-body.tex \
 		--include-after-body=./templates/include-after-body.tex \
-		--variable=date:"${DATE_TIME}" \
 		--output="${OUTPUT_DIR}/mohamed-bana_cv.pdf" \
 		../cv.md
 
-.PHONY: cover_letter
-cover_letter:
-	@printf "%b" "${GREEN}" "  ---> ${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" "${RESET}" "\n"
+.PHONY: cv_all
+cv_all: cv_tex
+	@printf "%b" "${GREEN}" "  ---> ${OUTPUT_DIR}/mohamed-bana_cv.*" "${RESET}" "\n"
+	pandoc \
+		--fail-if-warnings \
+		--from=markdown \
+		--standalone \
+		--include-in-header=./templates/include-in-header.tex \
+		--include-before-body=./templates/include-before-body.tex \
+		--include-after-body=./templates/include-after-body.tex \
+		--variable=date:"${DATE_TIME}" \
+		--output="${OUTPUT_DIR}/mohamed-bana_cv.odt" \
+		../cv.md
+	pandoc \
+		--fail-if-warnings \
+		--from=markdown \
+		--standalone \
+		--include-in-header=./templates/include-in-header.tex \
+		--include-before-body=./templates/include-before-body.tex \
+		--include-after-body=./templates/include-after-body.tex \
+		--variable=date:"${DATE_TIME}" \
+		--output="${OUTPUT_DIR}/mohamed-bana_cv.docx" \
+		../cv.md
+	pandoc \
+		--fail-if-warnings \
+		--to=opendocument \
+		--from=markdown \
+		--standalone \
+		--include-in-header=./templates/include-in-header.tex \
+		--include-before-body=./templates/include-before-body.tex \
+		--include-after-body=./templates/include-after-body.tex \
+		--variable=date:"${DATE_TIME}" \
+		--output="${OUTPUT_DIR}/mohamed-bana_cv.xml" \
+		../cv.md
+
+.PHONY: cover_letter_all
+cover_letter_all:
+	@printf "%b" "${GREEN}" "  ---> ${OUTPUT_DIR}/mohamed-bana_cover-letter.*" "${RESET}" "\n"
 	@# --include-before-body=./templates/include-before-body.tex
 	@# --include-after-body=./templates/include-after-body.tex
 	pandoc \
@@ -61,6 +99,34 @@ cover_letter:
 		--include-in-header=./templates/include-in-header.tex \
 		--variable=date:"${DATE_TIME}" \
 		--output="${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" \
+		../cover-letter.md
+	pandoc \
+		--fail-if-warnings \
+		--from=markdown \
+		--standalone \
+		--pdf-engine=context \
+		--include-in-header=./templates/include-in-header.tex \
+		--variable=date:"${DATE_TIME}" \
+		--output="${OUTPUT_DIR}/mohamed-bana_cover-letter.odt" \
+		../cover-letter.md
+	pandoc \
+		--fail-if-warnings \
+		--from=markdown \
+		--standalone \
+		--pdf-engine=context \
+		--include-in-header=./templates/include-in-header.tex \
+		--variable=date:"${DATE_TIME}" \
+		--output="${OUTPUT_DIR}/mohamed-bana_cover-letter.docx" \
+		../cover-letter.md
+	pandoc \
+		--fail-if-warnings \
+		--from=markdown \
+		--to=opendocument \
+		--standalone \
+		--pdf-engine=context \
+		--include-in-header=./templates/include-in-header.tex \
+		--variable=date:"${DATE_TIME}" \
+		--output="${OUTPUT_DIR}/mohamed-bana_cover-letter.xml" \
 		../cover-letter.md
 
 .PHONY: combine

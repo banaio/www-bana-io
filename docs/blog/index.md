@@ -13,11 +13,14 @@ sidebar: false
 </router-link>
 
 <script>
+// const LOCALE = 'en-US';
+const LOCALE = 'en-GB';
+const LOCALE_OPTIONS  = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
 export default {
     methods: {
         format_date(date) {
-            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            return new Date(date).toLocaleDateString("en-US", options);
+            return new Date(date).toLocaleDateString(LOCALE, LOCALE_OPTIONS);
         }
     },
     computed: {
@@ -32,7 +35,7 @@ export default {
                 return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
             });
 
-            console.log('sorted_desc=', sorted_desc);
+            // console.log('sorted_desc=', sorted_desc);
             return sorted_desc;
         }
     },

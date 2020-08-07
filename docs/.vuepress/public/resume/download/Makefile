@@ -47,6 +47,37 @@ cv:
 		--variable=date:"${DATE_TIME}" \
 		--output="${OUTPUT_DIR}/mohamed-bana_cv.pdf" \
 		../cv.md
+	pandoc \
+		--fail-if-warnings \
+		--from=markdown \
+		--standalone \
+		--include-in-header=./templates/include-in-header.tex \
+		--include-before-body=./templates/include-before-body.tex \
+		--include-after-body=./templates/include-after-body.tex \
+		--variable=date:"${DATE_TIME}" \
+		--output="${OUTPUT_DIR}/mohamed-bana_cv.odt" \
+		../cv.md
+	pandoc \
+		--fail-if-warnings \
+		--from=markdown \
+		--standalone \
+		--include-in-header=./templates/include-in-header.tex \
+		--include-before-body=./templates/include-before-body.tex \
+		--include-after-body=./templates/include-after-body.tex \
+		--variable=date:"${DATE_TIME}" \
+		--output="${OUTPUT_DIR}/mohamed-bana_cv.docx" \
+		../cv.md
+	pandoc \
+		--fail-if-warnings \
+		--to=opendocument \
+		--from=markdown \
+		--standalone \
+		--include-in-header=./templates/include-in-header.tex \
+		--include-before-body=./templates/include-before-body.tex \
+		--include-after-body=./templates/include-after-body.tex \
+		--variable=date:"${DATE_TIME}" \
+		--output="${OUTPUT_DIR}/mohamed-bana_cv.xml" \
+		../cv.md
 
 .PHONY: cover_letter
 cover_letter:
@@ -61,6 +92,34 @@ cover_letter:
 		--include-in-header=./templates/include-in-header.tex \
 		--variable=date:"${DATE_TIME}" \
 		--output="${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" \
+		../cover-letter.md
+	pandoc \
+		--fail-if-warnings \
+		--from=markdown \
+		--standalone \
+		--pdf-engine=context \
+		--include-in-header=./templates/include-in-header.tex \
+		--variable=date:"${DATE_TIME}" \
+		--output="${OUTPUT_DIR}/mohamed-bana_cover-letter.odt" \
+		../cover-letter.md
+	pandoc \
+		--fail-if-warnings \
+		--from=markdown \
+		--standalone \
+		--pdf-engine=context \
+		--include-in-header=./templates/include-in-header.tex \
+		--variable=date:"${DATE_TIME}" \
+		--output="${OUTPUT_DIR}/mohamed-bana_cover-letter.docx" \
+		../cover-letter.md
+	pandoc \
+		--fail-if-warnings \
+		--from=markdown \
+		--to=opendocument \
+		--standalone \
+		--pdf-engine=context \
+		--include-in-header=./templates/include-in-header.tex \
+		--variable=date:"${DATE_TIME}" \
+		--output="${OUTPUT_DIR}/mohamed-bana_cover-letter.docx" \
 		../cover-letter.md
 
 .PHONY: combine
