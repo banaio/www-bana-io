@@ -1,0 +1,178 @@
+% --include-in-header
+% \showframe
+% % \showframe[edge]
+% \setupbackgrounds[page][frame=on]
+% \showlayout
+
+\enableregime[utf]
+\mainlanguage[en-GB]
+\setuppapersize[A4][A4]
+
+\usetypescriptfile[type-alegreya]
+\usetypescript[alegreya]
+\setupbodyfont[alegreya]
+% \setupbodyfont[8pt]
+
+\setuplayout[
+  marking=on,
+  height=fit,
+  width=fit,
+  % leftmargin=2mm,
+  rightmargin=0mm,
+  left=2mm,
+  right=2mm,
+  rightedge=2mm,
+  rightedgedistance=0mm,
+  top=2mm,
+  topspace=2mm,
+  topdistance=2mm,
+  bottom=2mm,
+  bottomdistance=0mm,
+  % headerdistance=0mm,
+  % footerdistance=0mm,
+  % topspace=8mm,
+  header=16pt,
+  footer=16pt,
+  % backspace=0mm
+  backspace=8pt,
+  ]
+
+% \setupwhitespace[flexible]
+\setupwhitespace[small]
+\setupblank[small]
+
+% \setupindenting[32pt]
+% \indenting[yes,next]
+% \setupindenting[yes,big]
+
+% \setupitemize[autointro]    % prevent orphan list intro
+% \setupitemize[indentnext=no]
+
+% \setupheader[style=\smallcaps]
+% \setupfooter[style=\smallcaps]
+
+\setuphead
+  [section]
+  [
+    number=yes,
+    page=no,
+    continue=yes,
+    % header=empty,
+    % align=middle,
+    align={middle, hyphenated, verytolerant},
+    tolerance=verytolerant,
+    numberstyle=smallcaps,
+    style=bold,
+    textstyle=smallcaps,
+    % command=\StyleSection,
+    % after={\startsectioncolumns},
+    % aftersection={\stopsectioncolumns},
+    before={\blank[none]},
+    % before={\nowhitespace},
+    after={\blank[none]\nowhitespace\hairline\blank[none]},
+    beforesection={\blank[none]},
+    aftersection={\blank[none]},
+  ]
+\setuphead
+  [subsection]
+  [
+    number=yes,
+    page=no,
+    continue=yes,
+    % header=empty,
+    % align={flushleft, nothyphenated, verytolerant},
+    align={middle, hyphenated, verytolerant},
+    tolerance=verytolerant,
+    numberstyle=smallcaps,
+    style=bold,
+    textstyle=smallcaps,
+    % command=\StyleSection,
+    % after={\startsectioncolumns},
+    % aftersection={\stopsectioncolumns},
+    before={\blank[none]},
+    % before={\nowhitespace},
+    after={\blank[none]\nowhitespace\hairline\blank[none]},
+    % aftersubsection={}
+    beforesubsection={\blank[none]},
+    aftersubsection={\blank[none]},
+  ]
+\setuphead
+  [subsubsection]
+  [
+    number=yes,
+    page=no,
+    continue=yes,
+    align={flushleft, hyphenated, verytolerant},
+    tolerance=verytolerant,
+    numberstyle=smallcaps,
+    style=bold,
+    textstyle=smallcaps,
+    % command=\StyleSection,
+    % after={\startsectioncolumns},
+    % aftersection={\stopsectioncolumns},
+    before={\blank[none]},
+    % before={\nowhitespace},
+    after={\blank[none]},
+    beforesubsubsection={\blank[none]},
+    aftersubsubsection={\blank[none]},
+  ]
+\setuphead
+  [subsubsubsection]
+  [
+    number=yes,
+    page=no,
+    continue=yes,
+    align={flushleft, hyphenated, verytolerant},
+    tolerance=verytolerant,
+    numberstyle=smallcaps,
+    style=bold,
+    textstyle=smallcaps,
+    % command=\StyleSection,
+    % after={\startsectioncolumns},
+    % aftersection={\stopsectioncolumns},
+    before={\blank[none]},
+    % before={\nowhitespace},
+    after={\blank[none]},
+    beforesubsubsection={\blank[none]},
+    aftersubsubsection={\blank[none]},
+  ]
+\setuphead
+  [subsubsubsubsection]
+  [
+    number=yes,
+    page=no,
+    continue=yes,
+    align={flushleft, hyphenated, verytolerant},
+    tolerance=verytolerant,
+    numberstyle=smallcaps,
+    style=bold,
+    textstyle=smallcaps,
+    % command=\StyleSection,
+    % after={\startsectioncolumns},
+    % aftersection={\stopsectioncolumns},
+    before={\blank[none]},
+    % before={\nowhitespace},
+    after={\blank[none]},
+    beforesubsubsection={\blank[none]},
+    aftersubsubsection={\blank[none]},
+  ]
+
+% \setupheadertexts
+%   [\tfd{\smallcaps{\bf{Mohamed Bana — Full Stack Senior Software Engineer — CV}}}]
+% \setupfootertexts
+%   [\smallcaps{\bf{Last Updated: }}\smallcaps{\currentdate[weekday,month,day,{, },year]}]
+% \setupfootertexts
+%   [{\bf{Last Updated: }}{\currentdate[weekday,month,day,{, },year]}]
+
+\setuppagenumbering[location={footer,middle},style=smallcaps,conversion=romannumerals]
+
+% For \url:
+\setupurl
+   [color=red,
+    style=\tf]
+
+% For \goto and \from:
+\setupinteraction
+   [state=start,
+    color=red,
+    style=\tf]

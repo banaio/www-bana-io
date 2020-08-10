@@ -160,6 +160,110 @@
         </style:list-level-properties>
       </text:list-level-style-bullet>
     </text:list-style>
+    <text:list-style style:name="L4">
+      <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.5in" fo:text-indent="-0.25in" fo:margin-left="0.5in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="◦">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.75in" fo:text-indent="-0.25in" fo:margin-left="0.75in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="3" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="▪">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.0in" fo:text-indent="-0.25in" fo:margin-left="1.0in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="4" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.25in" fo:text-indent="-0.25in" fo:margin-left="1.25in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="5" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="◦">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.5in" fo:text-indent="-0.25in" fo:margin-left="1.5in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="6" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="▪">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.75in" fo:text-indent="-0.25in" fo:margin-left="1.75in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="7" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.0in" fo:text-indent="-0.25in" fo:margin-left="2.0in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="8" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="◦">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.25in" fo:text-indent="-0.25in" fo:margin-left="2.25in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="9" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="▪">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.5in" fo:text-indent="-0.25in" fo:margin-left="2.5in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="10" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.75in" fo:text-indent="-0.25in" fo:margin-left="2.75in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+    </text:list-style>
+    <text:list-style style:name="L5">
+      <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.5in" fo:text-indent="-0.25in" fo:margin-left="0.5in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="◦">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.75in" fo:text-indent="-0.25in" fo:margin-left="0.75in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="3" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="▪">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.0in" fo:text-indent="-0.25in" fo:margin-left="1.0in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="4" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.25in" fo:text-indent="-0.25in" fo:margin-left="1.25in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="5" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="◦">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.5in" fo:text-indent="-0.25in" fo:margin-left="1.5in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="6" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="▪">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.75in" fo:text-indent="-0.25in" fo:margin-left="1.75in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="7" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.0in" fo:text-indent="-0.25in" fo:margin-left="2.0in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="8" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="◦">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.25in" fo:text-indent="-0.25in" fo:margin-left="2.25in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="9" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="▪">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.5in" fo:text-indent="-0.25in" fo:margin-left="2.5in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="10" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.75in" fo:text-indent="-0.25in" fo:margin-left="2.75in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+    </text:list-style>
     <style:style style:name="T1" style:family="text"><style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold" /></style:style>
     <style:style style:name="fr2" style:family="graphic" style:parent-style-name="Formula"><style:graphic-properties style:vertical-pos="middle" style:vertical-rel="paragraph-content" style:horizontal-pos="center" style:horizontal-rel="paragraph-content" style:wrap="none" /></style:style>
     <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Formula"><style:graphic-properties style:vertical-pos="middle" style:vertical-rel="text" /></style:style>
@@ -172,10 +276,22 @@
     <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L3">
       <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
     </style:style>
+    <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L4">
+      <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
+    </style:style>
+    <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L5">
+    </style:style>
+    <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Quotations">
+      <style:paragraph-properties fo:margin-left="0.5in" fo:margin-right="0in" fo:text-indent="0in" style:auto-text-indent="false" />
+    </style:style>
+    <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Quotations">
+      <style:paragraph-properties fo:margin-left="0.5in" fo:margin-right="0in" fo:text-indent="0in" style:auto-text-indent="false" />
+    </style:style>
   </office:automatic-styles>
   % --include-in-header
   % \showframe
   % % \showframe[edge]
+  \showframe[cut]
   % \setupbackgrounds[page][frame=on]
   
   % % \showsetups
@@ -251,6 +367,7 @@
   \setuphead
     [section, subsection, subsubsection, subsubsubsection, subsubsubsubsection]
     [
+      placehead=no,
       page=no,
       continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
       % header=none,
@@ -311,12 +428,21 @@
   \setuphead[subsection][before={\blank[big]\hrule}, after={\blank[none]\hrule\blank[big]}]
   
   \setupfootertexts
-    [Mohamed Bana — Curriculum Vitae]
-    [{\bf{Last Updated: }}{\currentdate[weekday,{, },day,month,year], \currenttime[h,{\,:\,},m]}]
+    [Mohamed Bana — Curriculum Vitae, {\bf{Modified: }}{\currentdate[day,month,year]}]
+    % []
+  
+    % []
+  % \setupfootertexts
+  %   [Mohamed Bana — Curriculum Vitae]
+  %   [{\bf{Last Updated: }}{\currentdate[weekday,{, },day,month,year], \currenttime[h,{\,:\,},m]}]
   % \setupfootertexts
   %   [{\bf{Last Updated: }}{\currentdate[weekday,month,day,{, },year]}]
   
-  \setuppagenumbering[location={footer,middle},style=smallcaps,conversion=romannumerals]
+  \setuppagenumbering[alternative=doublesided, location={footer,right},style=smallcaps,textstyle=smallcaps,numberstyle=smallcaps,conversion=romannumerals,state=stop]
+  % \setuppagenumbering[location={footer,middle},style=smallcaps,conversion=romannumerals]
+  
+  \setupheader[state=high]
+  \setupfooter[state=high]
   
   % For \url:
   \setupurl
@@ -332,20 +458,12 @@
 <office:text>
 <text:p text:style-name="Title">Cover Letter</text:p>
 <text:p text:style-name="Author">Mohamed Bana</text:p>
-<text:p text:style-name="Date">Friday, 07 August 2020, 11:25:31 UTC</text:p>
+<text:p text:style-name="Date">Monday, 10 August 2020, 08:52:44 UTC</text:p>
 <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="intro" />Intro<text:bookmark-end text:name="intro" /></text:h>
 <text:p text:style-name="First_20_paragraph">I am a well-rounded
 Software Engineer, and I understand what it takes to release a product
 having worked on the back-end, front-end, testing and finally the
 deployment aspect of several products.</text:p>
-<text:p text:style-name="Text_20_body">I am looking for a role involving
-web technologies hosted on a cloud-based backend. I’ve worked on all the
-tiers of a software product, so I can appreciate the different concerns
-expressed at each level. I feel the latest trend in web technologies;
-quick prototyping, large selection of libraries, ease of programming and
-its cross-platform support is where the future is heading. This,
-distributed systems and big data algorithms are where I am focusing my
-current efforts—all of which are equally interesting to me.</text:p>
 <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="background" />Background<text:bookmark-end text:name="background" /></text:h>
 <text:p text:style-name="First_20_paragraph">A role involving web
 technologies hosted on a cloud-based backend. I’ve worked on all the
@@ -358,8 +476,8 @@ current efforts—all of which are equally interesting to me.</text:p>
 <text:p text:style-name="Text_20_body">I’m a well-rounded engineer and
 I’m able to see the delivery, from beginning to end, of a software
 stack. This includes the building, testing and continuous delivery of
-the solution. I have examples in my repos that demonstrate all these in
-a cloud environment:</text:p>
+the solution. I have examples in my repositories that demonstrate all
+these in a cloud environment:</text:p>
 <text:list text:style-name="L1">
   <text:list-item>
     <text:p text:style-name="P1">Go/Golang backends.</text:p>
@@ -388,59 +506,117 @@ a cloud environment:</text:p>
     using Kubernetes.</text:p>
   </text:list-item>
 </text:list>
-<text:h text:style-name="Heading_20_3" text:outline-level="3"><text:bookmark-start text:name="technology-stack" />Technology
-Stack<text:bookmark-end text:name="technology-stack" /></text:h>
+<text:h text:style-name="Heading_20_3" text:outline-level="3"><text:bookmark-start text:name="job-preferences" />Job
+Preferences<text:bookmark-end text:name="job-preferences" /></text:h>
+<text:h text:style-name="Heading_20_4" text:outline-level="4"><text:bookmark-start text:name="salary-and-notice-period" />Salary
+and notice
+period<text:bookmark-end text:name="salary-and-notice-period" /></text:h>
+<text:p text:style-name="First_20_paragraph">I’m willing to negotiate on
+this as it depends on a few things, that said:</text:p>
+<text:list text:style-name="L2">
+  <text:list-item>
+    <text:p text:style-name="P2">If it’s a contracting role, minimum of
+    £580 per day.</text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P2">If it’s a permanent position, minimum
+    of £90,000 per year.</text:p>
+  </text:list-item>
+</text:list>
+<text:p text:style-name="First_20_paragraph">I’m available to start
+immediately.</text:p>
+<text:h text:style-name="Heading_20_4" text:outline-level="4"><text:bookmark-start text:name="work-locations-considered" />Work
+locations
+considered<text:bookmark-end text:name="work-locations-considered" /></text:h>
+<text:p text:style-name="First_20_paragraph">Ideally, a remote role with
+an office in London.</text:p>
+<text:p text:style-name="Text_20_body">If it’s not fully remote, an
+office in East London would be perfect, e.g., Canary Wharf, Aldgate
+(East).</text:p>
+<text:h text:style-name="Heading_20_4" text:outline-level="4"><text:bookmark-start text:name="key-skills-and-preferred-job-role" />Key
+skills and preferred job
+role<text:bookmark-end text:name="key-skills-and-preferred-job-role" /></text:h>
 <text:p text:style-name="First_20_paragraph">I’m flexible in terms of
 the choice of framework used, however, my ideal role will involve (any
 of) the following:</text:p>
-<text:list text:style-name="L2">
+<text:list text:style-name="L3">
   <text:list-item>
-    <text:p text:style-name="P2">Backend: Ideally Go/Golang as I have
+    <text:p text:style-name="P3">Backend: Ideally Go/Golang as I have
     good experience with this.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P2">Frontend: JavaScript or any language
+    <text:p text:style-name="P3">Frontend: JavaScript or any language
     that targets JavaScript on the frontend side, my ideal choice would
     be TypeScript. I would prefer to use Vue.js as the underlying
     framework that the UI is built with.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P2">Roles where Linux, Google Cloud
-    Platform/Azure/AWS, Docker and Kubernetes are being used. Open
+    <text:p text:style-name="P3">Roles where Linux, Google Cloud
+    Platform (GCP)/Azure/AWS, Docker and Kubernetes are being used. Open
     Banking would be a plus.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P2">I’m up for learning more of Rust. It’s
+    <text:p text:style-name="P3">I’m up for learning more of Rust. It’s
     just a hobby at the moment.</text:p>
   </text:list-item>
 </text:list>
-<text:h text:style-name="Heading_20_3" text:outline-level="3"><text:bookmark-start text:name="enumeration-and-job-preferences" />Enumeration
-and Job
-Preferences<text:bookmark-end text:name="enumeration-and-job-preferences" /></text:h>
-<text:list text:style-name="L3">
+<text:p text:style-name="First_20_paragraph"><text:span text:style-name="T1">Summary:</text:span>
+(Full Stack) Senior Software Engineer: Golang, Vue.js, Linux, Docker,
+Docker-Compose, Kubernetes, Cloud Computing, Google Cloud Computing
+(GCP).</text:p>
+<text:h text:style-name="Heading_20_4" text:outline-level="4"><text:bookmark-start text:name="any-visa-restrictions-if-applicable-ilr-tier-2-dependant-visa-etc" />Any
+visa restrictions – if applicable (ILR, Tier 2, Dependant visa
+etc)<text:bookmark-end text:name="any-visa-restrictions-if-applicable-ilr-tier-2-dependant-visa-etc" /></text:h>
+<text:list text:style-name="L4">
   <text:list-item>
-    <text:p text:style-name="P3"><text:span text:style-name="T1">Rate:</text:span>
-    I’m seeking a daily rate of &gt;£580 per day. I’m willing to
-    negotiate on this.</text:p>
+    <text:p text:style-name="P4"><text:span text:style-name="T1">Passport/Nationality:</text:span>
+    I have a British Passport, national insurance number, British
+    Citizenship etc.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P3"><text:span text:style-name="T1">Location:</text:span>
-    I’m looking for work in the UK, ideally in London as that is where I
-    mainly live.</text:p>
+    <text:p text:style-name="P4"><text:span text:style-name="T1">Drivers
+    Licence:</text:span> Full UK Driving Licence.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P3"><text:span text:style-name="T1">Start
-    Date:</text:span> I’m available to start immediately.</text:p>
-  </text:list-item>
-  <text:list-item>
-    <text:p text:style-name="P3"><text:span text:style-name="T1">Job
-    Type:</text:span> I’ve a limited company called BANAIO LTD which I
-    started in March 2017 and I’ve been a contractor since then. I would
-    prefer to stick to contracting but I will also consider a permanent
-    position.</text:p>
+    <text:p text:style-name="P4"><text:span text:style-name="T1">Background/Criminal
+    Check:</text:span></text:p><text:list text:style-name="L5">
+      <text:list-item>
+        <text:p text:style-name="P5"><text:a xlink:type="simple" xlink:href="https://www.gov.uk/request-copy-criminal-record" office:name=""><text:span text:style-name="Definition">Basic
+        Disclosure and Barring Service (DBS) check</text:span></text:a>:
+        Certificate was issued on 31 July
+        2020.</text:p><text:p text:style-name="P6"><text:span text:style-name="T1">Police
+        Records of Convictions, Cautions, Reprimands and
+        Warnings:</text:span></text:p>
+        <text:p text:style-name="P6">NONE RECORDED</text:p>
+      </text:list-item>
+      <text:list-item>
+        <text:p text:style-name="P5"><text:a xlink:type="simple" xlink:href="https://www.acro.police.uk/police_certificates.aspx" office:name=""><text:span text:style-name="Definition">Police
+        Certificates - ACRO Criminal Records
+        Office</text:span></text:a>: Certificate was issued on 18
+        February
+        2020.</text:p><text:p text:style-name="P7"><text:span text:style-name="T1">Summary
+        of convictions and reprimands/warnings/cautions/impending
+        prosecutions/under investigations held on UK police databases
+        and disclosed in accordance with the ACRO stepdown
+        model:</text:span></text:p>
+        <text:p text:style-name="P7">NO
+        TRACE.</text:p><text:p text:style-name="P5">I have requested a
+        new certificate and this should arrive between the 15th/28th of
+        August 2020.</text:p>
+      </text:list-item>
+    </text:list>
   </text:list-item>
 </text:list>
-<text:p text:style-name="First_20_paragraph">Kind regards,</text:p>
+<text:p text:style-name="First_20_paragraph">I’ve a limited company
+called BANAIO LTD which I started in March 2017 and I’ve been a
+contractor since then. I would prefer to stick to contracting but I will
+also consider a permanent position.</text:p>
+<text:h text:style-name="Heading_20_4" text:outline-level="4"><text:bookmark-start text:name="reason-for-looking-for-new-role" />Reason
+for looking for new
+role<text:bookmark-end text:name="reason-for-looking-for-new-role" /></text:h>
+<text:p text:style-name="First_20_paragraph">Last contract finished on
+the 1st of January 2020.</text:p>
+<text:p text:style-name="Text_20_body">Kind regards,</text:p>
 <text:p text:style-name="Text_20_body">Mohamed Bana</text:p>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:p text:style-name="First_20_paragraph"><text:a xlink:type="simple" xlink:href="https://bana.io" office:name=""><text:span text:style-name="Definition">https://bana.io</text:span></text:a>

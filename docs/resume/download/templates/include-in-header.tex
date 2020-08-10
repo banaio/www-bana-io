@@ -1,6 +1,7 @@
 % --include-in-header
 % \showframe
 % % \showframe[edge]
+% \showframe[cut]
 % \setupbackgrounds[page][frame=on]
 
 % % \showsetups
@@ -72,23 +73,27 @@
     style=smallcaps,
     textstyle=smallcaps,
   ]
+    % style=smallcaps,
 
 \setuphead
   [section, subsection, subsubsection, subsubsubsection, subsubsubsubsection]
   [
     page=no,
     continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
-    % header=none,
     number=yes,
     numberstyle=smallcaps,
     style=bold,
     textstyle=smallcaps,
+    % header=none,
     % align={flushleft},
   ]
 
 \setuphead
   [section]
   [
+    page=no,
+    continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+    number=yes,
     align={middle},
     % align={middle, hyphenated, verytolerant},
     % tolerance=verytolerant,
@@ -103,6 +108,9 @@
 \setuphead
   [subsection]
   [
+    page=no,
+    continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+    number=yes,
     % align={flushleft, nothyphenated, verytolerant},
     % align={middle, hyphenated, verytolerant},
     % tolerance=verytolerant,
@@ -117,6 +125,9 @@
 \setuphead
   [subsubsection, subsubsubsection, subsubsubsubsection]
   [
+    page=no,
+    continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+    number=yes,
     % align={flushleft, hyphenated, verytolerant},
     % tolerance=verytolerant,
     align={flushleft},
@@ -132,24 +143,65 @@
     % % % aftersection={\stopsectioncolumns},
   ]
 
-\setuphead[section][before={\blank[big]\hrule}, after={\blank[none]\hrule\blank[big]}]
-\setuphead[subsection][before={\blank[big]\hrule}, after={\blank[none]\hrule\blank[big]}]
-
-\setupfootertexts
-  [Mohamed Bana — Curriculum Vitae]
-  [{\bf{Last Updated: }}{\currentdate[weekday,{, },day,month,year], \currenttime[h,{\,:\,},m]}]
-% \setupfootertexts
-%   [{\bf{Last Updated: }}{\currentdate[weekday,month,day,{, },year]}]
-
-\setuppagenumbering[location={footer,middle},style=smallcaps,conversion=romannumerals]
+\setuphead[section][
+    page=no,
+    continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+    number=yes,
+  	before={\blank[big]\hrule}, after={\blank[none]\hrule\blank[big]},
+  ]
+\setuphead[subsection]
+	[
+		page=no,
+		continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+		number=yes,
+		before={\blank[big]\hrule}, after={\blank[none]\hrule\blank[big]},
+  ]
 
 % For \url:
 \setupurl
-   [color=red,
-    style=\tf]
+	[
+  	color=red,
+    style=\tf,
+  ]
 
 % For \goto and \from:
 \setupinteraction
-   [state=start,
-    color=red,
-    style=\tf]
+   [
+			state=start,
+			color=red,
+			style=\tf,
+			contrastcolor=blue,
+			option=bookmark,
+  ]
+
+    % style=\tf,
+\setupfootertexts
+  [
+		{Mohamed Bana --- Curriculum Vitae}
+		{ \| }
+		{\useURL[url3][https://bana.io]\from[url3] --- \useURL[url4][mailto:m@bana.io][][m@bana.io]\from[url4] --- \useURL[url5][tel:+44-7960-045-281][][+44-7960-045-281]\from[url5]}
+		{ \| }
+		{{\bf{Modified: }}{\currentdate[day,month,year]}}
+	]
+  []
+
+  % []
+% \setupfootertexts
+%   [Mohamed Bana — Curriculum Vitae]
+%   [{\bf{Last Updated: }}{\currentdate[weekday,{, },day,month,year], \currenttime[h,{\,:\,},m]}]
+% \setupfootertexts
+%   [{\bf{Last Updated: }}{\currentdate[weekday,month,day,{, },year]}]
+
+
+  % alternative=doublesided,
+  % ,state=stop
+\setuppagenumbering
+	[
+		page=no,
+		alternative=doublesided,
+		location={footer,right},style=smallcaps,textstyle=smallcaps,numberstyle=smallcaps,conversion=romannumerals
+  ]
+% \setuppagenumbering[location={footer,middle},style=smallcaps,conversion=romannumerals]
+
+% \setupheader[state=high]
+% \setupfooter[state=high]

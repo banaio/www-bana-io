@@ -158,6 +158,7 @@
     "markdownlint.run": "onSave",
     "cSpell.words": [
         "Bana",
-        "Marrakech"
+        "Marrakech",
+        "kubernetes"
     ],
 }

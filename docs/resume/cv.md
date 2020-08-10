@@ -177,11 +177,14 @@ User Acceptance Testing of the latest release of Thomson Reuter's 3000 Extra, th
 
 ## Education
 
-| **2005-2008**                                               	| **2008-2009**                                                                                                                                        	|
-|---------------------------------------------------------	|--------------------------------------------------------------------------------------------------------------------------------------------------	|
-| BSc Computer Science (2.1), City, University of London. 	| MSc Software Systems Engineering (Attended), University College London, and Trading & Financial Market Structure module, London Business School. 	|
+* **2005-2008:** BSc Computer Science (2.1), City, University of London.
+* **2008-2009:** MSc Software Systems Engineering (Attended), University College London, and Trading & Financial Market Structure module, London Business School.
 
-## Information
+<!-- | **2005-2008**                                               	| **2008-2009**                                                                                                                                        	|
+|---------------------------------------------------------	|--------------------------------------------------------------------------------------------------------------------------------------------------	|
+| BSc Computer Science (2.1), City, University of London. 	| MSc Software Systems Engineering (Attended), University College London, and Trading & Financial Market Structure module, London Business School. 	| -->
+
+<!-- ## Information
 
 I am looking for a role involving web technologies hosted on a cloud-based backend. I’ve worked on all the tiers of a software product, so I can appreciate the different concerns expressed at each level. I feel the latest trend in web technologies; quick prototyping, large selection of libraries, ease of programming and its cross-platform support is where the future is heading. This, distributed systems and big data algorithms are where I am focusing my current efforts—all of which are equally interesting to me.
 
@@ -196,10 +199,12 @@ I'm flexible in terms of the choice of framework used, however, my ideal role wi
 
 ### Enumeration and Job Preferences
 
-* **Rate:** I’m seeking a daily rate of >£580 per day. I'm willing to negotiate on this.
-* **Location:** I’m looking for work in the UK, ideally in London as that is where I mainly live.
+If it's a contracting role, minimum of £580 per day. If it's a permanent position, minimum of £90,000 per year.
+
+* **Rate:** I'm willing to negotiate on this, that said, if it's a contracting role, minimum of £580 per day. If it's a permanent position, minimum of £90,000 per year.
+* **Location:** Ideally, a remote role with an office in London. If it's not fully remote, an office in East London would be perfect, e.g., Canary Wharf, Aldgate (East).
 * **Start Date:** I’m available to start immediately.
-* **Job Type:** I've a limited company called BANAIO LTD which I started in March 2017 and I've been a contractor since then. I would prefer to stick to contracting but I will also consider a permanent position.
+* **Job Type:** I've a limited company called BANAIO LTD which I started in March 2017 and I've been a contractor since then. I would prefer to stick to contracting but I will also consider a permanent position. -->
 
 ## Additional Information
 
