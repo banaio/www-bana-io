@@ -291,7 +291,7 @@
   % --include-in-header
   % \showframe
   % % \showframe[edge]
-  \showframe[cut]
+  % \showframe[cut]
   % \setupbackgrounds[page][frame=on]
   
   % % \showsetups
@@ -363,24 +363,27 @@
       style=smallcaps,
       textstyle=smallcaps,
     ]
+      % style=smallcaps,
   
   \setuphead
     [section, subsection, subsubsection, subsubsubsection, subsubsubsubsection]
     [
-      placehead=no,
       page=no,
       continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
-      % header=none,
       number=yes,
       numberstyle=smallcaps,
       style=bold,
       textstyle=smallcaps,
+      % header=none,
       % align={flushleft},
     ]
   
   \setuphead
     [section]
     [
+      page=no,
+      continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+      number=yes,
       align={middle},
       % align={middle, hyphenated, verytolerant},
       % tolerance=verytolerant,
@@ -395,6 +398,9 @@
   \setuphead
     [subsection]
     [
+      page=no,
+      continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+      number=yes,
       % align={flushleft, nothyphenated, verytolerant},
       % align={middle, hyphenated, verytolerant},
       % tolerance=verytolerant,
@@ -409,6 +415,9 @@
   \setuphead
     [subsubsection, subsubsubsection, subsubsubsubsection]
     [
+      page=no,
+      continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+      number=yes,
       % align={flushleft, hyphenated, verytolerant},
       % tolerance=verytolerant,
       align={flushleft},
@@ -424,12 +433,47 @@
       % % % aftersection={\stopsectioncolumns},
     ]
   
-  \setuphead[section][before={\blank[big]\hrule}, after={\blank[none]\hrule\blank[big]}]
-  \setuphead[subsection][before={\blank[big]\hrule}, after={\blank[none]\hrule\blank[big]}]
+  \setuphead[section][
+      page=no,
+      continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+      number=yes,
+    	before={\blank[big]\hrule}, after={\blank[none]\hrule\blank[big]},
+    ]
+  \setuphead[subsection]
+  	[
+  		page=no,
+  		continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+  		number=yes,
+  		before={\blank[big]\hrule}, after={\blank[none]\hrule\blank[big]},
+    ]
   
+  % For \url:
+  \setupurl
+  	[
+    	color=red,
+      style=\tf,
+    ]
+  
+  % For \goto and \from:
+  \setupinteraction
+     [
+  			state=start,
+  			color=red,
+  			style=\tf,
+  			contrastcolor=blue,
+  			option=bookmark,
+    ]
+  
+      % style=\tf,
   \setupfootertexts
-    [Mohamed Bana — Curriculum Vitae, {\bf{Modified: }}{\currentdate[day,month,year]}]
-    % []
+    [
+  		{Mohamed Bana --- Curriculum Vitae}
+  		{ \| }
+  		{\useURL[url3][https://bana.io]\from[url3] --- \useURL[url4][mailto:m@bana.io][][m@bana.io]\from[url4] --- \useURL[url5][tel:+44-7960-045-281][][+44-7960-045-281]\from[url5]}
+  		{ \| }
+  		{{\bf{Modified: }}{\currentdate[day,month,year]}}
+  	]
+    []
   
     % []
   % \setupfootertexts
@@ -438,27 +482,24 @@
   % \setupfootertexts
   %   [{\bf{Last Updated: }}{\currentdate[weekday,month,day,{, },year]}]
   
-  \setuppagenumbering[alternative=doublesided, location={footer,right},style=smallcaps,textstyle=smallcaps,numberstyle=smallcaps,conversion=romannumerals,state=stop]
+  
+    % alternative=doublesided,
+    % ,state=stop
+  \setuppagenumbering
+  	[
+  		page=no,
+  		alternative=doublesided,
+  		location={footer,right},style=smallcaps,textstyle=smallcaps,numberstyle=smallcaps,conversion=romannumerals
+    ]
   % \setuppagenumbering[location={footer,middle},style=smallcaps,conversion=romannumerals]
   
-  \setupheader[state=high]
-  \setupfooter[state=high]
-  
-  % For \url:
-  \setupurl
-     [color=red,
-      style=\tf]
-  
-  % For \goto and \from:
-  \setupinteraction
-     [state=start,
-      color=red,
-      style=\tf]
+  % \setupheader[state=high]
+  % \setupfooter[state=high]
 <office:body>
 <office:text>
 <text:p text:style-name="Title">Cover Letter</text:p>
 <text:p text:style-name="Author">Mohamed Bana</text:p>
-<text:p text:style-name="Date">Monday, 10 August 2020, 08:52:44 UTC</text:p>
+<text:p text:style-name="Date">Tuesday, 11 August 2020, 18:02:56 UTC</text:p>
 <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="intro" />Intro<text:bookmark-end text:name="intro" /></text:h>
 <text:p text:style-name="First_20_paragraph">I am a well-rounded
 Software Engineer, and I understand what it takes to release a product
@@ -615,15 +656,15 @@ also consider a permanent position.</text:p>
 for looking for new
 role<text:bookmark-end text:name="reason-for-looking-for-new-role" /></text:h>
 <text:p text:style-name="First_20_paragraph">Last contract finished on
-the 1st of January 2020.</text:p>
-<text:p text:style-name="Text_20_body">Kind regards,</text:p>
-<text:p text:style-name="Text_20_body">Mohamed Bana</text:p>
+the 1st of January 2020. I then went to Marrakech, Morocco on the 4th of
+January 2020 to buy an apartment, which took around 3 months. By the
+time I had completed the whole process it was the middle of March 2020
+and the borders in Morocco were closed so I could not return to London.
+I returned to London on the 22nd of July 2020, after the Moroccan
+government opened the borders on the 15th of July 2020.</text:p>
 <text:p text:style-name="Horizontal_20_Line" />
-<text:p text:style-name="First_20_paragraph"><text:a xlink:type="simple" xlink:href="https://bana.io" office:name=""><text:span text:style-name="Definition">https://bana.io</text:span></text:a>
-—
-<text:a xlink:type="simple" xlink:href="mailto:m@bana.io" office:name=""><text:span text:style-name="Definition">m@bana.io</text:span></text:a>
-—
-<text:a xlink:type="simple" xlink:href="tel:+44-7960-045-281" office:name=""><text:span text:style-name="Definition">+44-7960-045-281</text:span></text:a></text:p>
+<text:p text:style-name="First_20_paragraph">Kind regards,</text:p>
+<text:p text:style-name="Text_20_body">Mohamed Bana</text:p>
 </office:text>
 </office:body>
 </office:document-content>

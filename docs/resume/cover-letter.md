@@ -3,7 +3,7 @@ title: "Cover Letter"
 tags: ["resume", "cover letter"]
 sidebar: auto
 prev: ./cv-download
-next: ./about-me
+next: /resume/
 
 subtitle: "Full Stack Senior Software Engineer"
 author: Mohamed Bana

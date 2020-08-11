@@ -1,6 +1,6 @@
 ---
-title: "CV Download"
-tags: ["resume", "cv"]
+title: "Curriculum Vitae Download"
+tags: ["resume", "cv", "cover letter"]
 sidebar: false
 prev: ./cv
 next: ./cover-letter
