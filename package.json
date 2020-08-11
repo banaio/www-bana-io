@@ -18,6 +18,7 @@
     "docs:dev2": "FORCE_COLOR=3 NODE_ENV=development VUEPRESS_ENV=developer vuepress dev docs --cache docs/.cache --temp docs/.temp --no-clear-screen --no-cache --debug",
     "docs:dev3": "VUE_CLI_MODERN_MODE=true VUE_CLI_MODERN_BUILD=true VUE_APP_NODE_ENV=development NODE_DEBUG=webpack FORCE_COLOR=3 NODE_ENV=development VUEPRESS_ENV=developer vuepress dev docs --cache docs/.cache --temp docs/.temp --no-clear-screen --debug",
     "docs:build": "DEBUG=config:* FORCE_COLOR=3 DEBUG_COLORS=true DEBUG_SHOW_HIDDEN=true vuepress build docs --no-cache --debug",
+    "lint": "eslint --debug --ignore-pattern '!*.js' --ext .js,.ts,.vue --fix .remarkrc.js .textlintrc.js .eslintrc.js ./docs/.vuepress/",
     "lint-md:wording": "textlint ./docs/**/*.md",
     "lint-md:style": "remark --frail .",
     "lint-md": "EXIT_STATUS=0; yarn lint-md:style || EXIT_STATUS=$?; yarn lint-md:wording || EXIT_STATUS=$?; exit $EXIT_STATUS"
@@ -30,8 +31,12 @@
     "@vuepress/plugin-nprogress": "^1.5.2",
     "console-log-level": "^1.4.1",
     "debug": "^4.1.1",
+    "eslint": "^7.6.0",
+    "eslint-config-vuepress": "^2.2.0",
+    "eslint-plugin-vue-libs": "^4.0.0",
     "markdown-it-footnote": "^3.0.1",
     "markdown-it-katex": "^2.0.3",
+    "prettier-config-vuepress": "^1.0.0",
     "vuepress": "^v1.0.0-alpha.40"
   },
   "dependencies": {
@@ -40,5 +45,6 @@
     "minimist": "^1.2.3",
     "serialize-javascript": "^2.1.1",
     "websocket-extensions": "^0.1.4"
-  }
+  },
+  "prettier": "prettier-config-vuepress"
 }

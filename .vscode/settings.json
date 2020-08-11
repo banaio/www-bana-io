@@ -1,9 +1,7 @@
 {
     "breadcrumbs.enabled": false,
-
     "diffEditor.renderSideBySide": true,
     "diffEditor.renderIndicators": true,
-
     "editor.codeLens": false,
     "editor.minimap.enabled": false,
     "editor.formatOnPaste": false,
@@ -27,29 +25,21 @@
     "editor.renderWhitespace": "none",
     "editor.renderLineHighlight": "all",
     "editor.scrollBeyondLastLine": true,
-
     "explorer.confirmDragAndDrop": true,
     "explorer.openEditors.visible": 5,
-
     // "extensions.autoUpdate": true,
-
     "files.autoSave": "afterDelay",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-
     "terminal.explorerKind": "external",
-
     "problems.showCurrentInStatus": true,
-
     "search.collapseResults": "alwaysCollapse",
     "search.actionsPosition": "right",
     "search.showLineNumbers": true,
     "search.smartCase": true,
     "search.sortOrder": "countDescending",
-
     "scm.defaultViewMode": "tree",
-
     "window.zoomLevel": 0,
     // "window.nativeTabs": true,
     // "window.restoreWindows": "all",
@@ -57,13 +47,12 @@
     // "window.openFilesInNewWindow": "default",
     // "window.titleBarStyle": "custom",
     // //"window.titleBarStyle": "native",
-
     "workbench.editor.labelFormat": "medium",
     "workbench.tree.indent": 16,
     // "workbench.sideBar.location": "left",
     "workbench.colorCustomizations": {
-      "editorCursor.foreground": "#D50000",
-      "editorIndentGuide.activeBackground": "#EF9A9A"
+        "editorCursor.foreground": "#D50000",
+        "editorIndentGuide.activeBackground": "#EF9A9A"
     },
     "workbench.editor.closeOnFileDelete": false,
     "workbench.editor.focusRecentEditorAfterClose": true,
@@ -75,7 +64,6 @@
     "workbench.panel.defaultLocation": "right",
     // "workbench.useExperimentalGridLayout": true,
     "window.titleBarStyle": "custom",
-
     "files.associations": {
         "*_profile": "shellscript",
         ".*ignore": "ignore",
@@ -86,7 +74,6 @@
         "**/.temp": true,
         "**/.cache": true,
     },
-
     "[git-commit]": {
         "editor.rulers": [
             50,
@@ -104,14 +91,12 @@
         "editor.insertSpaces": true,
         "editor.tabSize": 2
     },
-
     "yaml.format.enable": true,
     "[yaml]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2,
         "editor.autoIndent": "advanced",
     },
-
     "emmet.triggerExpansionOnTab": true,
     "emmet.includeLanguages": {
         "javascript": "javascriptreact",
@@ -147,18 +132,45 @@
     //         "language": "vue-html"
     //     }
     // ],
-
     "cSpell.checkLimit": 9007199254740991,
     "cSpell.language": "en-GB",
     // "cSpell.maxDuplicateProblems": 9007199254740991,
     // "cSpell.maxNumberOfProblems": 9007199254740991,
     "cSpell.minWordLength": 1,
     // "cSpell.numSuggestions": 9007199254740991,
-
     "markdownlint.run": "onSave",
     "cSpell.words": [
         "Bana",
         "Marrakech",
         "kubernetes"
     ],
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+    // "eslint.validate": [
+    //     {
+    //         "language": "javascript",
+    //         "autoFix": true,
+    //     },
+    //     // {
+    //     //     "language": "javascriptreact",
+    //     //     "autoFix": true
+    //     // }
+    // ],
+    // "eslint.autoFixOnSave": true,
+    //     "editor.codeActionsOnSave": {
+    //         "source.fixAll": true
+    //     }
+    // In contrast, this configuration only turns it on for ESLint:
+    //     "editor.codeActionsOnSave": {
+    //         "source.fixAll.eslint": true
+    //     }
+    // You can also selectively disable ESLint via:
+    "editor.codeActionsOnSave": {
+        // "source.fixAll": true,
+        "source.fixAll.eslint": true,
+    },
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "eslint.packageManager": "yarn",
+    "eslint.run": "onSave",
 }

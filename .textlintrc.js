@@ -5,19 +5,19 @@ module.exports = {
     'common-misspellings': true,
     diacritics: true,
     'en-capitalization': {
-      allowHeading: false
+      allowHeading: false,
     },
     'stop-words': {
-      severity: 'warning'
+      severity: 'warning',
     },
     // terminology: {
     //     terms: `${__dirname}/.textlint.terms.json`
     // },
     'write-good': {
-      severity: 'warning'
-    }
+      severity: 'warning',
+    },
   },
   filters: {
-    comments: true
-  }
-};
+    comments: true,
+  },
+}

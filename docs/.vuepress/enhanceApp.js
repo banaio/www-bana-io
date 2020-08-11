@@ -1,13 +1,13 @@
 // https://vuepress.vuejs.org/guide/basic-config.html#app-level-enhancements
 
 export default ({ router }) => {
-    router.addRoutes([
-        // { path: '/cv/', redirect: '/resume/cv' },
-        // { path: '/cv', redirect: '/resume/cv' },
-        // { path: '/cv/*', redirect: '/resume/cv' },
-        { path: '/cv*', redirect: '/resume/cv' },
-    ]);
-};
+  router.addRoutes([
+    // { path: '/cv/', redirect: '/resume/cv' },
+    // { path: '/cv', redirect: '/resume/cv' },
+    // { path: '/cv/*', redirect: '/resume/cv' },
+    { path: '/cv*', redirect: '/resume/cv' },
+  ])
+}
 
 // // async function is also supported, too
 // export default ({

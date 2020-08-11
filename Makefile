@@ -78,10 +78,10 @@ init:
 .PHONY: commit
 commit:
 	@printf "%b" "${GREEN}" "  ---> committing " "${RESET}" "\n"
-	git log -n1
+	git --no-pager log -n1
 	@# git commit -m "$(shell cat stratch/commit-msg.md)"
-	git commit -eF stratch/commit-msg.md
-	git log -n1
+	GIT_EDITOR=vi git commit -eF stratch/commit-msg.md
+	git --no-pager log -n1
 
 # https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions-enterprise-linux-fedora-and-snap-packages
 # https://github.com/nodesource/distributions/blob/master/README.md
