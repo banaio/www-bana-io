@@ -89,7 +89,7 @@ I've a limited company called BANAIO LTD which I started in March 2017 and I've 
 
 #### Reason for looking for new role
 
-Last contract finished on the 1st of January 2020.
+Last contract finished on the 1st of January 2020. I then went to Marrakech, Morocco on the 4th of January 2020 to buy an apartment, which took around 3 months. By the time I had completed the whole process it was the middle of March 2020 and the borders in Morocco were closed so I could not return to London. I returned to London on the 22nd of July 2020, after the Moroccan government opened the borders on the 15th of July 2020.
 
 ---
 

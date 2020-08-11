@@ -1,0 +1,802 @@
+% Enable hyperlinks
+\setupinteraction
+  [state=start,
+  title={Curriculum Vitae},
+  subtitle={Full Stack Senior Software Engineer},
+  author={Mohamed Bana},
+  style=boldslanted,
+  color=red,
+  contrastcolor=]
+
+% make chapter, section bookmarks visible when opening document
+\placebookmarks[chapter, section, subsection, subsubsection, subsubsubsection, subsubsubsubsection][chapter, section]
+\setupinteractionscreen[option=bookmark]
+\setuptagging[state=start]
+
+
+% use microtypography
+\definefontfeature[default][default][script=latn, protrusion=quality, expansion=quality, itlc=yes, textitalics=yes, onum=yes, pnum=yes]
+\definefontfeature[smallcaps][script=latn, protrusion=quality, expansion=quality, smcp=yes, onum=yes, pnum=yes]
+\setupalign[hz,hanging]
+\setupitaliccorrection[global, always]
+
+\setupbodyfontenvironment[default][em=italic] % use italic as em, not slanted
+
+\definefallbackfamily[mainface][rm][CMU Serif][preset=range:greek, force=yes]
+\definefontfamily[mainface][rm][Latin Modern Roman]
+\definefontfamily[mainface][mm][Latin Modern Math]
+\definefontfamily[mainface][ss][Latin Modern Sans]
+\definefontfamily[mainface][tt][Latin Modern Typewriter][features=none]
+\setupbodyfont[mainface,9pt]
+
+\setupwhitespace[medium]
+
+\setuphead[chapter]            [style=\tfd,header=empty]
+\setuphead[section]            [style=\tfc]
+\setuphead[subsection]         [style=\tfb]
+\setuphead[subsubsection]      [style=\bf]
+\setuphead[subsubsubsection]   [style=\sc]
+\setuphead[subsubsubsubsection][style=\it]
+
+\setuphead[chapter, section, subsection, subsubsection, subsubsubsection, subsubsubsubsection][number=no]
+
+\definedescription
+  [description]
+  [headstyle=bold, style=normal, location=hanging, width=broad, margin=1cm, alternative=hanging]
+
+\setupitemize[autointro]    % prevent orphan list intro
+\setupitemize[indentnext=no]
+
+\setupfloat[figure][default={here,nonumber}]
+\setupfloat[table][default={here,nonumber}]
+
+\setupthinrules[width=15em] % width of horizontal rules
+
+\setupxtable[frame=off]
+\setupxtable[head][topframe=on,bottomframe=on]
+\setupxtable[body][]
+\setupxtable[foot][bottomframe=on]
+
+% --include-in-header
+% \showframe
+% % \showframe[edge]
+% \showframe[cut]
+% \setupbackgrounds[page][frame=on]
+
+% % \showsetups
+% % \showmakeup
+% \showlayout
+% \showframe
+% \showlayoutcomponents
+% \showgrid
+% % \showboxes
+
+\enableregime[utf]
+\mainlanguage[en-GB]
+\setuppapersize[A4][A4]
+
+\usetypescriptfile[type-alegreya]
+\usetypescript[alegreya]
+\setupbodyfont[alegreya]
+\setupbodyfont[9.5pt]
+% \setupbodyfont[10pt]
+
+\setuplayout[
+  marking=on,
+  height=fit,
+  width=fit,
+  % leftmargin=2mm,
+  rightmargin=0mm,
+  left=2mm,
+  right=2mm,
+  rightedge=2mm,
+  rightedgedistance=0mm,
+  top=2mm,
+  topspace=2mm,
+  topdistance=2mm,
+  bottom=2mm,
+  bottomdistance=0mm,
+  % headerdistance=0mm,
+  % footerdistance=0mm,
+  % topspace=8mm,
+  % header=16pt,
+  header=0pt,
+  footer=16pt,
+  % backspace=0mm
+  backspace=8pt,
+]
+
+% \setupwhitespace[flexible]
+% \setupwhitespace[big]
+% \setupblank[big]
+\setupwhitespace[small]
+\setupblank[small]
+% \setupblank[none]
+
+% \setupindenting[32pt]
+% \indenting[yes,next]
+% \setupindenting[yes,big]
+
+% \setupitemize[autointro]    % prevent orphan list intro
+% \setupitemize[indentnext=no]
+
+% \setupheader[style=\smallcaps]
+% \setupfooter[style=\smallcaps]
+\setupheader[
+    numberstyle=smallcaps,
+    style=smallcaps,
+    textstyle=smallcaps,
+  ]
+\setupfooter[
+    numberstyle=smallcaps,
+    style=smallcaps,
+    textstyle=smallcaps,
+  ]
+
+\setuphead
+  [section, subsection, subsubsection, subsubsubsection, subsubsubsubsection]
+  [
+    page=no,
+    continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+    number=yes,
+    numberstyle=smallcaps,
+    style=bold,
+    textstyle=smallcaps,
+    % header=none,
+    % align={flushleft},
+  ]
+
+\setuphead
+  [section]
+  [
+    % page=no,
+    % continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+    % number=yes,
+    align={middle},
+    % align={middle, hyphenated, verytolerant},
+    % tolerance=verytolerant,
+    % after={\startsectioncolumns},
+    % % before={\nowhitespace},
+    % before={\blank[none]\nowhitespace\hairline\blank[none]},
+    % after={\blank[none]\nowhitespace\hairline\blank[none]},
+    % beforesection={\blank[none]},
+    % aftersection={\blank[none]},
+    % aftersection={\stopsectioncolumns},
+  ]
+\setuphead
+  [subsection]
+  [
+    % page=no,
+    % continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+    % number=yes,
+    % align={flushleft, nothyphenated, verytolerant},
+    % align={middle, hyphenated, verytolerant},
+    % tolerance=verytolerant,
+    align={middle},
+    % before={\thinrule},
+    % after={\thinrule},
+    % strut=yes,
+    % grid=yes,
+    % beforesubsection={\blank[none]\nowhitespace},
+    % aftersubsection={\blank[none]\nowhitespace\blank[none]},
+  ]
+\setuphead
+  [subsubsection, subsubsubsection, subsubsubsubsection]
+  [
+    % page=no,
+    % continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+    % number=yes,
+    % align={flushleft, hyphenated, verytolerant},
+    % tolerance=verytolerant,
+    align={flushleft},
+    before={\blank[medium]},
+    after={\blank[medium]},
+    % after={},
+    % before={\blank[big]},
+    % % % before={\nowhitespace},
+    % % after={\blank[none]},
+    % % % after={\startsectioncolumns},
+    % % beforesubsubsection={\blank[none]},
+    % % aftersubsubsection={\blank[none]},
+    % % % aftersection={\stopsectioncolumns},
+  ]
+
+\setuphead[section][
+      page=no,
+    continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+    number=yes,
+  before={\blank[big]\hrule}, after={\blank[none]\hrule\blank[big]}
+  ]
+\setuphead[subsection][
+  page=no,
+  continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+  number=yes,
+  before={\blank[big]\hrule}, after={\blank[none]\hrule\blank[big]}
+  ]
+
+\setupfootertexts
+  [Mohamed Bana — Curriculum Vitae, {\bf{Modified: }}{\currentdate[day,month,year]}]
+  % []
+
+  % []
+% \setupfootertexts
+%   [Mohamed Bana — Curriculum Vitae]
+%   [{\bf{Last Updated: }}{\currentdate[weekday,{, },day,month,year], \currenttime[h,{\,:\,},m]}]
+% \setupfootertexts
+%   [{\bf{Last Updated: }}{\currentdate[weekday,month,day,{, },year]}]
+
+  % alternative=doublesided,
+  % ,state=stop
+\setuppagenumbering[
+  location={footer,right},style=smallcaps,textstyle=smallcaps,numberstyle=smallcaps,conversion=romannumerals
+  ]
+% \setuppagenumbering[location={footer,middle},style=smallcaps,conversion=romannumerals]
+
+% \setupheader[state=high]
+% \setupfooter[state=high]
+
+% For \url:
+\setupurl
+   [color=red,
+    style=\tf]
+
+% For \goto and \from:
+\setupinteraction
+   [state=start,
+    color=red,
+    style=\tf]
+
+\starttext
+\startalignment[middle]
+  {\tfd Curriculum Vitae}
+  \smallskip
+  {\tfa Full Stack Senior Software Engineer}
+  \smallskip
+  {\tfa Mohamed Bana}
+  \bigskip
+\stopalignment
+% --include-before-body=
+
+% % \startcolumns
+%   % [
+%   %   n=2,
+%   %   distance=5mm,
+%   %   rule=on,
+%   %   balance=yes,
+%   %   align=flushleft,
+%   % ]
+%   % [
+%   %   n=2,
+%   %   balance=yes,
+%   %   align=flushleft,
+%   %   separator=rule,
+%   % ]
+
+% \startcolumns
+%   [
+%     n=2,
+%     balance=no,
+%     align=right,
+%   ]
+
+\startplacetable[location=none]
+\startxtable
+\startxtablehead[head]
+\startxrow
+\startxcell[align=right] {\bf Contact} \stopxcell
+\startxcell[align=left] {\bf Web} \stopxcell
+\stopxrow
+\stopxtablehead
+\startxtablebody[body]
+\startxrow
+\startxcell[align=right]
+\useURL[url1][tel:+44-7960-045-281][][+44-7960-045-281]\from[url1] (UK
+Mobile) \stopxcell
+\startxcell[align=left]
+\useURL[url2][https://bana.io]\from[url2] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[align=right]
+\useURL[url3][tel:+212-624-846-935][][+212-624-846-935]\from[url3]
+(Moroccan Mobile) \stopxcell
+\startxcell[align=left]
+\useURL[url4][https://github.com/banaio]\from[url4] \stopxcell
+\stopxrow
+\stopxtablebody
+\startxtablefoot[foot]
+\startxrow
+\startxcell[align=right]
+\useURL[url5][mailto:m@bana.io][][m@bana.io]\from[url5] \stopxcell
+\startxcell[align=left]
+\useURL[url6][https://linkedin.com/in/mbana]\from[url6] \stopxcell
+\stopxrow
+\stopxtablefoot
+\stopxtable
+\stopplacetable
+
+I am a well-rounded Software Engineer, with around 9-10 years of
+Software Development experience. I understand what it takes to release a
+product having worked on the back-end, front-end, testing and finally
+the deployment aspect of several products.
+
+\subsection[title={Work Experience},reference={work-experience}]
+
+\subsubsection[title={Full Stack Go and Vue.js Developer,
+\useURL[url7][https://www.openbanking.org.uk][][Open Banking
+Limited]\from[url7], St Katharine's & Wapping, London, UK -
+08/05/2018--01/01/2020},reference={full-stack-go-and-vue.js-developer-open-banking-limited-st-katharines-wapping-london-uk---0805201801012020}]
+
+Working as a full stack developer at Open Banking on a tool that will
+validate a bank's implementation of the OpenBanking API spec, see:
+
+\startitemize[packed]
+\item
+  \useURL[url8][https://bitbucket.org/openbankingteam/conformance-suite]\from[url8]
+\item
+  \useURL[url9][https://hub.docker.com/u/openbanking/]\from[url9]
+\stopitemize
+
+{\bf Tech:} Go, Golang, Node.js,
+\useURL[url10][https://vuejs.org/][][Vue.js]\from[url10],
+\useURL[url11][https://vuex.vuejs.org/][][Vuex]\from[url11], Jest,
+Docker, Docker Compose, Kubernetes,
+\useURL[url12][https://openid.net/connect/][][OpenID
+Connect]\from[url12], \useURL[url13][https://jwt.io/][][JSON Web Token
+(JWT)]\from[url13],
+\useURL[url14][http://kompose.io/][][Kompose]\from[url14],
+\useURL[url15][https://circleci.com/][][CircleCI]\from[url15],
+\useURL[url16][https://swagger.io/][][Swagger]\from[url16], WebSocket,
+Bitbucket Pipelines, OpenAPI 3.0,
+\useURL[url17][https://bitbucket.org/openbankingteam/conformance-suite]\from[url17],
+\useURL[url18][https://hub.docker.com/u/openbanking/]\from[url18].
+
+\subsubsection[title={Senior Engineer (contractor),
+\useURL[url19][https://www.90poe.io/][][90POE - Ninety Percent of
+Everything Limited]\from[url19], Marble Arch, London, UK -
+01/02/2018--20/04/2018},reference={senior-engineer-contractor-90poe---ninety-percent-of-everything-limited-marble-arch-london-uk---0102201820042018}]
+
+Worked at startup specialising in software that runs on ship on two
+projects that were heavily Go-based.
+
+{\bf \type{platform-document-storage-service}}: Document storage and
+retrieval to be used by others services, so it's a core service. The
+core of the service was written in Go and exposed using
+\useURL[url20][https://grpc.io/][][gRPC]\from[url20] and http using
+\useURL[url21][https://github.com/gorilla/mux][][go
+gorilla/mux]\from[url21]. Both write and retrieve supported arbitrarily
+large files which was achieved using gRPC unidirectional streams. The
+underlying store was MongoDB's
+\useURL[url22][https://docs.mongodb.com/manual/core/gridfs/][][GridsFS]\from[url22]
+which I interfaced with using the Go driver
+\useURL[url23][https://gopkg.in/mgo.v2][][mgo]\from[url23].
+
+{\bf \type{auditing}}: Currently working on this. The service is
+structured very similar to the preceding in that the underlying service
+is exposed using gRPC but the top-level interface is done using
+\useURL[url24][graphql.org][][GraphQL]\from[url24]. I wrote the GraphQL
+server in go using
+\useURL[url25][https://github.com/graph-gophers/graphql-go][][graphql-go]\from[url25].
+The underlying store is in Postgres and the library I used to interact
+with it is \useURL[url26][http://gorm.io/][][GORM]\from[url26].
+
+{\bf Tech:} Go, Golang,
+\useURL[url27][https://grpc.io/][][gRPC]\from[url27],
+\useURL[url28][https://github.com/gorilla/mux][][go
+gorilla/mux]\from[url28], Protocol Buffers,
+\useURL[url29][http://gorm.io/][][GORM]\from[url29], MongoDB,
+\useURL[url30][https://docs.mongodb.com/manual/core/gridfs/][][MongoDB
+GridsFS]\from[url30],
+\useURL[url31][https://gopkg.in/mgo.v2][][mgo]\from[url31],
+\useURL[url32][graphql.org][][GraphQL]\from[url32],
+\useURL[url33][https://github.com/graph-gophers/graphql-go][][graphql-go]\from[url33],
+Docker, Docker Compose, Kubernetes, NodeJS, Jest,
+\useURL[url34][https://concourse-ci.org/][][Concourse CI]\from[url34],
+Postgres.
+
+\subsubsection[title={Full Stack Developer (contractor),
+\useURL[url35][https://www.rootcapital.co.uk][][Root Capital
+LLP]\from[url35], London Bridge, London, UK -
+09/10/2017--24/12/2017},reference={full-stack-developer-contractor-root-capital-llp-london-bridge-london-uk---0910201724122017}]
+
+Worked as a full stack Node.js developer on the
+\useURL[url36][https://mindsforlife.com/][][Minds for Life]\from[url36]
+application, mainly on the forum.
+
+{\bf Frontend:}
+
+\startitemize[packed]
+\item
+  \type{react}, \type{react-redux},
+  \useURL[url37][https://www.reactboilerplate.com/][][react-boilerplate]\from[url37].
+\item
+  Single Page Application (SPA) targeting mobile platforms.
+\item
+  \type{ES56} using most of the latest ES56 features; \type{async},
+  \type{await}, \type{classes} etc.
+\item
+  Serveless and hosted on
+  \useURL[url38][https://aws.amazon.com/s3/][][Amazon S3]\from[url38] as
+  static assets, with
+  \useURL[url39][http://aws.amazon.com/cloudfront/][][Amazon
+  CloudFront]\from[url39] as the CDN.
+\stopitemize
+
+{\bf Backend:}
+
+\startitemize[packed]
+\item
+  NodeJS server written in \type{ES6}, like the frontend.
+\item
+  \useURL[url40][http://koajs.com][][Koa]\from[url40].
+\item
+  MySQL as the datastore, using the
+  \useURL[url41][http://knexjs.org/][][Knex.js]\from[url41] library.
+\item
+  Packaged as a set of \type{docker} containers.
+\stopitemize
+
+{\bf CI, Devops and Infrastructure:}
+
+\startitemize[packed]
+\item
+  Services were packaged as containers. Used \type{docker} and
+  \type{docker-compose} to start them.
+\item
+  Builds managed by \useURL[url42][https://semaphoreci.com][][Semaphore
+  CI]\from[url42] and
+  \useURL[url43][http://www.wercker.com/][][Wercker]\from[url43].
+\stopitemize
+
+{\bf Tech:} JavaScript, ES6, Node.js, react, react-redux,
+\useURL[url44][https://www.reactboilerplate.com/][][react-boilerplate]\from[url44],
+Webpack, \useURL[url45][http://koajs.com][][Koa]\from[url45],
+\useURL[url46][http://knexjs.org/][][Knex.js]\from[url46], Sequel Pro,
+Docker, Docker Compose, Kubernetes,
+\useURL[url47][https://semaphoreci.com][][Semaphore CI]\from[url47],
+\useURL[url48][http://www.wercker.com/][][Wercker]\from[url48],
+\useURL[url49][https://aws.amazon.com/s3/][][Amazon S3]\from[url49],
+\useURL[url50][http://aws.amazon.com/cloudfront/][][Amazon
+CloudFront]\from[url50]
+
+\subsubsection[title={Full Stack Node Developer (contractor),
+\useURL[url51][https://www.lloydsbankinggroup.com][][Lloyds Banking
+Group PLC]\from[url51], London Bridge, London, UK -
+20/03/2017--22/05/2017},reference={full-stack-node-developer-contractor-lloyds-banking-group-plc-london-bridge-london-uk---2003201722052017}]
+
+{\bf NodeJS - JavaScript:}
+
+\startitemize[packed]
+\item
+  Loopback for server-side of the code.
+\item
+  ES5/6-based code base.
+\stopitemize
+
+{\bf Monitoring/Devops/Misc:}
+
+\startitemize[packed]
+\item
+  Splunk and sending logs via
+  (\useURL[url52][https://en.wikipedia.org/wiki/Syslog]\from[url52]) a
+  LogDrain service available on Bluemix.
+\item
+  Gerrit for managing code. CI:
+\item
+  Jenkins: Configuring, managing and installing.
+\item
+  Jenkins 2: Same as previous plus writing pipeline scripts.
+\stopitemize
+
+{\bf Tech:} JavaScript, Node.js, ES5/6-based code base,
+\useURL[url53][https://loopback.io][][LoopBack]\from[url53] for
+server-side of the code,
+\useURL[url54][https://en.wikipedia.org/wiki/Syslog][][SysLog]\from[url54],
+\useURL[url55][http://www.splunk.com][][Splunk]\from[url55],
+\useURL[url56][https://www.jenkins.io][][Jenkins]\from[url56],
+\useURL[url57][https://www.jenkins.io/2.0][][Jenkins 2]\from[url57],
+\useURL[url58][https://www.gerritcodereview.com/][][Gerrit Code
+Review]\from[url58],
+\useURL[url59][https://en.wikipedia.org/wiki/Bluemix][][IBM
+Bluemix]\from[url59]
+
+\subsubsection[title={Senior Front-End Engineer,
+\useURL[url60][https://synthace.com][][Synthace Ltd.]\from[url60],
+King's Cross, London, UK -
+13/04/2016--04/11/2016},reference={senior-front-end-engineer-synthace-ltd.-kings-cross-london-uk---1304201604112016}]
+
+Did a fair amount of architectural UI work:
+
+\startitemize[packed]
+\item
+  JWT-based authentication: Implemented most, if not all, of the
+  authentication related UI features. Polymer didn't have an
+  authentication module as it's fairly new requiring me to re-implement
+  this feature.
+\item
+  API interactions: I introduced Swagger JS and did the conversion from
+  plain XHR to Promises, and ensured API was in-sync with the state of
+  the authentication.
+\item
+  Updates via the Web Socket for notifications and async task updates:
+  STOMP Over WebSocket.
+\item
+  Bootstrapped the testing using Web Component Tester.
+\item
+  Deciding on the build, test and hosting strategy, e.g., hosting our
+  own CDN using Azure.
+\item
+  Performance: 1) pushed to have HTTP/2 enabled, and prototyped, on our
+  custom server written in Go, 2) implemented lazy-loading of our Web
+  Components which are included using HTML Imports, 3) Significantly
+  improved UI build scripts; went from a somewhat un-deterministic build
+  to one that almost always runs.
+\item
+  Introduced ES6 to the code-base, and moving to defining Polymer
+  elements using ES6 classes.
+\item
+  Misc: libraries/utils to ease UI development.
+\stopitemize
+
+We deploy Docker images to our Kubernetes cluster running in Azure
+using:
+
+\startitemize[packed]
+\item
+  Docker: Fairly comfortable using this.
+\item
+  Kubernetes: I've done deployments of dev branches, so I understand the
+  deployment model, navigating the Kubernetes dashboard and crude
+  command line interactions, e.g., port-forwarding of the service the
+  pod is running from the cluster to the local machine.
+\stopitemize
+
+I'm finishing up on adding support for our language Antha to Monaco
+Editor, the editor that powers Visual Studio Code.
+
+Since this is a startup I have done a fair amount of work and I have
+been given a fair share of responsibility, more so than any of my prior
+roles.
+
+{\bf Tech:} JavaScript, ES6,
+\useURL[url61][https://www.polymer-project.org][][Polymer
+Project]\from[url61],
+\useURL[url62][https://www.webcomponents.org][][Web
+Components]\from[url62], TypeScript, VSCode, Azure, Docker, Kubernetes,
+Go,
+\useURL[url63][https://github.com/Polymer/web-component-tester][][Polymer
+Web Component Tester]\from[url63], Git, Swagger.
+
+\subsubsection[title={Developer,
+\useURL[url64][https://www.ig.com/uk][][IG Index Ltd.]\from[url64]
+Cannon Bridge, London, UK -
+09-2014--18/02/2016},reference={developer-ig-index-ltd.-cannon-bridge-london-uk---09-201418022016}]
+
+\subsubsubsection[title={JavaScript
+Developer},reference={javascript-developer}]
+
+\startitemize[packed]
+\item
+  {\em Price & Indicator Alerts:} My main responsibility was handling
+  the UI aspect---setting, configuring, triggering---of the various
+  Alerts we support, from the basic Price Alert to Technical Indicators
+  such as RSI and Moving Average. {\bf Tech New:} Modern UI powered by
+  ES2015 (Babel), Ember.js, Handlebars and Less. The UI was then
+  composed of isolated and reusable Ember components. Runs on a NodeJS
+  server, managed with npm and bower, and version controlled using Git.
+  Integration and unit tests written in Mocha then run using Karma.
+  {\bf Tech Old:} Vanilla JavaScript using an in-house framework when
+  changing the previous UI.
+\item
+  {\em Charts:} Assisted in the conversion of the Adobe Flex Real Time
+  Charts to an SVG-based version. {\bf Tech:} d3 and tested like above.
+\item
+  {\em Deeplinking:} A hashed action link, like typical deeplinks, that
+  we send to our Clients which then launches the mobile IG app, or
+  directs them to the app store for the device with the IG app
+  pre-selected. Upon login the action is carried out automatically. I
+  did the bulk of the work with the team lead overseeing it. {\bf Tech:}
+  Java 8, Spring and acceptance tested using Cucumber. Redirecting and
+  launching of the IG app was done using vanilla JavaScript.
+\stopitemize
+
+\subsubsection[title={Software Developer,
+\useURL[url65][https://www.itrsgroup.com][][ITRS (International Trading
+Room Software) Group Ltd.]\from[url65] Moorgate, London, UK -
+02-2010--09-2014},reference={software-developer-itrs-international-trading-room-software-group-ltd.-moorgate-london-uk---02-201009-2014}]
+
+\subsubsubsection[title={JavaScript (UI) Developer,
+01/2014--09/2014},reference={javascript-ui-developer-012014092014}]
+
+UI for the next generation of the product which is built around, loosely
+speaking, a real-time distributed analytics store. The aim is for the
+old system to stream data to the new system so we can provide all the
+great visualizations available in the HTML ecosystem, which was not
+achievable in a reasonable amount of time in Swing.
+
+The code is entirely modularized using RequireJS so we can test each
+viewmodel without creating a view, we then test the entire UI
+(end-to-end tests) using WebDriverJS.
+
+Some Java/C coding required to write NodeJS bindings to interact with
+the store. We evaluated several frameworks, Angular, Batman and
+KnockoutJS, by writing prototype applications that connected to our
+backend for a period of roughly 4-6 months before we chose to settle on
+Knockout.js.
+
+{\bf Tech:} JavaScript, NodeJS, Node-WebKit, Durandal, KnockoutJS,
+RequireJS, Git, Jasmine, Protractor (WebDriverJS), Jenkins, Bower,
+HTML5, CSS, LoopBack.io.
+
+\subsubsubsection[title={Java (UI) Developer -
+07/2012--12/2013},reference={java-ui-developer---072012122013}]
+
+Worked with two developers and one QA member on a new Swing UI, ACLite,
+that uses our new streaming-based API to access Geneos data, for more
+info. see
+\useURL[url66][https://resources.itrsgroup.com/OpenAccess]\from[url66].
+We access data from a fault-tolerant Cluster that is built on a set of
+distributed nodes. The system we coded against is somewhat similar to
+the Amazon distributed key/value store, DynamoDB, except with support
+for streaming, so I am familiar with dealing with distributed systems.
+
+{\bf Tech:} Java, Maven, Swing, Eclipse, Jenkins, Git, Vagrant.
+
+\subsubsubsection[title={C++ Developer -
+02/2010--06/2012},reference={c-developer---022010062012}]
+
+Spent one year with Run The Business (RTB) team, a team set-up to fix
+critical bugs that Customers encounter. A very challenging role which
+requires all-around product knowledge, good debugging skills and being
+able to liaise with our Support staff in dealing with the Customers.
+Prior to this I was one of three developers working in the Transactions
+and Latency Monitoring team (part of the backend team) doing core C++.
+We wrote and maintained the following plug-ins that are part of the
+Geneos suite:
+
+\startitemize[n,packed][stopper=.]
+\item
+  \useURL[url67][https://docs.itrsgroup.com/docs/geneos/5.1.0/Netprobe/trading_fix/fix.html][][Geneos
+  FIX plug-in]\from[url67]: Monitors FIX (protocol) messages.
+\item
+  \useURL[url68][https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/market_data_monitoring/feedadapter_ug.html][][Feed
+  Latency Monitoring Plug-In]\from[url68]: Monitors feeds and calculates
+  latency of instruments and fields across the monitored feeds.
+\item
+  \useURL[url69][https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/latency_monitoring/message_tracker/fix_adapter.html][][Latency
+  Monitoring - Message Tracker FIX adapter]\from[url69]: Tracks,
+  generally, FIX messages across several checkpoints.
+\item
+  \useURL[url70][https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/market_data_monitoring/mdm_ug.html][][Market
+  Data Monitor]\from[url70]: See below. And bespoke plug-ins written for
+  specific firms.
+\stopitemize
+
+We also maintained several non-finance specific plug-ins. I ported
+another bespoke plug-in called Price Latency Monitor (provides latency
+figures for bonds) to MS VC++ when I worked on this team. Projects:
+
+\startitemize[packed]
+\item
+  I converted the Windows version of the entire product suite from
+  Visual Studio 2005 to 2010.
+\item
+  I wrote the Market Data Reliability plug-in. This plug-in connects to
+  the Patsystem's Trading API (<www.patsystems.com>) to monitor
+  commodity prices, using their C API, to determine if prices are
+  \quote{stale}.
+\item
+  I ported a significant part of our product to Solaris x86-64 (64-bit
+  non-sparc architecture).
+\stopitemize
+
+{\bf Tech:} C++, STL, Boost, Visual Studio, Linux/Unix, GDB, DBX, Make,
+Configure, XML, XPath, CPPUnit,
+\useURL[url67][https://en.wikipedia.org/wiki/Financial_Information_eXchange][][Financial
+Information eXchange (FIX) protocol]\from[url67],
+\useURL[url68][https://docs.itrsgroup.com/docs/geneos/5.1.0/Netprobe/trading_fix/fix.html][][Geneos
+FIX plug-in]\from[url68],
+\useURL[url69][https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/market_data_monitoring/feedadapter_ug.html][][Feed
+Latency Monitoring Plug-In]\from[url69],
+\useURL[url70][https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/latency_monitoring/message_tracker/fix_adapter.html][][Latency
+Monitoring - Message Tracker FIX adapter]\from[url70],
+\useURL[url71][https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/market_data_monitoring/mdm_ug.html][][Market
+Data Monitor]\from[url71],
+\useURL[url72][https://docs.itrsgroup.com/docs/geneos/5.1.0/Netprobe/trading_pats/pats-status.html][][Geneos
+PATS-STATUS Plug-In]\from[url72],
+\useURL[url73][www.patsystems.com][][Patsystem's Trading
+API]\from[url73].
+
+\subsubsection[title={Software Developer Intern, then Tester, Thomson
+Reuters. Canary Wharf, London, UK -
+05-2009--11-2009},reference={software-developer-intern-then-tester-thomson-reuters.-canary-wharf-london-uk---05-200911-2009}]
+
+\subsubsubsection[title={C\# Developer},reference={c-developer}]
+
+One of four developers working on a search and navigation interface to
+Global Product Search. Full life-cycle of development; requirements
+engineering, analysis and design to implementation, testing and
+deployment.
+
+{\bf Tech:} C\#, Silverlight 3.0, MS SQL Server 2005, LINQ, Web Services
+(WCF), XML and Visual Studio 2008. I handled deployment using
+CruiseControl.NET.
+
+\subsubsubsection[title={Tester},reference={tester}]
+
+User Acceptance Testing of the latest release of Thomson Reuter's 3000
+Extra, then called UTAH, now called Eikon. UTAH combines the data from
+Thomson and Reuters. My primary responsibilities were to validate the
+end product against pre-defined requirements/workflows. 1. Worked on
+Thomson Reuters project UTAH as part of a large team. 2. Tasks included
+testing, observing, documenting software bugs, issues and errors before
+final release of Utah. 3. Testing was done over multiple iterations.
+
+\subsection[title={Education},reference={education}]
+
+\startitemize[packed]
+\item
+  {\bf 2005-2008:} BSc Computer Science (2.1), City, University of
+  London.
+\item
+  {\bf 2008-2009:} MSc Software Systems Engineering (Attended),
+  University College London, and Trading & Financial Market Structure
+  module, London Business School.
+\stopitemize
+
+\subsection[title={Additional
+Information},reference={additional-information}]
+
+\subsubsection[title={Misc},reference={misc}]
+
+\startitemize[packed]
+\item
+  {\bf Passport/Nationality:} I have a British Passport.
+\item
+  {\bf Drivers Licence:} Full UK Driving Licence.
+\item
+  {\bf Background/Criminal Check:}
+  \startitemize
+  \item
+    \useURL[url74][https://www.gov.uk/request-copy-criminal-record][][Basic
+    Disclosure and Barring Service (DBS) check]\from[url74]: Certificate
+    was issued on 31 July 2020.
+
+    \startblockquote
+    {\bf Police Records of Convictions, Cautions, Reprimands and
+    Warnings:}
+
+    NONE RECORDED
+    \stopblockquote
+  \item
+    \useURL[url75][https://www.acro.police.uk/police_certificates.aspx][][Police
+    Certificates - ACRO Criminal Records Office]\from[url75]:
+    Certificate was issued on 18 February 2020.
+
+    \startblockquote
+    {\bf Summary of convictions and
+    reprimands/warnings/cautions/impending prosecutions/under
+    investigations held on UK police databases and disclosed in
+    accordance with the ACRO stepdown model:}
+
+    NO TRACE.
+    \stopblockquote
+
+    I have requested a new certificate and this should arrive between
+    the 15th/28th of August 2020.
+  \stopitemize
+\stopitemize
+
+\subsubsection[title={Languages},reference={languages}]
+
+\startitemize[packed]
+\item
+  {\bf English and Swahili:} Native.
+\item
+  {\bf Arabic:} Intermediate. I own an apartment in Marrakech, Morocco.
+  I have lived in Cairo, Egypt and have travelled several times to the
+  UAE.
+\stopitemize
+
+% --include-after-body
+% \stopcolumns
+\stoptext

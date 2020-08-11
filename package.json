@@ -1,5 +1,6 @@
 {
   "name": "www-bana-io-vue-js",
+  "version": "v0.0.1",
   "description": "https://bana.io",
   "private": true,
   "homepage": "https://github.com/banaio/www-bana-io-vue-js",
@@ -22,10 +23,12 @@
     "lint-md": "EXIT_STATUS=0; yarn lint-md:style || EXIT_STATUS=$?; yarn lint-md:wording || EXIT_STATUS=$?; exit $EXIT_STATUS"
   },
   "devDependencies": {
+    "@octokit/core": "^3.1.2",
     "@vue/cli": "^4.4.6",
     "@vue/cli-service-global": "^4.4.6",
     "@vuepress/plugin-back-to-top": "^1.5.2",
     "@vuepress/plugin-nprogress": "^1.5.2",
+    "console-log-level": "^1.4.1",
     "debug": "^4.1.1",
     "markdown-it-footnote": "^3.0.1",
     "markdown-it-katex": "^2.0.3",

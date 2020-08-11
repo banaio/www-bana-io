@@ -8,8 +8,22 @@
 .ONESHELL:
 SHELL 			:= bash
 # SHELL 		:= /bin/bash -o pipefail
-.SHELLFLAGS 	:= -euf -o pipefail -c
-# .SHELLFLAGS 	:= -euo pipefail -c
+.SHELLFLAGS 	:= -o pipefail -o noclobber -o errexit -o pipefail -o nounset -c
+# .SHELLFLAGS 	:= -euf -o pipefail -c
+# set -o noclobber    # Avoid overlay files (echo "hi" > foo)
+# set -o errexit      # Used to exit upon error, avoiding cascading errors
+# set -o pipefail     # Unveils hidden failures
+# set -o nounset      # Exposes unset variables
+
+# # set -o nullglob     # Non-matching globs are removed  ('*.foo' => '')
+# shopt -s nullglob   # Non-matching globs are removed  ('*.foo' => '')
+# # set -o failglob     # Non-matching globs throw errors
+# shopt -s failglob   # Non-matching globs throw errors
+# # set -o nocaseglob   # Case insensitive globs
+# shopt -s nocaseglob # Case insensitive globs
+# # set -o globstar     # Allow ** for recursive matches ('lib/**/*.rb' => 'lib/a/b/c.rb')
+# shopt -s globstar # Allow ** for recursive matches ('lib/**/*.rb' => 'lib/a/b/c.rb')
+
 .DEFAULT_GOAL	:= all
 .DELETE_ON_ERROR:
 MAKEFLAGS 	+= --warn-undefined-variables
@@ -30,12 +44,26 @@ DATE_TIME := $(shell date --utc +'%A, %d %B %Y, %H:%M:%S %Z')
 # OUTPUT_DIR="./download"
 OUTPUT_DIR := $(shell pwd)
 
-.PHONY: cv cover_letter combine
-all: cv cover_letter combine
+.PHONY: cv_all cover_letter_all combine
+all: cv_all cover_letter_all combine
 
-.PHONY: cv
-cv:
+# .PHONY: cv cover_letter combine
+# all: cv cover_letter combine
+
+.PHONY: format
+format_tex:
+	@printf "%b" "${GREEN}" "  ---> latexindent ./templates/*.tex" "${RESET}" "\n"
+	ls -lah ./templates_test/*.tex
+	latexindent \
+		--overwrite \
+		--trace \
+		--local=./localSettings.yaml \
+		./formatted/include-in-header_compact.tex
+
+.PHONY: cv_tex
+cv_tex:
 	@printf "%b" "${GREEN}" "  ---> ${OUTPUT_DIR}/mohamed-bana_cv.pdf" "${RESET}" "\n"
+	@# --variable=date:"${DATE_TIME}" \
 	pandoc \
 		--fail-if-warnings \
 		--from=markdown \
@@ -44,9 +72,12 @@ cv:
 		--include-in-header=./templates/include-in-header.tex \
 		--include-before-body=./templates/include-before-body.tex \
 		--include-after-body=./templates/include-after-body.tex \
-		--variable=date:"${DATE_TIME}" \
 		--output="${OUTPUT_DIR}/mohamed-bana_cv.pdf" \
 		../cv.md
+
+.PHONY: cv_all
+cv_all: cv_tex
+	@printf "%b" "${GREEN}" "  ---> ${OUTPUT_DIR}/mohamed-bana_cv.*" "${RESET}" "\n"
 	pandoc \
 		--fail-if-warnings \
 		--from=markdown \
@@ -79,20 +110,24 @@ cv:
 		--output="${OUTPUT_DIR}/mohamed-bana_cv.xml" \
 		../cv.md
 
-.PHONY: cover_letter
-cover_letter:
-	@printf "%b" "${GREEN}" "  ---> ${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" "${RESET}" "\n"
+.PHONY: cover_letter_tex
+cover_letter_tex:
+	@printf "%b" "${GREEN}" "  ---> ${OUTPUT_DIR}/mohamed-bana_cover-letter.tex" "${RESET}" "\n"
 	@# --include-before-body=./templates/include-before-body.tex
 	@# --include-after-body=./templates/include-after-body.tex
+	@# --variable=date:"${DATE_TIME}" \
 	pandoc \
 		--fail-if-warnings \
 		--from=markdown \
 		--standalone \
 		--pdf-engine=context \
 		--include-in-header=./templates/include-in-header.tex \
-		--variable=date:"${DATE_TIME}" \
 		--output="${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" \
 		../cover-letter.md
+
+.PHONY: cover_letter_all
+cover_letter_all: cover_letter_tex
+	@printf "%b" "${GREEN}" "  ---> ${OUTPUT_DIR}/mohamed-bana_cover-letter.*" "${RESET}" "\n"
 	pandoc \
 		--fail-if-warnings \
 		--from=markdown \
@@ -119,11 +154,11 @@ cover_letter:
 		--pdf-engine=context \
 		--include-in-header=./templates/include-in-header.tex \
 		--variable=date:"${DATE_TIME}" \
-		--output="${OUTPUT_DIR}/mohamed-bana_cover-letter.docx" \
+		--output="${OUTPUT_DIR}/mohamed-bana_cover-letter.xml" \
 		../cover-letter.md
 
 .PHONY: combine
-combine:
+combine: cv_tex cover_letter_tex
 	pdfunite "${OUTPUT_DIR}/mohamed-bana_cv.pdf" "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
 	xdg-open "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
 

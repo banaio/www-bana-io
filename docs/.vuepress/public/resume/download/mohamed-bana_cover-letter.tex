@@ -1,0 +1,434 @@
+% Enable hyperlinks
+\setupinteraction
+  [state=start,
+  title={Cover Letter},
+  subtitle={Full Stack Senior Software Engineer},
+  author={Mohamed Bana},
+  style=boldslanted,
+  color=red,
+  contrastcolor=]
+
+% make chapter, section bookmarks visible when opening document
+\placebookmarks[chapter, section, subsection, subsubsection, subsubsubsection, subsubsubsubsection][chapter, section]
+\setupinteractionscreen[option=bookmark]
+\setuptagging[state=start]
+
+
+% use microtypography
+\definefontfeature[default][default][script=latn, protrusion=quality, expansion=quality, itlc=yes, textitalics=yes, onum=yes, pnum=yes]
+\definefontfeature[smallcaps][script=latn, protrusion=quality, expansion=quality, smcp=yes, onum=yes, pnum=yes]
+\setupalign[hz,hanging]
+\setupitaliccorrection[global, always]
+
+\setupbodyfontenvironment[default][em=italic] % use italic as em, not slanted
+
+\definefallbackfamily[mainface][rm][CMU Serif][preset=range:greek, force=yes]
+\definefontfamily[mainface][rm][Latin Modern Roman]
+\definefontfamily[mainface][mm][Latin Modern Math]
+\definefontfamily[mainface][ss][Latin Modern Sans]
+\definefontfamily[mainface][tt][Latin Modern Typewriter][features=none]
+\setupbodyfont[mainface,11pt]
+
+\setupwhitespace[small]
+
+\setuphead[chapter]            [style=\tfd,header=empty]
+\setuphead[section]            [style=\tfc]
+\setuphead[subsection]         [style=\tfb]
+\setuphead[subsubsection]      [style=\bf]
+\setuphead[subsubsubsection]   [style=\sc]
+\setuphead[subsubsubsubsection][style=\it]
+
+\setuphead[chapter, section, subsection, subsubsection, subsubsubsection, subsubsubsubsection][number=no]
+
+\definedescription
+  [description]
+  [headstyle=bold, style=normal, location=hanging, width=broad, margin=1cm, alternative=hanging]
+
+\setupitemize[autointro]    % prevent orphan list intro
+\setupitemize[indentnext=no]
+
+\setupfloat[figure][default={here,nonumber}]
+\setupfloat[table][default={here,nonumber}]
+
+\setupthinrules[width=15em] % width of horizontal rules
+
+\setupxtable[frame=off]
+\setupxtable[head][topframe=on,bottomframe=on]
+\setupxtable[body][]
+\setupxtable[foot][bottomframe=on]
+
+% --include-in-header
+% \showframe
+% % \showframe[edge]
+% \showframe[cut]
+% \setupbackgrounds[page][frame=on]
+
+% % \showsetups
+% % \showmakeup
+% \showlayout
+% \showframe
+% \showlayoutcomponents
+% \showgrid
+% % \showboxes
+
+\enableregime[utf]
+\mainlanguage[en-GB]
+\setuppapersize[A4][A4]
+
+\usetypescriptfile[type-alegreya]
+\usetypescript[alegreya]
+\setupbodyfont[alegreya]
+\setupbodyfont[9.5pt]
+% \setupbodyfont[10pt]
+
+\setuplayout[
+  marking=on,
+  height=fit,
+  width=fit,
+  % leftmargin=2mm,
+  rightmargin=0mm,
+  left=2mm,
+  right=2mm,
+  rightedge=2mm,
+  rightedgedistance=0mm,
+  top=2mm,
+  topspace=2mm,
+  topdistance=2mm,
+  bottom=2mm,
+  bottomdistance=0mm,
+  % headerdistance=0mm,
+  % footerdistance=0mm,
+  % topspace=8mm,
+  % header=16pt,
+  header=0pt,
+  footer=16pt,
+  % backspace=0mm
+  backspace=8pt,
+]
+
+% \setupwhitespace[flexible]
+% \setupwhitespace[big]
+% \setupblank[big]
+\setupwhitespace[small]
+\setupblank[small]
+% \setupblank[none]
+
+% \setupindenting[32pt]
+% \indenting[yes,next]
+% \setupindenting[yes,big]
+
+% \setupitemize[autointro]    % prevent orphan list intro
+% \setupitemize[indentnext=no]
+
+% \setupheader[style=\smallcaps]
+% \setupfooter[style=\smallcaps]
+\setupheader[
+    numberstyle=smallcaps,
+    style=smallcaps,
+    textstyle=smallcaps,
+  ]
+\setupfooter[
+    numberstyle=smallcaps,
+    style=smallcaps,
+    textstyle=smallcaps,
+  ]
+
+\setuphead
+  [section, subsection, subsubsection, subsubsubsection, subsubsubsubsection]
+  [
+    page=no,
+    continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+    number=yes,
+    numberstyle=smallcaps,
+    style=bold,
+    textstyle=smallcaps,
+    % header=none,
+    % align={flushleft},
+  ]
+
+\setuphead
+  [section]
+  [
+    % page=no,
+    % continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+    % number=yes,
+    align={middle},
+    % align={middle, hyphenated, verytolerant},
+    % tolerance=verytolerant,
+    % after={\startsectioncolumns},
+    % % before={\nowhitespace},
+    % before={\blank[none]\nowhitespace\hairline\blank[none]},
+    % after={\blank[none]\nowhitespace\hairline\blank[none]},
+    % beforesection={\blank[none]},
+    % aftersection={\blank[none]},
+    % aftersection={\stopsectioncolumns},
+  ]
+\setuphead
+  [subsection]
+  [
+    % page=no,
+    % continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+    % number=yes,
+    % align={flushleft, nothyphenated, verytolerant},
+    % align={middle, hyphenated, verytolerant},
+    % tolerance=verytolerant,
+    align={middle},
+    % before={\thinrule},
+    % after={\thinrule},
+    % strut=yes,
+    % grid=yes,
+    % beforesubsection={\blank[none]\nowhitespace},
+    % aftersubsection={\blank[none]\nowhitespace\blank[none]},
+  ]
+\setuphead
+  [subsubsection, subsubsubsection, subsubsubsubsection]
+  [
+    % page=no,
+    % continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+    % number=yes,
+    % align={flushleft, hyphenated, verytolerant},
+    % tolerance=verytolerant,
+    align={flushleft},
+    before={\blank[medium]},
+    after={\blank[medium]},
+    % after={},
+    % before={\blank[big]},
+    % % % before={\nowhitespace},
+    % % after={\blank[none]},
+    % % % after={\startsectioncolumns},
+    % % beforesubsubsection={\blank[none]},
+    % % aftersubsubsection={\blank[none]},
+    % % % aftersection={\stopsectioncolumns},
+  ]
+
+\setuphead[section][
+      page=no,
+    continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+    number=yes,
+  before={\blank[big]\hrule}, after={\blank[none]\hrule\blank[big]}
+  ]
+\setuphead[subsection][
+  page=no,
+  continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
+  number=yes,
+  before={\blank[big]\hrule}, after={\blank[none]\hrule\blank[big]}
+  ]
+
+\setupfootertexts
+  [Mohamed Bana — Curriculum Vitae, {\bf{Modified: }}{\currentdate[day,month,year]}]
+  % []
+
+  % []
+% \setupfootertexts
+%   [Mohamed Bana — Curriculum Vitae]
+%   [{\bf{Last Updated: }}{\currentdate[weekday,{, },day,month,year], \currenttime[h,{\,:\,},m]}]
+% \setupfootertexts
+%   [{\bf{Last Updated: }}{\currentdate[weekday,month,day,{, },year]}]
+
+  % alternative=doublesided,
+  % ,state=stop
+\setuppagenumbering[
+  location={footer,right},style=smallcaps,textstyle=smallcaps,numberstyle=smallcaps,conversion=romannumerals
+  ]
+% \setuppagenumbering[location={footer,middle},style=smallcaps,conversion=romannumerals]
+
+% \setupheader[state=high]
+% \setupfooter[state=high]
+
+% For \url:
+\setupurl
+   [color=red,
+    style=\tf]
+
+% For \goto and \from:
+\setupinteraction
+   [state=start,
+    color=red,
+    style=\tf]
+
+\starttext
+\startalignment[middle]
+  {\tfd Cover Letter}
+  \smallskip
+  {\tfa Full Stack Senior Software Engineer}
+  \smallskip
+  {\tfa Mohamed Bana}
+  \bigskip
+\stopalignment
+% --include-before-body=
+
+% % \startcolumns
+%   % [
+%   %   n=2,
+%   %   distance=5mm,
+%   %   rule=on,
+%   %   balance=yes,
+%   %   align=flushleft,
+%   % ]
+%   % [
+%   %   n=2,
+%   %   balance=yes,
+%   %   align=flushleft,
+%   %   separator=rule,
+%   % ]
+
+% \startcolumns
+%   [
+%     n=2,
+%     balance=no,
+%     align=right,
+%   ]
+
+\subsection[title={Intro},reference={intro}]
+
+I am a well-rounded Software Engineer, and I understand what it takes to
+release a product having worked on the back-end, front-end, testing and
+finally the deployment aspect of several products.
+
+\subsection[title={Background},reference={background}]
+
+A role involving web technologies hosted on a cloud-based backend. I've
+worked on all the tiers of a software product, so I can appreciate the
+different concerns expressed at each level. I feel the latest trend in
+web technologies; quick prototyping, large selection of libraries, ease
+of programming and its cross-platform support is where the future is
+heading. This, distributed systems and big data algorithms are where I
+am focusing my current efforts---all of which are equally interesting to
+me.
+
+I'm a well-rounded engineer and I'm able to see the delivery, from
+beginning to end, of a software stack. This includes the building,
+testing and continuous delivery of the solution. I have examples in my
+repositories that demonstrate all these in a cloud environment:
+
+\startitemize[packed]
+\item
+  Go/Golang backends.
+\item
+  Building frontends in JavaScript.
+\item
+  Complete end-to-end testing of the final project.
+\item
+  CI builds on the cloud.
+\item
+  Deployment on the cloud using Google Cloud Platform (GCP).
+\item
+  Containerising software using Docker.
+\item
+  Orchestrating the built containers using Kubernetes.
+\stopitemize
+
+\subsubsection[title={Job Preferences},reference={job-preferences}]
+
+\subsubsubsection[title={Salary and notice
+period},reference={salary-and-notice-period}]
+
+I'm willing to negotiate on this as it depends on a few things, that
+said:
+
+\startitemize[packed]
+\item
+  If it's a contracting role, minimum of £580 per day.
+\item
+  If it's a permanent position, minimum of £90,000 per year.
+\stopitemize
+
+I'm available to start immediately.
+
+\subsubsubsection[title={Work locations
+considered},reference={work-locations-considered}]
+
+Ideally, a remote role with an office in London.
+
+If it's not fully remote, an office in East London would be perfect,
+e.g., Canary Wharf, Aldgate (East).
+
+\subsubsubsection[title={Key skills and preferred job
+role},reference={key-skills-and-preferred-job-role}]
+
+I'm flexible in terms of the choice of framework used, however, my ideal
+role will involve (any of) the following:
+
+\startitemize[packed]
+\item
+  Backend: Ideally Go/Golang as I have good experience with this.
+\item
+  Frontend: JavaScript or any language that targets JavaScript on the
+  frontend side, my ideal choice would be TypeScript. I would prefer to
+  use Vue.js as the underlying framework that the UI is built with.
+\item
+  Roles where Linux, Google Cloud Platform (GCP)/Azure/AWS, Docker and
+  Kubernetes are being used. Open Banking would be a plus.
+\item
+  I'm up for learning more of Rust. It's just a hobby at the moment.
+\stopitemize
+
+{\bf Summary:} (Full Stack) Senior Software Engineer: Golang, Vue.js,
+Linux, Docker, Docker-Compose, Kubernetes, Cloud Computing, Google Cloud
+Computing (GCP).
+
+\subsubsubsection[title={Any visa restrictions -- if applicable (ILR,
+Tier 2, Dependant visa
+etc)},reference={any-visa-restrictions-if-applicable-ilr-tier-2-dependant-visa-etc}]
+
+\startitemize[packed]
+\item
+  {\bf Passport/Nationality:} I have a British Passport, national
+  insurance number, British Citizenship etc.
+\item
+  {\bf Drivers Licence:} Full UK Driving Licence.
+\item
+  {\bf Background/Criminal Check:}
+  \startitemize
+  \item
+    \useURL[url1][https://www.gov.uk/request-copy-criminal-record][][Basic
+    Disclosure and Barring Service (DBS) check]\from[url1]: Certificate
+    was issued on 31 July 2020.
+
+    \startblockquote
+    {\bf Police Records of Convictions, Cautions, Reprimands and
+    Warnings:}
+
+    NONE RECORDED
+    \stopblockquote
+  \item
+    \useURL[url2][https://www.acro.police.uk/police_certificates.aspx][][Police
+    Certificates - ACRO Criminal Records Office]\from[url2]: Certificate
+    was issued on 18 February 2020.
+
+    \startblockquote
+    {\bf Summary of convictions and
+    reprimands/warnings/cautions/impending prosecutions/under
+    investigations held on UK police databases and disclosed in
+    accordance with the ACRO stepdown model:}
+
+    NO TRACE.
+    \stopblockquote
+
+    I have requested a new certificate and this should arrive between
+    the 15th/28th of August 2020.
+  \stopitemize
+\stopitemize
+
+I've a limited company called BANAIO LTD which I started in March 2017
+and I've been a contractor since then. I would prefer to stick to
+contracting but I will also consider a permanent position.
+
+\subsubsubsection[title={Reason for looking for new
+role},reference={reason-for-looking-for-new-role}]
+
+Last contract finished on the 1st of January 2020.
+
+Kind regards,
+
+Mohamed Bana
+
+\thinrule
+
+\useURL[url3][https://bana.io]\from[url3] ---
+\useURL[url4][mailto:m@bana.io][][m@bana.io]\from[url4] ---
+\useURL[url5][tel:+44-7960-045-281][][+44-7960-045-281]\from[url5]
+
+% --include-after-body
+% \stopcolumns
+\stoptext

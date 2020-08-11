@@ -4,7 +4,7 @@ tags: ["morocco", "marrakech"]
 sidebar: auto
 sidebarDepth: 3
 prev: /morocco/
-next: ./remote-job
+next: /morocco/
 ---
 
 | Contact                                                                                                                                                                                                                                           	|                                                                               Web                                                                              	|                                                                                                                                                        Address 	|

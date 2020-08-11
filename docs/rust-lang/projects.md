@@ -12,3 +12,9 @@ next: /rust-lang/
 
 * **Open Banking client written in Rust Programming Language.:** [https://github.com/banaio/openbanking.rs](https://github.com/banaio/openbanking.rs)
 * **All things written in Rust Programming Language.:** [https://github.com/banaio/bana.rs](https://github.com/banaio/bana.rs)
+
+## Misc
+
+See the script, [./generate-projects.sh](./generate-projects.sh), that I use to generate all the above:
+
+<<< @/docs/rust-lang/generate-projects.sh

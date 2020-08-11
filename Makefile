@@ -5,15 +5,25 @@
 # # SHELL 		:=	/bin/bash
 # # SHELL 	:=	/usr/bin/zsh
 # # SHELL		:=	/bin/sh
-.ONESHELL:
+# .ONESHELL:
 SHELL 			:= bash
-# SHELL 		:= /bin/bash -o pipefail
-.SHELLFLAGS 	:= -euf -o pipefail -c
-# .SHELLFLAGS 	:= -euo pipefail -c
-.DEFAULT_GOAL	:= all
-.DELETE_ON_ERROR:
+# # SHELL 		:= /bin/bash -o pipefail
+# .SHELLFLAGS 	:= -veuf -o pipefail -c
+# # .SHELLFLAGS 	:= -euo pipefail -c
+# .DEFAULT_GOAL	:= all
+# .DELETE_ON_ERROR:
 MAKEFLAGS 	+= --warn-undefined-variables
-MAKEFLAGS 	+= --no-builtin-rules
+# MAKEFLAGS 	+= --no-builtin-rules
+# MAKEFLAGS 	+= --print-directory
+# MAKEFLAGS 	+= --jobs=32
+# https://www.gnu.org/software/make/manual/html_node/Parallel-Output.html#Parallel-Output
+# MAKEFLAGS 	+= --output-sync=target
+# # debug
+# MAKEFLAGS 	+= --just-print
+# MAKEFLAGS 	+= --dry-run
+# MAKEFLAGS 	+= --recon
+
+# IFS=$'\n\t'
 
 BOLD   	:= \033[1m
 GREEN  	:= \033[32m
@@ -64,8 +74,40 @@ init:
 	@printf "%b" "${GREEN}" "  ---> initialising " "${RESET}" "\n"
 	yarn install --frozen-lockfile --non-interactive
 
+# https://www.arp242.net/dot-git.html
 .PHONY: commit
 commit:
 	@printf "%b" "${GREEN}" "  ---> committing " "${RESET}" "\n"
-	git commit -m "$(shell cat stratch/commit-msg.md)"
 	git log -n1
+	@# git commit -m "$(shell cat stratch/commit-msg.md)"
+	git commit -eF stratch/commit-msg.md
+	git log -n1
+
+# https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions-enterprise-linux-fedora-and-snap-packages
+# https://github.com/nodesource/distributions/blob/master/README.md
+# # Using Ubuntu
+# curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+# sudo apt-get install -y nodejs
+.PHONY: node_init
+node_init: NODE_VERSION_REQUIRED=$(shell cat ./.node-version | grep -oP '(?<=v)[0-9]+' | tr -d "\n" ; echo -e '.x')
+# node_init: NODE_VERSION_REQUIRED=$(shell cat ./.node-version | egrep -o '[0-9]+\.[0-9]+')
+node_init:
+	@printf "%b" "${GREEN}" "  ---> intalling Node.js " "${RESET}" "\n"
+	echo "current - node --version: $(shell node --version), required: ${NODE_VERSION_REQUIRED}"
+	@echo
+	curl -sL https://deb.nodesource.com/setup_${NODE_VERSION_REQUIRED} | sudo -E bash -
+	sudo apt-get install -y nodejs
+	@# ## Run `sudo apt-get install -y nodejs` to install Node.js 14.x and npm
+	@# ## You may also need development tools to build native addons:
+	@#      sudo apt-get install gcc g++ make
+	@# ## To install the Yarn package manager, run:
+	@#      curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+	@#      echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+	sudo apt autoremove
+	sudo apt-get install gcc g++ make
+	sudo apt-get update
+	@# sudo apt-get update && sudo apt-get install yarn
+	@echo
+	echo "updated - node --version: $(shell node --version)"
+	@echo
+	sudo apt autoremove
