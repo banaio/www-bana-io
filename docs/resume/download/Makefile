@@ -125,6 +125,21 @@ cover_letter_tex:
 		--output="${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" \
 		../cover-letter.md
 
+.PHONY: cover_letter_plain_text
+cover_letter_plain_text:
+	@printf "%b" "${GREEN}" "  ---> ${OUTPUT_DIR}/mohamed-bana_cover-letter.tex" "${RESET}" "\n"
+	@# --include-before-body=./templates/include-before-body.tex
+	@# --include-after-body=./templates/include-after-body.tex
+	@# --variable=date:"${DATE_TIME}" \
+	pandoc \
+		--fail-if-warnings \
+		--from=markdown \
+		--to=plain \
+		--standalone \
+		--wrap=preserve \
+		--output="${OUTPUT_DIR}/mohamed-bana_cover-letter.txt" \
+		../cover-letter.md
+
 .PHONY: cover_letter_all
 cover_letter_all: cover_letter_tex
 	@printf "%b" "${GREEN}" "  ---> ${OUTPUT_DIR}/mohamed-bana_cover-letter.*" "${RESET}" "\n"
