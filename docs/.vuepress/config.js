@@ -59,7 +59,7 @@ debug_copy.log = log_new
 // https://gist.github.com/kethinov/6658166
 // List all files in a directory in Node.js recursively in a synchronous fashion
 const allFilesSync = (dir, fileList = []) => {
-  fs.readdirSync(dir).forEach(file => {
+  fs.readdirSync(dir).forEach((file) => {
     const filePath = path.join(dir, file)
     fileList.push(
       fs.statSync(filePath).isDirectory()
@@ -136,7 +136,7 @@ const copyStaticFilesToPublic = () => {
       debug_copy('resolve pathToDestination=%o', pathToDestination)
 
       if (fs.lstatSync(pathToSource).isDirectory()) {
-        if (doNotCopyFolderNames.some(regexp => regexp.test(name))) {
+        if (doNotCopyFolderNames.some((regexp) => regexp.test(name))) {
           debug_copy(
             'fs.lstatSync(pathToSource).isDirectory() - SKIPPING doNotCopyFolderNames name=%o',
             name
@@ -157,7 +157,7 @@ const copyStaticFilesToPublic = () => {
           }
         }
       } else {
-        if (copyFileNames.some(regexp => regexp.test(name))) {
+        if (copyFileNames.some((regexp) => regexp.test(name))) {
           debug_copy(
             'copyFileNames.some(regexp => regexp.test(name)) - CREATE copyFileNames name=%o',
             name
@@ -561,7 +561,7 @@ module.exports = {
       //     debug('markdown:toc:formatormat args=', args);
       // },
     },
-    extendMarkdown: md => {
+    extendMarkdown: (md) => {
       debug_vuepress(
         'markdown:extendMarkdown - md=',
         util.inspect(md, inspect_options)
@@ -574,7 +574,7 @@ module.exports = {
       return md
     },
     // https://vuepress.vuejs.org/plugin/option-api.html#chainmarkdown
-    chainMarkdown: config => {
+    chainMarkdown: (config) => {
       debug_vuepress(
         'markdown:extendMarkdown - config=',
         util.inspect(config, inspect_options)

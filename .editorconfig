@@ -19,6 +19,7 @@ insert_final_newline = true
 
 [*.js]
 quote_type = single
+indent_size = 4
 
 [*.json]
 indent_style = space
@@ -46,3 +47,20 @@ indent_size = 4
 [*.go]
 indent_style = tab
 indent_size = 4
+
+# Matches the exact files either package.json or .travis.yml
+[{package.json,.travis.yml}]
+indent_style = space
+indent_size = 2
+
+[*.sh]
+# like -i=4
+indent_style = space
+indent_size = 4
+
+shell_variant      = posix # like -ln=posix
+binary_next_line   = true  # like -bn
+switch_case_indent = true  # like -ci
+space_redirects    = true  # like -sr
+keep_padding       = true  # like -kp
+function_next_line = true  # like -fn

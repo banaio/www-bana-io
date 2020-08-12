@@ -1,4 +1,5 @@
 // Place your key bindings in this file to override the defaultsauto[]
+// https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
 [
     {
         "key": "shift+meta+up",
@@ -19,5 +20,13 @@
         "key": "ctrl+shift+alt+down",
         "command": "-editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "meta+numpad_subtract",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "shift+meta+numpad_subtract",
+        "command": "workbench.action.navigateForward"
     }
 ]

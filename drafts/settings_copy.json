@@ -9,14 +9,9 @@
     ]
   },
   "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "editor.wordWrap": "on"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "editor.wordWrap": "on"
   },
   "[markdown]": {
@@ -33,59 +28,9 @@
     "editor.tabSize": 2
   },
   "breadcrumbs.enabled": false,
-  "cSpell.allowCompoundWords": true,
   "cSpell.checkLimit": 9007199254740991,
-  "cSpell.dictionaries": [
-    "wordsEn",
-    "wordsEnGb",
-    "companies",
-    "softwareTerms",
-    "misc",
-    "typescrip",
-    "node",
-    "php",
-    "go",
-    "python",
-    "powershell",
-    "html",
-    "css"
-  ],
   "cSpell.enableFiletypes": [
     "!.*.log"
-  ],
-  "cSpell.enabledLanguageIds": [
-    "asciidoc",
-    "c",
-    "cpp",
-    "csharp",
-    "css",
-    "git-commit",
-    "go",
-    "handlebars",
-    "haskell",
-    "html",
-    "jade",
-    "java",
-    "javascript",
-    "javascriptreact",
-    "json",
-    "jsonc",
-    "latex",
-    "less",
-    "markdown",
-    "php",
-    "plaintext",
-    "python",
-    "pug",
-    "restructuredtext",
-    "rust",
-    "scala",
-    "scss",
-    "text",
-    "typescript",
-    "typescriptreact",
-    "yaml",
-    "yml"
   ],
   "cSpell.language": "en-GB",
   "cSpell.logLevel": "Error",
@@ -101,9 +46,7 @@
   "diffEditor.renderIndicators": true,
   "diffEditor.renderSideBySide": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true,
-    "source.fixAll.tslint": true
+    "source.fixAll.eslint": true
   },
   "editor.codeLens": false,
   "editor.cursorBlinking": "blink",
@@ -125,66 +68,34 @@
   "editor.scrollBeyondLastLine": true,
   "editor.snippetSuggestions": "inline",
   "editor.wordWrap": "on",
-  "emmet.excludeLanguages": [],
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "vue-html": "html"
   },
-  "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": true,
   "eslint.alwaysShowStatus": true,
   "eslint.enable": true,
   "eslint.format.enable": true,
-  "eslint.onIgnoredFiles": "warn",
   "eslint.packageManager": "yarn",
-  "eslint.probe": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "html",
-    "vue",
-    "markdown",
-    "json",
-    "jsonc"
-  ],
   "eslint.run": "onSave",
   "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "html",
-    "vue",
-    "markdown",
     "json",
     "jsonc"
-  ],
-  "eslint.workingDirectories": [
-    "${workspaceFolder}"
   ],
   "explorer.confirmDragAndDrop": true,
   "explorer.openEditors.visible": 5,
-  "explorer.sortOrder": "type",
   "files.associations": {
     "*_profile": "shellscript",
-    ".*ignore": "ignore",
-    "\\..*profile": "shellscript",
-    "\\..*rc": "shellscript",
-    "^*_profile$": "shellscript",
-    "^\\..*profile$": "shellscript",
-    "^\\..*rc$": "shellscript"
+    ".*ignore": "ignore"
   },
-  "files.autoSave": "onFocusChange",
+  "files.autoSave": "afterDelay",
   "files.encoding": "utf8",
   "files.eol": "\n",
   "files.exclude": {
     "**/.cache": true,
     "**/.git": true,
     "**/.temp": true,
-    "**/node_modules": true,
-    "**/node_modules/*": true,
-    "node_modules": true
+    "**/node_modules": true
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
@@ -193,17 +104,7 @@
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
     "**/.hg/store/**": true,
-    "**/node_modules/*": true,
-    "dist": true,
-    "dist/": true,
-    "dist/**/*": true,
-    "docs/.cache": true,
-    "docs/.cache/": true,
-    "docs/.cache/**/*": true,
-    "docs/.temp": true,
-    "docs/.temp/": true,
-    "docs/.temp/**/*": true,
-    "node_modules": true
+    "**/node_modules/**": true
   },
   "markdownlint.run": "onSave",
   "problems.showCurrentInStatus": true,
@@ -217,8 +118,6 @@
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
   "workbench.colorCustomizations": {
-    "editorBracketMatch.background": "#D50000",
-    "editorBracketMatch.border": "#ffffff",
     "editorCursor.foreground": "#D50000",
     "editorIndentGuide.activeBackground": "#EF9A9A"
   },
@@ -231,6 +130,6 @@
   "workbench.settings.editor": "json",
   "workbench.settings.openDefaultSettings": false,
   "workbench.settings.useSplitJSON": false,
-  "workbench.tree.indent": 8,
+  "workbench.tree.indent": 16,
   "yaml.format.enable": true
 }

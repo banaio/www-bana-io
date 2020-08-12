@@ -21,7 +21,7 @@ const LANGUAGE_FILTERS = ['Go', 'Rust']
 // console.log('LANGUAGE_FILTERS=%O', LANGUAGE_FILTERS);
 // console.log('name=%O, version=%O', name, version);
 
-const MyOctokit = Octokit.defaults(options => {
+const MyOctokit = Octokit.defaults((options) => {
   return Object.assign({}, options, {
     Pragma: 'no-cache',
     'cache-control': 'no-cache',
@@ -31,7 +31,7 @@ const MyOctokit = Octokit.defaults(options => {
 })
 const octokit = new MyOctokit({
   log: require('console-log-level')({
-    prefix: level => {
+    prefix: (level) => {
       return [level, new Date().toISOString()].join(':')
     },
     level: 'trace',
@@ -57,7 +57,7 @@ const octokit = new MyOctokit({
 })
 // Following GitHub docs formatting:
 // https://developer.github.com/v3/repos/#list-organization-repositories
-const filtered = (async mod => {
+const filtered = (async (mod) => {
   const result = await octokit.request('GET /orgs/:org/repos', {
     org: 'banaio',
     type: 'public',
@@ -69,22 +69,22 @@ const filtered = (async mod => {
 
   // console.log(`${result.data.length} repos found.`);
   const filtered = result.data
-    .filter(repo => {
+    .filter((repo) => {
       // const { html_url, language, description = '' } = repo;
       // console.log('initial - html_url=%O, language=%O, description=%O', html_url, language, description);
-      return LANGUAGE_FILTERS.some(filter => filter.match(repo.language))
+      return LANGUAGE_FILTERS.some((filter) => filter.match(repo.language))
       // if (repo.description !== null) {
       //     return true;
       // }
       // return false;
     })
-    .map(repo => {
+    .map((repo) => {
       if (repo.description) {
         return repo
       }
       return { ...repo, description: '' }
     })
-    .map(repo => {
+    .map((repo) => {
       const { html_url, language, description, name } = repo
       return {
         name: name.trim(),
@@ -103,10 +103,10 @@ const filtered = (async mod => {
       text: 'Golang Projects',
       link: '/golang/projects',
       items: filtered
-        .filter(repo => {
+        .filter((repo) => {
           return repo.language === 'Go'
         })
-        .map(repo => {
+        .map((repo) => {
           return {
             text: repo.name,
             link: repo.html_url,
@@ -122,10 +122,10 @@ const filtered = (async mod => {
       text: 'Rust Lang Projects',
       link: '/rust-lang/projects',
       items: filtered
-        .filter(repo => {
+        .filter((repo) => {
           return repo.language === 'Rust'
         })
-        .map(repo => {
+        .map((repo) => {
           return {
             text: repo.name,
             link: repo.html_url,
@@ -134,7 +134,7 @@ const filtered = (async mod => {
         }),
     },
   ]
-})(module).then(filtered => {
+})(module).then((filtered) => {
   console.log('filtered=%j', filtered)
   console.log('filtered=%o', filtered)
   console.log('filtered=%O', filtered)

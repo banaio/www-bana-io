@@ -69,10 +69,26 @@ lint:
 	@printf "%b" "${GREEN}" "  ---> linting" "${RESET}" "\n"
 	yarn lint-md
 
-.PHONY: init
-init:
+.PHONY: yarn_init
+yarn_init:
 	@printf "%b" "${GREEN}" "  ---> initialising " "${RESET}" "\n"
 	yarn install --frozen-lockfile --non-interactive
+
+# $ cat ~/.zshrc ~/.profile ~/.zprofile
+#
+# ##########
+# # Golang #
+# export PATH="${PATH}:/usr/local/go/bin"
+# # export GOROOT="${HOME}/go"
+# export GOPATH="${HOME}/go"
+# export PATH="$HOME/go/bin:${PATH}"
+# ##########
+.PHONY: deps_init
+deps_init:
+	@printf "%b" "${GREEN}" "  ---> initialising dependencies " "${RESET}" "\n"
+	@#https://github.com/mvdan/sh
+	GO111MODULE=on go get mvdan.cc/sh/v3/cmd/shfmt
+	which shfmt
 
 # https://www.arp242.net/dot-git.html
 .PHONY: commit
