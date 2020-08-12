@@ -232,5 +232,6 @@
   "workbench.settings.openDefaultSettings": false,
   "workbench.settings.useSplitJSON": false,
   "workbench.tree.indent": 8,
+  "explorer.autoReveal": "focusNoScroll",
   "yaml.format.enable": true
 }
