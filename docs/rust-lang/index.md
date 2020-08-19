@@ -1,7 +1,7 @@
 ---
-title: "Rust Lang"
-tags: ["blog", "programming", "software", "rust", "rust lang"]
-date: "2020-08-01"
+title: 'Rust Lang'
+tags: ['blog', 'programming', 'software', 'rust', 'rust lang']
+date: '2020-08-01'
 sidebar: false
 type: post
 prev: false
@@ -14,8 +14,10 @@ next: ./projects
     v-for="page in pages"
     v-bind:key="page.path"
     :to="page.path"
-    tag="div"><h2><a>{{ page.title }}</a></h2><div>{{ page.lastUpdated }}, <b class="tags-heading">Tags:</b> <span v-for="(item, index) in page.frontmatter.tags" class="tag"><span v-if="index != 0">, </span>{{ item }}</span></div><div></div>
+    tag="div"><h2><a>{{ page.title }}</a></h2><div>{{ page.lastUpdated }}, <b class="tags-heading">Tags:</b> <span v-for="(item, index) in page.frontmatter.tags"><span class="tag">{{ item }}</span></span></div><div></div>
 </router-link>
+
+<!-- <span v-if="index != 0">, </span> -->
 
 <script>
 const LOCALE = 'en-GB';
@@ -67,12 +69,25 @@ export default {
 <style scoped>
 .tags-heading {
     font-family: 'Alegreya Sans SC', sans-serif;
+    margin-bottom: .5em;
 }
+
 .tags {
     font-family: 'Alegreya Sans SC', sans-serif;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 100%;
 }
 
 .tag {
     font-family: 'Alegreya Sans SC', sans-serif;
+    padding: .2em;
+    border: 1px solid #666;
+    background-color: #f7f7f7;
+    margin-right: .75em;
+    border-radius: 2px;
 }
 </style>

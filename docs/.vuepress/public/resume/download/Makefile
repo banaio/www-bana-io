@@ -1,44 +1,28 @@
 # http://agdr.org/2020/05/14/Polyglot-Makefiles.html
 # https://tech.davis-hansson.com/p/make/
 
-# SHELL 		:=	bash
-# # SHELL 		:=	/bin/bash
-# # SHELL 	:=	/usr/bin/zsh
-# # SHELL		:=	/bin/sh
-.ONESHELL:
-SHELL 			:= bash
-# SHELL 		:= /bin/bash -o pipefail
-.SHELLFLAGS 	:= -o pipefail -o noclobber -o errexit -o pipefail -o nounset -c
-# .SHELLFLAGS 	:= -euf -o pipefail -c
-# set -o noclobber    # Avoid overlay files (echo "hi" > foo)
-# set -o errexit      # Used to exit upon error, avoiding cascading errors
-# set -o pipefail     # Unveils hidden failures
-# set -o nounset      # Exposes unset variables
-
-# # set -o nullglob     # Non-matching globs are removed  ('*.foo' => '')
-# shopt -s nullglob   # Non-matching globs are removed  ('*.foo' => '')
-# # set -o failglob     # Non-matching globs throw errors
-# shopt -s failglob   # Non-matching globs throw errors
-# # set -o nocaseglob   # Case insensitive globs
-# shopt -s nocaseglob # Case insensitive globs
-# # set -o globstar     # Allow ** for recursive matches ('lib/**/*.rb' => 'lib/a/b/c.rb')
-# shopt -s globstar # Allow ** for recursive matches ('lib/**/*.rb' => 'lib/a/b/c.rb')
-
-.DEFAULT_GOAL	:= all
+# .ONESHELL:
+SHELL					:= bash
+# IFS					:= $'\n\t'
+.SHELLFLAGS 			:= -o pipefail -o noclobber -o errexit -o pipefail -o nounset -c
+# .SHELLFLAGS 			:= -euf -o pipefail -c
+.DEFAULT_GOAL			:= all
 .DELETE_ON_ERROR:
-MAKEFLAGS 	+= --warn-undefined-variables
-MAKEFLAGS 	+= --no-builtin-rules
+MAKEFLAGS 				+= --environment-overrides
+MAKEFLAGS 				+= --warn-undefined-variables
+MAKEFLAGS 				+= --no-builtin-rules
+MAKEFLAGS 				+= --no-builtin-variables
 
-BOLD   	:= \033[1m
-GREEN  	:= \033[32m
-YELLOW 	:= \033[33m
-MISC	:= \033[92m
-RESET  	:= \033[0m
+BOLD   					:= \033[1m
+GREEN  					:= \033[32m
+YELLOW 					:= \033[33m
+MISC					:= \033[92m
+RED						:= \033[91m
+RESET  					:= \033[0m
 
-GIT_REV	:=	$(shell git rev-parse --short HEAD)
+GIT_REV					:= $(shell git rev-parse --short HEAD)
 
 # DATE_TIME="$(date --iso-8601='s')"
-# DATE_TIME="$(date --utc)"
 DATE_TIME := $(shell date --utc +'%A, %d %B %Y, %H:%M:%S %Z')
 # OUTPUT_DIR="./docs/resume/download"
 # OUTPUT_DIR="./download"
@@ -125,6 +109,21 @@ cover_letter_tex:
 		--output="${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" \
 		../cover-letter.md
 
+.PHONY: cover_letter_plain_text
+cover_letter_plain_text:
+	@printf "%b" "${GREEN}" "  ---> ${OUTPUT_DIR}/mohamed-bana_cover-letter.tex" "${RESET}" "\n"
+	@# --include-before-body=./templates/include-before-body.tex
+	@# --include-after-body=./templates/include-after-body.tex
+	@# --variable=date:"${DATE_TIME}" \
+	pandoc \
+		--fail-if-warnings \
+		--from=markdown \
+		--to=plain \
+		--standalone \
+		--wrap=preserve \
+		--output="${OUTPUT_DIR}/mohamed-bana_cover-letter.txt" \
+		../cover-letter.md
+
 .PHONY: cover_letter_all
 cover_letter_all: cover_letter_tex
 	@printf "%b" "${GREEN}" "  ---> ${OUTPUT_DIR}/mohamed-bana_cover-letter.*" "${RESET}" "\n"
@@ -157,16 +156,17 @@ cover_letter_all: cover_letter_tex
 		--output="${OUTPUT_DIR}/mohamed-bana_cover-letter.xml" \
 		../cover-letter.md
 
+XDG_OPEN_EXISTS := $(shell command -v xdg-open 2> /dev/null)
+
 .PHONY: combine
 combine: cv_tex cover_letter_tex
+	@printf "%b" "${GREEN}" "  ---> combining " "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf" "${RESET}" "\n"
+ifdef XDG_OPEN_EXISTS
 	pdfunite "${OUTPUT_DIR}/mohamed-bana_cv.pdf" "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
 	xdg-open "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
-
-
-
-
-
-
+else
+	$(error 'canot find pdfunite and xdg-open')
+endif
 
 
 

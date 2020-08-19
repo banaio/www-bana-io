@@ -1,37 +1,34 @@
 # http://agdr.org/2020/05/14/Polyglot-Makefiles.html
 # https://tech.davis-hansson.com/p/make/
 
-# SHELL 		:=	bash
-# # SHELL 		:=	/bin/bash
-# # SHELL 	:=	/usr/bin/zsh
-# # SHELL		:=	/bin/sh
 # .ONESHELL:
-SHELL 			:= bash
-# # SHELL 		:= /bin/bash -o pipefail
-# .SHELLFLAGS 	:= -veuf -o pipefail -c
-# # .SHELLFLAGS 	:= -euo pipefail -c
-# .DEFAULT_GOAL	:= all
-# .DELETE_ON_ERROR:
-MAKEFLAGS 	+= --warn-undefined-variables
-# MAKEFLAGS 	+= --no-builtin-rules
-# MAKEFLAGS 	+= --print-directory
-# MAKEFLAGS 	+= --jobs=32
+SHELL					:= bash
+# IFS					:= $'\n\t'
+.SHELLFLAGS 			:= -o pipefail -o noclobber -o errexit -o pipefail -o nounset -c
+# .SHELLFLAGS 			:= -euf -o pipefail -c
+.DEFAULT_GOAL			:= all
+.DELETE_ON_ERROR:
+MAKEFLAGS 				+= --environment-overrides
+MAKEFLAGS 				+= --warn-undefined-variables
+MAKEFLAGS 				+= --no-builtin-rules
+MAKEFLAGS 				+= --no-builtin-variables
+# MAKEFLAGS 			+= --print-directory
+# MAKEFLAGS 			+= --jobs=32
 # https://www.gnu.org/software/make/manual/html_node/Parallel-Output.html#Parallel-Output
-# MAKEFLAGS 	+= --output-sync=target
+# MAKEFLAGS 			+= --output-sync=target
 # # debug
-# MAKEFLAGS 	+= --just-print
-# MAKEFLAGS 	+= --dry-run
-# MAKEFLAGS 	+= --recon
+# MAKEFLAGS 			+= --just-print
+# MAKEFLAGS 			+= --dry-run
+# MAKEFLAGS 			+= --recon
 
-# IFS=$'\n\t'
+BOLD   					:= \033[1m
+GREEN  					:= \033[32m
+YELLOW 					:= \033[33m
+MISC					:= \033[92m
+RED						:= \033[91m
+RESET  					:= \033[0m
 
-BOLD   	:= \033[1m
-GREEN  	:= \033[32m
-YELLOW 	:= \033[33m
-MISC	:= \033[92m
-RESET  	:= \033[0m
-
-GIT_REV	:=	$(shell git rev-parse --short HEAD)
+GIT_REV					:= $(shell git rev-parse --short HEAD)
 
 .PHONY: dev
 all: dev

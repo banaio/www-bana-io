@@ -1,6 +1,29 @@
 // Place your key bindings in this file to override the defaultsauto[]
 // https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
+// https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf
 [
+    // start: disable
+    {
+        "key": "ctrl+numpad_add",
+        "command": "-workbench.action.zoomIn"
+    },
+    {
+        "key": "ctrl+shift+=",
+        "command": "-workbench.action.zoomIn"
+    },
+    {
+        "key": "ctrl+=",
+        "command": "-workbench.action.zoomIn"
+    },
+    {
+        "key": "ctrl+numpad_subtract",
+        "command": "-workbench.action.zoomOut"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.zoomOut"
+    },
+    // end: disabled
     {
         "key": "shift+meta+up",
         "command": "editor.action.copyLinesUpAction",
@@ -11,22 +34,30 @@
         "command": "-editor.action.copyLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
     },
+    // ⇧⌥↓ / ⇧⌥↑ Copy line down/up
     {
         "key": "shift+meta+down",
         "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
+    // ⇧⌥↓ / ⇧⌥↑ Copy line down/up
     {
         "key": "ctrl+shift+alt+down",
         "command": "-editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
+    // ⌃- / ⌃⇧- Go back/forward
     {
-        "key": "meta+numpad_subtract",
+        "key": "ctrl+numpad_subtract",
         "command": "workbench.action.navigateBack"
     },
+    // ⌃- / ⌃⇧- Go back/forward
     {
-        "key": "shift+meta+numpad_subtract",
+        "key": "shift+ctrl+numpad_subtract",
         "command": "workbench.action.navigateForward"
     }
+    // ⌘Home / End Scroll to top/bottom
+    // Home / End Go to beginning/end of line
+    // ⌘↑ / ⌘↓ Go to beginning/end of file
+    //     ⌥↓ / ⌥↑ Move line down/up
 ]
