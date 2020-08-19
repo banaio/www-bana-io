@@ -111,7 +111,6 @@
   "editor.cursorSmoothCaretAnimation": false,
   "editor.cursorStyle": "block-outline",
   "editor.cursorSurroundingLinesStyle": "all",
-  // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "'Iosevka Fixed Extended','Iosevka-Extended','monospace', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
@@ -165,6 +164,7 @@
     "${workspaceFolder}"
   ],
   "explorer.autoReveal": "focusNoScroll",
+  "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": true,
   "explorer.openEditors.visible": 5,
   "explorer.sortOrder": "type",
@@ -233,6 +233,6 @@
   "workbench.settings.editor": "json",
   "workbench.settings.openDefaultSettings": false,
   "workbench.settings.useSplitJSON": false,
-  "workbench.tree.indent": 8,
+  "workbench.tree.indent": 24,
   "yaml.format.enable": true
 }
