@@ -28,8 +28,8 @@ DATE_TIME := $(shell date --utc +'%A, %d %B %Y, %H:%M:%S %Z')
 # OUTPUT_DIR="./download"
 OUTPUT_DIR := $(shell pwd)
 
-.PHONY: cv_all cover_letter_all combine
-all: cv_all cover_letter_all combine
+.PHONY: cv_all cover_letter_all combine copy_to_send_dir
+all: cv_all cover_letter_all combine copy_to_send_dir
 
 # .PHONY: cv cover_letter combine
 # all: cv cover_letter combine
@@ -168,6 +168,21 @@ else
 	$(error 'canot find pdfunite and xdg-open')
 endif
 
+.PHONY: copy_to_send_dir
+copy_to_send_dir: SEND_DIR=${OUTPUT_DIR}/send
+copy_to_send_dir:
+	@printf "%b" "${GREEN}" "  ---> copying " "SEND_DIR=${SEND_DIR}" "${RESET}" "\n"
+	@mkdir -p "${OUTPUT_DIR}/send"
+	@cp -v "${OUTPUT_DIR}/mohamed-bana_cv.pdf" "${SEND_DIR}"
+	@cp -v "${OUTPUT_DIR}/mohamed-bana_cv.docx" "${SEND_DIR}"
+	@cp -v "${OUTPUT_DIR}/mohamed-bana_cv.odt" "${SEND_DIR}"
+	@echo
+	@cp -v "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" "${SEND_DIR}"
+	@cp -v "${OUTPUT_DIR}/mohamed-bana_cover-letter.docx" "${SEND_DIR}"
+	@cp -v "${OUTPUT_DIR}/mohamed-bana_cover-letter.odt" "${SEND_DIR}"
+	@echo
+	@cp -v "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf" "${SEND_DIR}"
+	@ls -1 "${SEND_DIR}"
 
 
 
