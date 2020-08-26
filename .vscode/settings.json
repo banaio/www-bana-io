@@ -177,7 +177,7 @@
     "^\\..*profile$": "shellscript",
     "^\\..*rc$": "shellscript"
   },
-  "files.autoSave": "onFocusChange",
+  "files.autoSave": "onWindowChange",
   "files.encoding": "utf8",
   "files.eol": "\n",
   "files.exclude": {
@@ -233,6 +233,6 @@
   "workbench.settings.editor": "json",
   "workbench.settings.openDefaultSettings": false,
   "workbench.settings.useSplitJSON": false,
-  "workbench.tree.indent": 24,
+  "workbench.tree.indent": 8,
   "yaml.format.enable": true
 }

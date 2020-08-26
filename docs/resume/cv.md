@@ -29,6 +29,8 @@ includesource: true
 
 I am a well-rounded Software Engineer, with around 9-10 years of Software Development experience. I understand what it takes to release a product having worked on the back-end, front-end, testing and finally the deployment aspect of several products.
 
+Please read my [Cover Letter](./cover-letter).
+
 ## Work Experience
 
 ### Full Stack Go and Vue.js Developer, [Open Banking Limited](https://www.openbanking.org.uk), St Katharine's & Wapping, London, UK - 08/05/2018–01/01/2020
