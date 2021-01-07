@@ -33,6 +33,26 @@ Please read my [Cover Letter](./cover-letter).
 
 ## Work Experience
 
+### Remote Cloud Software Engineer / Golang, [IBM United Kingdom Limited](https://www.ibm.com/uk/en/), Hursley Park, Winchester, UK - 14/09/2020–-31/12/2021 (Present)
+
+I am working on IBM Cloud as Software Engineer on IKS Cluster (IBM Cloud™ Kubernetes Service) as Cloud Software Engineer / Golang Engineer. IKS is effectively something like AWS, GCP or Azure, see [IBM Cloud](https://cloud.ibm.com/).
+
+* I'm a member of the IBM Cloud™ Kubernetes Service team responsible for delivering IBM's Kubernetes managed container service. As a certified K8s provider, IBM Cloud Kubernetes Service provides intelligent scheduling, self-healing, horizontal scaling, service discovery and load balancing, automated rollouts and > rollbacks, along with secret and configuration management and a fully managed image registry with integrated vulnerability scanning.
+* Working in an agile way and operating with a continuous delivery model.
+* Team/Squad consisted of around nine (9) people and we managed the complete life cycle of deliveries.
+
+**NB:** I'm not looking for a new role until 31/12/2021. Also, it must be remote or partially remote, by which I mean, I do not mind occasional visits to an office in the United Kingdom. I'm also working towards a Red Hat Certification.
+
+**Tech:** Go, Golang, Shell Scripting, Bash, Docker, Docker Compose, Kubernetes, RedHat, [Travis CI](https://travis-ci.org/), [LogDNA](https://logdna.com/), [go.uber.org/zap](https://github.com/uber-go/zap), [etcd](https://etcd.io/) or [What is etcd? | IBM](https://www.ibm.com/cloud/learn/etcd).
+
+<!-- IBM United Kingdom Limited
+Hursley Park
+Winchester
+Hants
+SO21 2JN
+
+Telephone: +44(0) 1962 815000 -->
+
 ### Full Stack Go and Vue.js Developer, [Open Banking Limited](https://www.openbanking.org.uk), St Katharine's & Wapping, London, UK - 08/05/2018–01/01/2020
 
 Working as a full stack developer at Open Banking on a tool that will validate a bank’s implementation of the OpenBanking API spec, see:
