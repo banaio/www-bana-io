@@ -44,16 +44,16 @@ I'm a well-rounded engineer and I'm able to see the delivery, from beginning to 
 
 I'm willing to negotiate on this as it depends on a few things, that said:
 
-* If it's a contracting role, minimum of £580 per day.
+* If it's a contracting role, minimum of £500 per day.
 * If it's a permanent position, minimum of £90,000 per year.
 
-I'm available to start immediately.
+I'm available to start after the 30/04/2021.
 
 #### Work locations considered
 
 Ideally, a remote role with an office in London.
 
-If it's not fully remote, an office in East London would be perfect, e.g., Canary Wharf, Aldgate (East).
+If it's not fully remote, an office in East London, e.g., Canary Wharf, Aldgate (East), would be good.
 
 #### Key skills and preferred job role
 
@@ -68,28 +68,18 @@ I'm flexible in terms of the choice of framework used, however, my ideal role wi
 
 #### Any visa restrictions – if applicable (ILR, Tier 2, Dependant visa etc)
 
-* **Passport/Nationality:** I have a British Passport, national insurance number, British Citizenship etc.
+* **Passport/Nationality:** I have a British Passport, National Insurance number, British Citizenship etc.
 * **Drivers Licence:** Full UK Driving Licence.
 * **Background/Criminal Check:**
-  * [Basic Disclosure and Barring Service (DBS) check](https://www.gov.uk/request-copy-criminal-record): Certificate was issued on 31 July 2020.
-
-     > **Police Records of Convictions, Cautions, Reprimands and Warnings:**
-     >
-     > NONE RECORDED
-
-  * [Police Certificates - ACRO Criminal Records Office](https://www.acro.police.uk/police_certificates.aspx): Certificate was issued on 18 February 2020.
+  * [Police Certificates - ACRO Criminal Records Office](https://www.acro.police.uk/police_certificates.aspx): Certificate was issued in 2021.
 
      > **Summary of convictions and reprimands/warnings/cautions/impending prosecutions/under investigations held on UK police databases and disclosed in accordance with the ACRO stepdown model:**
      >
      > NO TRACE.
 
-     I have requested a new certificate and this should arrive between the 15th/28th of August 2020.
-
-I've a limited company called BANAIO LTD which I started in March 2017 and I've been a contractor since then. I would prefer to stick to contracting but I will also consider a permanent position.
-
 #### Reason for looking for new role
 
-Last contract finished on the 1st of January 2020. I then went to Marrakech, Morocco on the 4th of January 2020 to buy an apartment, which took around 3 months. By the time I had completed the whole process it was the middle of March 2020 and the borders in Morocco were closed so I could not return to London. I returned to London on the 22nd of July 2020, after the Moroccan government opened the borders on the 15th of July 2020.
+My contract at IBM will be finishing on the 30/04/2021.
 
 ---
 

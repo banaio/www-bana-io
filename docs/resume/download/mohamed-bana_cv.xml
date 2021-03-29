@@ -473,13 +473,6 @@
       </text:list-level-style-bullet>
     </text:list-style>
     <text:list-style style:name="L10">
-      <text:list-level-style-number text:level="1" text:style-name="Numbering_20_Symbols" style:num-format="1" text:start-value="1" style:num-suffix=".">
-        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
-          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.5in" fo:text-indent="-0.25in" fo:margin-left="0.5in" />
-        </style:list-level-properties>
-      </text:list-level-style-number>
-    </text:list-style>
-    <text:list-style style:name="L11">
       <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
         <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
           <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.5in" fo:text-indent="-0.25in" fo:margin-left="0.5in" />
@@ -530,6 +523,13 @@
           <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.75in" fo:text-indent="-0.25in" fo:margin-left="2.75in" />
         </style:list-level-properties>
       </text:list-level-style-bullet>
+    </text:list-style>
+    <text:list-style style:name="L11">
+      <text:list-level-style-number text:level="1" text:style-name="Numbering_20_Symbols" style:num-format="1" text:start-value="1" style:num-suffix=".">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.5in" fo:text-indent="-0.25in" fo:margin-left="0.5in" />
+        </style:list-level-properties>
+      </text:list-level-style-number>
     </text:list-style>
     <text:list-style style:name="L12">
       <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
@@ -739,6 +739,58 @@
         </style:list-level-properties>
       </text:list-level-style-bullet>
     </text:list-style>
+    <text:list-style style:name="L16">
+      <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.5in" fo:text-indent="-0.25in" fo:margin-left="0.5in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="◦">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.75in" fo:text-indent="-0.25in" fo:margin-left="0.75in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="3" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="▪">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.0in" fo:text-indent="-0.25in" fo:margin-left="1.0in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="4" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.25in" fo:text-indent="-0.25in" fo:margin-left="1.25in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="5" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="◦">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.5in" fo:text-indent="-0.25in" fo:margin-left="1.5in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="6" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="▪">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.75in" fo:text-indent="-0.25in" fo:margin-left="1.75in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="7" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.0in" fo:text-indent="-0.25in" fo:margin-left="2.0in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="8" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="◦">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.25in" fo:text-indent="-0.25in" fo:margin-left="2.25in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="9" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="▪">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.5in" fo:text-indent="-0.25in" fo:margin-left="2.5in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="10" text:style-name="Bullet_20_Symbols" style:num-suffix="." text:bullet-char="•">
+        <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="right">
+          <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.75in" fo:text-indent="-0.25in" fo:margin-left="2.75in" />
+        </style:list-level-properties>
+      </text:list-level-style-bullet>
+    </text:list-style>
     <style:style style:name="T1" style:family="text"><style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold" /></style:style>
     <style:style style:name="T2" style:family="text"><style:text-properties fo:font-style="italic" style:font-style-asian="italic" style:font-style-complex="italic" /></style:style>
     <style:style style:name="fr2" style:family="graphic" style:parent-style-name="Formula"><style:graphic-properties style:vertical-pos="middle" style:vertical-rel="paragraph-content" style:horizontal-pos="center" style:horizontal-rel="paragraph-content" style:wrap="none" /></style:style>
@@ -789,14 +841,17 @@
       <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
     </style:style>
     <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L14">
+      <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
     </style:style>
-    <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Quotations">
-      <style:paragraph-properties fo:margin-left="0.5in" fo:margin-right="0in" fo:text-indent="0in" style:auto-text-indent="false" />
+    <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L15">
     </style:style>
     <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Quotations">
       <style:paragraph-properties fo:margin-left="0.5in" fo:margin-right="0in" fo:text-indent="0in" style:auto-text-indent="false" />
     </style:style>
-    <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L15">
+    <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Quotations">
+      <style:paragraph-properties fo:margin-left="0.5in" fo:margin-right="0in" fo:text-indent="0in" style:auto-text-indent="false" />
+    </style:style>
+    <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L16">
       <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" />
     </style:style>
     <style:style style:name="TableHeaderRowCell" style:family="table-cell">
@@ -816,7 +871,7 @@
   % % \showframe[edge]
   % \showframe[cut]
   % \setupbackgrounds[page][frame=on]
-  
+
   % % \showsetups
   % % \showmakeup
   % \showlayout
@@ -824,17 +879,17 @@
   % \showlayoutcomponents
   % \showgrid
   % % \showboxes
-  
+
   \enableregime[utf]
   \mainlanguage[en-GB]
   \setuppapersize[A4][A4]
-  
+
   \usetypescriptfile[type-alegreya]
   \usetypescript[alegreya]
   \setupbodyfont[alegreya]
   \setupbodyfont[9.5pt]
   % \setupbodyfont[10pt]
-  
+
   \setuplayout[
     marking=on,
     height=fit,
@@ -859,21 +914,21 @@
     % backspace=0mm
     backspace=8pt,
   ]
-  
+
   % \setupwhitespace[flexible]
   % \setupwhitespace[big]
   % \setupblank[big]
   \setupwhitespace[small]
   \setupblank[small]
   % \setupblank[none]
-  
+
   % \setupindenting[32pt]
   % \indenting[yes,next]
   % \setupindenting[yes,big]
-  
+
   % \setupitemize[autointro]    % prevent orphan list intro
   % \setupitemize[indentnext=no]
-  
+
   % \setupheader[style=\smallcaps]
   % \setupfooter[style=\smallcaps]
   \setupheader[
@@ -887,7 +942,7 @@
       textstyle=smallcaps,
     ]
       % style=smallcaps,
-  
+
   \setuphead
     [section, subsection, subsubsection, subsubsubsection, subsubsubsubsection]
     [
@@ -900,7 +955,7 @@
       % header=none,
       % align={flushleft},
     ]
-  
+
   \setuphead
     [section]
     [
@@ -955,7 +1010,7 @@
       % % aftersubsubsection={\blank[none]},
       % % % aftersection={\stopsectioncolumns},
     ]
-  
+
   \setuphead[section][
       page=no,
       continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
@@ -969,14 +1024,14 @@
   		number=yes,
   		before={\blank[big]\hrule}, after={\blank[none]\hrule\blank[big]},
     ]
-  
+
   % For \url:
   \setupurl
   	[
     	color=red,
       style=\tf,
     ]
-  
+
   % For \goto and \from:
   \setupinteraction
      [
@@ -986,7 +1041,7 @@
   			contrastcolor=blue,
   			option=bookmark,
     ]
-  
+
       % style=\tf,
   \setupfootertexts
     [
@@ -997,15 +1052,15 @@
   		{{\bf{Modified: }}{\currentdate[day,month,year]}}
   	]
     []
-  
+
     % []
   % \setupfootertexts
   %   [Mohamed Bana — Curriculum Vitae]
   %   [{\bf{Last Updated: }}{\currentdate[weekday,{, },day,month,year], \currenttime[h,{\,:\,},m]}]
   % \setupfootertexts
   %   [{\bf{Last Updated: }}{\currentdate[weekday,month,day,{, },year]}]
-  
-  
+
+
     % alternative=doublesided,
     % ,state=stop
   \setuppagenumbering
@@ -1015,14 +1070,16 @@
   		location={footer,right},style=smallcaps,textstyle=smallcaps,numberstyle=smallcaps,conversion=romannumerals
     ]
   % \setuppagenumbering[location={footer,middle},style=smallcaps,conversion=romannumerals]
-  
+
   % \setupheader[state=high]
   % \setupfooter[state=high]
 <office:body>
 <office:text>
 <text:p text:style-name="Title">Curriculum Vitae</text:p>
+<text:p text:style-name="Subtitle">Full Stack Senior Software
+Engineer</text:p>
 <text:p text:style-name="Author">Mohamed Bana</text:p>
-<text:p text:style-name="Date">Tuesday, 11 August 2020, 18:02:56 UTC</text:p>
+<text:p text:style-name="Date">Tuesday, 30 March 2021, 19:55:56 UTC</text:p>
 % --include-before-body=
 
 % % \startcolumns
@@ -1091,8 +1148,55 @@ Software Engineer, with around 9-10 years of Software Development
 experience. I understand what it takes to release a product having
 worked on the back-end, front-end, testing and finally the deployment
 aspect of several products.</text:p>
+<text:p text:style-name="Text_20_body">Please read my
+<text:a xlink:type="simple" xlink:href="./cover-letter" office:name=""><text:span text:style-name="Definition">Cover
+Letter</text:span></text:a>.</text:p>
 <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="work-experience" />Work
 Experience<text:bookmark-end text:name="work-experience" /></text:h>
+<text:h text:style-name="Heading_20_3" text:outline-level="3"><text:bookmark-start text:name="remote-cloud-software-engineer-golang-ibm-united-kingdom-limited-hursley-park-winchester-uk---14092020-30042021" />Remote
+Cloud Software Engineer / Golang,
+<text:a xlink:type="simple" xlink:href="https://www.ibm.com/uk/en/" office:name=""><text:span text:style-name="Definition">IBM
+United Kingdom Limited</text:span></text:a>, Hursley Park, Winchester,
+UK -
+14/09/2020–-30/04/2021<text:bookmark-end text:name="remote-cloud-software-engineer-golang-ibm-united-kingdom-limited-hursley-park-winchester-uk---14092020-30042021" /></text:h>
+<text:p text:style-name="First_20_paragraph">I am working on IBM Cloud
+as Software Engineer on IKS Cluster (IBM Cloud™ Kubernetes Service) as
+Cloud Software Engineer / Golang Engineer. IKS is effectively something
+like AWS, GCP or Azure, see
+<text:a xlink:type="simple" xlink:href="https://cloud.ibm.com/" office:name=""><text:span text:style-name="Definition">IBM
+Cloud</text:span></text:a>.</text:p>
+<text:list text:style-name="L1">
+  <text:list-item>
+    <text:p text:style-name="P3">I’m a member of the IBM Cloud™
+    Kubernetes Service team responsible for delivering IBM’s Kubernetes
+    managed container service. As a certified K8s provider, IBM Cloud
+    Kubernetes Service provides intelligent scheduling, self-healing,
+    horizontal scaling, service discovery and load balancing, automated
+    rollouts and rollbacks, along with secret and configuration
+    management and a fully managed image registry with integrated
+    vulnerability scanning.</text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P3">Working in an agile way and operating
+    with a continuous delivery model.</text:p>
+  </text:list-item>
+  <text:list-item>
+    <text:p text:style-name="P3">Team/Squad consisted of around nine (9)
+    people and we managed the complete life cycle of
+    deliveries.</text:p>
+  </text:list-item>
+</text:list>
+<text:p text:style-name="First_20_paragraph"><text:span text:style-name="T1">Tech:</text:span>
+Go, Golang, Shell Scripting, Bash, Docker, Docker Compose, Kubernetes,
+RedHat,
+<text:a xlink:type="simple" xlink:href="https://travis-ci.org/" office:name=""><text:span text:style-name="Definition">Travis
+CI</text:span></text:a>,
+<text:a xlink:type="simple" xlink:href="https://logdna.com/" office:name=""><text:span text:style-name="Definition">LogDNA</text:span></text:a>,
+<text:a xlink:type="simple" xlink:href="https://github.com/uber-go/zap" office:name=""><text:span text:style-name="Definition">go.uber.org/zap</text:span></text:a>,
+<text:a xlink:type="simple" xlink:href="https://etcd.io/" office:name=""><text:span text:style-name="Definition">etcd</text:span></text:a>
+or
+<text:a xlink:type="simple" xlink:href="https://www.ibm.com/cloud/learn/etcd" office:name=""><text:span text:style-name="Definition">What
+is etcd? | IBM</text:span></text:a>.</text:p>
 <text:h text:style-name="Heading_20_3" text:outline-level="3"><text:bookmark-start text:name="full-stack-go-and-vue.js-developer-open-banking-limited-st-katharines-wapping-london-uk---0805201801012020" />Full
 Stack Go and Vue.js Developer,
 <text:a xlink:type="simple" xlink:href="https://www.openbanking.org.uk" office:name=""><text:span text:style-name="Definition">Open
@@ -1102,12 +1206,12 @@ London, UK -
 <text:p text:style-name="First_20_paragraph">Working as a full stack
 developer at Open Banking on a tool that will validate a bank’s
 implementation of the OpenBanking API spec, see:</text:p>
-<text:list text:style-name="L1">
+<text:list text:style-name="L2">
   <text:list-item>
-    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://bitbucket.org/openbankingteam/conformance-suite" office:name=""><text:span text:style-name="Definition">https://bitbucket.org/openbankingteam/conformance-suite</text:span></text:a></text:p>
+    <text:p text:style-name="P4"><text:a xlink:type="simple" xlink:href="https://bitbucket.org/openbankingteam/conformance-suite" office:name=""><text:span text:style-name="Definition">https://bitbucket.org/openbankingteam/conformance-suite</text:span></text:a></text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="https://hub.docker.com/u/openbanking/" office:name=""><text:span text:style-name="Definition">https://hub.docker.com/u/openbanking/</text:span></text:a></text:p>
+    <text:p text:style-name="P4"><text:a xlink:type="simple" xlink:href="https://hub.docker.com/u/openbanking/" office:name=""><text:span text:style-name="Definition">https://hub.docker.com/u/openbanking/</text:span></text:a></text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="First_20_paragraph"><text:span text:style-name="T1">Tech:</text:span>
@@ -1182,18 +1286,18 @@ Node.js developer on the
 <text:a xlink:type="simple" xlink:href="https://mindsforlife.com/" office:name=""><text:span text:style-name="Definition">Minds
 for Life</text:span></text:a> application, mainly on the forum.</text:p>
 <text:p text:style-name="Text_20_body"><text:span text:style-name="T1">Frontend:</text:span></text:p>
-<text:list text:style-name="L2">
+<text:list text:style-name="L3">
   <text:list-item>
-    <text:p text:style-name="P4"><text:span text:style-name="Source_Text">react</text:span>,
+    <text:p text:style-name="P5"><text:span text:style-name="Source_Text">react</text:span>,
     <text:span text:style-name="Source_Text">react-redux</text:span>,
     <text:a xlink:type="simple" xlink:href="https://www.reactboilerplate.com/" office:name=""><text:span text:style-name="Definition">react-boilerplate</text:span></text:a>.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P4">Single Page Application (SPA) targeting
+    <text:p text:style-name="P5">Single Page Application (SPA) targeting
     mobile platforms.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P4"><text:span text:style-name="Source_Text">ES56</text:span>
+    <text:p text:style-name="P5"><text:span text:style-name="Source_Text">ES56</text:span>
     using most of the latest ES56 features;
     <text:span text:style-name="Source_Text">async</text:span>,
     <text:span text:style-name="Source_Text">await</text:span>,
@@ -1201,7 +1305,7 @@ for Life</text:span></text:a> application, mainly on the forum.</text:p>
     etc.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P4">Serveless and hosted on
+    <text:p text:style-name="P5">Serveless and hosted on
     <text:a xlink:type="simple" xlink:href="https://aws.amazon.com/s3/" office:name=""><text:span text:style-name="Definition">Amazon
     S3</text:span></text:a> as static assets, with
     <text:a xlink:type="simple" xlink:href="http://aws.amazon.com/cloudfront/" office:name=""><text:span text:style-name="Definition">Amazon
@@ -1209,37 +1313,37 @@ for Life</text:span></text:a> application, mainly on the forum.</text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="First_20_paragraph"><text:span text:style-name="T1">Backend:</text:span></text:p>
-<text:list text:style-name="L3">
+<text:list text:style-name="L4">
   <text:list-item>
-    <text:p text:style-name="P5">NodeJS server written in
+    <text:p text:style-name="P6">NodeJS server written in
     <text:span text:style-name="Source_Text">ES6</text:span>, like the
     frontend.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P5"><text:a xlink:type="simple" xlink:href="http://koajs.com" office:name=""><text:span text:style-name="Definition">Koa</text:span></text:a>.</text:p>
+    <text:p text:style-name="P6"><text:a xlink:type="simple" xlink:href="http://koajs.com" office:name=""><text:span text:style-name="Definition">Koa</text:span></text:a>.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P5">MySQL as the datastore, using the
+    <text:p text:style-name="P6">MySQL as the datastore, using the
     <text:a xlink:type="simple" xlink:href="http://knexjs.org/" office:name=""><text:span text:style-name="Definition">Knex.js</text:span></text:a>
     library.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P5">Packaged as a set of
+    <text:p text:style-name="P6">Packaged as a set of
     <text:span text:style-name="Source_Text">docker</text:span>
     containers.</text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="First_20_paragraph"><text:span text:style-name="T1">CI,
 Devops and Infrastructure:</text:span></text:p>
-<text:list text:style-name="L4">
+<text:list text:style-name="L5">
   <text:list-item>
-    <text:p text:style-name="P6">Services were packaged as containers.
+    <text:p text:style-name="P7">Services were packaged as containers.
     Used <text:span text:style-name="Source_Text">docker</text:span> and
     <text:span text:style-name="Source_Text">docker-compose</text:span>
     to start them.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P6">Builds managed by
+    <text:p text:style-name="P7">Builds managed by
     <text:a xlink:type="simple" xlink:href="https://semaphoreci.com" office:name=""><text:span text:style-name="Definition">Semaphore
     CI</text:span></text:a> and
     <text:a xlink:type="simple" xlink:href="http://www.wercker.com/" office:name=""><text:span text:style-name="Definition">Wercker</text:span></text:a>.</text:p>
@@ -1266,31 +1370,31 @@ Banking Group PLC</text:span></text:a>, London Bridge, London, UK -
 20/03/2017–22/05/2017<text:bookmark-end text:name="full-stack-node-developer-contractor-lloyds-banking-group-plc-london-bridge-london-uk---2003201722052017" /></text:h>
 <text:p text:style-name="First_20_paragraph"><text:span text:style-name="T1">NodeJS
 - JavaScript:</text:span></text:p>
-<text:list text:style-name="L5">
+<text:list text:style-name="L6">
   <text:list-item>
-    <text:p text:style-name="P7">Loopback for server-side of the
+    <text:p text:style-name="P8">Loopback for server-side of the
     code.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P7">ES5/6-based code base.</text:p>
+    <text:p text:style-name="P8">ES5/6-based code base.</text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="First_20_paragraph"><text:span text:style-name="T1">Monitoring/Devops/Misc:</text:span></text:p>
-<text:list text:style-name="L6">
+<text:list text:style-name="L7">
   <text:list-item>
-    <text:p text:style-name="P8">Splunk and sending logs via
+    <text:p text:style-name="P9">Splunk and sending logs via
     (<text:a xlink:type="simple" xlink:href="https://en.wikipedia.org/wiki/Syslog" office:name=""><text:span text:style-name="Definition">https://en.wikipedia.org/wiki/Syslog</text:span></text:a>)
     a LogDrain service available on Bluemix.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P8">Gerrit for managing code. CI:</text:p>
+    <text:p text:style-name="P9">Gerrit for managing code. CI:</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P8">Jenkins: Configuring, managing and
+    <text:p text:style-name="P9">Jenkins: Configuring, managing and
     installing.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P8">Jenkins 2: Same as previous plus
+    <text:p text:style-name="P9">Jenkins 2: Same as previous plus
     writing pipeline scripts.</text:p>
   </text:list-item>
 </text:list>
@@ -1314,32 +1418,32 @@ Ltd.</text:span></text:a>, King’s Cross, London, UK -
 13/04/2016–04/11/2016<text:bookmark-end text:name="senior-front-end-engineer-synthace-ltd.-kings-cross-london-uk---1304201604112016" /></text:h>
 <text:p text:style-name="First_20_paragraph">Did a fair amount of
 architectural UI work:</text:p>
-<text:list text:style-name="L7">
+<text:list text:style-name="L8">
   <text:list-item>
-    <text:p text:style-name="P9">JWT-based authentication: Implemented
+    <text:p text:style-name="P10">JWT-based authentication: Implemented
     most, if not all, of the authentication related UI features. Polymer
     didn’t have an authentication module as it’s fairly new requiring me
     to re-implement this feature.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P9">API interactions: I introduced Swagger
+    <text:p text:style-name="P10">API interactions: I introduced Swagger
     JS and did the conversion from plain XHR to Promises, and ensured
     API was in-sync with the state of the authentication.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P9">Updates via the Web Socket for
+    <text:p text:style-name="P10">Updates via the Web Socket for
     notifications and async task updates: STOMP Over WebSocket.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P9">Bootstrapped the testing using Web
+    <text:p text:style-name="P10">Bootstrapped the testing using Web
     Component Tester.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P9">Deciding on the build, test and hosting
-    strategy, e.g., hosting our own CDN using Azure.</text:p>
+    <text:p text:style-name="P10">Deciding on the build, test and
+    hosting strategy, e.g., hosting our own CDN using Azure.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P9">Performance: 1) pushed to have HTTP/2
+    <text:p text:style-name="P10">Performance: 1) pushed to have HTTP/2
     enabled, and prototyped, on our custom server written in Go, 2)
     implemented lazy-loading of our Web Components which are included
     using HTML Imports, 3) Significantly improved UI build scripts; went
@@ -1347,23 +1451,23 @@ architectural UI work:</text:p>
     runs.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P9">Introduced ES6 to the code-base, and
+    <text:p text:style-name="P10">Introduced ES6 to the code-base, and
     moving to defining Polymer elements using ES6 classes.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P9">Misc: libraries/utils to ease UI
+    <text:p text:style-name="P10">Misc: libraries/utils to ease UI
     development.</text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="First_20_paragraph">We deploy Docker images to
 our Kubernetes cluster running in Azure using:</text:p>
-<text:list text:style-name="L8">
+<text:list text:style-name="L9">
   <text:list-item>
-    <text:p text:style-name="P10">Docker: Fairly comfortable using
+    <text:p text:style-name="P11">Docker: Fairly comfortable using
     this.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P10">Kubernetes: I’ve done deployments of
+    <text:p text:style-name="P11">Kubernetes: I’ve done deployments of
     dev branches, so I understand the deployment model, navigating the
     Kubernetes dashboard and crude command line interactions, e.g.,
     port-forwarding of the service the pod is running from the cluster
@@ -1391,9 +1495,9 @@ Index Ltd.</text:span></text:a> Cannon Bridge, London, UK -
 09-2014–18/02/2016<text:bookmark-end text:name="developer-ig-index-ltd.-cannon-bridge-london-uk---09-201418022016" /></text:h>
 <text:h text:style-name="Heading_20_4" text:outline-level="4"><text:bookmark-start text:name="javascript-developer" />JavaScript
 Developer<text:bookmark-end text:name="javascript-developer" /></text:h>
-<text:list text:style-name="L9">
+<text:list text:style-name="L10">
   <text:list-item>
-    <text:p text:style-name="P11"><text:span text:style-name="T2">Price
+    <text:p text:style-name="P12"><text:span text:style-name="T2">Price
     &amp; Indicator Alerts:</text:span> My main responsibility was
     handling the UI aspect—setting, configuring, triggering—of the
     various Alerts we support, from the basic Price Alert to Technical
@@ -1408,13 +1512,13 @@ Developer<text:bookmark-end text:name="javascript-developer" /></text:h>
     previous UI.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P11"><text:span text:style-name="T2">Charts:</text:span>
+    <text:p text:style-name="P12"><text:span text:style-name="T2">Charts:</text:span>
     Assisted in the conversion of the Adobe Flex Real Time Charts to an
     SVG-based version. <text:span text:style-name="T1">Tech:</text:span>
     d3 and tested like above.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P11"><text:span text:style-name="T2">Deeplinking:</text:span>
+    <text:p text:style-name="P12"><text:span text:style-name="T2">Deeplinking:</text:span>
     A hashed action link, like typical deeplinks, that we send to our
     Clients which then launches the mobile IG app, or directs them to
     the app store for the device with the IG app pre-selected. Upon
@@ -1478,25 +1582,25 @@ Support staff in dealing with the Customers. Prior to this I was one of
 three developers working in the Transactions and Latency Monitoring team
 (part of the backend team) doing core C++. We wrote and maintained the
 following plug-ins that are part of the Geneos suite:</text:p>
-<text:list text:style-name="L10">
+<text:list text:style-name="L11">
   <text:list-item>
-    <text:p text:style-name="P12"><text:a xlink:type="simple" xlink:href="https://docs.itrsgroup.com/docs/geneos/5.1.0/Netprobe/trading_fix/fix.html" office:name=""><text:span text:style-name="Definition">Geneos
+    <text:p text:style-name="P13"><text:a xlink:type="simple" xlink:href="https://docs.itrsgroup.com/docs/geneos/5.1.0/Netprobe/trading_fix/fix.html" office:name=""><text:span text:style-name="Definition">Geneos
     FIX plug-in</text:span></text:a>: Monitors FIX (protocol)
     messages.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P12"><text:a xlink:type="simple" xlink:href="https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/market_data_monitoring/feedadapter_ug.html" office:name=""><text:span text:style-name="Definition">Feed
+    <text:p text:style-name="P13"><text:a xlink:type="simple" xlink:href="https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/market_data_monitoring/feedadapter_ug.html" office:name=""><text:span text:style-name="Definition">Feed
     Latency Monitoring Plug-In</text:span></text:a>: Monitors feeds and
     calculates latency of instruments and fields across the monitored
     feeds.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P12"><text:a xlink:type="simple" xlink:href="https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/latency_monitoring/message_tracker/fix_adapter.html" office:name=""><text:span text:style-name="Definition">Latency
+    <text:p text:style-name="P13"><text:a xlink:type="simple" xlink:href="https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/latency_monitoring/message_tracker/fix_adapter.html" office:name=""><text:span text:style-name="Definition">Latency
     Monitoring - Message Tracker FIX adapter</text:span></text:a>:
     Tracks, generally, FIX messages across several checkpoints.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P12"><text:a xlink:type="simple" xlink:href="https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/market_data_monitoring/mdm_ug.html" office:name=""><text:span text:style-name="Definition">Market
+    <text:p text:style-name="P13"><text:a xlink:type="simple" xlink:href="https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/market_data_monitoring/mdm_ug.html" office:name=""><text:span text:style-name="Definition">Market
     Data Monitor</text:span></text:a>: See below. And bespoke plug-ins
     written for specific firms.</text:p>
   </text:list-item>
@@ -1505,19 +1609,19 @@ following plug-ins that are part of the Geneos suite:</text:p>
 non-finance specific plug-ins. I ported another bespoke plug-in called
 Price Latency Monitor (provides latency figures for bonds) to MS VC++
 when I worked on this team. Projects:</text:p>
-<text:list text:style-name="L11">
+<text:list text:style-name="L12">
   <text:list-item>
-    <text:p text:style-name="P13">I converted the Windows version of the
+    <text:p text:style-name="P14">I converted the Windows version of the
     entire product suite from Visual Studio 2005 to 2010.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P13">I wrote the Market Data Reliability
+    <text:p text:style-name="P14">I wrote the Market Data Reliability
     plug-in. This plug-in connects to the Patsystem’s Trading API
     (&lt;www.patsystems.com&gt;) to monitor commodity prices, using
     their C API, to determine if prices are ‘stale’.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P13">I ported a significant part of our
+    <text:p text:style-name="P14">I ported a significant part of our
     product to Solaris x86-64 (64-bit non-sparc architecture).</text:p>
   </text:list-item>
 </text:list>
@@ -1562,13 +1666,13 @@ UTAH as part of a large team. 2. Tasks included testing, observing,
 documenting software bugs, issues and errors before final release of
 Utah. 3. Testing was done over multiple iterations.</text:p>
 <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="education" />Education<text:bookmark-end text:name="education" /></text:h>
-<text:list text:style-name="L12">
+<text:list text:style-name="L13">
   <text:list-item>
-    <text:p text:style-name="P14"><text:span text:style-name="T1">2005-2008:</text:span>
+    <text:p text:style-name="P15"><text:span text:style-name="T1">2005-2008:</text:span>
     BSc Computer Science (2.1), City, University of London.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P14"><text:span text:style-name="T1">2008-2009:</text:span>
+    <text:p text:style-name="P15"><text:span text:style-name="T1">2008-2009:</text:span>
     MSc Software Systems Engineering (Attended), University College
     London, and Trading &amp; Financial Market Structure module, London
     Business School.</text:p>
@@ -1577,39 +1681,39 @@ Utah. 3. Testing was done over multiple iterations.</text:p>
 <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="additional-information" />Additional
 Information<text:bookmark-end text:name="additional-information" /></text:h>
 <text:h text:style-name="Heading_20_3" text:outline-level="3"><text:bookmark-start text:name="misc" />Misc<text:bookmark-end text:name="misc" /></text:h>
-<text:list text:style-name="L13">
+<text:list text:style-name="L14">
   <text:list-item>
-    <text:p text:style-name="P15"><text:span text:style-name="T1">Passport/Nationality:</text:span>
+    <text:p text:style-name="P16"><text:span text:style-name="T1">Passport/Nationality:</text:span>
     I have a British Passport.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P15"><text:span text:style-name="T1">Drivers
+    <text:p text:style-name="P16"><text:span text:style-name="T1">Drivers
     Licence:</text:span> Full UK Driving Licence.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P15"><text:span text:style-name="T1">Background/Criminal
-    Check:</text:span></text:p><text:list text:style-name="L14">
+    <text:p text:style-name="P16"><text:span text:style-name="T1">Background/Criminal
+    Check:</text:span></text:p><text:list text:style-name="L15">
       <text:list-item>
-        <text:p text:style-name="P16"><text:a xlink:type="simple" xlink:href="https://www.gov.uk/request-copy-criminal-record" office:name=""><text:span text:style-name="Definition">Basic
+        <text:p text:style-name="P17"><text:a xlink:type="simple" xlink:href="https://www.gov.uk/request-copy-criminal-record" office:name=""><text:span text:style-name="Definition">Basic
         Disclosure and Barring Service (DBS) check</text:span></text:a>:
         Certificate was issued on 31 July
-        2020.</text:p><text:p text:style-name="P17"><text:span text:style-name="T1">Police
+        2020.</text:p><text:p text:style-name="P18"><text:span text:style-name="T1">Police
         Records of Convictions, Cautions, Reprimands and
         Warnings:</text:span></text:p>
-        <text:p text:style-name="P17">NONE RECORDED</text:p>
+        <text:p text:style-name="P18">NONE RECORDED</text:p>
       </text:list-item>
       <text:list-item>
-        <text:p text:style-name="P16"><text:a xlink:type="simple" xlink:href="https://www.acro.police.uk/police_certificates.aspx" office:name=""><text:span text:style-name="Definition">Police
+        <text:p text:style-name="P17"><text:a xlink:type="simple" xlink:href="https://www.acro.police.uk/police_certificates.aspx" office:name=""><text:span text:style-name="Definition">Police
         Certificates - ACRO Criminal Records
         Office</text:span></text:a>: Certificate was issued on 18
         February
-        2020.</text:p><text:p text:style-name="P18"><text:span text:style-name="T1">Summary
+        2020.</text:p><text:p text:style-name="P19"><text:span text:style-name="T1">Summary
         of convictions and reprimands/warnings/cautions/impending
         prosecutions/under investigations held on UK police databases
         and disclosed in accordance with the ACRO stepdown
         model:</text:span></text:p>
-        <text:p text:style-name="P18">NO
-        TRACE.</text:p><text:p text:style-name="P16">I have requested a
+        <text:p text:style-name="P19">NO
+        TRACE.</text:p><text:p text:style-name="P17">I have requested a
         new certificate and this should arrive between the 15th/28th of
         August 2020.</text:p>
       </text:list-item>
@@ -1618,13 +1722,13 @@ Information<text:bookmark-end text:name="additional-information" /></text:h>
 </text:list>
 <text:p text:style-name="First_20_paragraph"></text:p>
 <text:h text:style-name="Heading_20_3" text:outline-level="3"><text:bookmark-start text:name="languages" />Languages<text:bookmark-end text:name="languages" /></text:h>
-<text:list text:style-name="L15">
+<text:list text:style-name="L16">
   <text:list-item>
-    <text:p text:style-name="P19"><text:span text:style-name="T1">English
+    <text:p text:style-name="P20"><text:span text:style-name="T1">English
     and Swahili:</text:span> Native.</text:p>
   </text:list-item>
   <text:list-item>
-    <text:p text:style-name="P19"><text:span text:style-name="T1">Arabic:</text:span>
+    <text:p text:style-name="P20"><text:span text:style-name="T1">Arabic:</text:span>
     Intermediate. I own an apartment in Marrakech, Morocco. I have lived
     in Cairo, Egypt and have travelled several times to the
     UAE.</text:p>

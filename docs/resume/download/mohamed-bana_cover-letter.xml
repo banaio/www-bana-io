@@ -284,16 +284,13 @@
     <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Quotations">
       <style:paragraph-properties fo:margin-left="0.5in" fo:margin-right="0in" fo:text-indent="0in" style:auto-text-indent="false" />
     </style:style>
-    <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Quotations">
-      <style:paragraph-properties fo:margin-left="0.5in" fo:margin-right="0in" fo:text-indent="0in" style:auto-text-indent="false" />
-    </style:style>
   </office:automatic-styles>
   % --include-in-header
   % \showframe
   % % \showframe[edge]
   % \showframe[cut]
   % \setupbackgrounds[page][frame=on]
-  
+
   % % \showsetups
   % % \showmakeup
   % \showlayout
@@ -301,17 +298,17 @@
   % \showlayoutcomponents
   % \showgrid
   % % \showboxes
-  
+
   \enableregime[utf]
   \mainlanguage[en-GB]
   \setuppapersize[A4][A4]
-  
+
   \usetypescriptfile[type-alegreya]
   \usetypescript[alegreya]
   \setupbodyfont[alegreya]
   \setupbodyfont[9.5pt]
   % \setupbodyfont[10pt]
-  
+
   \setuplayout[
     marking=on,
     height=fit,
@@ -336,21 +333,21 @@
     % backspace=0mm
     backspace=8pt,
   ]
-  
+
   % \setupwhitespace[flexible]
   % \setupwhitespace[big]
   % \setupblank[big]
   \setupwhitespace[small]
   \setupblank[small]
   % \setupblank[none]
-  
+
   % \setupindenting[32pt]
   % \indenting[yes,next]
   % \setupindenting[yes,big]
-  
+
   % \setupitemize[autointro]    % prevent orphan list intro
   % \setupitemize[indentnext=no]
-  
+
   % \setupheader[style=\smallcaps]
   % \setupfooter[style=\smallcaps]
   \setupheader[
@@ -364,7 +361,7 @@
       textstyle=smallcaps,
     ]
       % style=smallcaps,
-  
+
   \setuphead
     [section, subsection, subsubsection, subsubsubsection, subsubsubsubsection]
     [
@@ -377,7 +374,7 @@
       % header=none,
       % align={flushleft},
     ]
-  
+
   \setuphead
     [section]
     [
@@ -432,7 +429,7 @@
       % % aftersubsubsection={\blank[none]},
       % % % aftersection={\stopsectioncolumns},
     ]
-  
+
   \setuphead[section][
       page=no,
       continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
@@ -446,14 +443,14 @@
   		number=yes,
   		before={\blank[big]\hrule}, after={\blank[none]\hrule\blank[big]},
     ]
-  
+
   % For \url:
   \setupurl
   	[
     	color=red,
       style=\tf,
     ]
-  
+
   % For \goto and \from:
   \setupinteraction
      [
@@ -463,7 +460,7 @@
   			contrastcolor=blue,
   			option=bookmark,
     ]
-  
+
       % style=\tf,
   \setupfootertexts
     [
@@ -474,15 +471,15 @@
   		{{\bf{Modified: }}{\currentdate[day,month,year]}}
   	]
     []
-  
+
     % []
   % \setupfootertexts
   %   [Mohamed Bana — Curriculum Vitae]
   %   [{\bf{Last Updated: }}{\currentdate[weekday,{, },day,month,year], \currenttime[h,{\,:\,},m]}]
   % \setupfootertexts
   %   [{\bf{Last Updated: }}{\currentdate[weekday,month,day,{, },year]}]
-  
-  
+
+
     % alternative=doublesided,
     % ,state=stop
   \setuppagenumbering
@@ -492,14 +489,16 @@
   		location={footer,right},style=smallcaps,textstyle=smallcaps,numberstyle=smallcaps,conversion=romannumerals
     ]
   % \setuppagenumbering[location={footer,middle},style=smallcaps,conversion=romannumerals]
-  
+
   % \setupheader[state=high]
   % \setupfooter[state=high]
 <office:body>
 <office:text>
 <text:p text:style-name="Title">Cover Letter</text:p>
+<text:p text:style-name="Subtitle">Full Stack Senior Software
+Engineer</text:p>
 <text:p text:style-name="Author">Mohamed Bana</text:p>
-<text:p text:style-name="Date">Tuesday, 11 August 2020, 18:02:56 UTC</text:p>
+<text:p text:style-name="Date">Tuesday, 30 March 2021, 19:55:56 UTC</text:p>
 <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="intro" />Intro<text:bookmark-end text:name="intro" /></text:h>
 <text:p text:style-name="First_20_paragraph">I am a well-rounded
 Software Engineer, and I understand what it takes to release a product
@@ -557,7 +556,7 @@ this as it depends on a few things, that said:</text:p>
 <text:list text:style-name="L2">
   <text:list-item>
     <text:p text:style-name="P2">If it’s a contracting role, minimum of
-    £580 per day.</text:p>
+    £500 per day.</text:p>
   </text:list-item>
   <text:list-item>
     <text:p text:style-name="P2">If it’s a permanent position, minimum
@@ -565,15 +564,15 @@ this as it depends on a few things, that said:</text:p>
   </text:list-item>
 </text:list>
 <text:p text:style-name="First_20_paragraph">I’m available to start
-immediately.</text:p>
+after the 30/04/2021.</text:p>
 <text:h text:style-name="Heading_20_4" text:outline-level="4"><text:bookmark-start text:name="work-locations-considered" />Work
 locations
 considered<text:bookmark-end text:name="work-locations-considered" /></text:h>
 <text:p text:style-name="First_20_paragraph">Ideally, a remote role with
 an office in London.</text:p>
 <text:p text:style-name="Text_20_body">If it’s not fully remote, an
-office in East London would be perfect, e.g., Canary Wharf, Aldgate
-(East).</text:p>
+office in East London, e.g., Canary Wharf, Aldgate (East), would be
+good.</text:p>
 <text:h text:style-name="Heading_20_4" text:outline-level="4"><text:bookmark-start text:name="key-skills-and-preferred-job-role" />Key
 skills and preferred job
 role<text:bookmark-end text:name="key-skills-and-preferred-job-role" /></text:h>
@@ -611,7 +610,7 @@ etc)<text:bookmark-end text:name="any-visa-restrictions-if-applicable-ilr-tier-2
 <text:list text:style-name="L4">
   <text:list-item>
     <text:p text:style-name="P4"><text:span text:style-name="T1">Passport/Nationality:</text:span>
-    I have a British Passport, national insurance number, British
+    I have a British Passport, National Insurance number, British
     Citizenship etc.</text:p>
   </text:list-item>
   <text:list-item>
@@ -622,46 +621,24 @@ etc)<text:bookmark-end text:name="any-visa-restrictions-if-applicable-ilr-tier-2
     <text:p text:style-name="P4"><text:span text:style-name="T1">Background/Criminal
     Check:</text:span></text:p><text:list text:style-name="L5">
       <text:list-item>
-        <text:p text:style-name="P5"><text:a xlink:type="simple" xlink:href="https://www.gov.uk/request-copy-criminal-record" office:name=""><text:span text:style-name="Definition">Basic
-        Disclosure and Barring Service (DBS) check</text:span></text:a>:
-        Certificate was issued on 31 July
-        2020.</text:p><text:p text:style-name="P6"><text:span text:style-name="T1">Police
-        Records of Convictions, Cautions, Reprimands and
-        Warnings:</text:span></text:p>
-        <text:p text:style-name="P6">NONE RECORDED</text:p>
-      </text:list-item>
-      <text:list-item>
         <text:p text:style-name="P5"><text:a xlink:type="simple" xlink:href="https://www.acro.police.uk/police_certificates.aspx" office:name=""><text:span text:style-name="Definition">Police
         Certificates - ACRO Criminal Records
-        Office</text:span></text:a>: Certificate was issued on 18
-        February
-        2020.</text:p><text:p text:style-name="P7"><text:span text:style-name="T1">Summary
+        Office</text:span></text:a>: Certificate was issued in
+        2021.</text:p><text:p text:style-name="P6"><text:span text:style-name="T1">Summary
         of convictions and reprimands/warnings/cautions/impending
         prosecutions/under investigations held on UK police databases
         and disclosed in accordance with the ACRO stepdown
         model:</text:span></text:p>
-        <text:p text:style-name="P7">NO
-        TRACE.</text:p><text:p text:style-name="P5">I have requested a
-        new certificate and this should arrive between the 15th/28th of
-        August 2020.</text:p>
+        <text:p text:style-name="P6">NO TRACE.</text:p>
       </text:list-item>
     </text:list>
   </text:list-item>
 </text:list>
-<text:p text:style-name="First_20_paragraph">I’ve a limited company
-called BANAIO LTD which I started in March 2017 and I’ve been a
-contractor since then. I would prefer to stick to contracting but I will
-also consider a permanent position.</text:p>
 <text:h text:style-name="Heading_20_4" text:outline-level="4"><text:bookmark-start text:name="reason-for-looking-for-new-role" />Reason
 for looking for new
 role<text:bookmark-end text:name="reason-for-looking-for-new-role" /></text:h>
-<text:p text:style-name="First_20_paragraph">Last contract finished on
-the 1st of January 2020. I then went to Marrakech, Morocco on the 4th of
-January 2020 to buy an apartment, which took around 3 months. By the
-time I had completed the whole process it was the middle of March 2020
-and the borders in Morocco were closed so I could not return to London.
-I returned to London on the 22nd of July 2020, after the Moroccan
-government opened the borders on the 15th of July 2020.</text:p>
+<text:p text:style-name="First_20_paragraph">My contract at IBM will be
+finishing on the 30/04/2021.</text:p>
 <text:p text:style-name="Horizontal_20_Line" />
 <text:p text:style-name="First_20_paragraph">Kind regards,</text:p>
 <text:p text:style-name="Text_20_body">Mohamed Bana</text:p>

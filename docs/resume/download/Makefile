@@ -2,8 +2,8 @@
 # https://tech.davis-hansson.com/p/make/
 
 # .ONESHELL:
-SHELL					:= bash
-# IFS					:= $'\n\t'
+SHELL							:= bash
+# IFS							:= $'\n\t'
 .SHELLFLAGS 			:= -o pipefail -o noclobber -o errexit -o pipefail -o nounset -c
 # .SHELLFLAGS 			:= -euf -o pipefail -c
 .DEFAULT_GOAL			:= all
@@ -13,20 +13,21 @@ MAKEFLAGS 				+= --warn-undefined-variables
 MAKEFLAGS 				+= --no-builtin-rules
 MAKEFLAGS 				+= --no-builtin-variables
 
-BOLD   					:= \033[1m
-GREEN  					:= \033[32m
-YELLOW 					:= \033[33m
-MISC					:= \033[92m
-RED						:= \033[91m
-RESET  					:= \033[0m
+BOLD   						:= \033[1m
+GREEN  						:= \033[32m
+YELLOW 						:= \033[33m
+MISC							:= \033[92m
+RED								:= \033[91m
+RESET  						:= \033[0m
 
-GIT_REV					:= $(shell git rev-parse --short HEAD)
+GIT_REV						:= $(shell git rev-parse --short HEAD)
 
 # DATE_TIME="$(date --iso-8601='s')"
-DATE_TIME := $(shell date --utc +'%A, %d %B %Y, %H:%M:%S %Z')
+DATE_TIME 				:= $(shell date --utc +'%A, %d %B %Y, %H:%M:%S %Z')
 # OUTPUT_DIR="./docs/resume/download"
 # OUTPUT_DIR="./download"
-OUTPUT_DIR := $(shell pwd)
+OUTPUT_DIR 				:= $(shell pwd)
+OS 								:= $(shell uname -s)
 
 .PHONY: cv_all cover_letter_all combine copy_to_send_dir
 all: cv_all cover_letter_all combine copy_to_send_dir
@@ -47,7 +48,6 @@ format_tex:
 .PHONY: cv_tex
 cv_tex:
 	@printf "%b" "${GREEN}" "  ---> ${OUTPUT_DIR}/mohamed-bana_cv.pdf" "${RESET}" "\n"
-	@# --variable=date:"${DATE_TIME}" \
 	pandoc \
 		--fail-if-warnings \
 		--from=markdown \
@@ -97,9 +97,6 @@ cv_all: cv_tex
 .PHONY: cover_letter_tex
 cover_letter_tex:
 	@printf "%b" "${GREEN}" "  ---> ${OUTPUT_DIR}/mohamed-bana_cover-letter.tex" "${RESET}" "\n"
-	@# --include-before-body=./templates/include-before-body.tex
-	@# --include-after-body=./templates/include-after-body.tex
-	@# --variable=date:"${DATE_TIME}" \
 	pandoc \
 		--fail-if-warnings \
 		--from=markdown \
@@ -156,16 +153,15 @@ cover_letter_all: cover_letter_tex
 		--output="${OUTPUT_DIR}/mohamed-bana_cover-letter.xml" \
 		../cover-letter.md
 
-XDG_OPEN_EXISTS := $(shell command -v xdg-open 2> /dev/null)
-
 .PHONY: combine
 combine: cv_tex cover_letter_tex
 	@printf "%b" "${GREEN}" "  ---> combining " "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf" "${RESET}" "\n"
-ifdef XDG_OPEN_EXISTS
+ifeq ($(OS),Darwin)
+	pdfunite "${OUTPUT_DIR}/mohamed-bana_cv.pdf" "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
+	open "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
+else
 	pdfunite "${OUTPUT_DIR}/mohamed-bana_cv.pdf" "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
 	xdg-open "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
-else
-	$(error 'canot find pdfunite and xdg-open')
 endif
 
 .PHONY: copy_to_send_dir

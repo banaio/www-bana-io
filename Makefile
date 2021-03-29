@@ -2,8 +2,8 @@
 # https://tech.davis-hansson.com/p/make/
 
 # .ONESHELL:
-SHELL					:= bash
-# IFS					:= $'\n\t'
+SHELL							:= bash
+# IFS							:= $'\n\t'
 .SHELLFLAGS 			:= -o pipefail -o noclobber -o errexit -o pipefail -o nounset -c
 # .SHELLFLAGS 			:= -euf -o pipefail -c
 .DEFAULT_GOAL			:= all
@@ -24,8 +24,8 @@ MAKEFLAGS 				+= --no-builtin-variables
 BOLD   					:= \033[1m
 GREEN  					:= \033[32m
 YELLOW 					:= \033[33m
-MISC					:= \033[92m
-RED						:= \033[91m
+MISC						:= \033[92m
+RED							:= \033[91m
 RESET  					:= \033[0m
 
 GIT_REV					:= $(shell git rev-parse --short HEAD)
@@ -36,12 +36,12 @@ all: dev
 .PHONY: clean
 clean:
 	@printf "%b" "${GREEN}" "  ---> cleaning directories" "${RESET}" "\n"
-	rm --verbose --recursive --force --dir docs/.temp
-	rm --verbose --recursive --force --dir docs/.cache
-	rm --verbose --recursive --force --dir docs/.vuepress/dist
+	rm -rvd docs/.temp || true
+	rm -rvd docs/.cache || true
+	rm -rvd docs/.vuepress/dist || true
 	@# --force: ignore nonexistent files and arguments, never prompt
 	@# find ./docs/.vuepress/public -mindepth 1 -maxdepth 1 -type d \! \( -iname cv -o -iname fonts -o -iname static \)
-	rm --verbose --recursive --force --dir $(shell find ./docs/.vuepress/public -mindepth 1 -maxdepth 1 -type d \! \( -iname cv -o -iname fonts -o -iname static \))
+	rm -rvd $(shell find ./docs/.vuepress/public -mindepth 1 -maxdepth 1 -type d \! \( -iname cv -o -iname fonts -o -iname static \)) || true
 	@#rmdir --parents
 
 .PHONY: dev
