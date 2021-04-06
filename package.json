@@ -3,11 +3,7 @@
     "docs:build": "FORCE_COLOR=3 DEBUG_COLORS=true DEBUG_SHOW_HIDDEN=true vuepress build docs --no-cache --debug",
     "docs:dev": "FORCE_COLOR=3 DEBUG_COLORS=true DEBUG_SHOW_HIDDEN=true vuepress dev docs --cache docs/.cache --temp docs/.temp --no-clear-screen --no-cache --debug",
     "docs:dev2": "FORCE_COLOR=3 DEBUG_COLORS=true DEBUG_SHOW_HIDDEN=true NODE_ENV=development VUEPRESS_ENV=developer vuepress dev docs --cache docs/.cache --temp docs/.temp --no-clear-screen --no-cache --debug",
-    "docs:dev3": "FORCE_COLOR=3 DEBUG_COLORS=true DEBUG_SHOW_HIDDEN=true VUE_CLI_MODERN_MODE=true VUE_CLI_MODERN_BUILD=true VUE_APP_NODE_ENV=development VUEPRESS_ENV=developer NODE_DEBUG=webpack NODE_ENV=development vuepress dev docs --cache docs/.cache --temp docs/.temp --no-clear-screen --debug",
-    "lint": "eslint --debug --ignore-pattern '!*.js' --ext .js,.json,.eslintrc,.babelrc,.ts,.vue package.json .remarkrc.js .textlintrc.js .eslintrc.js ./docs/.vuepress/",
-    "lint-md": "EXIT_STATUS=0; yarn lint-md:style || EXIT_STATUS=$?; yarn lint-md:wording || EXIT_STATUS=$?; exit $EXIT_STATUS",
-    "lint-md:style": "remark --frail .",
-    "lint-md:wording": "textlint ./docs/**/*.md"
+    "docs:dev3": "FORCE_COLOR=3 DEBUG_COLORS=true DEBUG_SHOW_HIDDEN=true VUE_CLI_MODERN_MODE=true VUE_CLI_MODERN_BUILD=true VUE_APP_NODE_ENV=development VUEPRESS_ENV=developer NODE_DEBUG=webpack NODE_ENV=development vuepress dev docs --cache docs/.cache --temp docs/.temp --no-clear-screen --debug"
   },
   "devDependencies": {
     "@octokit/core": "^3.1.2",

@@ -1,212 +1,30 @@
-% --include-in-header
+% \usepackage[utf8]{inputenc}
 
-% \showframe
+% \documentclass{article}
+% \usepackage[pass,paperwidth=\classpagewidth,paperheight=\classpageheight,twoside,inner=1cm,outer=2cm,top=1cm,bottom=1cm]{geometry}
+\usepackage{geometry}
+\geometry{heightrounded,inner=4mm,outer=4mm,top=4mm,bottom=14mm}
 
-% \showframe[edge]
-% \showframe[cut]
-% \setupbackgrounds[page][frame=on]
+\usepackage{fontspec}
+% \defaultfontfeatures{Mapping=tex-text,Numbers={OldStyle,Lowercase,Proportional},Ligatures={Common,Rare,TeX},Style=Historic}
+\defaultfontfeatures{Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle}
 
-% % \showsetups
-% \showmakeup
-% \showlayout
-% \showframe
-% \showlayoutcomponents
-% \showgrid
-% % \showboxes
+% \usepackage{Alegreya}
+% \usepackage{AlegreyaSans}
 
-\enableregime[utf]
-\mainlanguage[en-GB]
-\setuppapersize[A4][A4]
+% \renewcommand*\oldstylenums[1]{{\AlegreyaOsF #1}}
 
-% \usetypescriptfile[type-alegreya]
-% \usetypescript[alegreya]
-% \setupbodyfont[alegreya]
-% \setupbodyfont[8pt]
-% \setupbodyfont[9.5pt]
-\setupbodyfont[gentium]
-% \setupbodyfont[9.5pt]
-\setupbodyfont[9.8pt]
+\setmainfont[Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle]{Alegreya}
+\setsansfont[Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle]{Alegreya Sans}
 
-\setuplayout[
-  marking=on,
-  height=fit,
-  width=fit,
-  leftmargin=2mm,
-  rightmargin=2mm,
-  left=2mm,
-  right=2mm,
-  rightedge=2mm,
-  rightedgedistance=0mm,
-  top=2mm,
-  topspace=2mm,
-  topdistance=2mm,
-  bottom=2mm,
-  bottomdistance=0mm,
-  % headerdistance=0mm,
-  % footerdistance=0mm,
-  % topspace=8mm,
-  % header=16pt,
-  header=0pt,
-  footer=16pt,
-  % backspace=0mm
-  backspace=8pt,
-]
+% \setmainfont[Ligatures = TeX, Scale = MatchLowercase, Numbers = OldStyle]{Alegreya}
+% \setsansfont[Numbers={OldStyle,Lowercase,Proportional},Ligatures={Common,Rare,TeX},Style=Historic]{Alegreya Sans}
+\setmonofont{DejaVuSansMono}
+% % \setmathfont{TeXGyreDejaVuMath}
+% \setmathfont{TeXGyreDejaVuMath-Regular}
 
-% \setupwhitespace[flexible]
-% \setupwhitespace[big]
-% \setupblank[big]
-\setupwhitespace[small]
-\setupblank[small]
-% \setupblank[none]
-
-% \setupindenting[32pt]
-% \indenting[yes,next]
-% \setupindenting[yes,big]
-
-% \setupitemize[autointro]    % prevent orphan list intro
-% \setupitemize[indentnext=no]
-
-% \setupheader[style=\smallcaps]
-% \setupfooter[style=\smallcaps]
-\setupheader[
-    numberstyle=smallcaps,
-    style=smallcaps,
-    textstyle=smallcaps,
-  ]
-\setupfooter[
-    numberstyle=smallcaps,
-    style=smallcaps,
-    textstyle=smallcaps,
-  ]
-    % style=smallcaps,
-
-\setuphead
-  [section, subsection, subsubsection, subsubsubsection, subsubsubsubsection]
-  [
-    page=no,
-    continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
-    number=yes,
-    numberstyle=smallcaps,
-    style=bold,
-    textstyle=smallcaps,
-    % header=none,
-    % align={flushleft},
-  ]
-
-\setuphead
-  [section]
-  [
-    page=no,
-    continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
-    number=yes,
-    align={middle},
-    % align={middle, hyphenated, verytolerant},
-    % tolerance=verytolerant,
-    % after={\startsectioncolumns},
-    % % before={\nowhitespace},
-    % before={\blank[none]\nowhitespace\hairline\blank[none]},
-    % after={\blank[none]\nowhitespace\hairline\blank[none]},
-    % beforesection={\blank[none]},
-    % aftersection={\blank[none]},
-    % aftersection={\stopsectioncolumns},
-  ]
-\setuphead
-  [subsection]
-  [
-    page=no,
-    continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
-    number=yes,
-    % align={flushleft, nothyphenated, verytolerant},
-    % align={middle, hyphenated, verytolerant},
-    % tolerance=verytolerant,
-    align={middle},
-    % before={\thinrule},
-    % after={\thinrule},
-    % strut=yes,
-    % grid=yes,
-    % beforesubsection={\blank[none]\nowhitespace},
-    % aftersubsection={\blank[none]\nowhitespace\blank[none]},
-  ]
-\setuphead
-  [subsubsection, subsubsubsection, subsubsubsubsection]
-  [
-    page=no,
-    continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
-    number=yes,
-    % align={flushleft, hyphenated, verytolerant},
-    % tolerance=verytolerant,
-    align={flushleft},
-    before={\blank[medium]},
-    after={\blank[medium]},
-    % after={},
-    % before={\blank[big]},
-    % % % before={\nowhitespace},
-    % % after={\blank[none]},
-    % % % after={\startsectioncolumns},
-    % % beforesubsubsection={\blank[none]},
-    % % aftersubsubsection={\blank[none]},
-    % % % aftersection={\stopsectioncolumns},
-  ]
-
-\setuphead[section][
-    page=no,
-    continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
-    number=yes,
-  	before={\blank[big]\hrule}, after={\blank[none]\hrule\blank[big]},
-  ]
-\setuphead[subsection]
-	[
-		page=no,
-		continue=yes, % yes: If the section immediately follows a chapter it will be on the same page even though page=yes.
-		number=yes,
-		before={\blank[big]\hrule}, after={\blank[none]\hrule\blank[big]},
-  ]
-
-% For \url:
-\setupurl
-	[
-  	color=red,
-    style=\tf,
-  ]
-
-% For \goto and \from:
-\setupinteraction
-   [
-			state=start,
-			color=red,
-			style=\tf,
-			contrastcolor=blue,
-			option=bookmark,
-  ]
-
-    % style=\tf,
-\setupfootertexts
-  [
-		{Mohamed Bana --- Curriculum Vitae}
-		{ \| }
-		{\useURL[url3][https://bana.io]\from[url3] --- \useURL[url4][mailto:m@bana.io][][m@bana.io]\from[url4] --- \useURL[url5][tel:+44-7960-045-281][][+44-7960-045-281]\from[url5]}
-		{ \| }
-		{{\bf{Modified: }}{\currentdate[day,month,year]}}
-	]
-  []
-
-  % []
-% \setupfootertexts
-%   [Mohamed Bana — Curriculum Vitae]
-%   [{\bf{Last Updated: }}{\currentdate[weekday,{, },day,month,year], \currenttime[h,{\,:\,},m]}]
-% \setupfootertexts
-%   [{\bf{Last Updated: }}{\currentdate[weekday,month,day,{, },year]}]
-
-
-  % alternative=doublesided,
-  % ,state=stop
-\setuppagenumbering
-	[
-		page=no,
-		alternative=doublesided,
-		location={footer,right},style=smallcaps,textstyle=smallcaps,numberstyle=smallcaps,conversion=romannumerals
-  ]
-% \setuppagenumbering[location={footer,middle},style=smallcaps,conversion=romannumerals]
-
-% \setupheader[state=high]
-% \setupfooter[state=high]
+% \usepackage{xunicode,xltxtra,url,parskip}
+% \usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{hyperref} % Required for adding links   and customizing them
+\definecolor{linkcolour}{RGB}{229,57,53} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document

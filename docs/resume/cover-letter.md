@@ -5,19 +5,18 @@ sidebar: auto
 prev: ./cv-download
 next: /resume/
 
-subtitle: "Full Stack Senior Software Engineer"
+# subtitle: "Full Stack Senior Software Engineer"
 author: Mohamed Bana
-fontsize: 11pt
 # indenting: small
 # interlinespace: small
-linkcolor: red
-contrastcolor: blue
-linkstyle: boldslanted
+# linkcolor: red
+# contrastcolor: blue
+# linkstyle: boldslanted
 lof: false
 lot: false
 toc: false
-whitespace: small
-includesource: true
+# whitespace: small
+# includesource: true
 ---
 
 ## Intro
@@ -38,9 +37,9 @@ I'm a well-rounded engineer and I'm able to see the delivery, from beginning to 
 * Containerising software using Docker.
 * Orchestrating the built containers using Kubernetes.
 
-### Job Preferences
+## Job Preferences
 
-#### Salary and notice period
+### Salary and notice period
 
 I'm willing to negotiate on this as it depends on a few things, that said:
 
@@ -49,13 +48,13 @@ I'm willing to negotiate on this as it depends on a few things, that said:
 
 I'm available to start after the 30/04/2021.
 
-#### Work locations considered
+### Work locations considered
 
 Ideally, a remote role with an office in London.
 
 If it's not fully remote, an office in East London, e.g., Canary Wharf, Aldgate (East), would be good.
 
-#### Key skills and preferred job role
+### Key skills and preferred job role
 
 I'm flexible in terms of the choice of framework used, however, my ideal role will involve (any of) the following:
 
@@ -66,18 +65,18 @@ I'm flexible in terms of the choice of framework used, however, my ideal role wi
 
 **Summary:** (Full Stack) Senior Software Engineer: Golang, Vue.js, Linux, Docker, Docker-Compose, Kubernetes, Cloud Computing, Google Cloud Computing (GCP).
 
-#### Any visa restrictions – if applicable (ILR, Tier 2, Dependant visa etc)
+### Any visa restrictions – if applicable (ILR, Tier 2, Dependant visa etc)
 
 * **Passport/Nationality:** I have a British Passport, National Insurance number, British Citizenship etc.
 * **Drivers Licence:** Full UK Driving Licence.
 * **Background/Criminal Check:**
-  * [Police Certificates - ACRO Criminal Records Office](https://www.acro.police.uk/police_certificates.aspx): Certificate was issued in 2021.
+  * [Police Certificates - ACRO Criminal Records Office](https://www.acro.police.uk/police_certificates.aspx): Certificate was issued in 08/03/2021.
 
      > **Summary of convictions and reprimands/warnings/cautions/impending prosecutions/under investigations held on UK police databases and disclosed in accordance with the ACRO stepdown model:**
      >
      > NO TRACE.
 
-#### Reason for looking for new role
+### Reason for looking for new role
 
 My contract at IBM will be finishing on the 30/04/2021.
 

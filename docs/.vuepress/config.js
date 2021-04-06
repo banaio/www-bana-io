@@ -7,7 +7,6 @@
 const fs = require('fs')
 const path = require('path')
 const util = require('util')
-const generate_projects = require('./generate-projects')
 // https://www.npmjs.com/package/debug
 const debug = require('debug')
 const debug_config = require('debug')('config')
@@ -24,8 +23,6 @@ const inspect_options = {
 }
 
 console.log('config.js: debug.enabled=%o', debug.enabled)
-console.log('config.js: generate_projects=%o', generate_projects)
-// console.log('config.js: generate_projects=%O', generate_projects);
 // generate_projects
 // // https://github.com/visionmedia/debug/issues/582#issuecomment-418185850
 // // https://github.com/visionmedia/debug/issues/582
@@ -320,10 +317,6 @@ module.exports = {
             text: 'CV Download',
             link: '/resume/cv-download',
           },
-          // {
-          //     text: 'About Me',
-          //     link: '/resume/about-me',
-          // },
           {
             text: 'LinkedIn',
             link: 'https://linkedin.com/in/mbana',
@@ -337,152 +330,7 @@ module.exports = {
       {
         text: 'Blog',
         link: '/blog/',
-        items: [
-          {
-            text: 'Blog',
-            link: '/blog/',
-          },
-          {
-            text: 'Linux',
-            link: '/linux/',
-          },
-        ].concat([
-          {
-            text: 'Golang',
-            link: '/golang/',
-          },
-          {
-            text: 'Golang Projects',
-            link: '/golang/projects',
-            items: [
-              {
-                text: 'openbankingforgerock',
-                link: 'https://github.com/banaio/openbankingforgerock',
-                description: "Connect to ForgeRock's directory.",
-              },
-              {
-                text: 'go_gdax_fix',
-                link: 'https://github.com/banaio/go_gdax_fix',
-                description:
-                  'Go (golang) FIX Client for the Coinbase GDAX API https://www.gdax.com',
-              },
-              {
-                text: 'openbanking_tools',
-                link: 'https://github.com/banaio/openbanking_tools',
-                description: 'Open Banking tools written in Go (golang).',
-              },
-              {
-                text: 'go_samples',
-                link: 'https://github.com/banaio/go_samples',
-                description: '',
-              },
-              {
-                text: 'bingo',
-                link: 'https://github.com/banaio/bingo',
-                description:
-                  'Bingo is a Go language server that speaks Language Server Protocol.',
-              },
-              {
-                text: 'countdistinct',
-                link: 'https://github.com/banaio/countdistinct',
-                description:
-                  'In computer science, the count-distinct problem (also known in applied mathematics as the cardinality estimation problem) is the problem of finding the number of distinct elements in a data stream with repeated elements. This is a well-known problem with numerous applications. The elements might represent IP addresses of packets passing through a router, unique visitors to a web site, elements in a large database, motifs in a DNA sequence, or elements of RFID/sensor networks.',
-              },
-              {
-                text: 'echo',
-                link: 'https://github.com/banaio/echo',
-                description: 'High performance, minimalist Go web framework',
-              },
-              {
-                text: 'go-gdax',
-                link: 'https://github.com/banaio/go-gdax',
-                description:
-                  'Go (golang) Client for the Coinbase GDAX API https://www.gdax.com',
-              },
-            ],
-          },
-          {
-            text: 'Rust Lang',
-            link: '/rust-lang/',
-          },
-          {
-            text: 'Rust Lang Projects',
-            link: '/rust-lang/projects',
-            items: [
-              {
-                text: 'openbanking.rs',
-                link: 'https://github.com/banaio/openbanking.rs',
-                description:
-                  'Open Banking client written in Rust Programming Language.',
-              },
-              {
-                text: 'bana.rs',
-                link: 'https://github.com/banaio/bana.rs',
-                description: 'All things written in Rust Programming Language.',
-              },
-            ],
-          },
-        ]),
-        // {
-        //     text: 'Rust Lang',
-        //     link: '/rust-lang/',
-        //     items: [
-        //         {
-        //             text: 'Rust Lang',
-        //             link: '/rust-lang/',
-        //         },
-        //         {
-        //             text: 'Rust Lang Projects',
-        //             link: '/rust-lang/projects',
-        //         },
-        //         {
-        //             text: 'Install',
-        //             link: '/rust-lang/install',
-        //         },
-        //     ]
-        // },
-        // {
-        //     text: 'Golang',
-        //     link: '/golang/',
-        //     items: [
-        //         {
-        //             text: 'Golang',
-        //             link: '/golang/',
-        //         },
-        //         {
-        //             text: 'Golang Projects',
-        //             link: '/golang/projects',
-        //             items: [
-        //                 {
-        //                     text: 'Golang Projects',
-        //                     link: '/golang/projects',
-        //                 },
-        //                 {
-        //                     text: 'openbankingforgerock',
-        //                     link: 'https://github.com/banaio/openbankingforgerock',
-        //                 },
-        //                 {
-        //                     text: 'go-gdax',
-        //                     link: 'https://github.com/banaio/go-gdax',
-        //                 },
-        //                 {
-        //                     text: 'go_gdax_fix',
-        //                     link: 'https://github.com/banaio/go_gdax_fix',
-        //                 },
-        //                 {
-        //                     text: 'go_samples',
-        //                     link: 'https://github.com/banaio/go_samples',
-        //                 },
-        //             ],
-        //         },
-        //     ]
-        // },
-        // ],
-      },
-      // {
-      //     text: 'The Quran',
-      //     link: '/the-quran/',
-      // },
+      }
     ],
     sidebar: 'auto',
     sidebarDepth: 10,
@@ -494,7 +342,6 @@ module.exports = {
     // https://vuepress.vuejs.org/theme/default-theme-config.html#last-updated
     // lastUpdated: true,
     lastUpdated: 'Last Updated',
-
     // serviceWorker: {
     //     updatePopup: {
     //         message: "New content is available.",

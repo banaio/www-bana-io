@@ -1,0 +1,56 @@
+{
+  "scripts": {
+    "docs:build": "FORCE_COLOR=3 DEBUG_COLORS=true DEBUG_SHOW_HIDDEN=true vuepress build docs --no-cache --debug",
+    "docs:dev": "FORCE_COLOR=3 DEBUG_COLORS=true DEBUG_SHOW_HIDDEN=true vuepress dev docs --cache docs/.cache --temp docs/.temp --no-clear-screen --no-cache --debug",
+    "docs:dev2": "FORCE_COLOR=3 DEBUG_COLORS=true DEBUG_SHOW_HIDDEN=true NODE_ENV=development VUEPRESS_ENV=developer vuepress dev docs --cache docs/.cache --temp docs/.temp --no-clear-screen --no-cache --debug",
+    "docs:dev3": "FORCE_COLOR=3 DEBUG_COLORS=true DEBUG_SHOW_HIDDEN=true VUE_CLI_MODERN_MODE=true VUE_CLI_MODERN_BUILD=true VUE_APP_NODE_ENV=development VUEPRESS_ENV=developer NODE_DEBUG=webpack NODE_ENV=development vuepress dev docs --cache docs/.cache --temp docs/.temp --no-clear-screen --debug",
+    "lint": "eslint --debug --ignore-pattern '!*.js' --ext .js,.json,.eslintrc,.babelrc,.ts,.vue package.json .remarkrc.js .textlintrc.js .eslintrc.js ./docs/.vuepress/",
+    "lint-md": "EXIT_STATUS=0; yarn lint-md:style || EXIT_STATUS=$?; yarn lint-md:wording || EXIT_STATUS=$?; exit $EXIT_STATUS",
+    "lint-md:style": "remark --frail .",
+    "lint-md:wording": "textlint ./docs/**/*.md"
+  },
+  "devDependencies": {
+    "@octokit/core": "^3.1.2",
+    "@vue/cli": "^4.4.6",
+    "@vue/cli-service-global": "^4.4.6",
+    "@vuepress/plugin-back-to-top": "^1.5.2",
+    "@vuepress/plugin-nprogress": "^1.5.2",
+    "ajv-keywords": "^3.5.2",
+    "console-log-level": "^1.4.1",
+    "debug": "^4.1.1",
+    "eslint": "^7.6.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-vuepress": "^2.2.0",
+    "eslint-plugin-json-format": "^2.0.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue-libs": "^4.0.0",
+    "markdown-it-footnote": "^3.0.1",
+    "markdown-it-katex": "^2.0.3",
+    "prettier": "^2.0.5",
+    "prettier-config-vuepress": "^1.0.0",
+    "vuepress": "^v1.0.0-alpha.40",
+    "webpack-env": "^0.8.0"
+  },
+  "dependencies": {
+    "acorn": "^6.4.1",
+    "kind-of": "^6.0.3",
+    "minimist": "^1.2.3",
+    "serialize-javascript": "^3.1.0",
+    "websocket-extensions": "^0.1.4"
+  },
+  "name": "www-bana-io-vue-js",
+  "version": "v0.0.1",
+  "author": "Mohamed Bana <m@bana.io>",
+  "description": "https://bana.io",
+  "homepage": "https://github.com/banaio/www-bana-io-vue-js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:banaio/www-bana-io-vue-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/banaio/www-bana-io-vue-js/issues"
+  },
+  "license": "MIT",
+  "private": true,
+  "prettier": "prettier-config-vuepress"
+}

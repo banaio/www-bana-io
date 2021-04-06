@@ -6,20 +6,9 @@ prev: false
 next: ./cv
 ---
 
-<!-- ## Pages -->
-
-<!-- * [CV](./cv)
-* [CV Download](./cv-download.md)
-* [Cover Letter](./cover-letter)
-* [About Me](./about-me) -->
-
 ## Pages
 
-<router-link
-    v-for="page in pages"
-    v-bind:key="page.path"
-    :to="page.path"
-    tag="div"><h2><a>{{ page.title }}</a></h2><div>{{ page.frontmatter.date }}, <b class="tags-heading">Tags:</b> <span v-for="(item, index) in page.frontmatter.tags" class="tag"><span v-if="index != 0">, </span>{{ item }}</span></div><div></div>
+<router-link v-for="page in pages" v-bind:key="page.path" :to="page.path" tag="div"><h2><a>{{ page.title }}</a></h2><div>{{ page.frontmatter.date }}, <b class="tags-heading">Tags:</b> <span v-for="(item, index) in page.frontmatter.tags" class="tag"><span v-if="index != 0">, </span>{{ item }}</span></div><div></div>
 </router-link>
 
 <script>
@@ -75,21 +64,13 @@ export default {
 
 <style scoped>
 .tags-heading {
-    /* display: inline-block; */
-    /* margin-block-start: 0; */
-    /* margin-block-end: 0; */
-    /* margin-block-start: 1.33em;
-    margin-block-end: 1.33em; */
     font-family: 'Alegreya Sans SC', sans-serif;
 }
 .tags {
-    /* border: 1px solid black; */
     font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 .tag {
-    /* border: 1px solid black;
-    padding: 2px; */
     font-family: 'Alegreya Sans SC', sans-serif;
 }
 

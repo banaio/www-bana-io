@@ -1,0 +1,13 @@
+./*
+
+############
+# VuePress #
+!favicon.ico
+!favicon.jpg
+!favicon.png
+!favicon.svg
+!./favicon.ico
+!./favicon.jpg
+!./favicon.png
+!./favicon.svg
+############

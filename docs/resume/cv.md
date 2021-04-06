@@ -7,25 +7,25 @@ sidebarDepth: 3
 prev: /resume/
 next: ./cv-download
 
-subtitle: "Full Stack Senior Software Engineer"
+# subtitle: "Full Stack Senior Software Engineer"
 author: Mohamed Bana
-fontsize: 9pt
+# fontsize: 9pt
 # indenting: small
 # interlinespace: small
-linkcolor: red
-contrastcolor: blue
-linkstyle: boldslanted
+# linkcolor: red
+# contrastcolor: blue
+# linkstyle: boldslanted
 lof: false
 lot: false
 toc: false
-includesource: true
+# includesource: true
 ---
 
 | **Contact**                                                 | **Web**                                                        |
-|:-----------------------------------------------------------|---------------------------------------------------------------:|
-| [+44-7960-045-281](tel:+44-7960-045-281) (UK Mobile)       | [https://bana.io](https://bana.io)                             |
-| [+212-624-846-935](tel:+212-624-846-935) (Moroccan Mobile) | [https://github.com/banaio](https://github.com/banaio)         |
-| [m@bana.io](mailto:m@bana.io)                              | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) |
+|:------------------------------------------------------------|---------------------------------------------------------------:|
+| [+44-7960-045-281](tel:+44-7960-045-281) (UK Mobile)        | [https://bana.io](https://bana.io)                             |
+| [+212-624-846-935](tel:+212-624-846-935) (Moroccan Mobile)  | [https://github.com/banaio](https://github.com/banaio)         |
+| [m@bana.io](mailto:m@bana.io)                               | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) |
 
 I am a well-rounded Software Engineer, with around 9-10 years of Software Development experience. I understand what it takes to release a product having worked on the back-end, front-end, testing and finally the deployment aspect of several products.
 
@@ -233,19 +233,17 @@ If it's a contracting role, minimum of £580 per day. If it's a permanent positi
 * **Passport/Nationality:** I have a British Passport.
 * **Drivers Licence:** Full UK Driving Licence.
 * **Background/Criminal Check:**
-  * [Basic Disclosure and Barring Service (DBS) check](https://www.gov.uk/request-copy-criminal-record): Certificate was issued on 31 July 2020.
+  * [Basic Disclosure and Barring Service (DBS) check](https://www.gov.uk/request-copy-criminal-record): Certificate was issued on 31/07/2020.
 
      > **Police Records of Convictions, Cautions, Reprimands and Warnings:**
      >
      > NONE RECORDED
 
-  * [Police Certificates - ACRO Criminal Records Office](https://www.acro.police.uk/police_certificates.aspx): Certificate was issued in 2021.
+  * [Police Certificates - ACRO Criminal Records Office](https://www.acro.police.uk/police_certificates.aspx): Certificate was issued in 08/03/2021.
 
      > **Summary of convictions and reprimands/warnings/cautions/impending prosecutions/under investigations held on UK police databases and disclosed in accordance with the ACRO stepdown model:**
      >
      > NO TRACE.
-
-     I have requested a new certificate and this should arrive between the 15th/28th of August 2020.
 
 <!-- Police records check
 DBS ID Number: P0000GBYC03

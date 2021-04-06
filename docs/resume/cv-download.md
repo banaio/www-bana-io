@@ -31,7 +31,6 @@ next: ./cover-letter
 
 * [CV](./cv)
 * [Cover Letter](./cover-letter)
-* [About Me](./about-me)
 
 <!-- ---
 

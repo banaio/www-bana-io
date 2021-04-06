@@ -29,11 +29,13 @@ DATE_TIME 				:= $(shell date --utc +'%A, %d %B %Y, %H:%M:%S %Z')
 OUTPUT_DIR 				:= $(shell pwd)
 OS 								:= $(shell uname -s)
 
-.PHONY: cv_tex cover_letter_tex combine
-all: cv_tex cover_letter_tex combine
+.PHONY: clean cv_tex cover_letter_tex combine
+all: clean cv_tex cover_letter_tex combine
 
-# .PHONY: cv cover_letter combine
-# all: cv cover_letter combine
+.PHONY: clean
+clean:
+	rm -v missfont.log || true
+	rm -v mohamed-bana_cover-letter.pdf  mohamed-bana_cv_cover-letter.pdf  mohamed-bana_cv.pdf || true
 
 .PHONY: cv_tex
 cv_tex:
@@ -42,7 +44,7 @@ cv_tex:
     --fail-if-warnings \
     --from=markdown \
     --standalone \
-    --pdf-engine=context \
+    --pdf-engine=xelatex \
     --include-in-header=./templates/include-in-header.tex \
     --include-before-body=./templates/include-before-body.tex \
     --include-after-body=./templates/include-after-body.tex \
@@ -91,7 +93,7 @@ cover_letter_tex:
     --fail-if-warnings \
     --from=markdown \
     --standalone \
-    --pdf-engine=context \
+    --pdf-engine=xelatex \
     --include-in-header=./templates/include-in-header.tex \
     --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" \
     ../cover-letter.md
@@ -118,7 +120,7 @@ cover_letter_all: cover_letter_tex
     --fail-if-warnings \
     --from=markdown \
     --standalone \
-    --pdf-engine=context \
+    --pdf-engine=xelatex \
     --include-in-header=./templates/include-in-header.tex \
     --variable=date:"${DATE_TIME}" \
     --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.odt" \
@@ -127,7 +129,7 @@ cover_letter_all: cover_letter_tex
     --fail-if-warnings \
     --from=markdown \
     --standalone \
-    --pdf-engine=context \
+    --pdf-engine=xelatex \
     --include-in-header=./templates/include-in-header.tex \
     --variable=date:"${DATE_TIME}" \
     --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.docx" \
@@ -137,7 +139,7 @@ cover_letter_all: cover_letter_tex
     --from=markdown \
     --to=opendocument \
     --standalone \
-    --pdf-engine=context \
+    --pdf-engine=xelatex \
     --include-in-header=./templates/include-in-header.tex \
     --variable=date:"${DATE_TIME}" \
     --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.xml" \
@@ -153,6 +155,7 @@ else
 	pdfunite "${OUTPUT_DIR}/mohamed-bana_cv.pdf" "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
 	xdg-open "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
 endif
+	cat missfont.log || true
 
 # .PHONY: copy_to_send_dir
 # copy_to_send_dir: SEND_DIR=${OUTPUT_DIR}/send
