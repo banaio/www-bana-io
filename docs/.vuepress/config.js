@@ -279,8 +279,8 @@ module.exports = {
     // logo: 'favicon.png',
     nav: [
       {
-        text: 'm@bana.io',
-        link: 'mailto:m@bana.io',
+        text: 'mohamed@bana.io',
+        link: 'mailto:mohamed@bana.io',
         rel: 'noopener noreferrer',
         target: '_blank',
       },
@@ -330,7 +330,7 @@ module.exports = {
       {
         text: 'Blog',
         link: '/blog/',
-      }
+      },
     ],
     sidebar: 'auto',
     sidebarDepth: 10,

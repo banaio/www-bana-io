@@ -78,7 +78,7 @@ I'm flexible in terms of the choice of framework used, however, my ideal role wi
 
 ### Reason for looking for new role
 
-My contract at IBM will be finishing on the 30/04/2021.
+My contract at IBM finished on the 30/04/2021.
 
 ---
 

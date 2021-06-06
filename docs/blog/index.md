@@ -4,7 +4,7 @@ tags: ["blog"]
 sidebar: false
 ---
 
-<router-link v-for="post in posts" v-bind:key="post.path" :to="post.path" tag="div"><h2><a>{{ post.title }}</a></h2><div>{{ post.frontmatter.date }}, <b class="tags-heading">Tags:</b> <span v-for="(item, index) in post.frontmatter.tags" class="tag">{{ item }}</span></div><div></div>
+<router-link v-for="post in posts" v-bind:key="post.path" :to="post.path" tag="div"><h2><a>{{ post.title }}</a></h2><div>{{ post.frontmatter.date }}, <b class="tags-heading">Tags:</b> <span v-for="(item, index) in post.frontmatter.tags" class="tag"><span v-if="index != 0">, </span>{{ item }}</span></div><div></div>
 </router-link>
 
 <script>
