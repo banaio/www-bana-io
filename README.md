@@ -12,7 +12,7 @@
 
 ```sh
 git clone git@github.com:banaio/www-bana-io.git
-yarn install
+yarn install --frozen-lockfile
 yarn docs:dev
 ... # Make changes
 yarn lint-md
