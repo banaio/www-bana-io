@@ -49,7 +49,7 @@ EOF
 ### Generic Steps
 
 ```sh
-sudo dnf install rocm-opencl rocm-utils rocm-smi rocm-device-libs
+sudo dnf install rocm-opencl rocm-utils rocm-smi rocm-device-libs rocm-runtime
 ```
 
 List installed packages:
