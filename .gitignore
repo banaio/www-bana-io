@@ -121,3 +121,6 @@ docs/.vuepress/public/resume/download/format/mohamed-bana_cv.tex
 node_modules
 .temp
 .cache
+
+# Local Netlify folder
+.netlify
