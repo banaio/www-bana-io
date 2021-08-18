@@ -4,7 +4,6 @@ tags: ["the-quran", "القرآن الكريم"]
 sidebarDepth: 2
 prev: /quran/
 next: /quran/
-permalink: /quran/soosi
 ---
 
 ## برواية السوسي عن أبي عمرو البصري
