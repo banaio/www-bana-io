@@ -11,7 +11,7 @@ lof: false
 lot: false
 mainfont: Alegreya
 sansfont: Alegreya Sans
-monofont: DejaVuSansMono
+# monofont: DejaVuSansMono
 mathfont: TeXGyreDejaVuMath-Regular
 fontfamily: Alegreya
 toc: false
@@ -28,7 +28,7 @@ lof: false
 lot: false
 mainfont: Alegreya
 sansfont: Alegreya Sans
-monofont: DejaVuSansMono
+# monofont: DejaVuSansMono
 mathfont: TeXGyreDejaVuMath-Regular
 fontfamily: Alegreya
 toc: false

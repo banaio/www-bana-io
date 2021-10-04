@@ -24,8 +24,13 @@ toc: false
 | **Contact**                                                 | **Web**                                                        |
 |:------------------------------------------------------------|---------------------------------------------------------------:|
 | [+44-7960-045-281](tel:+44-7960-045-281) (UK Mobile)        | [https://bana.io](https://bana.io)                             |
+| [mohamed@bana.io](mailto:mohamed@bana.io)                   | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) |
+
+<!-- | **Contact**                                                 | **Web**                                                        |
+|:------------------------------------------------------------|---------------------------------------------------------------:|
+| [+44-7960-045-281](tel:+44-7960-045-281) (UK Mobile)        | [https://bana.io](https://bana.io)                             |
 | [+212-624-846-935](tel:+212-624-846-935) (Moroccan Mobile)  | [https://github.com/banaio](https://github.com/banaio)         |
-| [m@bana.io](mailto:m@bana.io)                               | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) |
+| [m@bana.io](mailto:m@bana.io)                               | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) | -->
 
 I am a well-rounded Software Engineer, with around 9-10 years of Software Development experience. I understand what it takes to release a product having worked on the back-end, front-end, testing and finally the deployment aspect of several products.
 

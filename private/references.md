@@ -1,18 +1,17 @@
 # Mohamed Bana References
 
-Please **DO NOT** use or share these details with anyone without my consent and only share for reference purposes.
-
-Please see attached `mohamed-bana_references.html` file.
-
-## Golang Engineer (Remote), [Paymentsense Limited](https://www.paymentsense.com), The Brunel Building, 2 Canalside Walk, London, W2 1DG, London, UK - 05/07/2021–31/10/2021 - Permanent
+Please **DO NOT** use or share these details with anyone and only contact my references with my prior consent.
 
 Please contact HR in first instance.
+
+<!-- Please see attached `mohamed-bana_references.html` file. -->
+
+## Golang Engineer (Remote), [Paymentsense Limited](https://www.paymentsense.com), The Brunel Building, 2 Canalside Walk, London, W2 1DG, London, UK - 05/07/2021–31/10/2021 - Permanent
 
 ### HR
 
 ```sh
 <@paymentsense.com> | HR
-
 Paymentsense Limited, The Brunel Building, 2 Canalside Walk, London W2 1DG.
 ```
 
@@ -23,11 +22,9 @@ Andrea Maderna <andrea.maderna@paymentsense.com> | Head Of Engineering
 https://www.linkedin.com/in/madernaandrea/
 ```
 
-## Remote Cloud Software Engineer / Golang, [IBM United Kingdom Limited](https://www.ibm.com/uk/en/), Hursley Park, Winchester, UK - 14/09/2020–-30/04/2021
+## Remote Cloud Software Engineer / Golang, [IBM United Kingdom Limited](https://www.ibm.com/uk/en/), Hursley Park, Winchester, UK - 14/09/2020–-30/04/2021 - Contractor
 
-Please contact HR in first instance.
-
-###
+### HR
 
 ```sh
 IBM United Kingdom Limited
@@ -45,28 +42,31 @@ Noel Rooney <noel_rooney@uk.ibm.com> | Senior Development Manager for IBM Kubern
 Hursley Park
 Hampshire SO21 2JN
 England
-Telephone: +44-7917-613235
 ```
 
-## Full Stack Go and Vue.js Developer, [Open Banking Limited](https://www.openbanking.org.uk), St Katharine's & Wapping, London, UK - 08/05/2018–01/01/2020 - Contract
+<!-- Telephone: +44-7917-613235 -->
 
-Please contact HR in first instance:
+## Full Stack Go and Vue.js Developer, [Open Banking Limited](https://www.openbanking.org.uk), St Katharine's & Wapping, London, UK - 08/05/2018–01/01/2020 - Contractor
+
+### HR
 
 ```sh
 Jo.Morcom@openbanking.org.uk | HR
-
 Open Banking Limited, 2 Thomas More Square, London E1W 1YN
 ```
+
+### Manager
 
 ```sh
 Glyn Jackson <me@glynjackson.org> | Product Owner Open Banking Conformance Tools
 https://www.linkedin.com/in/glynjackson
 Mobile: 07595 354092‬
-
 Open Banking Limited, 2 Thomas More Square, London E1W 1YN
 ```
 
-## Senior Engineer (contractor), [90POE - Ninety Percent of Everything Limited](https://www.90poe.io/), Marble Arch, London, UK - 01/02/2018–20/04/2018 - Contract
+## Senior Engineer, [90POE - Ninety Percent of Everything Limited](https://www.90poe.io/), Marble Arch, London, UK - 01/02/2018–20/04/2018 - Contractor
+
+### Manager
 
 ```sh
 Paul Birkin
@@ -76,28 +76,30 @@ Portman House, 7th Floor
 London
 W1H 6DU
 Mobile: +44 (0) 7718 478 956
-Email: paul.birkin@90poe.io
+Email: <paul.birkin@90poe.io>
 ```
 
-## Full Stack Developer (contractor), [Root Capital LLP](https://www.rootcapital.co.uk), London Bridge, London, UK - 09/10/2017–24/12/2017 - Contract
+## Full Stack Developer (contractor), [Root Capital LLP](https://www.rootcapital.co.uk), London Bridge, London, UK - 09/10/2017–24/12/2017 - Contractor
+
+### Manager
 
 ```sh
 Chris Hall CTO at Root Capital
 Root Capital LLP
 Mobile: 07973 515659
-Website: www.rootcapital.co.uk
+Website: <www.rootcapital.co.uk>
 Chris Hall <chris@rootcapital.co.uk>
 ```
 
-## Full Stack Node Developer (contractor), [Lloyds Banking Group PLC](https://www.lloydsbankinggroup.com), London Bridge, London, UK - 20/03/2017–22/05/2017 - Contract
+## Full Stack Node Developer, [Lloyds Banking Group PLC](https://www.lloydsbankinggroup.com), London Bridge, London, UK - 20/03/2017–22/05/2017 - Contractor
+
+### Manager
 
 ```sh
 Manasé Mtopa (Contractor - Digital Marketing & Customer Development)
 Head of Business Mgt | Shared Components | Digital COO | Group Digital | LBG
-
-MANASE.MTOPA1@lloydsbanking.com
+<MANASE.MTOPA1@lloydsbanking.com>
 T: 07711 747 035
-
 Lloyds Banking Group, 1st Floor, Red Lion Court, 46/48 Park St. London, SE1 9EQ
 ```
 
@@ -105,19 +107,17 @@ Lloyds Banking Group, 1st Floor, Red Lion Court, 46/48 Park St. London, SE1 9EQ
 
 ### HR
 
-Please contact [info@synthace.com](mail:info@synthace.com) HR in first instance:
-
 ```sh
 Synthace Ltd
 The London Bioscience Innovation Centre
 2 Royal College Street
 London, NW1 0NH
 
-info@synthace.com
-+44 (0) 20 7554 5877
+<info@synthace.com>
++44-207-554-5877
 ```
 
-### Team Lead
+### Team Lead / Manager
 
 ```sh
 Dr Michael Sadowski (Sid)
@@ -139,37 +139,34 @@ Synthace Ltd
 The London Bioscience Innovation Centre
 2 Royal College Street
 London, NW1 0NH
-
-O:  +44 (0) 2036 421350
-M: +44 (0) 7979 691769
+O: +44-2036-421350
+M: +44-7979-691769
 ```
 
 ## Developer, [IG Index Ltd.](https://www.ig.com/uk) Cannon Bridge, London, UK - 09-2014–18/02/2016 - Permanent
 
-Please contact HR in first instance:
+### HR
 
 ```sh
 IG Index
 HR department
-+4420 7896 0011
++44-207-896-0011
 ```
 
-```SH
+### Manager
+
+```sh
 IG:
 Tech Lead / Boss
 Christopher Casar - Technical Team Lead at IG Group
 christophe.casar@iggroup.com, christophe.casar@ig.com
 
-Tel: +4420 7896 0011, reception will forward your call on.
+Tel: +44-207-896-0011, reception will forward your call on.
 ```
 
 ### Software Developer, [ITRS (International Trading Room Software) Group Ltd.](https://www.itrsgroup.com) Moorgate, London, UK - 02-2010–09-2014 - Permanent
 
-Please contact HR in first instance:
-
-To quote:
-
-> If you ask them to email HR Admin hr-admin@itrsgroup.com it will get to us.
+### HR
 
 ```sh
 hr-admin@itrsgroup.com ● HR ● ITRS Group Ltd
