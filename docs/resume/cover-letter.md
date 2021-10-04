@@ -7,15 +7,19 @@ next: /resume/
 
 # subtitle: "Full Stack Senior Software Engineer"
 author: Mohamed Bana
-# indenting: small
-# interlinespace: small
-# linkcolor: red
-# contrastcolor: blue
-# linkstyle: boldslanted
+indenting: small
+interlinespace: small
+whitespace: small
 lof: false
 lot: false
 toc: false
-# whitespace: small
+linestretch: 0.4
+output:
+   pdf_document:
+      latex_engine: xelatex
+# linkcolor: red
+# contrastcolor: blue
+# linkstyle: boldslanted
 # includesource: true
 ---
 
@@ -29,12 +33,13 @@ A role involving web technologies hosted on a cloud-based backend. I’ve worked
 
 ### Key skills and preferred job role
 
-I'm flexible in terms of the choice of framework used, however, my ideal role will involve (any of) the following:
+I'm flexible in terms of the choice of framework used, however, my ideal role will involve the following:
 
 * Backend: Ideally Go/Golang as I have good experience with this.
 * Frontend: JavaScript or any language that targets JavaScript on the frontend side, my ideal choice would be TypeScript. I would prefer to use Vue.js as the underlying framework that the UI is built with.
-* Roles where Linux, Google Cloud Platform (GCP)/AWS/Azure, Docker/Podman and Kubernetes are being used. Open Banking would be a plus.
-* I'm up for learning more of Rust. It's just a hobby at the moment.
+* Roles where Linux, Google Cloud Platform/AWS/Azure, Docker/Podman and Kubernetes are being used. Open Banking would be a plus.
+
+I'm up for learning more of Rust but it's just a hobby at the moment.
 
 **Summary:** (Full Stack) Senior Software Engineer: Golang, Vue.js, Linux, Docker, Docker-Compose, Kubernetes, Cloud Computing, Google Cloud Computing (GCP), Fedora Linux.
 
@@ -54,28 +59,21 @@ Ideally, a fully remote role with an office in London. If it's not fully remote,
 * **Passport/Nationality:** I have a British Passport, National Insurance number, British Citizenship etc.
 * **Drivers Licence:** Full UK Driving Licence.
 * **Background/Criminal Check:**
-  * [Basic Disclosure and Barring Service (DBS) check](https://www.gov.uk/request-copy-criminal-record): Certificate was issued on 31/07/2020.
+  * [Basic Disclosure and Barring Service (DBS) check](https://www.gov.uk/request-copy-criminal-record): **Date of issue:** 31/07/2021 (13th July 2021), **DBS ID Nuumber:** P0000GBYC03, **Certificate number:** 001023825352:
 
      > Police Records of Convictions, Cautions, Reprimands and Warnings:
      >
      > **NONE RECORDED**
 
-  * [Police Certificates - ACRO Criminal Records Office](https://www.acro.police.uk/police_certificates.aspx): Certificate was issued in 08/03/2021.
+  * [Police Certificates - ACRO Criminal Records Office](https://www.acro.police.uk/police_certificates.aspx): **Date of issue:** 08/03/2021 (8th March 2021).
 
      > Summary of convictions and reprimands/warnings/cautions/impending prosecutions/under investigations held on UK police databases and disclosed in accordance with the ACRO stepdown model:
      >
      > **NO TRACE.**
 
-<!-- * **Background/Criminal Check:**
-  * [Police Certificates - ACRO Criminal Records Office](https://www.acro.police.uk/police_certificates.aspx): Certificate was issued in 08/03/2021.
-
-     > **Summary of convictions and reprimands/warnings/cautions/impending prosecutions/under investigations held on UK police databases and disclosed in accordance with the ACRO stepdown model:**
-     >
-     > NO TRACE. -->
-
 ### Reason for looking for new role
 
-My employment at Paymentsense Limited will finish on the 31/10/2021.
+My employment at Paymentsense Limited will finish on the 31/10/2021. I was not fit for the team, and there's also an element of the team not being fit for me.
 
 <!-- ---
 

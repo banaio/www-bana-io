@@ -10,14 +10,19 @@ next: ./cv-download
 # subtitle: "Full Stack Senior Software Engineer"
 author: Mohamed Bana
 # fontsize: 9pt
-# indenting: small
-# interlinespace: small
-# linkcolor: red
-# contrastcolor: blue
-# linkstyle: boldslanted
+indenting: small
+interlinespace: small
+whitespace: small
 lof: false
 lot: false
 toc: false
+linestretch: 0.4
+output:
+   pdf_document:
+      latex_engine: xelatex
+# linkcolor: red
+# contrastcolor: blue
+# linkstyle: boldslanted
 # includesource: true
 ---
 
@@ -203,32 +208,6 @@ User Acceptance Testing of the latest release of Thomson Reuter's 3000 Extra, th
 * **2005-2008:** BSc Computer Science (2.1), City, University of London.
 * **2008-2009:** MSc Software Systems Engineering (Attended), University College London, and Trading & Financial Market Structure module, London Business School.
 
-<!-- | **2005-2008**                                               	| **2008-2009**                                                                                                                                        	|
-|---------------------------------------------------------	|--------------------------------------------------------------------------------------------------------------------------------------------------	|
-| BSc Computer Science (2.1), City, University of London. 	| MSc Software Systems Engineering (Attended), University College London, and Trading & Financial Market Structure module, London Business School. 	| -->
-
-<!-- ## Information
-
-I am looking for a role involving web technologies hosted on a cloud-based backend. I’ve worked on all the tiers of a software product, so I can appreciate the different concerns expressed at each level. I feel the latest trend in web technologies; quick prototyping, large selection of libraries, ease of programming and its cross-platform support is where the future is heading. This, distributed systems and big data algorithms are where I am focusing my current efforts—all of which are equally interesting to me.
-
-### Technology Stack
-
-I'm flexible in terms of the choice of framework used, however, my ideal role will involve (any of) the following:
-
-* Backend: Ideally Go/Golang as I have good experience with this.
-* Frontend: JavaScript or any language that targets JavaScript on the frontend side, my ideal choice would be TypeScript. I would prefer to use Vue.js as the underlying framework that the UI is built with.
-* Roles where Linux, Google Cloud Platform/Azure/AWS, Docker and Kubernetes are being used. Open Banking would be a plus.
-* I'm up for learning more of Rust. It's just a hobby at the moment.
-
-### Enumeration and Job Preferences
-
-If it's a contracting role, minimum of £580 per day. If it's a permanent position, minimum of £90,000 per year.
-
-* **Rate:** I'm willing to negotiate on this, that said, if it's a contracting role, minimum of £580 per day. If it's a permanent position, minimum of £90,000 per year.
-* **Location:** Ideally, a remote role with an office in London. If it's not fully remote, an office in East London would be perfect, e.g., Canary Wharf, Aldgate (East).
-* **Start Date:** I’m available to start immediately.
-* **Job Type:** I've a limited company called BANAIO LTD which I started in March 2017 and I've been a contractor since then. I would prefer to stick to contracting but I will also consider a permanent position. -->
-
 ## Additional Information
 
 ### Misc
@@ -236,32 +215,19 @@ If it's a contracting role, minimum of £580 per day. If it's a permanent positi
 * **Passport/Nationality:** I have a British Passport.
 * **Drivers Licence:** Full UK Driving Licence.
 * **Background/Criminal Check:**
-  * [Basic Disclosure and Barring Service (DBS) check](https://www.gov.uk/request-copy-criminal-record): Certificate was issued on 31/07/2020.
+  * [Basic Disclosure and Barring Service (DBS) check](https://www.gov.uk/request-copy-criminal-record): **Date of issue:** 31/07/2021 (13th July 2021), **DBS ID Nuumber:** P0000GBYC03, **Certificate number:** 001023825352:
 
      > Police Records of Convictions, Cautions, Reprimands and Warnings:
      >
      > **NONE RECORDED**
 
-  * [Police Certificates - ACRO Criminal Records Office](https://www.acro.police.uk/police_certificates.aspx): Certificate was issued in 08/03/2021.
+  * [Police Certificates - ACRO Criminal Records Office](https://www.acro.police.uk/police_certificates.aspx): **Date of issue:** 08/03/2021 (8th March 2021).
 
      > Summary of convictions and reprimands/warnings/cautions/impending prosecutions/under investigations held on UK police databases and disclosed in accordance with the ACRO stepdown model:
      >
      > **NO TRACE.**
 
-<!-- Police records check
-DBS ID Number: P0000GBYC03
-DBS ID Number: POOOOGBYCO3
-Basic Disclosure and Barring Service (DBS) check application reference number is E0933200906.
-Application reference number: E0933200906
-Your basic DBS check result is clear. Your check on 31/07/2020 revealed no information. -->
-  <!-- ** [Basic Disclosure and Barring Service (DBS) check](https://www.gov.uk/request-copy-criminal-record): Certificate was issued on 31 July 2020 and your certificate number is: 000975926595. -->
-
 ### Languages
 
 * **English and Swahili:** Native.
 * **Arabic:** Intermediate. I own an apartment in Marrakech, Morocco. I have lived in Cairo, Egypt and have travelled several times to the UAE.
-
-<!-- | **Misc**                    	| **Languages**                                                                                                                                   	|
-|----------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------	|
-| I have a British Passport. 	| **English and Swahili:** Native.                                                                                                              	|
-| Full UK Driving Licence.   	| **Arabic:** Intermediate. I own an apartment in Marrakech, Morocco. I have lived in Cairo, Egypt and have travelled several times to the UAE. 	| -->

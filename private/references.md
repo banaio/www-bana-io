@@ -11,7 +11,7 @@ Please contact HR in first instance.
 ### HR
 
 ```sh
-<@paymentsense.com> | HR
+HR <hr@paymentsense.com>
 Paymentsense Limited, The Brunel Building, 2 Canalside Walk, London W2 1DG.
 ```
 
@@ -20,6 +20,7 @@ Paymentsense Limited, The Brunel Building, 2 Canalside Walk, London W2 1DG.
 ```sh
 Andrea Maderna <andrea.maderna@paymentsense.com> | Head Of Engineering
 https://www.linkedin.com/in/madernaandrea/
+Paymentsense Limited, The Brunel Building, 2 Canalside Walk, London W2 1DG.
 ```
 
 ## Remote Cloud Software Engineer / Golang, [IBM United Kingdom Limited](https://www.ibm.com/uk/en/), Hursley Park, Winchester, UK - 14/09/2020–-30/04/2021 - Contractor

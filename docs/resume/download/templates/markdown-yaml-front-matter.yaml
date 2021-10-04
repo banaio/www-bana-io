@@ -1,9 +1,9 @@
 subtitle: "Full Stack Senior Software Engineer"
 author: Mohamed Bana
 
-# fontsize: 9pt
-# indenting: small
-# interlinespace: small
+fontsize: 12pt
+indenting: small
+interlinespace: small
 linkcolor: red
 contrastcolor: blue
 linkstyle: boldslanted
@@ -19,8 +19,8 @@ whitespace: small
 includesource: true
 
 # fontsize: 12pt
-# indenting: small
-# interlinespace: small
+indenting: small
+interlinespace: small
 linkcolor: red
 contrastcolor: blue
 linkstyle: boldslanted
@@ -34,3 +34,4 @@ fontfamily: Alegreya
 toc: false
 whitespace: small
 includesource: true
+linestretch: 1.2

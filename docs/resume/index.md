@@ -25,13 +25,13 @@ export default {
             // { "title": "Rust Lang", "frontmatter": { "title": "Rust Lang", "tags": [ "blog", "programming", "software", "rust", "rust lang" ], "date": "2020-08-01", "sidebar": false, "type": "post", "prev": false, "next": "./projects" }, "regularPath": "/rust-lang/", "relativePath": "rust-lang/index.md", "key": "v-32333916", "path": "/rust-lang/", "headers": [ { "level": 2, "title": "Pages", "slug": "pages" } ], "lastUpdated": "8/11/2020, 3:24:34 PM" }
             const { regularPath, relativePath, path } = this.$page;
             // const current_path =
-            console.log('this.$page=%O', this.$page);
-            console.log('this.$page=%o', this.$page);
-            console.log('this.$page=%j', this.$page);
+            // console.log('this.$page=%O', this.$page);
+            // console.log('this.$page=%o', this.$page);
+            // console.log('this.$page=%j', this.$page);
             const sorted_desc = this.$site.pages.filter((page) => {
-                console.log('page=%O', page);
-                console.log('page=%o', page);
-                console.log('page=%j', page);
+                // console.log('page=%O', page);
+                // console.log('page=%o', page);
+                // console.log('page=%j', page);
                 const { path } = page;
                 if (page.path && page.path === regularPath) {
                     return false;
