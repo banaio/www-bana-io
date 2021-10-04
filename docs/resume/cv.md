@@ -34,7 +34,7 @@ toc: false
 
 I am a well-rounded Software Engineer, with around 9-10 years of Software Development experience. I understand what it takes to release a product having worked on the back-end, front-end, testing and finally the deployment aspect of several products.
 
-Please read my [Cover Letter](./cover-letter).
+Please read my [Cover Letter](https://bana.io/resume/cover-letter).
 
 ## Work Experience
 
@@ -46,7 +46,7 @@ Worked as a Golang Engineer on `Connect-E` (<https://docs.connect.paymentsense.c
 
 ### Remote Cloud Software Engineer / Golang, [IBM United Kingdom Limited](https://www.ibm.com/uk/en/), Hursley Park, Winchester, UK - 14/09/2020–-30/04/2021 - Contractor
 
-I am working on IBM Cloud as Software Engineer on IKS Cluster (IBM Cloud™ Kubernetes Service) as Cloud Software Engineer / Golang Engineer. IKS is effectively something like AWS, GCP or Azure, see [IBM Cloud](https://cloud.ibm.com/).
+I worked on IBM Cloud as Software Engineer on the IKS Cluster (IBM Cloud™ Kubernetes Service) team as Cloud Software Engineer / Golang Engineer. IKS is effectively something like AWS, GCP or Azure, see [IBM Cloud](https://cloud.ibm.com/).
 
 * I'm a member of the IBM Cloud™ Kubernetes Service team responsible for delivering IBM's Kubernetes managed container service. As a certified K8s provider, IBM Cloud Kubernetes Service provides intelligent scheduling, self-healing, horizontal scaling, service discovery and load balancing, automated rollouts and rollbacks, along with secret and configuration management and a fully managed image registry with integrated vulnerability scanning.
 * Working in an agile way and operating with a continuous delivery model.

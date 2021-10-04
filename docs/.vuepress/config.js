@@ -72,19 +72,46 @@ const copyStaticFilesToPublic = () => {
   //     // new RegExp("^.*\\.md$"),
   //     new RegExp(/^.*\.(md)(\?.*)?$/),
   // ];
-  const copyFileNames = [
-    // new RegExp("^.*\\.pdf$"),
-    // new RegExp(/^.*\.(pdf)(\?.*)?$/),
-    // /^.*(?<!\.md)$/gi,
+  // const copyFileNames = [
+  //   // new RegExp("^.*\\.pdf$"),
+  //   // new RegExp(/^.*\.(pdf)(\?.*)?$/),
+  //   // /^.*(?<!\.md)$/gi,
 
+  //   // NB:
+  //   // Negative Lookbehind (?<!\.(md|png|jpe?g|gif|webp|svg|mp4|webm|ogg|mp3|wav|flac|aac|woff2?|eot|ttf|otf))
+  //   // Assert that the Regex below does not match
+  //   // new RegExp(/^.*(?<!\.(md|mp4|webm|ogg|mp3|wav|flac|aac|woff2?|eot|ttf|otf))$/iug),
+  //   new RegExp(
+  //     /^.*(?<!\.(md|mp4|webm|ogg|mp3|wav|flac|aac|woff2?|eot|ttf|otf|Makefile|json|ya?ml|mkiv))$/iu
+  //   ),
+  //   new RegExp(
+  //     /^.*(?<!\.(Makefile|json|ya?ml|mkiv))$/iu
+  //   ),
+  //   new RegExp(
+  //     /^.*(?<!\.(Makefile|json|yml|ya?ml|mkiv))$/i
+  //   ),
+  //   // new RegExp(/^.*(?<!\.(md|png|jpe?g|gif|webp|svg|mp4|webm|ogg|mp3|wav|flac|aac|woff2?|eot|ttf|otf))$/i),
+  // ]
     // NB:
     // Negative Lookbehind (?<!\.(md|png|jpe?g|gif|webp|svg|mp4|webm|ogg|mp3|wav|flac|aac|woff2?|eot|ttf|otf))
     // Assert that the Regex below does not match
     // new RegExp(/^.*(?<!\.(md|mp4|webm|ogg|mp3|wav|flac|aac|woff2?|eot|ttf|otf))$/iug),
+  const copyFileNames = [
     new RegExp(
       /^.*(?<!\.(md|mp4|webm|ogg|mp3|wav|flac|aac|woff2?|eot|ttf|otf))$/iu
     ),
-
+    new RegExp(
+      /^.*\.(Makefile|json|yml|ya?ml|mkiv)$/iu
+    ),
+    new RegExp(
+      /^.*\.(Makefile|json|yml|ya?ml|mkiv)$/i
+    ),
+    new RegExp(
+      /^.*\.(Makefile|json|yml|yaml|mkiv)$/iu
+    ),
+    new RegExp(
+      /^.*\.(Makefile|json|yml|yaml|mkiv)$/i
+    ),
     // new RegExp(/^.*(?<!\.(md|png|jpe?g|gif|webp|svg|mp4|webm|ogg|mp3|wav|flac|aac|woff2?|eot|ttf|otf))$/i),
   ]
   const doNotCopyFolderNames = [
@@ -93,7 +120,7 @@ const copyStaticFilesToPublic = () => {
     new RegExp(/^.*\.temp$/giu),
     new RegExp(/^.*dist$/giu),
   ]
-  // debug_copy('copyFileNames=%o', copyFileNames);
+  debug_copy('copyFileNames=%o', copyFileNames);
   // debug_copy('doNotCopyFolderNames=%o', doNotCopyFolderNames);
 
   const pathToPublicFolder = path.resolve(__dirname, 'public')
@@ -154,6 +181,10 @@ const copyStaticFilesToPublic = () => {
           }
         }
       } else {
+          debug_copy(
+            'copyFileNames.some(regexp => regexp.test(name)) - CREATE copyFileNames name=%o, copy=%o',
+            name, copyFileNames.some((regexp) => regexp.test(name)),
+          )
         if (copyFileNames.some((regexp) => regexp.test(name))) {
           debug_copy(
             'copyFileNames.some(regexp => regexp.test(name)) - CREATE copyFileNames name=%o',
@@ -209,8 +240,8 @@ module.exports = {
   // description: 'Mohamed Bana—The Builder',
   // https://vuepress.vuejs.org/config/#head
   head: [
-    ['link', { rel: 'icon', href: '/favicon.webp' }],
-    // ['link', { rel: 'icon', href: '/favicon.ico' }],
+    // ['link', { rel: 'icon', href: '/favicon.webp' }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
     // ['link', { rel: 'icon', href: 'favicon.png' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     // https://stackoverflow.com/a/56423507
@@ -274,9 +305,10 @@ module.exports = {
   // https://vuepress.vuejs.org/theme/default-theme-config.html
   // External links: `rel="noopener"` or `rel="noreferrer"`
   themeConfig: {
-    logo: 'logo/logo.webp',
+    // logo: 'logo/logo.webp',
     // logo: 'favicon.webp',
-    // logo: 'favicon.png',
+    // logo: 'favicon.svg',
+    logo: '/favicon.svg',
     nav: [
       {
         text: 'mohamed@bana.io',

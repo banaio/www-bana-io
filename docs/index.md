@@ -19,7 +19,7 @@ heroImage: /logo/logo.webp
 #     <a href="mailto:m@bana.io">m@bana.io</a>
 actionText: CV
 actionLink: ./resume/cv
-footer: MIT Licensed | Copyright © 2020-present | Mohamed Bana
+footer: MIT Licensed | Copyright © 2021-present | Mohamed Bana
 ---
 
 <div class="features">
