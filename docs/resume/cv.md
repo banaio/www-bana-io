@@ -33,7 +33,13 @@ Please read my [Cover Letter](./cover-letter).
 
 ## Work Experience
 
-### Remote Cloud Software Engineer / Golang, [IBM United Kingdom Limited](https://www.ibm.com/uk/en/), Hursley Park, Winchester, UK - 14/09/2020–-30/04/2021
+### Golang Engineer (Remote), [Paymentsense Limited](https://www.paymentsense.com), The Brunel Building, 2 Canalside Walk, London, W2 1DG, London, UK - 05/07/2021–31/10/2021 - Permanent
+
+Worked as a Golang Engineer on `Connect-E` (<https://docs.connect.paymentsense.cloud/ConnectE/GettingStarted>).
+
+**Tech:** Golang with modules, Docker, Docker Compose, TypeScript, GCP, Google Cloud Datastore, Google Cloud Big Query, Google Cloud Pub / Sub.
+
+### Remote Cloud Software Engineer / Golang, [IBM United Kingdom Limited](https://www.ibm.com/uk/en/), Hursley Park, Winchester, UK - 14/09/2020–-30/04/2021 - Contractor
 
 I am working on IBM Cloud as Software Engineer on IKS Cluster (IBM Cloud™ Kubernetes Service) as Cloud Software Engineer / Golang Engineer. IKS is effectively something like AWS, GCP or Azure, see [IBM Cloud](https://cloud.ibm.com/).
 
@@ -43,15 +49,7 @@ I am working on IBM Cloud as Software Engineer on IKS Cluster (IBM Cloud™ Kube
 
 **Tech:** Go, Golang, Shell Scripting, Bash, Docker, Docker Compose, Kubernetes, RedHat, [Travis CI](https://travis-ci.org/), [LogDNA](https://logdna.com/), [go.uber.org/zap](https://github.com/uber-go/zap), [etcd](https://etcd.io/) or [What is etcd? | IBM](https://www.ibm.com/cloud/learn/etcd).
 
-<!-- IBM United Kingdom Limited
-Hursley Park
-Winchester
-Hants
-SO21 2JN
-
-Telephone: +44(0) 1962 815000 -->
-
-### Full Stack Go and Vue.js Developer, [Open Banking Limited](https://www.openbanking.org.uk), St Katharine's & Wapping, London, UK - 08/05/2018–01/01/2020
+### Full Stack Go and Vue.js Developer, [Open Banking Limited](https://www.openbanking.org.uk), St Katharine's & Wapping, London, UK - 08/05/2018–01/01/2020 - Contractor
 
 Working as a full stack developer at Open Banking on a tool that will validate a bank’s implementation of the OpenBanking API spec, see:
 
@@ -60,7 +58,7 @@ Working as a full stack developer at Open Banking on a tool that will validate a
 
 **Tech:** Go, Golang, Node.js, [Vue.js](https://vuejs.org/), [Vuex](https://vuex.vuejs.org/), Jest, Docker, Docker Compose, Kubernetes, [OpenID Connect](https://openid.net/connect/), [JSON Web Token (JWT)](https://jwt.io/), [Kompose](http://kompose.io/), [CircleCI](https://circleci.com/), [Swagger](https://swagger.io/), WebSocket, Bitbucket Pipelines, OpenAPI 3.0, [https://bitbucket.org/openbankingteam/conformance-suite](https://bitbucket.org/openbankingteam/conformance-suite), [https://hub.docker.com/u/openbanking/](https://hub.docker.com/u/openbanking/).
 
-### Senior Engineer (contractor), [90POE - Ninety Percent of Everything Limited](https://www.90poe.io/), Marble Arch, London, UK - 01/02/2018–20/04/2018
+### Senior Engineer, [90POE - Ninety Percent of Everything Limited](https://www.90poe.io/), Marble Arch, London, UK - 01/02/2018–20/04/2018 - Contractor
 
 Worked at startup specialising in software that runs on ship on two projects that were heavily Go-based.
 
@@ -72,7 +70,7 @@ Currently working on this. The service is structured very similar to the precedi
 
 **Tech:** Go, Golang, [gRPC](https://grpc.io/), [go gorilla/mux](https://github.com/gorilla/mux), Protocol Buffers, [GORM](http://gorm.io/), MongoDB, [MongoDB GridsFS](https://docs.mongodb.com/manual/core/gridfs/), [mgo](https://gopkg.in/mgo.v2), [GraphQL](graphql.org), [graphql-go](https://github.com/graph-gophers/graphql-go), Docker, Docker Compose, Kubernetes, NodeJS, Jest, [Concourse CI](https://concourse-ci.org/), Postgres.
 
-### Full Stack Developer (contractor), [Root Capital LLP](https://www.rootcapital.co.uk), London Bridge, London, UK - 09/10/2017–24/12/2017
+### Full Stack Developer, [Root Capital LLP](https://www.rootcapital.co.uk), London Bridge, London, UK - 09/10/2017–24/12/2017 - Contractor
 
 Worked as a full stack Node.js developer on the [Minds for Life](https://mindsforlife.com/) application, mainly on the forum.
 
@@ -97,7 +95,7 @@ Worked as a full stack Node.js developer on the [Minds for Life](https://mindsfo
 
 **Tech:** JavaScript, ES6, Node.js, react, react-redux, [react-boilerplate](https://www.reactboilerplate.com/), Webpack, [Koa](http://koajs.com), [Knex.js](http://knexjs.org/), Sequel Pro, Docker, Docker Compose, Kubernetes, [Semaphore CI](https://semaphoreci.com), [Wercker](http://www.wercker.com/), [Amazon S3](https://aws.amazon.com/s3/), [Amazon CloudFront](http://aws.amazon.com/cloudfront/)
 
-### Full Stack Node Developer (contractor), [Lloyds Banking Group PLC](https://www.lloydsbankinggroup.com), London Bridge, London, UK - 20/03/2017–22/05/2017
+### Full Stack Node Developer, [Lloyds Banking Group PLC](https://www.lloydsbankinggroup.com), London Bridge, London, UK - 20/03/2017–22/05/2017 - Contractor
 
 **NodeJS - JavaScript:**
 
@@ -114,7 +112,7 @@ CI:
 
 **Tech:** JavaScript, Node.js, ES5/6-based code base, [LoopBack](https://loopback.io) for server-side of the code, [SysLog](https://en.wikipedia.org/wiki/Syslog), [Splunk](http://www.splunk.com), [Jenkins](https://www.jenkins.io), [Jenkins 2](https://www.jenkins.io/2.0), [Gerrit Code Review](https://www.gerritcodereview.com/), [IBM Bluemix](https://en.wikipedia.org/wiki/Bluemix)
 
-### Senior Front-End Engineer, [Synthace Ltd.](https://synthace.com), King's Cross, London, UK - 13/04/2016–04/11/2016
+### Senior Front-End Engineer, [Synthace Ltd.](https://synthace.com), King's Cross, London, UK - 13/04/2016–04/11/2016 - Permanent
 
 Did a fair amount of architectural UI work:
 
@@ -138,7 +136,7 @@ Since this is a startup I have done a fair amount of work and I have been given 
 
 **Tech:** JavaScript, ES6, [Polymer Project](https://www.polymer-project.org), [Web Components](https://www.webcomponents.org), TypeScript, VSCode, Azure, Docker, Kubernetes, Go, [Polymer Web Component Tester](https://github.com/Polymer/web-component-tester), Git, Swagger.
 
-### Developer, [IG Index Ltd.](https://www.ig.com/uk) Cannon Bridge, London, UK - 09-2014–18/02/2016
+### Developer, [IG Index Ltd.](https://www.ig.com/uk) Cannon Bridge, London, UK - 09-2014–18/02/2016 - Permanent
 
 #### JavaScript Developer
 
@@ -146,7 +144,7 @@ Since this is a startup I have done a fair amount of work and I have been given 
 * *Charts:* Assisted in the conversion of the Adobe Flex Real Time Charts to an SVG-based version. **Tech:** d3 and tested like above.
 * *Deeplinking:* A hashed action link, like typical deeplinks, that we send to our Clients which then launches the mobile IG app, or directs them to the app store for the device with the IG app pre-selected. Upon login the action is carried out automatically. I did the bulk of the work with the team lead overseeing it. **Tech:** Java 8, Spring and acceptance tested using Cucumber. Redirecting and launching of the IG app was done using vanilla JavaScript.
 
-### Software Developer, [ITRS (International Trading Room Software) Group Ltd.](https://www.itrsgroup.com) Moorgate, London, UK - 02-2010–09-2014
+### Software Developer, [ITRS (International Trading Room Software) Group Ltd.](https://www.itrsgroup.com) Moorgate, London, UK - 02-2010–09-2014 - Permanent
 
 #### JavaScript (UI) Developer, 01/2014–09/2014
 
@@ -235,15 +233,15 @@ If it's a contracting role, minimum of £580 per day. If it's a permanent positi
 * **Background/Criminal Check:**
   * [Basic Disclosure and Barring Service (DBS) check](https://www.gov.uk/request-copy-criminal-record): Certificate was issued on 31/07/2020.
 
-     > **Police Records of Convictions, Cautions, Reprimands and Warnings:**
+     > Police Records of Convictions, Cautions, Reprimands and Warnings:
      >
-     > NONE RECORDED
+     > **NONE RECORDED**
 
   * [Police Certificates - ACRO Criminal Records Office](https://www.acro.police.uk/police_certificates.aspx): Certificate was issued in 08/03/2021.
 
-     > **Summary of convictions and reprimands/warnings/cautions/impending prosecutions/under investigations held on UK police databases and disclosed in accordance with the ACRO stepdown model:**
+     > Summary of convictions and reprimands/warnings/cautions/impending prosecutions/under investigations held on UK police databases and disclosed in accordance with the ACRO stepdown model:
      >
-     > NO TRACE.
+     > **NO TRACE.**
 
 <!-- Police records check
 DBS ID Number: P0000GBYC03

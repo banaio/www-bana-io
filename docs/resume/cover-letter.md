@@ -46,7 +46,7 @@ I'm willing to negotiate on this as it depends on a few things, that said:
 * If it's a contracting role, minimum of £500 per day.
 * If it's a permanent position, minimum of £90,000 per year.
 
-I'm available to start after the 30/04/2021.
+I'm available to start after the **31/10/2021**, or possibly earlier.
 
 ### Work locations considered
 
@@ -69,16 +69,17 @@ I'm flexible in terms of the choice of framework used, however, my ideal role wi
 
 * **Passport/Nationality:** I have a British Passport, National Insurance number, British Citizenship etc.
 * **Drivers Licence:** Full UK Driving Licence.
-* **Background/Criminal Check:**
+
+<!-- * **Background/Criminal Check:**
   * [Police Certificates - ACRO Criminal Records Office](https://www.acro.police.uk/police_certificates.aspx): Certificate was issued in 08/03/2021.
 
      > **Summary of convictions and reprimands/warnings/cautions/impending prosecutions/under investigations held on UK police databases and disclosed in accordance with the ACRO stepdown model:**
      >
-     > NO TRACE.
+     > NO TRACE. -->
 
 ### Reason for looking for new role
 
-My contract at IBM finished on the 30/04/2021.
+My employment at Paymentsense Limited will finish on the 31/10/2021.
 
 ---
 
