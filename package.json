@@ -25,27 +25,29 @@
     "netlify-cli": "^6.6.0",
     "prettier": "^2.0.5",
     "prettier-config-vuepress": "^1.0.0",
-    "vuepress": "^v1.0.0-alpha.40",
+    "vuepress": "^1.8.2",
     "webpack-env": "^0.8.0"
   },
   "dependencies": {
     "acorn": "^6.4.1",
+    "browserslist": "4.16.6",
     "kind-of": "^6.0.3",
     "minimist": "^1.2.3",
+    "prismjs": "1.25.0",
     "serialize-javascript": "^3.1.0",
     "websocket-extensions": "^0.1.4"
   },
-  "name": "www-bana-io-vue-js",
+  "name": "www-bana-io",
   "version": "v0.0.1",
   "author": "Mohamed Bana <m@bana.io>",
   "description": "https://bana.io",
-  "homepage": "https://github.com/banaio/www-bana-io-vue-js",
+  "homepage": "https://github.com/banaio/www-bana-io",
   "repository": {
     "type": "git",
-    "url": "git@github.com:banaio/www-bana-io-vue-js.git"
+    "url": "git@github.com:banaio/www-bana-io.git"
   },
   "bugs": {
-    "url": "https://github.com/banaio/www-bana-io-vue-js/issues"
+    "url": "https://github.com/banaio/www-bana-io/issues"
   },
   "license": "MIT",
   "private": true,
