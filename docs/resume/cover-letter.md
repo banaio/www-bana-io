@@ -47,7 +47,7 @@ I'm up for learning more of Rust but it's just a hobby at the moment.
 
 I'm available to start after the **31/10/2021**, or possibly earlier. I'm willing to negotiate on this as it depends on a few things, that said:
 
-* If it's a contracting role, minimum of £500 per day.
+* If it's a contracting role, minimum of £650 per day.
 * If it's a permanent position, minimum of £90,000 per year.
 
 ### Work locations considered
@@ -73,7 +73,7 @@ Ideally, a fully remote role with an office in London. If it's not fully remote,
 
 ### Reason for looking for new role
 
-My employment at Paymentsense Limited will finish on the 31/10/2021. I was not fit for the team, and there's also an element of the team not being fit for me.
+My contract at ViTRiFi Limited will finish on the 28/01/2022.
 
 <!-- ---
 
