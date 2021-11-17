@@ -1,0 +1,33 @@
+; A BIND file is a .TXT file that's used to export
+; DNS records from one domain to another. BIND
+; files are commonly used by lots of domain
+; registrars, so they're a good choice if
+; you're exporting resource records to a domain
+; that's managed by a different registrar.
+
+bana.io. 3600 IN A 104.198.14.52
+_github-challenge-banaio.bana.io. 3600 IN TXT "2784441095"
+calendar.bana.io. 3600 IN CNAME ghs.googlehosted.com.
+docs.bana.io. 3600 IN CNAME ghs.googlehosted.com.
+drive.bana.io. 3600 IN CNAME ghs.googlehosted.com.
+groups.bana.io. 3600 IN CNAME ghs.googlehosted.com.
+hangouts.bana.io. 3600 IN CNAME ghs.googlehosted.com.
+ma.bana.io. 600 IN A 102.50.245.123
+mail.bana.io. 3600 IN CNAME ghs.googlehosted.com.
+marrakech.bana.io. 600 IN A 102.50.245.123
+morocco.bana.io. 600 IN A 102.50.245.123
+plus.bana.io. 3600 IN CNAME ghs.googlehosted.com.
+sheets.bana.io. 3600 IN CNAME ghs.googlehosted.com.
+sites.bana.io. 3600 IN CNAME ghs.googlehosted.com.
+slides.bana.io. 3600 IN CNAME ghs.googlehosted.com.
+start.bana.io. 3600 IN CNAME ghs.googlehosted.com.
+vault.bana.io. 3600 IN CNAME ghs.googlehosted.com.
+www.bana.io. 3600 IN CNAME www-bana-io.netlify.app.
+bana.io. 3600 IN MX 1 aspmx.l.google.com.
+bana.io. 3600 IN MX 5 alt1.aspmx.l.google.com.
+bana.io. 3600 IN MX 5 alt2.aspmx.l.google.com.
+bana.io. 3600 IN MX 10 alt3.aspmx.l.google.com.
+bana.io. 3600 IN MX 10 alt4.aspmx.l.google.com.
+bana.io. 3600 IN SPF "v=spf1 include:_spf.google.com ~all"
+bana.io. 3600 IN TXT "v=spf1 include:_spf.google.com ~all"
+google._domainkey.bana.io. 3600 IN TXT "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiea5OZBCEUqr5/091eoJ3+1AddHeoc/79ohErKvZChsNBliHsg6P5yAFNBbsBu/nPL/GuD3Tx5yOdF1qxG3yDR/3KU7HUOatEziHN/BeoFN9DBMexbheS8em1rZ4piz0AVGiK52gez3NrbbHDF11DJSbRNYzbk0pgzcA6gHhp4GzmLZuqW+YTpBYhM4vBzv0L" "TtvXRHgTis9OVlca8UACS//dQMHESUTW8nme1QGyJiKNfqDbW/6XZPlEMkK9vluB+1FvoB9+eF7ker5iwPO9ZOxq3L4JBfW3xrWAJ8O561Thwr6V5GcSqPaZ8jNAGBVTZq1SUgcK9mYtVtKy1CQsQIDAQAB"

@@ -233,6 +233,17 @@ const copyStaticFilesToPublic = () => {
 //     // console.log('config.js: projects=%o', projects);
 //     // console.log('config.js: projects=%O', projects);
 
+// <!-- Global site tag (gtag.js) - Google Analytics -->
+// <script async src="https://www.googletagmanager.com/gtag/js?id=UA-213150018-1">
+// </script>
+// <script>
+//   window.dataLayer = window.dataLayer || [];
+//   function gtag(){dataLayer.push(arguments);}
+//   gtag('js', new Date());
+
+//   gtag('config', 'UA-213150018-1');
+// </script>
+
 module.exports = {
   // https://vuepress.vuejs.org/config/#basic-config
   title: 'BanaIO',
@@ -393,6 +404,10 @@ module.exports = {
     //     permalink: ':regular',
     // },
     // '@vuepress/pagination': {},
+    '@vuepress/google-analytics',
+    {
+      'ga': 'UA-213150018-1' // UA-00000000-0
+    },
   ],
   markdown: {
     // https://vuepress.vuejs.org/config/#markdown-linenumbers

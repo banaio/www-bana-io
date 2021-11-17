@@ -1,9 +1,9 @@
 ---
-title: "Fedora 34: ROCm Installation"
+title: "Fedora 34: ROCm 4.3.1 Installation"
 date: "2021-10-26"
 tags: ["blog", "linux", "fedora"]
 type: post
-permalink: /blog/fedora-34-rocm-install
+permalink: /blog/fedora-34-rocm-4_3_1-install
 ---
 
 # {{ $frontmatter.title }}
@@ -148,6 +148,9 @@ export LD_LIBRARY_PATH="${ROCM_PATH}/lib:${ROCM_PATH}/opencl/lib:${ROCM_PATH}/hs
 ########
 
 EOF
+$ echo 'SUBSYSTEM=="kfd", KERNEL=="kfd", TAG+="uaccess", GROUP="video"' | sudo tee /etc/udev/rules.d/70-kfd.rules
+$ sudo usermod -a -G video $LOGNAME
+$ echo 'export PATH=$PATH:/opt/rocm/bin:/opt/rocm/profiler/bin:/opt/rocm/opencl/bin' | sudo tee -a /etc/profile.d/rocm.sh
 ```
 
 ### Notes
