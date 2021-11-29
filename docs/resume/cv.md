@@ -45,7 +45,7 @@ Please read my [Cover Letter](https://bana.io/resume/cover-letter).
 
 ### Senior Software Engineer (Remote), [ViTRiFi Limited](https://vitrifi.net), 6th Floor 33 Holborn, London, England, EC1N 2HT, UK - 01/11/2021–28/01/2022 - Contractor
 
-* Go / Python module and library development.
+* Go module/library/binary development.
 * API design and implementation.
 * UI design and implementation.
 * Architectural component definition and build.
@@ -53,7 +53,7 @@ Please read my [Cover Letter](https://bana.io/resume/cover-letter).
 
 Delivery of a log aggregation pipeline for real time analysis.
 
-**Tech:** Golang with modules, Docker, Docker Compose, Kubernetes, AWS.
+**Tech:** Golang with modules, Docker, Docker Compose, Kubernetes, AWS, Kafka, Grafana, Grafana Loki, Prometheus, Bash and Visual Studio Code Remote - Containers.
 
 ### Golang Engineer (Remote), [Paymentsense Limited](https://www.paymentsense.com), The Brunel Building, 2 Canalside Walk, London, W2 1DG, London, UK - 05/07/2021–31/10/2021 - Permanent
 
