@@ -73,7 +73,7 @@ Ideally, a fully remote role with an office in London. If it's not fully remote,
 
 ### Reason for looking for new role
 
-My contract at ViTRiFi Limited will finish on the 28/01/2022.
+My contract at ViTRiFi Limited finished on the 03/03/2022.
 
 <!-- ---
 
