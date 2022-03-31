@@ -45,7 +45,7 @@ I'm up for learning more of Rust but it's just a hobby at the moment.
 
 ### Salary and notice period
 
-I'm available to start after the **31/10/2021**, or possibly earlier. I'm willing to negotiate on this as it depends on a few things, that said:
+I'm available to start on/after the **01/04/2022**, or possibly earlier. I'm willing to negotiate on this as it depends on a few things, that said:
 
 * If it's a contracting role, minimum of £650 per day.
 * If it's a permanent position, minimum of £90,000 per year.
