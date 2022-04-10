@@ -26,16 +26,13 @@ output:
 # includesource: true
 ---
 
+<!-- | [+44-7960-045-281](tel:+44-7960-045-281) (UK Mobile)        | [https://bana.io](https://bana.io)                             | -->
+<!-- | [+212-624-846-935](tel:+212-624-846-935) (Moroccan Mobile)  | [https://github.com/banaio](https://github.com/banaio)         | -->
+
 | **Contact**                                                 | **Web**                                                        |
 |:------------------------------------------------------------|---------------------------------------------------------------:|
-| [+44-7960-045-281](tel:+44-7960-045-281) (UK Mobile)        | [https://bana.io](https://bana.io)                             |
+| [+44-20-7097-4635](tel:+44-20-7097-4635)                    | [https://bana.io](https://bana.io)                             |
 | [mohamed@bana.io](mailto:mohamed@bana.io)                   | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) |
-
-<!-- | **Contact**                                                 | **Web**                                                        |
-|:------------------------------------------------------------|---------------------------------------------------------------:|
-| [+44-7960-045-281](tel:+44-7960-045-281) (UK Mobile)        | [https://bana.io](https://bana.io)                             |
-| [+212-624-846-935](tel:+212-624-846-935) (Moroccan Mobile)  | [https://github.com/banaio](https://github.com/banaio)         |
-| [m@bana.io](mailto:m@bana.io)                               | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) | -->
 
 I am a well-rounded Software Engineer, with around 9-10 years of Software Development experience. I understand what it takes to release a product having worked on the back-end, front-end, testing and finally the deployment aspect of several products.
 
@@ -45,15 +42,21 @@ Please read my [Cover Letter](https://bana.io/resume/cover-letter).
 
 ### Senior Software Engineer (Remote), [ViTRiFi Limited](https://vitrifi.net), 6th Floor 33 Holborn, London, England, EC1N 2HT, UK - 01/11/2021–03/03/2022 - Contractor
 
+Delivery of a log aggregation pipeline on Amazon EKS for real time log analysis:
+
 * Go module/library/binary development.
 * API design and implementation.
-* UI design and implementation.
 * Architectural component definition and build.
-* Deployment of code to AWS platform via CI / CD pipelines.
+* Deployment of code to AWS platform via CI/CD pipelines.
 
-Delivery of a log aggregation pipeline for real time analysis.
+Cortex/FirstLight:
 
-**Tech:** Golang with modules, Kubernetes, Docker, Docker Compose, Kubernetes, AWS, Kafka, Grafana, Grafana Loki, Prometheus, Bash and Visual Studio Code Remote - Containers.
+* Build up the functionality of the Cortex Portal.
+* Work on the interface of the Cortex Portal
+* Work on the interface of Cortex Core.
+* UI design and implementation.
+
+**Tech:** Golang, Kubernetes, Docker, Docker Compose, AWS, Amazon EKS, Grafana, Loki, Prometheus, Shell scripting/Bash, Visual Studio Code Remote - Containers, gRPC, Protocol Buffers, Kafka, Redpanda Kafka, GitLab.
 
 ### Golang Engineer (Remote), [Paymentsense Limited](https://www.paymentsense.com), The Brunel Building, 2 Canalside Walk, London, W2 1DG, London, UK - 05/07/2021–31/10/2021 - Permanent
 

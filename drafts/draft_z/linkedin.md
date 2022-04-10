@@ -5,7 +5,7 @@ sidebar: auto
 draft: true
 ---
 
-I can talk on UK mobile number; +44-7960-045-281.
+I can talk on UK mobile number; +44-20-7097-4635.
 
 Most of what I said below is up for discussion.
 
@@ -34,7 +34,7 @@ I'd like to know:
 
 Contact details are below but since I am in Morocco at the moment it's best to reach me on the second number unless you want to send me a message or call me on WhatsApp:
 
-* UK WhatsApp number: +44-7960-045-281
+* UK WhatsApp number: +44-20-7097-4635
 * Morocco Telecom mobile number: +212-624-846-935
 
 Kind regards,
