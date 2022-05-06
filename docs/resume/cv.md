@@ -32,9 +32,10 @@ output:
 | **Contact**                                                 | **Web**                                                        |
 |:------------------------------------------------------------|---------------------------------------------------------------:|
 | [+44-20-7097-4635](tel:+44-20-7097-4635)                    | [https://bana.io](https://bana.io)                             |
+| [+212-624-846-935](tel:+212-624-846-935)                    | [https://github.com/banaio](https://github.com/banaio)         |
 | [mohamed@bana.io](mailto:mohamed@bana.io)                   | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) |
 
-I am a well-rounded Software Engineer, with around 9-10 years of Software Development experience. I understand what it takes to release a product having worked on the back-end, front-end, testing and finally the deployment aspect of several products.
+I am a well-rounded Software Engineer, with over 10 years of Software Development experience. I understand what it takes to release a product having worked on the back-end, front-end, testing and finally the deployment aspect of several products.
 
 Please read my [Cover Letter](https://bana.io/resume/cover-letter).
 

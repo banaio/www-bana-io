@@ -23,11 +23,11 @@ output:
 # includesource: true
 ---
 
+<!-- A role involving web technologies hosted on a cloud-based backend. I’ve worked on all the tiers of a software product, so I can appreciate the different concerns expressed at each level. I feel the latest trend in web technologies; quick prototyping, large selection of libraries, ease of programming and its cross-platform support is where the future is heading. This, distributed systems and big data algorithms are where I am focusing my current efforts—all of which are equally interesting to me. -->
+
 ### Introduction and background
 
 I am a well-rounded Software Engineer, and I understand what it takes to release a product having worked on the back-end, front-end, testing and finally the deployment aspect of several products.
-
-<!-- A role involving web technologies hosted on a cloud-based backend. I’ve worked on all the tiers of a software product, so I can appreciate the different concerns expressed at each level. I feel the latest trend in web technologies; quick prototyping, large selection of libraries, ease of programming and its cross-platform support is where the future is heading. This, distributed systems and big data algorithms are where I am focusing my current efforts—all of which are equally interesting to me. -->
 
 A role involving web technologies hosted on a cloud-based backend. I’ve worked on all the tiers of a software product, so I can appreciate the different concerns expressed at each level. What interests me: Go/Golang backends, building frontends in JavaScript, complete end-to-end testing of the final project, CI builds on the cloud, deployment on the cloud using Google Cloud Platform (GCP), containerising software using Docker, and orchestrating the built containers using Kubernetes.
 
