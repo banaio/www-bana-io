@@ -43,19 +43,7 @@ Please read my [Cover Letter](https://bana.io/resume/cover-letter).
 
 ### Senior Software Engineer (Remote), [ViTRiFi Limited](https://vitrifi.net), 6th Floor 33 Holborn, London, England, EC1N 2HT, UK - 01/11/2021–03/03/2022 - Contractor
 
-Delivery of a log aggregation pipeline on Amazon EKS for real time log analysis:
-
-* Go module/library/binary development.
-* API design and implementation.
-* Architectural component definition and build.
-* Deployment of code to AWS platform via CI/CD pipelines.
-
-Cortex/FirstLight:
-
-* Build up the functionality of the Cortex Portal.
-* Work on the interface of the Cortex Portal
-* Work on the interface of Cortex Core.
-* UI design and implementation.
+Cannot disclose details due to NDA.
 
 **Tech:** Golang, Kubernetes, Docker, Docker Compose, AWS, Amazon EKS, Grafana, Loki, Prometheus, Shell scripting/Bash, Visual Studio Code Remote - Containers, gRPC, Protocol Buffers, Kafka, Redpanda Kafka, GitLab.
 
