@@ -46,7 +46,7 @@ BuildRequires:  bash
 Requires:       python3.6
 Requires:       bash
 Provides:       /usr/libexec/platform-python
-Packager:       Mohamed Bana <m@bana.io>
+Packager:       Mohamed Bana <mohamed@bana.io>
 
 %pre
 python --version

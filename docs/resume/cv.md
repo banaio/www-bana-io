@@ -9,7 +9,8 @@ next: ./cv-download
 
 # subtitle: "Full Stack Senior Software Engineer"
 author: Mohamed Bana
-# fontsize: 9pt
+papersize: a4
+# fontsize: 6pt
 indenting: small
 interlinespace: small
 whitespace: small
@@ -40,6 +41,17 @@ I am a well-rounded Software Engineer, with over 10 years of Software Developmen
 Please read my [Cover Letter](https://bana.io/resume/cover-letter).
 
 ## Work Experience
+
+### Senior Software Engineer (Remote), [Kubeshop](https://kubeshop.io/), Kubernetes Innovation Labs LLC, 20 Brynwood Lane, Greenwich, CT 06831, United States - 01/05/2022–Present - Contractor
+
+Worked on [`kusk-gateway`](https://docs.kusk.io/), a OpenAPI-driven API Gateway for Kubernetes. Links:
+
+* <https://kusk.kubeshop.io/>
+* <https://github.com/kubeshop/kusk-gateway>
+
+The commits I made against the repository is available to view at: <https://github.com/kubeshop/kusk-gateway/commits?author=mbana>.
+
+**Tech:** Golang, Kubernetes, Kubernetes Control Plane, [`go-control-plane`](https://github.com/envoyproxy/go-control-plane), [Envoy Proxy](https://www.envoyproxy.io/), Docker, Docker Compose, Minikube, Shell scripting/Bash, gRPC, Protocol Buffers, GitHub Workflows, Linux.
 
 ### Senior Software Engineer (Remote), [ViTRiFi Limited](https://vitrifi.net), 6th Floor 33 Holborn, London, England, EC1N 2HT, UK - 01/11/2021–03/03/2022 - Contractor
 
@@ -234,4 +246,4 @@ User Acceptance Testing of the latest release of Thomson Reuter's 3000 Extra, th
 ### Languages
 
 * **English and Swahili:** Native.
-* **Arabic:** Intermediate. I own an apartment in Marrakech, Morocco. I have lived in Cairo, Egypt and have travelled several times to the UAE.
+* **Arabic:** Intermediate. I have lived in Marrakech, Morocco for almost two years. I have also lived in Cairo, Egypt and have travelled several times to the UAE.

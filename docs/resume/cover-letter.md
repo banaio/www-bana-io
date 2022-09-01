@@ -7,6 +7,8 @@ next: /resume/
 
 # subtitle: "Full Stack Senior Software Engineer"
 author: Mohamed Bana
+papersize: a4
+# fontsize: 6pt
 indenting: small
 interlinespace: small
 whitespace: small
@@ -47,12 +49,14 @@ I'm up for learning more of Rust but it's just a hobby at the moment.
 
 I'm available to start on/after the **01/04/2022**, or possibly earlier. I'm willing to negotiate on this as it depends on a few things, that said:
 
-* If it's a contracting role, minimum of £650 per day.
-* If it's a permanent position, minimum of £90,000 per year.
+* If it's a contracting role, minimum of £800 per day outside of IR35.
+* If it's a permanent position, minimum of £155,000 per year.
+
+The figures I mentioned above are not set in stone and I am willing to listen to counter offers.
 
 ### Work locations considered
 
-Ideally, a fully remote role with an office in London. If it's not fully remote, an office in East London, e.g., Canary Wharf, Aldgate (East), would be good.
+A fully remote role with a UK or US company.
 
 ### Any visa restrictions – if applicable (ILR, Tier 2, Dependant visa etc)
 
@@ -73,7 +77,7 @@ Ideally, a fully remote role with an office in London. If it's not fully remote,
 
 ### Reason for looking for new role
 
-My contract at ViTRiFi Limited finished on the 03/03/2022.
+I am looking for a more challenging experience. My main condition is fully remote work.
 
 <!-- ---
 

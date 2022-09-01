@@ -2,8 +2,8 @@
 # https://tech.davis-hansson.com/p/make/
 
 # .ONESHELL:
-SHELL				:= /usr/bin/env bash
-# IFS				:= $'\n\t'
+SHELL						:= /usr/bin/env bash
+# IFS						:= $'\n\t'
 .SHELLFLAGS 		:= -o pipefail -o noclobber -o errexit -o pipefail -o nounset -c
 # .SHELLFLAGS 		:= -euf -o pipefail -c
 .DEFAULT_GOAL		:= all
@@ -13,20 +13,20 @@ MAKEFLAGS 			+= --warn-undefined-variables
 MAKEFLAGS 			+= --no-builtin-rules
 MAKEFLAGS 			+= --no-builtin-variables
 
-BOLD   				:= \033[1m
-GREEN  				:= \033[32m
-YELLOW 				:= \033[33m
-MISC				:= \033[92m
-RED					:= \033[91m
-RESET  				:= \033[0m
-GIT_REV				:= $(shell git rev-parse --short HEAD)
+BOLD   					:= \033[1m
+GREEN  					:= \033[32m
+YELLOW 					:= \033[33m
+MISC						:= \033[92m
+RED							:= \033[91m
+RESET  					:= \033[0m
+GIT_REV					:= $(shell git rev-parse --short HEAD)
 
 # DATE_TIME="$(date --iso-8601='s')"
 DATE_TIME 			:= $(shell date --utc +'%A, %d %B %Y, %H:%M:%S %Z')
 # OUTPUT_DIR="./docs/resume/download"
 # OUTPUT_DIR="./download"
-OUTPUT_DIR 		    := $(shell pwd)
-OS 					:= $(shell uname -s)
+OUTPUT_DIR 			:= $(shell pwd)
+OS 							:= $(shell uname -s)
 
 .PHONY: clean combine
 all: clean combine

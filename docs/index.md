@@ -15,11 +15,11 @@ heroImage: /logo/logo.webp
 #     Remote Senior Software Engineer:** Golang, Vue.js, Linux, Docker, Docker-Compose, Kubernetes, Cloud Computing and tinkering with Rust
 # - title: Contact
 #   details: |
-#     [mailto:m@bana.io](mailto:m@bana.io)
-#     <a href="mailto:m@bana.io">m@bana.io</a>
+#     [mailto:mohamed@bana.io](mailto:mohamed@bana.io)
+#     <a href="mailto:mohamed@bana.io">mohamed@bana.io</a>
 actionText: CV
 actionLink: ./resume/cv
-footer: MIT Licensed | Copyright © 2021-present | Mohamed Bana
+footer: MIT Licensed | Copyright © 2019-present | Mohamed Bana
 ---
 
 <div class="features">

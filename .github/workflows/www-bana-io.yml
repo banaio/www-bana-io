@@ -24,7 +24,7 @@ defaults:
   run:
     shell: bash
 jobs:
-  vuepress:
+  resume:
     env:
       TERM: "xterm-256color"
     continue-on-error: true
@@ -33,16 +33,18 @@ jobs:
       fail-fast: false
       matrix:
         node:
-          - 10.19.0
-          - 12.18.4
-          - 14
+          - 16
           - 15
+          - 14
+          - 12.18.4
+          - 10.19.0
           # - 10
           # - 12
           # - 14
         os:
+          - ubuntu-22.04
           - ubuntu-20.04
-          # - ubuntu-latest
+          - ubuntu-latest
     runs-on: ${{ matrix.os }}
     name: ${{ github.event.repository.name }}-os-${{ matrix.os }}-node-${{ matrix.node }}
     steps:
@@ -52,10 +54,66 @@ jobs:
         run: |
           pwd
           printf -- "  %b" "uname -a=$(uname -a)" $'\n' "uname -s=$(uname -s)" $'\n'
-      - uses: actions/checkout@v2
+
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: install-texlive-packages
+        run: |
+          echo "TODO: Install texlive packages"
+
+      - name: resume-build
+        working-directory: docs/resume/download
+        run: |
+          echo 'TODO: run `make`'
+
+      - name: resume-publish
+        working-directory: docs/resume/download
+        run: |
+          echo 'TODO: publish resume in separate tagged commit'
+
+  www-bana-io:
+    env:
+      TERM: "xterm-256color"
+    continue-on-error: true
+    strategy:
+      max-parallel: 6
+      fail-fast: false
+      matrix:
+        node:
+          - 16
+          - 15
+          - 14
+          - 12.18.4
+          - 10.19.0
+          # - 10
+          # - 12
+          # - 14
+        os:
+          - ubuntu-22.04
+          - ubuntu-20.04
+          - ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    name: ${{ github.event.repository.name }}-os-${{ matrix.os }}-node-${{ matrix.node }}
+    steps:
+      - name: environment-details-os-${{ matrix.os }}-node-${{ matrix.node }}
+        continue-on-error: true
+        shell: bash
+        run: |
+          pwd
+          printf -- "  %b" "uname -a=$(uname -a)" $'\n' "uname -s=$(uname -s)" $'\n'
+
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
       - name: setup-node-${{ matrix.node }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node }}
+
       - run: yarn install
       - run: yarn docs:build
