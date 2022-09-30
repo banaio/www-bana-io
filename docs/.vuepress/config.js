@@ -331,16 +331,20 @@ module.exports = {
         text: 'GitHub etc.',
         items: [
           {
-            text: 'GitHub - BanaIO',
-            link: 'https://github.com/banaio',
-          },
-          {
             text: 'GitHub - mbana',
             link: 'https://github.com/mbana',
           },
           {
-            text: 'Twitter',
+            text: 'GitHub - BanaIO',
+            link: 'https://github.com/banaio',
+          },
+          {
+            text: 'Twitter - m_bana',
             link: 'https://twitter.com/m_bana/',
+          },
+          {
+            text: 'Twitter - BanaIO',
+            link: 'https://twitter.com/banaio_ltd/',
           },
         ],
       },

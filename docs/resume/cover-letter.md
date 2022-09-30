@@ -47,10 +47,10 @@ I'm up for learning more of Rust but it's just a hobby at the moment.
 
 ### Salary and notice period
 
-I'm available to start on/after the **01/04/2022**, or possibly earlier. I'm willing to negotiate on this as it depends on a few things, that said:
+I'm available to start on/after the **20/01/2023**, or possibly earlier. I'm willing to negotiate on this as it depends on a few things, that said:
 
-* If it's a contracting role, minimum of £800 per day outside of IR35.
-* If it's a permanent position, minimum of £155,000 per year.
+* If it's a contracting role, minimum of £650 per day outside of IR35 and £750 per day inside of IR35.
+* If it's a permanent position, minimum of £140,000 per year.
 
 The figures I mentioned above are not set in stone and I am willing to listen to counter offers.
 

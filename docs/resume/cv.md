@@ -33,16 +33,18 @@ output:
 | **Contact**                                                 | **Web**                                                        |
 |:------------------------------------------------------------|---------------------------------------------------------------:|
 | [+44-20-7097-4635](tel:+44-20-7097-4635)                    | [https://bana.io](https://bana.io)                             |
-| [+212-624-846-935](tel:+212-624-846-935)                    | [https://github.com/banaio](https://github.com/banaio)         |
+| [+212-624-846-935](tel:+212-624-846-935) (WhatsApp)         | [https://github.com/mbana](https://github.com/mbana)           |
 | [mohamed@bana.io](mailto:mohamed@bana.io)                   | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) |
 
 I am a well-rounded Software Engineer, with over 10 years of Software Development experience. I understand what it takes to release a product having worked on the back-end, front-end, testing and finally the deployment aspect of several products.
 
-Please read my [Cover Letter](https://bana.io/resume/cover-letter).
+Please read my <https://bana.io/resume/cover-letter>.
+
+To download my CV and Cover Letter in PDF format, please visit <https://bana.io/resume/cv-download>.
 
 ## Work Experience
 
-### Senior Software Engineer (Remote), [Kubeshop](https://kubeshop.io/), Kubernetes Innovation Labs LLC, 20 Brynwood Lane, Greenwich, CT 06831, United States - 01/05/2022–Present - Contractor
+### Senior Software Engineer (Remote), [Kubeshop](https://kubeshop.io/), Kubernetes Innovation Labs LLC, 20 Brynwood Lane, Greenwich, CT 06831, United States - 01/05/2022–20/01/2023 - Contractor
 
 Worked on [`kusk-gateway`](https://docs.kusk.io/), a OpenAPI-driven API Gateway for Kubernetes. Links:
 
@@ -79,8 +81,11 @@ I worked on IBM Cloud as Software Engineer on the IKS Cluster (IBM Cloud™ Kube
 
 Working as a full stack developer at Open Banking on a tool that will validate a bank’s implementation of the OpenBanking API spec, see:
 
+* [https://github.com/OpenBankingUK/conformance-suite](https://github.com/OpenBankingUK/conformance-suite)
 * [https://bitbucket.org/openbankingteam/conformance-suite](https://bitbucket.org/openbankingteam/conformance-suite)
 * [https://hub.docker.com/u/openbanking/](https://hub.docker.com/u/openbanking/)
+
+The commits I made against the repository is available to view at: <https://github.com/OpenBankingUK/conformance-suite/commits?author=mbana>.
 
 **Tech:** Go, Golang, Node.js, [Vue.js](https://vuejs.org/), [Vuex](https://vuex.vuejs.org/), Jest, Docker, Docker Compose, Kubernetes, [OpenID Connect](https://openid.net/connect/), [JSON Web Token (JWT)](https://jwt.io/), [Kompose](http://kompose.io/), [CircleCI](https://circleci.com/), [Swagger](https://swagger.io/), WebSocket, Bitbucket Pipelines, OpenAPI 3.0, [https://bitbucket.org/openbankingteam/conformance-suite](https://bitbucket.org/openbankingteam/conformance-suite), [https://hub.docker.com/u/openbanking/](https://hub.docker.com/u/openbanking/).
 

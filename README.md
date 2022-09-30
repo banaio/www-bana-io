@@ -21,7 +21,23 @@ yarn lint-md
 
 ---
 
-# `openssl.conf`
+# Hacks
+
+## `--ignore-engines`
+
+See:
+
+1. <https://github.com/vuejs/vue-cli/issues/7116#issuecomment-1113911601>.
+2. <https://github.com/vuejs/vue-cli/issues/7116>.
+
+```sh
+yarn install --frozen-lockfile
+...
+error @achrinza/node-ipc@9.2.2: The engine "node" is incompatible with this module. Expected version "8 || 10 || 12 || 14 || 16 || 17". Got "18.12.1"
+...
+```
+
+## `openssl.conf`
 
 See:
 

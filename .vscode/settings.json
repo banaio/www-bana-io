@@ -1,6 +1,6 @@
 {
   "[Log]": {
-    "editor.fontSize": 12
+    "editor.fontSize": 14
   },
   "[git-commit]": {
     "editor.rulers": [
@@ -20,7 +20,11 @@
     "editor.wordWrap": "on"
   },
   "[markdown]": {
-    "editor.quickSuggestions": false,
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
     "editor.wordWrap": "on"
   },
   "[shellscript]": {
@@ -108,7 +112,7 @@
   },
   "editor.codeLens": false,
   "editor.cursorBlinking": "blink",
-  "editor.cursorSmoothCaretAnimation": false,
+  "editor.cursorSmoothCaretAnimation": "off",
   "editor.cursorStyle": "line",
   "editor.cursorSurroundingLinesStyle": "all",
   "editor.formatOnPaste": false,
