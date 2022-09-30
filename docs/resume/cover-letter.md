@@ -1,0 +1,90 @@
+---
+title: "Cover Letter"
+tags: ["resume", "cover letter"]
+sidebar: auto
+prev: ./cv-download
+next: /resume/
+
+# subtitle: "Full Stack Senior Software Engineer"
+author: Mohamed Bana
+papersize: a4
+# fontsize: 6pt
+indenting: small
+interlinespace: small
+whitespace: small
+lof: false
+lot: false
+toc: false
+linestretch: 0.4
+output:
+   pdf_document:
+      latex_engine: xelatex
+# linkcolor: red
+# contrastcolor: blue
+# linkstyle: boldslanted
+# includesource: true
+---
+
+<!-- A role involving web technologies hosted on a cloud-based backend. I’ve worked on all the tiers of a software product, so I can appreciate the different concerns expressed at each level. I feel the latest trend in web technologies; quick prototyping, large selection of libraries, ease of programming and its cross-platform support is where the future is heading. This, distributed systems and big data algorithms are where I am focusing my current efforts—all of which are equally interesting to me. -->
+
+### Introduction and background
+
+I am a well-rounded Software Engineer, and I understand what it takes to release a product having worked on the back-end, front-end, testing and finally the deployment aspect of several products.
+
+A role involving web technologies hosted on a cloud-based backend. I’ve worked on all the tiers of a software product, so I can appreciate the different concerns expressed at each level. What interests me: Go/Golang backends, building frontends in JavaScript, complete end-to-end testing of the final project, CI builds on the cloud, deployment on the cloud using Google Cloud Platform (GCP), containerising software using Docker, and orchestrating the built containers using Kubernetes.
+
+### Key skills and preferred job role
+
+I'm flexible in terms of the choice of framework used, however, my ideal role will involve the following:
+
+* Backend: Ideally Go/Golang as I have good experience with this.
+* Frontend: JavaScript or any language that targets JavaScript on the frontend side, my ideal choice would be TypeScript. I would prefer to use Vue.js as the underlying framework that the UI is built with.
+* Roles where Linux, Google Cloud Platform/AWS/Azure, Docker/Podman and Kubernetes are being used. Open Banking would be a plus.
+
+I'm up for learning more of Rust but it's just a hobby at the moment.
+
+**Summary:** (Full Stack) Senior Software Engineer: Golang, Vue.js, Linux, Docker, Docker-Compose, Kubernetes, Cloud Computing, Google Cloud Computing (GCP), Fedora Linux.
+
+### Salary and notice period
+
+I'm available to start on/after the **01/04/2022**, or possibly earlier. I'm willing to negotiate on this as it depends on a few things, that said:
+
+* If it's a contracting role, minimum of £800 per day outside of IR35.
+* If it's a permanent position, minimum of £155,000 per year.
+
+The figures I mentioned above are not set in stone and I am willing to listen to counter offers.
+
+### Work locations considered
+
+A fully remote role with a UK or US company.
+
+### Any visa restrictions – if applicable (ILR, Tier 2, Dependant visa etc)
+
+* **Passport/Nationality:** I have a British Passport, National Insurance number, British Citizenship etc.
+* **Drivers Licence:** Full UK Driving Licence.
+* **Background/Criminal Check:**
+  * [Basic Disclosure and Barring Service (DBS) check](https://www.gov.uk/request-copy-criminal-record): **Date of issue:** 31/07/2021 (13th July 2021), **DBS ID Nuumber:** P0000GBYC03, **Certificate number:** 001023825352:
+
+     > Police Records of Convictions, Cautions, Reprimands and Warnings:
+     >
+     > **NONE RECORDED**
+
+  * [Police Certificates - ACRO Criminal Records Office](https://www.acro.police.uk/police_certificates.aspx): **Date of issue:** 08/03/2021 (8th March 2021).
+
+     > Summary of convictions and reprimands/warnings/cautions/impending prosecutions/under investigations held on UK police databases and disclosed in accordance with the ACRO stepdown model:
+     >
+     > **NO TRACE.**
+
+### Reason for looking for new role
+
+I am looking for a more challenging experience. My main condition is fully remote work.
+
+<!-- ---
+
+Kind regards,
+
+Mohamed Bana -->
+
+<!-- ---
+
+[https://bana.io](https://bana.io) — [mohamed@bana.io](mailto:mohamed@bana.io) — [+44-20-7097-4635](tel:+44-20-7097-4635) -->

@@ -1,0 +1,30 @@
+% \usepackage[utf8]{inputenc}
+
+% \documentclass{article}
+% \usepackage[pass,paperwidth=\classpagewidth,paperheight=\classpageheight,twoside,inner=1cm,outer=2cm,top=1cm,bottom=1cm]{geometry}
+\usepackage{geometry}
+\geometry{heightrounded,inner=4mm,outer=4mm,top=4mm,bottom=14mm}
+
+\usepackage{fontspec}
+% \defaultfontfeatures{Mapping=tex-text,Numbers={OldStyle,Lowercase,Proportional},Ligatures={Common,Rare,TeX},Style=Historic}
+\defaultfontfeatures{Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle}
+
+% \usepackage{Alegreya}
+% \usepackage{AlegreyaSans}
+
+% \renewcommand*\oldstylenums[1]{{\AlegreyaOsF #1}}
+
+\setmainfont[Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle]{Alegreya}
+\setsansfont[Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle]{Alegreya Sans}
+
+% % \setmainfont[Ligatures = TeX, Scale = MatchLowercase, Numbers = OldStyle]{Alegreya}
+% % \setsansfont[Numbers={OldStyle,Lowercase,Proportional},Ligatures={Common,Rare,TeX},Style=Historic]{Alegreya Sans}
+% \setmonofont{DejaVuSansMono}
+% % % \setmathfont{TeXGyreDejaVuMath}
+% % \setmathfont{TeXGyreDejaVuMath-Regular}
+
+% \usepackage{xunicode,xltxtra,url,parskip}
+% \usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{hyperref} % Required for adding links   and customizing them
+\definecolor{linkcolour}{RGB}{229,57,53} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
