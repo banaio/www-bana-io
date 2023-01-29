@@ -414,6 +414,11 @@ module.exports = {
     },
   ],
   markdown: {
+    // https://vuepress.vuejs.org/config/#markdown-externallinks
+    externalLinks: {
+        target: '_self',
+        rel: ''
+    },
     // https://vuepress.vuejs.org/config/#markdown-linenumbers
     lineNumbers: true,
     // options for markdown-it-anchor
