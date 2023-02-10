@@ -27,6 +27,8 @@ output:
 
 <!-- A role involving web technologies hosted on a cloud-based backend. I’ve worked on all the tiers of a software product, so I can appreciate the different concerns expressed at each level. I feel the latest trend in web technologies; quick prototyping, large selection of libraries, ease of programming and its cross-platform support is where the future is heading. This, distributed systems and big data algorithms are where I am focusing my current efforts—all of which are equally interesting to me. -->
 
+I am **only** looking for a fully remote Golang - Senior Software Engineer - role.
+
 ### Introduction and background
 
 I am a well-rounded Software Engineer, and I understand what it takes to release a product having worked on the back-end, front-end, testing and finally the deployment aspect of several products.
@@ -37,13 +39,14 @@ A role involving web technologies hosted on a cloud-based backend. I’ve worked
 
 I'm flexible in terms of the choice of framework used, however, my ideal role will involve the following:
 
-* Backend: Ideally Go/Golang as I have good experience with this.
-* Frontend: JavaScript or any language that targets JavaScript on the frontend side, my ideal choice would be TypeScript. I would prefer to use Vue.js as the underlying framework that the UI is built with.
-* Roles where Linux, Google Cloud Platform/AWS/Azure, Docker/Podman and Kubernetes are being used. Open Banking would be a plus.
+* Go/Golang as I have good experience with this. I have been using Golang since 2017.
+* A role where Linux, Google Cloud Platform/AWS/Azure, Docker/Podman and Kubernetes are being used. Open Banking would be a plus.
+
+<!-- * Frontend: JavaScript or any language that targets JavaScript on the frontend side, my ideal choice would be TypeScript. I would prefer to use Vue.js as the underlying framework that the UI is built with. -->
 
 I'm up for learning more of Rust but it's just a hobby at the moment.
 
-**Summary:** (Full Stack) Senior Software Engineer: Golang, Vue.js, Linux, Docker, Docker-Compose, Kubernetes, Cloud Computing, Google Cloud Computing (GCP), Fedora Linux.
+**Summary:** Senior Software Engineer: Golang, Linux, Docker, Docker-Compose, Kubernetes, Cloud Computing, Google Cloud Computing (GCP), Fedora Linux.
 
 ### Salary and notice period
 
@@ -62,7 +65,8 @@ A fully remote role with a UK or US company.
 
 * **Passport/Nationality:** I have a British Passport, National Insurance number, British Citizenship etc.
 * **Drivers Licence:** Full UK Driving Licence.
-* **Background/Criminal Check:**
+
+<!-- * **Background/Criminal Check:**
   * [Basic Disclosure and Barring Service (DBS) check](https://www.gov.uk/request-copy-criminal-record): **Date of issue:** 31/07/2021 (13th July 2021), **DBS ID Nuumber:** P0000GBYC03, **Certificate number:** 001023825352:
 
      > Police Records of Convictions, Cautions, Reprimands and Warnings:
@@ -77,7 +81,7 @@ A fully remote role with a UK or US company.
 
 ### Reason for looking for new role
 
-I am looking for a more challenging experience. My main condition is fully remote work.
+I am looking for a more challenging experience. My main condition is fully remote work. -->
 
 <!-- ---
 

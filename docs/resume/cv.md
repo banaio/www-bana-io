@@ -36,36 +36,42 @@ output:
 | [+44-20-7097-4635](tel:+44-20-7097-4635)                    | [https://github.com/mbana](https://github.com/mbana)           |
 | [mohamed@bana.io](mailto:mohamed@bana.io)                   | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) |
 
+I am **only** looking for a fully remote Golang - Senior Software Engineer - role.
+
 I am a well-rounded Software Engineer, with over 12 years of Software Development experience. I understand what it takes to release a product having worked on the back-end, front-end, testing and finally the deployment aspect of several products.
 
 Please read my cover letter at <https://bana.io/resume/cover-letter>. To download my CV and/or cover letter, please see <https://bana.io/resume/cv-download>.
 
 ## Work Experience
 
-### Senior Software Engineer (Remote), [Kubeshop](https://kubeshop.io/), 20 Brynwood Lane, Greenwich, CT 06831, United States - 01/05/2022–20/01/2023
+### Senior Software Engineer (Remote), [Kubeshop](https://kubeshop.io/), Greenwich, United States - 01/05/2022–20/01/2023
 
 Worked on [`kusk-gateway`](https://docs.kusk.io/), a OpenAPI-driven API Gateway for Kubernetes. Links:
 
 * <https://kusk.kubeshop.io/>
 * <https://github.com/kubeshop/kusk-gateway>
 
+Kusk is a Kubernetes API gateway powered by Envoy. The main difference with other API Gateways is that Kusk has native support for OpenAPI.
+
+Modern REST APIs are developed using OpenAPI specification that is then used to generate API documentation, tests, server stubs and clients all from the OpenAPI definition. Kusk enables the use of OpenAPI definitions to configure the Ingress Controller of your Kubernetes clusters.
+
 The commits I made against the repository is available to view at: <https://github.com/kubeshop/kusk-gateway/commits?author=mbana>.
 
 **Tech:** Golang, Kubernetes, Kubernetes Control Plane, [`go-control-plane`](https://github.com/envoyproxy/go-control-plane), [Envoy Proxy](https://www.envoyproxy.io/), Docker, Docker Compose, Minikube, Shell scripting/Bash, gRPC, Protocol Buffers, GitHub Workflows, Linux.
 
-### Senior Software Engineer (Remote), [ViTRiFi Limited](https://vitrifi.net), 6th Floor 33 Holborn, London, England, EC1N 2HT, UK - 01/11/2021–03/03/2022
+### Senior Software Engineer (Remote), [ViTRiFi Limited](https://vitrifi.net), London, UK - 01/11/2021–03/03/2022
 
 Cannot disclose details due to NDA.
 
 **Tech:** Golang, Kubernetes, Docker, Docker Compose, AWS, Amazon EKS, Grafana, Loki, Prometheus, Shell scripting/Bash, Visual Studio Code Remote - Containers, gRPC, Protocol Buffers, Kafka, Redpanda Kafka, GitLab.
 
-### Software Engineer (Remote), [Paymentsense Limited](https://www.paymentsense.com), The Brunel Building, 2 Canalside Walk, London, W2 1DG, London, UK - 05/07/2021–31/10/2021
+### Software Engineer (Remote), [Paymentsense Limited](https://www.paymentsense.com), London, UK - 05/07/2021–31/10/2021
 
 I worked with Golang on `Connect-E` (<https://docs.connect.paymentsense.cloud/ConnectE/GettingStarted>).
 
 **Tech:** Golang with modules, Docker, Docker Compose, TypeScript, GCP, Google Cloud Datastore, Google Cloud Big Query, Google Cloud Pub / Sub.
 
-### Software Engineer (Remote), [IBM United Kingdom Limited](https://www.ibm.com/uk/en/), Hursley Park, Winchester, UK - 14/09/2020–30/04/2021
+### Software Engineer (Remote), [IBM](https://www.ibm.com/uk/en/), Winchester, UK - 14/09/2020–30/04/2021
 
 I worked on IBM Cloud as Software Engineer on the IKS Cluster (IBM Cloud™ Kubernetes Service) team as Cloud Software Engineer / Golang Engineer. IKS is effectively something like AWS, GCP or Azure, see [IBM Cloud](https://cloud.ibm.com/).
 
@@ -75,7 +81,7 @@ I worked on IBM Cloud as Software Engineer on the IKS Cluster (IBM Cloud™ Kube
 
 **Tech:** Go, Golang, Shell Scripting, Bash, Docker, Docker Compose, Kubernetes, RedHat, [Travis CI](https://travis-ci.org/), [LogDNA](https://logdna.com/), [go.uber.org/zap](https://github.com/uber-go/zap), [etcd](https://etcd.io/) or [What is etcd? | IBM](https://www.ibm.com/cloud/learn/etcd).
 
-### Full Stack Software Engineer, [Open Banking Limited](https://www.openbanking.org.uk), St Katharine's & Wapping, London, UK - 08/05/2018–01/01/2020
+### Full Stack Software Engineer, [Open Banking Limited](https://www.openbanking.org.uk), London, UK - 08/05/2018–01/01/2020
 
 Working as a full stack software engineer at Open Banking on a tool that will validate a bank’s implementation of the OpenBanking API spec, see:
 
@@ -87,7 +93,7 @@ The commits I made against the repository is available to view at: <https://gith
 
 **Tech:** Go, Golang, Node.js, [Vue.js](https://vuejs.org/), [Vuex](https://vuex.vuejs.org/), Jest, Docker, Docker Compose, Kubernetes, [OpenID Connect](https://openid.net/connect/), [JSON Web Token (JWT)](https://jwt.io/), [Kompose](http://kompose.io/), [CircleCI](https://circleci.com/), [Swagger](https://swagger.io/), WebSocket, Bitbucket Pipelines, OpenAPI 3.0, [https://bitbucket.org/openbankingteam/conformance-suite](https://bitbucket.org/openbankingteam/conformance-suite), [https://hub.docker.com/u/openbanking/](https://hub.docker.com/u/openbanking/).
 
-### Senior Software Engineer, [90POE - Ninety Percent of Everything Limited](https://www.90poe.io/), Marble Arch, London, UK - 01/02/2018–20/04/2018
+### Senior Software Engineer, [90POE - Ninety Percent of Everything Limited](https://www.90poe.io/), London, UK - 01/02/2018–20/04/2018
 
 I worked at startup specialising in software that runs on ship on two projects that were heavily Go-based.
 
@@ -101,7 +107,7 @@ The service is structured very similar to the preceding in that the underlying s
 
 **Tech:** Go, Golang, [gRPC](https://grpc.io/), [go gorilla/mux](https://github.com/gorilla/mux), Protocol Buffers, [GORM](http://gorm.io/), MongoDB, [MongoDB GridsFS](https://docs.mongodb.com/manual/core/gridfs/), [mgo](https://gopkg.in/mgo.v2), [GraphQL](graphql.org), [graphql-go](https://github.com/graph-gophers/graphql-go), Docker, Docker Compose, Kubernetes, NodeJS, Jest, [Concourse CI](https://concourse-ci.org/), Postgres.
 
-### Full Stack Software Engineer, [Root Capital LLP](https://www.rootcapital.co.uk), London Bridge, London, UK - 09/10/2017–24/12/2017
+### Full Stack Software Engineer, [Root Capital LLP](https://www.rootcapital.co.uk), London, UK - 09/10/2017–24/12/2017
 
 I worked as a full stack Node.js software engineer on the [Minds for Life](https://mindsforlife.com/) application, mainly on the forum.
 
@@ -126,7 +132,7 @@ I worked as a full stack Node.js software engineer on the [Minds for Life](https
 
 **Tech:** JavaScript, ES6, Node.js, react, react-redux, [react-boilerplate](https://www.reactboilerplate.com/), Webpack, [Koa](http://koajs.com), [Knex.js](http://knexjs.org/), Sequel Pro, Docker, Docker Compose, Kubernetes, [Semaphore CI](https://semaphoreci.com), [Wercker](http://www.wercker.com/), [Amazon S3](https://aws.amazon.com/s3/), [Amazon CloudFront](http://aws.amazon.com/cloudfront/)
 
-### Full Stack Software Engineer, [Lloyds Banking Group PLC](https://www.lloydsbankinggroup.com), London Bridge, London, UK - 20/03/2017–22/05/2017
+### Full Stack Software Engineer, [Lloyds Banking Group PLC](https://www.lloydsbankinggroup.com), London, UK - 20/03/2017–22/05/2017
 
 #### NodeJS - JavaScript
 
@@ -143,7 +149,7 @@ CI:
 
 **Tech:** JavaScript, Node.js, ES5/6-based code base, [LoopBack](https://loopback.io) for server-side of the code, [SysLog](https://en.wikipedia.org/wiki/Syslog), [Splunk](http://www.splunk.com), [Jenkins](https://www.jenkins.io), [Jenkins 2](https://www.jenkins.io/2.0), [Gerrit Code Review](https://www.gerritcodereview.com/), [IBM Bluemix](https://en.wikipedia.org/wiki/Bluemix)
 
-### Senior Front-End Software Engineer, [Synthace Ltd.](https://synthace.com), King's Cross, London, UK - 13/04/2016–04/11/2016
+### Senior Front-End Software Engineer, [Synthace Ltd.](https://synthace.com), London, UK - 13/04/2016–04/11/2016
 
 Did a fair amount of architectural UI work:
 
@@ -167,7 +173,7 @@ Since this is a startup I have done a fair amount of work and I have been given 
 
 **Tech:** JavaScript, ES6, [Polymer Project](https://www.polymer-project.org), [Web Components](https://www.webcomponents.org), TypeScript, VSCode, Azure, Docker, Kubernetes, Go, [Polymer Web Component Tester](https://github.com/Polymer/web-component-tester), Git, Swagger.
 
-### Software Engineer, [IG Index Ltd.](https://www.ig.com/uk) Cannon Bridge, London, UK - 09-2014–18/02/2016
+### Software Engineer, [IG Index Ltd.](https://www.ig.com/uk) London, UK - 09-2014–18/02/2016
 
 #### Price & Indicator Alerts
 
@@ -218,7 +224,7 @@ Projects:
 
 **Tech:** C++, STL, Boost, Visual Studio, Linux/Unix, GDB, DBX, Make, Configure, XML, XPath, CPPUnit, [Financial Information eXchange (FIX) protocol](https://en.wikipedia.org/wiki/Financial_Information_eXchange), [Geneos FIX plug-in](https://docs.itrsgroup.com/docs/geneos/5.1.0/Netprobe/trading_fix/fix.html), [Feed Latency Monitoring Plug-In](https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/market_data_monitoring/feedadapter_ug.html), [Latency Monitoring - Message Tracker FIX adapter](https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/latency_monitoring/message_tracker/fix_adapter.html), [Market Data Monitor](https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/market_data_monitoring/mdm_ug.html), [Geneos PATS-STATUS Plug-In](https://docs.itrsgroup.com/docs/geneos/5.1.0/Netprobe/trading_pats/pats-status.html), [Patsystem's Trading API](www.patsystems.com).
 
-### Software Engineer Intern, then Tester, Thomson Reuters. Canary Wharf, London, UK - 05-2009–11-2009
+### Software Engineer Intern, then Tester, Thomson Reuters. London, UK - 05-2009–11-2009
 
 #### C# Software Engineer
 
@@ -241,7 +247,8 @@ User Acceptance Testing of the latest release of Thomson Reuter's 3000 Extra, th
 
 * **Passport/Nationality:** I have a British Passport.
 * **Drivers Licence:** Full UK Driving Licence.
-* **Background/Criminal Check:**
+
+<!-- * **Background/Criminal Check:**
   * [Basic Disclosure and Barring Service (DBS) check](https://www.gov.uk/request-copy-criminal-record): **Date of issue:** 31/07/2021 (13th July 2021), **DBS ID Nuumber:** P0000GBYC03, **Certificate number:** 001023825352:
 
      > Police Records of Convictions, Cautions, Reprimands and Warnings:
@@ -252,7 +259,7 @@ User Acceptance Testing of the latest release of Thomson Reuter's 3000 Extra, th
 
      > Summary of convictions and reprimands/warnings/cautions/impending prosecutions/under investigations held on UK police databases and disclosed in accordance with the ACRO stepdown model:
      >
-     > **NO TRACE.**
+     > **NO TRACE.** -->
 
 ### Languages
 
