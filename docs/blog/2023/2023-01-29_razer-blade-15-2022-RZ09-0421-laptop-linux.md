@@ -99,7 +99,28 @@ sudo grubby --update-kernel=ALL --args="nvme.noacpi=1"
 
 ## Nvidia <Badge text="TODO" vertical="middle" type="info"/>
 
-TODO.
+As `root` run:
+
+```bash
+cat <<EOF > /etc/X11/xorg.conf.d/nvidia.conf
+#This file is provided by xorg-x11-drv-nvidia
+#Do not edit
+
+Section "OutputClass"
+	Identifier "nvidia"
+	MatchDriver "nvidia-drm"
+	Driver "nvidia"
+	Option "AllowEmptyInitialConfiguration"
+	Option "SLI" "Auto"
+	Option "BaseMosaic" "on"
+	Option "PrimaryGPU" "yes"
+EndSection
+
+Section "ServerLayout"
+	Identifier "layout"
+	Option "AllowNVIDIAGPUScreens"
+EndSection
+EOF
 
 ## Additional Linux Configuration
 

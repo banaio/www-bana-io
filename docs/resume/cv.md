@@ -187,7 +187,7 @@ Assisted in the conversion of the Adobe Flex Real Time Charts to an SVG-based ve
 
 A hashed action link, like typical deeplinks, that we send to our Clients which then launches the mobile IG app, or directs them to the app store for the device with the IG app pre-selected. Upon login the action is carried out automatically. I did the bulk of the work with the team lead overseeing it. **Tech:** Java 8, Spring and acceptance tested using Cucumber. Redirecting and launching of the IG app was done using vanilla JavaScript.
 
-### Software Engineer, [ITRS (International Trading Room Software) Group Ltd.](https://www.itrsgroup.com) Moorgate, London, UK - 02-2010–09-2014
+### Software Engineer, [ITRS (International Trading Room Software) Group Ltd.](https://www.itrsgroup.com) London, UK - 02-2010–09-2014
 
 #### JavaScript (UI) Software Engineer - 01/2014–09/2014
 
