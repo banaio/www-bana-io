@@ -1,12 +1,13 @@
 ---
-title: "Cover Letter"
+# title: "Cover Letter"
 tags: ["resume", "cover letter"]
 sidebar: auto
 prev: ./cv-download
 next: /resume/
 
 # subtitle: "Full Stack Senior Software Engineer"
-author: Mohamed Bana
+title: "Mohamed Bana's Cover Letter"
+author: I am **_only_** looking for a fully remote Golang - Senior Software Engineer - role.
 papersize: a4
 # fontsize: 6pt
 indenting: small
@@ -15,7 +16,8 @@ whitespace: small
 lof: false
 lot: false
 toc: false
-linestretch: 0.4
+# linestretch: 0.4
+linestretch: 0.1
 output:
    pdf_document:
       latex_engine: xelatex
@@ -24,10 +26,6 @@ output:
 # linkstyle: boldslanted
 # includesource: true
 ---
-
-<!-- A role involving web technologies hosted on a cloud-based backend. I’ve worked on all the tiers of a software product, so I can appreciate the different concerns expressed at each level. I feel the latest trend in web technologies; quick prototyping, large selection of libraries, ease of programming and its cross-platform support is where the future is heading. This, distributed systems and big data algorithms are where I am focusing my current efforts—all of which are equally interesting to me. -->
-
-I am **only** looking for a fully remote Golang - Senior Software Engineer - role.
 
 ### Introduction and background
 
@@ -41,8 +39,6 @@ I'm flexible in terms of the choice of framework used, however, my ideal role wi
 
 * Go/Golang as I have good experience with this. I have been using Golang since 2017.
 * A role where Linux, Google Cloud Platform/AWS/Azure, Docker/Podman and Kubernetes are being used. Open Banking would be a plus.
-
-<!-- * Frontend: JavaScript or any language that targets JavaScript on the frontend side, my ideal choice would be TypeScript. I would prefer to use Vue.js as the underlying framework that the UI is built with. -->
 
 I'm up for learning more of Rust but it's just a hobby at the moment.
 
@@ -63,7 +59,7 @@ A fully remote role with a UK or US company.
 
 ### Any visa restrictions – if applicable (ILR, Tier 2, Dependant visa etc)
 
-* **Passport/Nationality:** I have a British Passport, National Insurance number, British Citizenship etc.
+* **Passport/Nationality:** I am a British citizen with a British passport, National Insurance number etc.
 * **Drivers Licence:** Full UK Driving Licence.
 
 <!-- * **Background/Criminal Check:**
@@ -82,13 +78,3 @@ A fully remote role with a UK or US company.
 ### Reason for looking for new role
 
 I am looking for a more challenging experience. My main condition is fully remote work. -->
-
-<!-- ---
-
-Kind regards,
-
-Mohamed Bana -->
-
-<!-- ---
-
-[https://bana.io](https://bana.io) — [mohamed@bana.io](mailto:mohamed@bana.io) — [+44-20-7097-4635](tel:+44-20-7097-4635) -->

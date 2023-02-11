@@ -1,14 +1,14 @@
 ---
-title: "Curriculum Vitae"
-description: "Full Stack Senior Software Engineer"
+#title: "Mohamed Bana --- Curriculum Vitae"
+#description: "Full Stack Senior Software Engineer"
 tags: ["resume", "cv", "curriculum vitae"]
 sidebar: auto
 sidebarDepth: 3
 prev: /resume/
 next: ./cv-download
 
-# subtitle: "Full Stack Senior Software Engineer"
-author: Mohamed Bana
+title: "Mohamed Bana's Curriculum Vitae"
+author: I am **_only_** looking for a fully remote Golang - Senior Software Engineer - role.
 papersize: a4
 # fontsize: 6pt
 indenting: small
@@ -17,26 +17,25 @@ whitespace: small
 lof: false
 lot: false
 toc: false
-linestretch: 0.4
+# linestretch: 0.4
+linestretch: 0.1
 output:
    pdf_document:
       latex_engine: xelatex
 # linkcolor: red
 # contrastcolor: blue
 # linkstyle: boldslanted
-# includesource: true
+includesource: true
 ---
-
-<!-- | [+44-7960-045-281](tel:+44-7960-045-281) (UK Mobile)        | [https://bana.io](https://bana.io)                             | -->
-<!-- | [+212-624-846-935](tel:+212-624-846-935) (Moroccan Mobile)  | [https://github.com/banaio](https://github.com/banaio)         | -->
 
 | **Contact**                                                 | **Web**                                                        |
 |:------------------------------------------------------------|---------------------------------------------------------------:|
-| [+44-7960-045-281](tel:+44-7960-045-281)                    | [https://bana.io](https://bana.io)                             |
-| [+44-20-7097-4635](tel:+44-20-7097-4635)                    | [https://github.com/mbana](https://github.com/mbana)           |
-| [mohamed@bana.io](mailto:mohamed@bana.io)                   | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) |
+| [+44-7960-045-281](tel:+44-7960-045-281)                    | [https://github.com/mbana](https://github.com/mbana)           |
+| [+44-20-7097-4635](tel:+44-20-7097-4635)                    | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) |
+| [mohamed@bana.io](mailto:mohamed@bana.io)                   | [https://bana.io/blog](https://bana.io/blog)                   |
+|                                                             | [https://stackoverflow.com/users/241993/mohamed-bana](https://stackoverflow.com/users/241993/mohamed-bana) |
+|                                                             | [https://reddit.com/user/mohamed-bana](https://reddit.com/user/mohamed-bana) |
 
-I am **only** looking for a fully remote Golang - Senior Software Engineer - role.
 
 I am a well-rounded Software Engineer, with over 12 years of Software Development experience. I understand what it takes to release a product having worked on the back-end, front-end, testing and finally the deployment aspect of several products.
 
@@ -245,7 +244,7 @@ User Acceptance Testing of the latest release of Thomson Reuter's 3000 Extra, th
 
 ### Misc
 
-* **Passport/Nationality:** I have a British Passport.
+* **Passport/Nationality:** I am a British citizen with a British passport.
 * **Drivers Licence:** Full UK Driving Licence.
 
 <!-- * **Background/Criminal Check:**

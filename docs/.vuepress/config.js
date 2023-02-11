@@ -328,7 +328,7 @@ module.exports = {
         target: '_blank',
       },
       {
-        text: 'GitHub etc.',
+        text: 'Open Source',
         items: [
           {
             text: 'GitHub - mbana',
@@ -339,13 +339,13 @@ module.exports = {
             link: 'https://github.com/banaio',
           },
           {
-            text: 'Twitter - m_bana',
-            link: 'https://twitter.com/m_bana/',
+            text: 'GitHub - m_bana',
+            link: 'https://gitlab.com/m_bana',
           },
-          {
-            text: 'Twitter - BanaIO',
-            link: 'https://twitter.com/banaio_ltd/',
-          },
+        //   {
+        //     text: 'Twitter - BanaIO',
+        //     link: 'https://twitter.com/banaio_ltd/',
+        //   },
         ],
       },
       {
@@ -371,6 +371,23 @@ module.exports = {
         ],
       },
       {
+        text: 'Socials',
+        items: [
+          {
+            text: 'Twitter',
+            link: 'https://twitter.com/m_bana/',
+          },
+          {
+            text: 'Stack Overflow',
+            link: 'https://stackoverflow.com/users/241993/mohamed-bana',
+          },
+          {
+            text: 'Reddit',
+            link: 'https://www.reddit.com/user/mohamed-bana',
+          },
+        ],
+      },
+      {
         text: 'CV Download',
         link: '/resume/cv-download',
       },
@@ -385,7 +402,7 @@ module.exports = {
     // // https://vuepress.vuejs.org/theme/default-theme-config.html#search-box
     // searchMaxSuggestions: 20,
     // https://vuepress.vuejs.org/theme/default-theme-config.html#smooth-scrolling
-    smoothScroll: false,
+    smoothScroll: true,
     // https://vuepress.vuejs.org/theme/default-theme-config.html#last-updated
     // lastUpdated: true,
     lastUpdated: 'Last Updated',

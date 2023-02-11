@@ -12,20 +12,22 @@ next: ./cover-letter
 * [`mohamed-bana_cover-letter.pdf`](./download/mohamed-bana_cover-letter.pdf)
 * [`mohamed-bana_cv_cover-letter.pdf`](./download/mohamed-bana_cv_cover-letter.pdf)
 
-<!-- ## ODT (OpenDocument Text, readable by OpenOffice)
+## ODT (OpenDocument Text, readable by OpenOffice)
 
 * [`mohamed-bana_cv.odt`](./download/mohamed-bana_cv.odt)
 * [`mohamed-bana_cover-letter.odt`](./download/mohamed-bana_cover-letter.odt)
 
+## MS Word docx
+
+* [`mohamed-bana_cv.docx`](./download/mohamed-bana_cv.docx)
+* [`mohamed-bana_cover-letter.docx`](./download/mohamed-bana_cover-letter.docx)
+
+<!--
 ## OpenDocument XML
 
 * [`mohamed-bana_cv.xml`](./download/mohamed-bana_cv.xml)
 * [`mohamed-bana_cover-letter.xml`](./download/mohamed-bana_cover-letter.xml)
-
-## MS Word docx
-
-* [`mohamed-bana_cv.docx`](./download/mohamed-bana_cv.docx)
-* [`mohamed-bana_cover-letter.docx`](./download/mohamed-bana_cover-letter.docx) -->
+-->
 
 ## Pages
 

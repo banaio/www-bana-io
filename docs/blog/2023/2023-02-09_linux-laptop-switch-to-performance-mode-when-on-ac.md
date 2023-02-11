@@ -1,6 +1,6 @@
 ---
 title: "Linux: Switch to performance mode when AC adapter is plugged in"
-date: "2023-02-10"
+date: "2023-02-09"
 tags: ["blog", "laptop", "pc", "linux", "udev"]
 type: post
 permalink: /blog/linux-laptop-switch-to-performance-mode-when-on-ac

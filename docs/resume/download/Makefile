@@ -28,20 +28,26 @@ DATE_TIME 			:= $(shell date --utc +'%A, %d %B %Y, %H:%M:%S %Z')
 OUTPUT_DIR 			:= $(shell pwd)
 OS 							:= $(shell uname -s)
 
-.PHONY: clean combine
-all: clean combine
-
-# .PHONY: clean tex_cv tex_cover_letter combine
-# all: clean tex_cv tex_cover_letter combine
+.PHONY: clean combine-pdfs
+all: clean combine-pdfs
 
 .PHONY: clean
 clean:
 	-rm -v missfont.log
-	-rm -v mohamed-bana_cover-letter.pdf mohamed-bana_cv_cover-letter.pdf mohamed-bana_cv.pdf
+	-rm -v \
+		mohamed-bana_cv.pdf \
+		mohamed-bana_cover-letter.pdf \
+		mohamed-bana_cv_cover-letter.pdf \
+		mohamed-bana_cv.docx \
+		mohamed-bana_cover-letter.docx \
+		mohamed-bana_cv.odt \
+		mohamed-bana_cover-letter.odt \
+		mohamed-bana_cv.text \
+		mohamed-bana_cover-letter.text
 
-.PHONY: tex_cv
-tex_cv:
-	@printf "%b" "${GREEN}" "  ---> ${OUTPUT_DIR}/mohamed-bana_cv.pdf" "${RESET}" "\n"
+.PHONY: tex-cv
+tex-cv:
+	@printf "%b" "${GREEN}" "---> ${OUTPUT_DIR}/mohamed-bana_cv.pdf" "${RESET}" "\n"
 	pandoc \
     --fail-if-warnings \
     --from=markdown \
@@ -53,9 +59,9 @@ tex_cv:
     --output="${OUTPUT_DIR}/mohamed-bana_cv.pdf" \
     ../cv.md
 
-.PHONY: tex_cover_letter
-tex_cover_letter:
-	@printf "%b" "${GREEN}" "  ---> ${OUTPUT_DIR}/mohamed-bana_cover-letter.tex" "${RESET}" "\n"
+.PHONY: tex-cover-letter
+tex-cover-letter:
+	@printf "%b" "${GREEN}" "---> ${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" "${RESET}" "\n"
 	pandoc \
     --fail-if-warnings \
     --from=markdown \
@@ -65,22 +71,9 @@ tex_cover_letter:
     --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" \
     ../cover-letter.md
 
-.PHONY: combine
-combine:
-	/bin/sh -c 'make tex_cv & make tex_cover_letter & wait'
-	@printf "%b" "${GREEN}" "  ---> combining " "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf" "${RESET}" "\n"
-ifeq ($(OS),Darwin)
-	pdfunite "${OUTPUT_DIR}/mohamed-bana_cv.pdf" "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
-	open "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
-else
-	pdfunite "${OUTPUT_DIR}/mohamed-bana_cv.pdf" "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
-	xdg-open "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
-endif
-	-cat missfont.log
-
-.PHONY: cv_all
-cv_all: tex_cv
-	@printf "%b" "${GREEN}" "  ---> ${OUTPUT_DIR}/mohamed-bana_cv.*" "${RESET}" "\n"
+.PHONY: all-cv
+all-cv: tex-cv
+	@printf "%b" "${GREEN}" "---> ${OUTPUT_DIR}/mohamed-bana_cv.*" "${RESET}" "\n"
 	pandoc \
     --fail-if-warnings \
     --from=markdown \
@@ -103,40 +96,22 @@ cv_all: tex_cv
     ../cv.md
 	pandoc \
     --fail-if-warnings \
-    --to=opendocument \
+    --to=plain \
+    --from=markdown \
+    --standalone \
+    --variable=date:"${DATE_TIME}" \
+    --output="${OUTPUT_DIR}/mohamed-bana_cv.text" \
+    ../cv.md
+
+.PHONY: all-cover-letter
+all-cover-letter: tex-cover-letter
+	pandoc \
+    --fail-if-warnings \
     --from=markdown \
     --standalone \
     --include-in-header=./templates/include-in-header.tex \
     --include-before-body=./templates/include-before-body.tex \
     --include-after-body=./templates/include-after-body.tex \
-    --variable=date:"${DATE_TIME}" \
-    --output="${OUTPUT_DIR}/mohamed-bana_cv.xml" \
-    ../cv.md
-
-.PHONY: cover_letter_plain_text
-cover_letter_plain_text:
-	@printf "%b" "${GREEN}" "  ---> ${OUTPUT_DIR}/mohamed-bana_cover-letter.tex" "${RESET}" "\n"
-	@# --include-before-body=./templates/include-before-body.tex
-	@# --include-after-body=./templates/include-after-body.tex
-	@# --variable=date:"${DATE_TIME}" \
-	pandoc \
-    --fail-if-warnings \
-    --from=markdown \
-    --to=plain \
-    --standalone \
-    --wrap=preserve \
-    --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.txt" \
-    ../cover-letter.md
-
-.PHONY: cover_letter_all
-cover_letter_all: tex_cover_letter
-	@printf "%b" "${GREEN}" "  ---> ${OUTPUT_DIR}/mohamed-bana_cover-letter.*" "${RESET}" "\n"
-	pandoc \
-    --fail-if-warnings \
-    --from=markdown \
-    --standalone \
-    --pdf-engine=xelatex \
-    --include-in-header=./templates/include-in-header.tex \
     --variable=date:"${DATE_TIME}" \
     --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.odt" \
     ../cover-letter.md
@@ -144,34 +119,31 @@ cover_letter_all: tex_cover_letter
     --fail-if-warnings \
     --from=markdown \
     --standalone \
-    --pdf-engine=xelatex \
     --include-in-header=./templates/include-in-header.tex \
+    --include-before-body=./templates/include-before-body.tex \
+    --include-after-body=./templates/include-after-body.tex \
     --variable=date:"${DATE_TIME}" \
     --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.docx" \
     ../cover-letter.md
 	pandoc \
     --fail-if-warnings \
+    --to=plain \
     --from=markdown \
-    --to=opendocument \
     --standalone \
-    --pdf-engine=xelatex \
-    --include-in-header=./templates/include-in-header.tex \
     --variable=date:"${DATE_TIME}" \
-    --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.xml" \
+    --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.text" \
     ../cover-letter.md
 
-# .PHONY: copy_to_send_dir
-# copy_to_send_dir: SEND_DIR=${OUTPUT_DIR}/send
-# copy_to_send_dir:
-# 	@printf "%b" "${GREEN}" "  ---> copying " "SEND_DIR=${SEND_DIR}" "${RESET}" "\n"
-# 	@mkdir -p "${OUTPUT_DIR}/send"
-# 	@cp -v "${OUTPUT_DIR}/mohamed-bana_cv.pdf" "${SEND_DIR}"
-# 	@#cp -v "${OUTPUT_DIR}/mohamed-bana_cv.docx" "${SEND_DIR}"
-# 	@#cp -v "${OUTPUT_DIR}/mohamed-bana_cv.odt" "${SEND_DIR}"
-# 	@echo
-# 	@cp -v "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" "${SEND_DIR}"
-# 	@#cp -v "${OUTPUT_DIR}/mohamed-bana_cover-letter.docx" "${SEND_DIR}"
-# 	@#cp -v "${OUTPUT_DIR}/mohamed-bana_cover-letter.odt" "${SEND_DIR}"
-# 	@echo
-# 	@cp -v "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf" "${SEND_DIR}"
-# 	@ls -1 "${SEND_DIR}"
+.PHONY: combine-pdfs
+combine-pdfs: all-cv all-cover-letter
+	# @#/bin/sh -c 'make all-cv && make all-cover-letter && make combine-pdfs & wait'
+	# $(MAKE) all-cv
+	# $(MAKE) all-cover-letter
+ifeq ($(OS),Darwin)
+	pdfunite "${OUTPUT_DIR}/mohamed-bana_cv.pdf" "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
+	open "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
+else
+	pdfunite "${OUTPUT_DIR}/mohamed-bana_cv.pdf" "${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
+	xdg-open "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
+endif
+	-cat missfont.log
