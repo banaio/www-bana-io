@@ -53,10 +53,7 @@ tex-cv:
     --from=markdown \
     --standalone \
     --pdf-engine=xelatex \
-    --include-in-header=./templates/include-in-header.tex \
-    --include-before-body=./templates/include-before-body.tex \
-    --include-after-body=./templates/include-after-body.tex \
-    --output="${OUTPUT_DIR}/mohamed-bana_cv.pdf" \
+    --output="${OUTPUT_DIR}/mohamed-bana_cv.tex" \
     ../cv.md
 
 .PHONY: tex-cover-letter
@@ -67,8 +64,7 @@ tex-cover-letter:
     --from=markdown \
     --standalone \
     --pdf-engine=xelatex \
-    --include-in-header=./templates/include-in-header.tex \
-    --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" \
+    --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.tex" \
     ../cover-letter.md
 
 .PHONY: all-cv

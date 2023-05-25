@@ -1,0 +1,114 @@
+% \usepackage{fancyhdr}
+% \usepackage[T1]{fontenc}
+% \usepackage[default]{sourcesanspro}
+% \usepackage{tikz}
+% \addtolength{\headheight}{1.0cm}
+% \fancypagestyle{plain}{}
+% \thispagestyle{fancy}
+% \fancyhead[L]{\includegraphics[width = 500pt]{example-image}}
+% \renewcommand{\headrulewidth}{0pt}
+
+
+% \documentclass[twocolumn]{article}
+% \usepackage{supertabular,booktabs}
+% \usepackage[textheight=10cm]{geometry}   %% just for this example.
+
+% \begin{document}
+
+% \tablefirsthead{\toprule First&\multicolumn{1}{c}{Name} \\ \midrule}
+% %
+% \tablehead{%
+% \multicolumn{2}{c}%
+% {{\bfseries  Continued from previous column}} \\
+% \toprule
+% First&\multicolumn{1}{c}{Name}\\ \midrule}
+% %
+% \tabletail{%
+% \midrule \multicolumn{2}{r}{{Continued on next column}} \\ \midrule}
+% \tablelasttail{%
+% \\\midrule
+% \multicolumn{2}{r}{{Concluded}} \\ \bottomrule}
+% \begin{supertabular}{ll}
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text comes\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text comes here too \\
+%     content & some text\\
+%     content & some text\\
+%     content & some text\\
+%     content & some text
+% \end{supertabular}%
+% \end{document}
+
+
+
+
+\usepackage{fontspec}
+% \setmainfont{Iosevka}
+
+\setmainfont[Scale=0.3,Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle]{Iosevka}
+
+
+
+
+
+
+\usepackage{geometry}
+\geometry{heightrounded,inner=4mm,outer=4mm,top=4mm,bottom=14mm}
+
+\usepackage{fontspec}
+\setmainfont{Iosevka Regular}
+
+\usepackage[ text = mechanistic
+           , mono = typewriter
+           ]{typographydefaults}
+
+% % \defaultfontfeatures{Mapping=tex-text,Numbers={OldStyle,Lowercase,Proportional},Ligatures={Common,Rare,TeX},Style=Historic}
+% \defaultfontfeatures{Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle}
+% \setmainfont[Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle]{Alegreya}
+% \setsansfont[Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle]{Alegreya Sans}
+
+% % \setmainfont[Ligatures = TeX, Scale = MatchLowercase, Numbers = OldStyle]{Alegreya}
+% % \setsansfont[Numbers={OldStyle,Lowercase,Proportional},Ligatures={Common,Rare,TeX},Style=Historic]{Alegreya Sans}
+% \setmonofont{DejaVuSansMono}
+% % % \setmathfont{TeXGyreDejaVuMath}
+% % \setmathfont{TeXGyreDejaVuMath-Regular}
+
+% \usepackage{xunicode,xltxtra,url,parskip}
+% \usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{hyperref} % Required for adding links   and customizing them
+\definecolor{linkcolour}{RGB}{229,57,53} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+% \setmainfont{Iosevka}
+
+
+
+
+\documentclass[10pt,twocolumn]{revtex4}
+\usepackage[a4paper,margin=0.2cm]{geometry}
+
+%\usepackage{fontspec} % optional
+\usepackage{newtxtext,newtxmath}

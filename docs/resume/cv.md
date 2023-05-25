@@ -21,7 +21,10 @@ toc: false
 linestretch: 0.1
 output:
    pdf_document:
-      latex_engine: xelatex
+      latex_engine: lualatex
+      keep_tex: true
+      includes:
+         in_header: download/templates/preamble.tex
 # linkcolor: red
 # contrastcolor: blue
 # linkstyle: boldslanted
@@ -29,14 +32,17 @@ includesource: true
 ---
 
 | **Contact**                                                 | **Web**                                                        |
-|:------------------------------------------------------------|---------------------------------------------------------------:|
-| [+44-7960-045-281](tel:+44-7960-045-281)                    | [https://github.com/mbana](https://github.com/mbana)           |
-| [mohamed@bana.io](mailto:mohamed@bana.io)                   | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) |
-|                                                             | [https://bana.io/blog](https://bana.io/blog)                   |
-|                                                             | [https://stackoverflow.com/users/241993/mohamed-bana](https://stackoverflow.com/users/241993/mohamed-bana) |
-|                                                             | [https://reddit.com/user/mohamed-bana](https://reddit.com/user/mohamed-bana) |
+|:--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------:|
+| [+44-7960-045-281](tel:+44-7960-045-281)                                                                      | [https://github.com/mbana](https://github.com/mbana)           |
+| [mohamed@bana.io](mailto:mohamed@bana.io)                                                                     | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) |
+| [https://stackoverflow.com/users/241993/mohamed-bana](https://stackoverflow.com/users/241993/mohamed-bana)    | [https://bana.io/blog](https://bana.io/blog)                   |
 
-I am a well-rounded Software Engineer, with over 12 years of Software Development experience. I understand what it takes to release a product having worked on the back-end, front-end, testing and finally the deployment aspect of several products.
+<!-- | [https://reddit.com/user/mohamed-bana](https://reddit.com/user/mohamed-bana)                                  |  | -->
+
+
+I am a highly Software Engineer with 13 years of job experience with a proven record of successful projects up to hundreds of servers running a lot of fairly complicated services that meet the most strict SLA requirements. I love to build and maintain high-availability rock-solid systems that support successful businesses.
+
+I am looking for an interesting **remote-only** job,, solo or in a small team of professionals to share my knowledge and to learn from. Part-time occupation is negotiable.
 
 Please read my cover letter at <https://bana.io/resume/cover-letter>. To download my CV and/or cover letter, please see <https://bana.io/resume/cv-download>.
 
