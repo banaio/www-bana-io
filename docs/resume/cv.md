@@ -31,17 +31,20 @@ includesource: true
 | **Contact**                                                 | **Web**                                                        |
 |:------------------------------------------------------------|---------------------------------------------------------------:|
 | [+44-7960-045-281](tel:+44-7960-045-281)                    | [https://github.com/mbana](https://github.com/mbana)           |
-| [+44-20-7097-4635](tel:+44-20-7097-4635)                    | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) |
-| [mohamed@bana.io](mailto:mohamed@bana.io)                   | [https://bana.io/blog](https://bana.io/blog)                   |
+| [mohamed@bana.io](mailto:mohamed@bana.io)                   | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) |
+|                                                             | [https://bana.io/blog](https://bana.io/blog)                   |
 |                                                             | [https://stackoverflow.com/users/241993/mohamed-bana](https://stackoverflow.com/users/241993/mohamed-bana) |
 |                                                             | [https://reddit.com/user/mohamed-bana](https://reddit.com/user/mohamed-bana) |
-
 
 I am a well-rounded Software Engineer, with over 12 years of Software Development experience. I understand what it takes to release a product having worked on the back-end, front-end, testing and finally the deployment aspect of several products.
 
 Please read my cover letter at <https://bana.io/resume/cover-letter>. To download my CV and/or cover letter, please see <https://bana.io/resume/cv-download>.
 
 ## Work Experience
+
+### Senior Software Engineer (Remote), [Cynergy Bank](https://cynergybank.co.uk), London, United Kingdom - 13/03/2022–Present
+
+**Tech:** Continuous Integration and Continuous Delivery (CI/CD), OpenAPI Specification (OAS), Swagger API, Google Cloud Platform (GCP), REST APIs, Golang, Go (Programming Language), Docker, Kubernetes
 
 ### Senior Software Engineer (Remote), [Kubeshop](https://kubeshop.io/), Greenwich, United States - 01/05/2022–20/01/2023
 
