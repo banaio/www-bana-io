@@ -1,18 +1,11 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
   a4paper,
-  8pt,
 ]{article}
-
-\usepackage{fontspec}
-% \setmainfont{Iosevka}
-\setmainfont[Scale=0.1,Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle]{Iosevka}
-\setmonofont[Scale=0.1,Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle]{Iosevka}
-\usepackage[fontsize=8pt]{fontsize}
-
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
 \usepackage{setspace}
@@ -43,14 +36,6 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
-\hypersetup{
-  pdftitle={Mohamed Bana's Curriculum Vitae},
-  pdfauthor={I am only looking for a fully remote Golang - Senior Software Engineer - role.},
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
-\urlstyle{same} % disable monospaced font for URLs
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -65,39 +50,135 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{geometry}
+\geometry{
+    heightrounded,
+    a4paper,
+    inner=4mm,
+    outer=4mm,
+    top=4mm,
+    bottom=14mm,
+}
+
+\usepackage{fontspec}
+\defaultfontfeatures{
+    Ligatures = { Required, Common, Contextual , Rare },
+    Numbers = OldStyle,
+    Mapping = tex-text,
+}
+\setmainfont{Iosevka Fixed SS05}[
+    Scale=0.7,
+]
+\setsansfont{Iosevka Fixed SS05}[
+    Scale=0.7,
+]
+\setmonofont{Iosevka Fixed SS05}[
+    Scale=0.7,
+]
+
+\usepackage{multicol}
+
+
+% \setmainfont[Scale=0.3,Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle]{Iosevka Regular}
+% \setmainfont[Scale=MatchLowercase,Numbers=OldStyle,Ligatures={Common,Rare,Historic},Style=Swash]{Iosevka}
+
+% \defaultfontfeatures{Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle}
+
+
+
+% \setmainfont{/home/mbana/.fonts/truetype/iosevka-fonts/iosevka-regular.ttf}
+% \setmainfont{/usr/share/fonts/iosevka-term-fonts/iosevka-term-regular.ttf}
+
+
+
+% % \defaultfontfeatures{Mapping=tex-text,Numbers={OldStyle,Lowercase,Proportional},Ligatures={Common,Rare,TeX},Style=Historic}
+% \defaultfontfeatures{Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle}
+% \setmainfont[Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle]{Alegreya}
+% \setsansfont[Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle]{Alegreya Sans}
+
+% % \setmainfont[Ligatures = TeX, Scale = MatchLowercase, Numbers = OldStyle]{Alegreya}
+% % \setsansfont[Numbers={OldStyle,Lowercase,Proportional},Ligatures={Common,Rare,TeX},Style=Historic]{Alegreya Sans}
+% \setmonofont{DejaVuSansMono}
+% % % \setmathfont{TeXGyreDejaVuMath}
+% % \setmathfont{TeXGyreDejaVuMath-Regular}
+
+% \usepackage{xunicode,xltxtra,url,parskip}
+% \usepackage[usenames,dvipsnames]{xcolor}
+
+
+
+
+
+
+% \documentclass[10pt,twocolumn]{revtex4}
+% \usepackage[a4paper,margin=0.2cm]{geometry}
+
+% %\usepackage{fontspec} % optional
+% \usepackage{newtxtext,newtxmath}
+
+
+% \usepackage{hyperref} % Required for adding links   and customizing them
+% \definecolor{linkcolour}{RGB}{229,57,53} % Link color
+% \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Mohamed Bana's Curriculum Vitae},
+  pdfauthor={I am only looking for a fully remote Golang - Senior Software Engineer - role},
+  colorlinks=true,
+  linkcolor={red},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
 
-\title{Mohamed Bana's Curriculum Vitae\vspace{-6ex}}
-% \author{I am \textbf{\emph{only}} looking for a fully remote Golang -Senior Software Engineer - role.}
+\title{Mohamed Bana's Curriculum Vitae}
+\author{I am \textbf{\emph{only}} looking for a fully remote Golang -
+Senior Software Engineer - role}
 \date{}
 
-\usepackage{fontspec}
-\setmainfont[Scale=0.3,Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle]{Iosevka}
-\usepackage{hyperref} % Required for adding links   and customizing them
-\definecolor{linkcolour}{RGB}{229,57,53} % Link color
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
-
-\usepackage{geometry}
-\geometry{heightrounded,inner=4mm,outer=4mm,top=4mm,bottom=14mm}
-\usepackage{multicol}
-
-\showoutput
 \begin{document}
 \maketitle
 
-% \setstretch{0.1}
+% \usepackage{hyperref} % Required for adding links and customizing theme
+
+\hypersetup{
+  pdftitle={Mohamed Bana's Curriculum Vitae},
+  pdfauthor={Mohamed Bana},
+  pdfcreator={Mohamed Bana},
+  pdfproducer={Mohamed Bana},
+}
+
+% \usepackage[pdftex,
+%             pdfauthor={Your Name},
+%             pdftitle={The Title},
+%             pdfsubject={The Subject},
+%             pdfkeywords={Some Keywords},
+%             pdfproducer={Latex with hyperref, or other system},
+%             pdfcreator={pdflatex, or other tool}]{hyperref}
+\definecolor{linkcolour}{RGB}{229,57,53} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\urlstyle{same}
+
+% \renewcommand\UrlFont{\bfseries\itshape}
+\renewcommand\UrlFont{\bfseries}
+
+\setstretch{0.1}
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6343}}
   >{\raggedleft\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.3657}}@{}}
-\toprule
+\toprule()
 \begin{minipage}[b]{\linewidth}\raggedright
 \textbf{Contact}
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
 \textbf{Web}
 \end{minipage} \\
-\midrule
+\midrule()
 \endhead
 \href{tel:+44-7960-045-281}{+44-7960-045-281} &
 \url{https://github.com/mbana} \\
@@ -105,36 +186,33 @@
 \url{https://linkedin.com/in/mbana} \\
 \url{https://stackoverflow.com/users/241993/mohamed-bana} &
 \url{https://bana.io/blog} \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
-\begin{multicols}{2}
-
-I am a highly Software Engineer with 13 years of job experience with a
-proven record of successful projects up to hundreds of servers running a
-lot of fairly complicated services that meet the most strict SLA
-requirements. I love to build and maintain high-availability rock-solid
-systems that support successful businesses.
-
-I am looking for an interesting \textbf{remote-only} job, solo or in a
-small team of professionals to share my knowledge and to learn from.
-Part-time occupation is negotiable.
-
-Please read my cover letter at
+I am a highly skilled Software Engineer with 13 years of job experience
+with a proven record. I love to build and maintain high-availability
+rock-solid systems that support successful businesses. I am looking for
+an interesting \textbf{remote-only} job, solo or in a small team of
+professionals to share my knowledge and to learn from. Part-time
+occupation is negotiable. Please read my cover letter at
 \url{https://bana.io/resume/cover-letter}. To download my CV and/or
 cover letter, please see \url{https://bana.io/resume/cv-download}.
+
+\begin{multicols*}{2}
 
 \hypertarget{work-experience}{%
 \subsection{Work Experience}\label{work-experience}}
 
-\hypertarget{senior-software-engineer-remote-cynergy-bank-london-united-kingdom---13032022present}{%
+\hypertarget{senior-software-engineer-remote-cynergy-bank-london-united-kingdom---1303202313072023}{%
 \subsubsection{\texorpdfstring{Senior Software Engineer (Remote),
 \href{https://cynergybank.co.uk}{Cynergy Bank}, London, United Kingdom -
-13/03/2022--Present}{Senior Software Engineer (Remote), Cynergy Bank, London, United Kingdom - 13/03/2022--Present}}\label{senior-software-engineer-remote-cynergy-bank-london-united-kingdom---13032022present}}
+13/03/2023--13/07/2023}{Senior Software Engineer (Remote), Cynergy Bank, London, United Kingdom - 13/03/2023--13/07/2023}}\label{senior-software-engineer-remote-cynergy-bank-london-united-kingdom---1303202313072023}}
 
-\textbf{Tech:} Continuous Integration and Continuous Delivery (CI/CD),
-OpenAPI Specification (OAS), Swagger API, Google Cloud Platform (GCP),
-REST APIs, Golang, Go (Programming Language), Docker, Kubernetes
+\textbf{Tech:} PostgreSQL, Postgres, Continuous Integration and
+Continuous Delivery (CI/CD), OpenAPI Specification (OAS), Swagger API,
+Google Cloud Platform (GCP), REST APIs, go, Linux, Golang, Go
+(Programming Language), Docker, Git, Google Cloud Platform and
+Kubernetes.
 
 \hypertarget{senior-software-engineer-remote-kubeshop-greenwich-united-states---0105202220012023}{%
 \subsubsection{\texorpdfstring{Senior Software Engineer (Remote),
@@ -695,6 +773,6 @@ final release of Utah. 3. Testing was done over multiple iterations.
   several times to the UAE.
 \end{itemize}
 
-\end{multicols}
+\end{multicols*}
 
 \end{document}

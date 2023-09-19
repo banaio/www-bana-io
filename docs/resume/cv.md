@@ -8,30 +8,39 @@ prev: /resume/
 next: ./cv-download
 
 title: "Mohamed Bana's Curriculum Vitae"
-author: I am **_only_** looking for a fully remote Golang - Senior Software Engineer - role.
+author: I am **_only_** looking for a fully remote Golang - Senior Software Engineer - role
 papersize: a4
-# fontsize: 6pt
 indenting: small
 interlinespace: small
 whitespace: small
 lof: false
 lot: false
 toc: false
-# linestretch: 0.4
 linestretch: 0.1
 output:
    pdf_document:
-      latex_engine: lualatex
-      keep_tex: true
-      includes:
-         in_header: download/templates/preamble.tex
-# linkcolor: red
-# contrastcolor: blue
+      latex_engine: xelatex
+linkcolor: red
+# contrastcolor: red
 # linkstyle: boldslanted
-includesource: true
+# includesource: true
+# documentclass: revtex4
+# fontsize: 8pt
+# header-includes: |
+#     \hypersetup{pdftex,
+#             pdfauthor={Mohamed Bana},
+#             pdftitle={The Title},
+#             pdfsubject={The Subject},
+#             pdfkeywords={Some Keywords},
+#             pdfproducer={Latex with hyperref, or other system},
+#             pdfcreator={pdflatex, or other tool}}
+# header-includes: |
+#     \hypersetup{pdftex,
+#             pdfproducer={Mohamed Bana},
+#             pdfcreator={Mohamed Bana}}
 ---
 
-| **Contact**                                                 | **Web**                                                        |
+| **Contact**                                                                                                   | **Web**                                                        |
 |:--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------:|
 | [+44-7960-045-281](tel:+44-7960-045-281)                                                                      | [https://github.com/mbana](https://github.com/mbana)           |
 | [mohamed@bana.io](mailto:mohamed@bana.io)                                                                     | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) |
@@ -40,17 +49,15 @@ includesource: true
 <!-- | [https://reddit.com/user/mohamed-bana](https://reddit.com/user/mohamed-bana)                                  |  | -->
 
 
-I am a highly Software Engineer with 13 years of job experience with a proven record of successful projects up to hundreds of servers running a lot of fairly complicated services that meet the most strict SLA requirements. I love to build and maintain high-availability rock-solid systems that support successful businesses.
+<!-- I am a highly skilled Software Engineer with 13 years of job experience with a proven record of successful projects up to hundreds of servers running a lot of fairly complicated services that meet the most strict SLA requirements. I love to build and maintain high-availability rock-solid systems that support successful businesses. I am looking for an interesting **remote-only** job,, solo or in a small team of professionals to share my knowledge and to learn from. Part-time occupation is negotiable. Please read my cover letter at <https://bana.io/resume/cover-letter>. To download my CV and/or cover letter, please see <https://bana.io/resume/cv-download>. -->
 
-I am looking for an interesting **remote-only** job,, solo or in a small team of professionals to share my knowledge and to learn from. Part-time occupation is negotiable.
-
-Please read my cover letter at <https://bana.io/resume/cover-letter>. To download my CV and/or cover letter, please see <https://bana.io/resume/cv-download>.
+I am a highly skilled Software Engineer with 13 years of job experience with a proven record. I love to build and maintain high-availability rock-solid systems that support successful businesses. I am looking for an interesting **remote-only** job, solo or in a small team of professionals to share my knowledge and to learn from. Part-time occupation is negotiable. Please read my cover letter at <https://bana.io/resume/cover-letter>. To download my CV and/or cover letter, please see <https://bana.io/resume/cv-download>.
 
 ## Work Experience
 
-### Senior Software Engineer (Remote), [Cynergy Bank](https://cynergybank.co.uk), London, United Kingdom - 13/03/2022–Present
+### Senior Software Engineer (Remote), [Cynergy Bank](https://cynergybank.co.uk), London, United Kingdom - 13/03/2023–13/07/2023
 
-**Tech:** Continuous Integration and Continuous Delivery (CI/CD), OpenAPI Specification (OAS), Swagger API, Google Cloud Platform (GCP), REST APIs, Golang, Go (Programming Language), Docker, Kubernetes
+**Tech:** PostgreSQL, Postgres, Continuous Integration and Continuous Delivery (CI/CD), OpenAPI Specification (OAS), Swagger API, Google Cloud Platform (GCP), REST APIs, go, Linux, Golang, Go (Programming Language), Docker, Git, Google Cloud Platform and Kubernetes.
 
 ### Senior Software Engineer (Remote), [Kubeshop](https://kubeshop.io/), Greenwich, United States - 01/05/2022–20/01/2023
 
