@@ -34,6 +34,8 @@ all: clean combine-pdfs
 .PHONY: clean
 clean:
 	-rm -v missfont.log
+	-rm -v *.aux
+	-rm -v *.log
 	-rm -v \
         mohamed-bana_cv.pdf \
         mohamed-bana_cover-letter.pdf \
@@ -50,14 +52,14 @@ clean:
 tex-cv:
 	@printf "%b" "${GREEN}" "---> ${OUTPUT_DIR}/mohamed-bana_cv.pdf" "${RESET}" "\n"
 	pandoc \
-        --fail-if-warnings \
-        --from=markdown \
-        --standalone \
-        --pdf-engine=xelatex \
-        --output="${OUTPUT_DIR}/mohamed-bana_cv.tex" \
-        --include-in-header=./templates-new-new/preamble.tex \
-        --include-before-body=./templates-new-new/before-body.tex\
-        ../cv.md
+          --fail-if-warnings \
+          --from=markdown \
+          --standalone \
+          --pdf-engine=xelatex \
+          --output="${OUTPUT_DIR}/mohamed-bana_cv.tex" \
+          --include-in-header=./templates-new-new/preamble.tex \
+          --include-before-body=./templates-new-new/before-body.tex \
+          ../cv.md
 	xelatex "${OUTPUT_DIR}/mohamed-bana_cv.tex"
 
     # --include-in-header=./templates/include-in-header.tex \
@@ -68,79 +70,82 @@ tex-cv:
 tex-cover-letter:
 	@printf "%b" "${GREEN}" "---> ${OUTPUT_DIR}/mohamed-bana_cover-letter.pdf" "${RESET}" "\n"
 	pandoc \
-        --fail-if-warnings \
-        --from=markdown \
-        --standalone \
-        --pdf-engine=xelatex \
-        --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.tex" \
-        ../cover-letter.md
+          --fail-if-warnings \
+          --from=markdown \
+          --standalone \
+          --pdf-engine=xelatex \
+          --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.tex" \
+          --include-in-header=./templates-new-new/preamble.tex \
+          --include-before-body=./templates-new-new/before-body.tex \
+          ../cover-letter.md
 	xelatex "${OUTPUT_DIR}/mohamed-bana_cover-letter.tex"
 
 .PHONY: all-cv
-all-cv: tex-cv
+all-cv: tex-cv all-cover-letter
 	@printf "%b" "${GREEN}" "---> ${OUTPUT_DIR}/mohamed-bana_cv.*" "${RESET}" "\n"
 	pandoc \
-        --fail-if-warnings \
-        --from=markdown \
-        --standalone \
-        --include-in-header=./templates/include-in-header.tex \
-        --include-before-body=./templates/include-before-body.tex \
-        --include-after-body=./templates/include-after-body.tex \
-        --variable=date:"${DATE_TIME}" \
-        --output="${OUTPUT_DIR}/mohamed-bana_cv.odt" \
-        ../cv.md
+          --fail-if-warnings \
+          --from=markdown \
+          --standalone \
+          --include-in-header=./templates/include-in-header.tex \
+          --include-before-body=./templates/include-before-body.tex \
+          --include-after-body=./templates/include-after-body.tex \
+          --variable=date:"${DATE_TIME}" \
+          --output="${OUTPUT_DIR}/mohamed-bana_cv.odt" \
+          ../cv.md
 	pandoc \
-        --fail-if-warnings \
-        --from=markdown \
-        --standalone \
-        --include-in-header=./templates/include-in-header.tex \
-        --include-before-body=./templates/include-before-body.tex \
-        --include-after-body=./templates/include-after-body.tex \
-        --variable=date:"${DATE_TIME}" \
-        --output="${OUTPUT_DIR}/mohamed-bana_cv.docx" \
-        ../cv.md
+          --fail-if-warnings \
+          --from=markdown \
+          --standalone \
+          --include-in-header=./templates/include-in-header.tex \
+          --include-before-body=./templates/include-before-body.tex \
+          --include-after-body=./templates/include-after-body.tex \
+          --variable=date:"${DATE_TIME}" \
+          --output="${OUTPUT_DIR}/mohamed-bana_cv.docx" \
+          ../cv.md
 	pandoc \
-        --fail-if-warnings \
-        --to=plain \
-        --from=markdown \
-        --standalone \
-        --variable=date:"${DATE_TIME}" \
-        --output="${OUTPUT_DIR}/mohamed-bana_cv.text" \
-        ../cv.md
+          --fail-if-warnings \
+          --to=plain \
+          --from=markdown \
+          --standalone \
+          --variable=date:"${DATE_TIME}" \
+          --output="${OUTPUT_DIR}/mohamed-bana_cv.text" \
+          ../cv.md
 
 .PHONY: all-cover-letter
 all-cover-letter: tex-cover-letter
 	pandoc \
-        --fail-if-warnings \
-        --from=markdown \
-        --standalone \
-        --include-in-header=./templates/include-in-header.tex \
-        --include-before-body=./templates/include-before-body.tex \
-        --include-after-body=./templates/include-after-body.tex \
-        --variable=date:"${DATE_TIME}" \
-        --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.odt" \
-        ../cover-letter.md
+          --fail-if-warnings \
+          --from=markdown \
+          --standalone \
+          --include-in-header=./templates/include-in-header.tex \
+          --include-before-body=./templates/include-before-body.tex \
+          --include-after-body=./templates/include-after-body.tex \
+          --variable=date:"${DATE_TIME}" \
+          --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.odt" \
+          ../cover-letter.md
 	pandoc \
-        --fail-if-warnings \
-        --from=markdown \
-        --standalone \
-        --include-in-header=./templates/include-in-header.tex \
-        --include-before-body=./templates/include-before-body.tex \
-        --include-after-body=./templates/include-after-body.tex \
-        --variable=date:"${DATE_TIME}" \
-        --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.docx" \
-        ../cover-letter.md
+          --fail-if-warnings \
+          --from=markdown \
+          --standalone \
+          --include-in-header=./templates/include-in-header.tex \
+          --include-before-body=./templates/include-before-body.tex \
+          --include-after-body=./templates/include-after-body.tex \
+          --variable=date:"${DATE_TIME}" \
+          --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.docx" \
+          ../cover-letter.md
 	pandoc \
-        --fail-if-warnings \
-        --to=plain \
-        --from=markdown \
-        --standalone \
-        --variable=date:"${DATE_TIME}" \
-        --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.text" \
-        ../cover-letter.md
+          --fail-if-warnings \
+          --to=plain \
+          --from=markdown \
+          --standalone \
+          --variable=date:"${DATE_TIME}" \
+          --output="${OUTPUT_DIR}/mohamed-bana_cover-letter.text" \
+          ../cover-letter.md
 
 .PHONY: combine-pdfs
-combine-pdfs: all-cv all-cover-letter
+# combine-pdfs: all-cv all-cover-letter
+combine-pdfs: tex-cv tex-cover-letter
 	@# @#/bin/sh -c 'make all-cv && make all-cover-letter && make combine-pdfs & wait'
 	@# $(MAKE) all-cv
 	@# $(MAKE) all-cover-letter
@@ -152,3 +157,6 @@ else
 	xdg-open "${OUTPUT_DIR}/mohamed-bana_cv_cover-letter.pdf"
 endif
 	-cat missfont.log
+	-rm -v missfont.log
+	-rm -v *.aux
+	-rm -v *.log

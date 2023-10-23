@@ -7,7 +7,7 @@ next: /resume/
 
 # subtitle: "Full Stack Senior Software Engineer"
 title: "Mohamed Bana's Cover Letter"
-author: I am **_only_** looking for a fully remote Golang - Senior Software Engineer - role.
+author: I am **_only_** looking for a fully remote Golang - Senior Software Engineer - role
 papersize: a4
 # fontsize: 6pt
 indenting: small
@@ -48,8 +48,8 @@ I'm up for learning more of Rust but it's just a hobby at the moment.
 
 I'm available to start immediately. I'm willing to negotiate on this as it depends on a few things, that said:
 
-* If it's a contracting role, minimum of £500 per day outside of IR35 and £600 per day inside of IR35.
-* If it's a permanent position, minimum of £90,000 per year.
+* If it's a contracting role, minimum of £400 per day outside of IR35 and £500 per day inside of IR35.
+* If it's a permanent position, minimum of £70,000 per year.
 
 The figures I mentioned above are not set in stone and I am willing to listen to counter offers.
 

@@ -39,6 +39,87 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{geometry}
+\geometry{
+    heightrounded,
+    a4paper,
+    inner=4mm,
+    outer=4mm,
+    top=4mm,
+    bottom=14mm,
+}
+
+\usepackage{fontspec}
+\defaultfontfeatures{
+    Ligatures = { Required, Common, Contextual , Rare },
+    Numbers = OldStyle,
+    Mapping = tex-text,
+}
+% working
+% \setmainfont{Iosevka Fixed SS05}[
+%     Scale=0.7,
+% ]
+% \setsansfont{Iosevka Fixed SS05}[
+%     Scale=0.7,
+% ]
+% \setmonofont{Iosevka Fixed SS05}[
+%     Scale=0.7,
+% ]
+
+\setmainfont{Iosevka Fixed SS05}[
+    Scale=0.8,
+]
+\setsansfont{Iosevka Fixed SS05}[
+    Scale=0.8,
+]
+\setmonofont{Iosevka Fixed SS05}[
+    Scale=0.8,
+]
+
+\usepackage{multicol}
+
+
+% \setmainfont[Scale=0.3,Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle]{Iosevka Regular}
+% \setmainfont[Scale=MatchLowercase,Numbers=OldStyle,Ligatures={Common,Rare,Historic},Style=Swash]{Iosevka}
+
+% \defaultfontfeatures{Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle}
+
+
+
+% \setmainfont{/home/mbana/.fonts/truetype/iosevka-fonts/iosevka-regular.ttf}
+% \setmainfont{/usr/share/fonts/iosevka-term-fonts/iosevka-term-regular.ttf}
+
+
+
+% % \defaultfontfeatures{Mapping=tex-text,Numbers={OldStyle,Lowercase,Proportional},Ligatures={Common,Rare,TeX},Style=Historic}
+% \defaultfontfeatures{Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle}
+% \setmainfont[Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle]{Alegreya}
+% \setsansfont[Mapping=tex-text,Ligatures={Common,Rare,TeX},Scale=MatchLowercase,Numbers=OldStyle]{Alegreya Sans}
+
+% % \setmainfont[Ligatures = TeX, Scale = MatchLowercase, Numbers = OldStyle]{Alegreya}
+% % \setsansfont[Numbers={OldStyle,Lowercase,Proportional},Ligatures={Common,Rare,TeX},Style=Historic]{Alegreya Sans}
+% \setmonofont{DejaVuSansMono}
+% % % \setmathfont{TeXGyreDejaVuMath}
+% % \setmathfont{TeXGyreDejaVuMath-Regular}
+
+% \usepackage{xunicode,xltxtra,url,parskip}
+% \usepackage[usenames,dvipsnames]{xcolor}
+
+
+
+
+
+
+% \documentclass[10pt,twocolumn]{revtex4}
+% \usepackage[a4paper,margin=0.2cm]{geometry}
+
+% %\usepackage{fontspec} % optional
+% \usepackage{newtxtext,newtxmath}
+
+
+% \usepackage{hyperref} % Required for adding links   and customizing them
+% \definecolor{linkcolour}{RGB}{229,57,53} % Link color
+% \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -47,17 +128,41 @@
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
   pdftitle={Mohamed Bana's Cover Letter},
-  pdfauthor={I am only looking for a fully remote Golang - Senior Software Engineer - role.},
+  pdfauthor={I am only looking for a fully remote Golang - Senior Software Engineer - role},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
 \title{Mohamed Bana's Cover Letter}
 \author{I am \textbf{\emph{only}} looking for a fully remote Golang -
-Senior Software Engineer - role.}
+Senior Software Engineer - role}
 \date{}
 
 \begin{document}
 \maketitle
+
+% \usepackage{hyperref} % Required for adding links and customizing theme
+
+\hypersetup{
+  pdftitle={Mohamed Bana's Curriculum Vitae},
+  pdfauthor={Mohamed Bana},
+  pdfcreator={Mohamed Bana},
+  pdfproducer={Mohamed Bana},
+}
+
+% \usepackage[pdftex,
+%             pdfauthor={Your Name},
+%             pdftitle={The Title},
+%             pdfsubject={The Subject},
+%             pdfkeywords={Some Keywords},
+%             pdfproducer={Latex with hyperref, or other system},
+%             pdfcreator={pdflatex, or other tool}]{hyperref}
+\definecolor{linkcolour}{RGB}{229,57,53} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\urlstyle{same}
+
+% \renewcommand\UrlFont{\bfseries\itshape}
+\renewcommand\UrlFont{\bfseries}
 
 \setstretch{0.1}
 \hypertarget{introduction-and-background}{%
@@ -109,10 +214,10 @@ it depends on a few things, that said:
 \begin{itemize}
 \tightlist
 \item
-  If it's a contracting role, minimum of £500 per day outside of IR35
-  and £600 per day inside of IR35.
+  If it's a contracting role, minimum of £400 per day outside of IR35
+  and £500 per day inside of IR35.
 \item
-  If it's a permanent position, minimum of £90,000 per year.
+  If it's a permanent position, minimum of £70,000 per year.
 \end{itemize}
 
 The figures I mentioned above are not set in stone and I am willing to
