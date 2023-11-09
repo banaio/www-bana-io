@@ -7,7 +7,7 @@ next: /resume/
 
 # subtitle: "Full Stack Senior Software Engineer"
 title: "Mohamed Bana's Cover Letter"
-author: I am **_only_** looking for a fully remote Golang - Senior Software Engineer - role
+author: Software Engineer
 papersize: a4
 # fontsize: 6pt
 indenting: small
@@ -42,14 +42,14 @@ I'm flexible in terms of the choice of framework used, however, my ideal role wi
 
 I'm up for learning more of Rust but it's just a hobby at the moment.
 
-**Summary:** Senior Software Engineer: Golang, Linux, Docker, Docker-Compose, Kubernetes, Cloud Computing, Google Cloud Computing (GCP), Fedora Linux.
+**Summary:** Senior Software Engineer with expertise in Golang, Linux, Docker, Docker-Compose, Kubernetes, Cloud Computing, Google Cloud Computing (GCP) and Linux.
 
-### Salary and notice period
+### Notice period and salary
 
-I'm available to start immediately. I'm willing to negotiate on this as it depends on a few things, that said:
+I'm available to start after one week. I'm willing to negotiate on this as it depends on a few things, that said:
 
-* If it's a contracting role, minimum of £400 per day outside of IR35 and £500 per day inside of IR35.
-* If it's a permanent position, minimum of £70,000 per year.
+* If it's a contracting role, minimum of £400 per day.
+* If it's a permanent position, minimum of £65,000 per year.
 
 The figures I mentioned above are not set in stone and I am willing to listen to counter offers.
 
@@ -59,7 +59,7 @@ A fully remote role with a UK or US company.
 
 ### Any visa restrictions – if applicable (ILR, Tier 2, Dependant visa etc)
 
-* **Passport/Nationality:** I am a British citizen with a British passport, National Insurance number etc.
+* **Passport/Nationality:** I am a British citizen with a British passport, right to work, national Insurance number etc.
 * **Drivers Licence:** Full UK Driving Licence.
 
 <!-- * **Background/Criminal Check:**

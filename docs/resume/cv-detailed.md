@@ -43,7 +43,7 @@ linkcolor: red
 | **Contact**                                                                                                   | **Web**                                                        |
 |:--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------:|
 | [+44-7960-045-281](tel:+44-7960-045-281)                                                                      | [https://github.com/mbana](https://github.com/mbana)           |
-| [mohamed@bana.io](mailto:mohamed@bana.io)                                                                     | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) |
+| [jobs@bana.io](mailto:jobs@bana.io)                                                                     | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) |
 | [https://stackoverflow.com/users/241993/mohamed-bana](https://stackoverflow.com/users/241993/mohamed-bana)    | [https://bana.io/blog](https://bana.io/blog)                   |
 
 <!-- | [https://reddit.com/user/mohamed-bana](https://reddit.com/user/mohamed-bana)                                  |  | -->

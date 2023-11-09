@@ -322,8 +322,8 @@ module.exports = {
     logo: '/favicon.svg',
     nav: [
       {
-        text: 'mohamed@bana.io',
-        link: 'mailto:mohamed@bana.io',
+        text: 'jobs@bana.io',
+        link: 'mailto:jobs@bana.io',
         rel: 'noopener noreferrer',
         target: '_blank',
       },

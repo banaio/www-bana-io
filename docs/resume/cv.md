@@ -9,7 +9,7 @@ next: ./cv-download
 
 title: "Mohamed Bana's Curriculum Vitae"
 # author: I am **_only_** looking for a fully remote Golang - Senior Software Engineer - role
-author: Senior Software Engineer
+author: Software Engineer
 papersize: a4
 indenting: small
 interlinespace: small
@@ -44,7 +44,7 @@ linkcolor: red
 | **Contact**                                                                                                   | **Web**                                                        |
 |:--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------:|
 | [+44-7960-045-281](tel:+44-7960-045-281)                                                                      | [https://github.com/mbana](https://github.com/mbana)           |
-| [mohamed@bana.io](mailto:mohamed@bana.io)                                                                     | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) |
+| [jobs@bana.io](mailto:jobs@bana.io)                                                                           | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) |
 | [https://stackoverflow.com/users/241993/mohamed-bana](https://stackoverflow.com/users/241993/mohamed-bana)    | [https://bana.io/blog](https://bana.io/blog)                   |
 
 <!-- | [https://reddit.com/user/mohamed-bana](https://reddit.com/user/mohamed-bana)                                  |  | -->
@@ -52,17 +52,17 @@ linkcolor: red
 
 <!-- I am a highly skilled Software Engineer with 13 years of job experience with a proven record of successful projects up to hundreds of servers running a lot of fairly complicated services that meet the most strict SLA requirements. I love to build and maintain high-availability rock-solid systems that support successful businesses. I am looking for an interesting **remote-only** job,, solo or in a small team of professionals to share my knowledge and to learn from. Part-time occupation is negotiable. Please read my cover letter at <https://bana.io/resume/cover-letter>. To download my CV and/or cover letter, please see <https://bana.io/resume/cv-download>. -->
 
-I am a highly skilled Software Engineer with 13 years of job experience with a proven record. I love to build and maintain high-availability rock-solid systems that support successful businesses. I am looking for an interesting **remote-only** job, solo or in a small team of professionals to share my knowledge and to learn from. Part-time occupation is negotiable. Please read my cover letter at <https://bana.io/resume/cover-letter>. To download my CV and/or cover letter, please see <https://bana.io/resume/cv-download>.
+I am a highly skilled Software Engineer with over a decades worth of job experience and a proven record. I love to build and maintain high-availability rock-solid systems that support successful businesses. I am looking for an interesting **remote-only** job, solo or in a small team of professionals to share my knowledge and to learn from. Part-time occupation is negotiable. Please read my cover letter at <https://bana.io/resume/cover-letter>. To download my CV and/or cover letter, please see <https://bana.io/resume/cv-download>.
 
 <!-- That said, I am **_only_** looking for a fully remote Golang - Senior Software Engineer - role. -->
 
 ## Work Experience
 
-### Senior Software Engineer (Remote), [Cynergy Bank](https://cynergybank.co.uk), London, United Kingdom - 03/2023–07/2023
+### Senior Software Engineer, [Cynergy Bank](https://cynergybank.co.uk), London, United Kingdom - 03/2023–07/2023
 
 **Tech:** PostgreSQL, Postgres, Continuous Integration and Continuous Delivery (CI/CD), OpenAPI Specification (OAS), Swagger API, Google Cloud Platform (GCP), REST APIs, go, Linux, Golang, Go (Programming Language), Docker, Git, Google Cloud Platform and Kubernetes.
 
-### Senior Software Engineer (Remote), [Kubeshop](https://kubeshop.io/), Greenwich, United States - 05/2022–01/2023
+### Senior Software Engineer, [Kubeshop](https://kubeshop.io/), Greenwich, United States - 05/2022–01/2023
 
 Worked on [`kusk-gateway`](https://docs.kusk.io/), a OpenAPI-driven API Gateway for Kubernetes. Links:
 
@@ -77,19 +77,19 @@ The commits I made against the repository is available to view at: <https://gith
 
 **Tech:** Golang, Kubernetes, Kubernetes Control Plane, [`go-control-plane`](https://github.com/envoyproxy/go-control-plane), [Envoy Proxy](https://www.envoyproxy.io/), Docker, Docker Compose, Minikube, Shell scripting/Bash, gRPC, Protocol Buffers, GitHub Workflows, Linux.
 
-### Senior Software Engineer (Remote), [ViTRiFi Limited](https://vitrifi.net), London, UK - 11/2021–03/2022
+### Senior Software Engineer, [ViTRiFi Limited](https://vitrifi.net), London, UK - 11/2021–03/2022
 
 Cannot disclose details due to NDA.
 
 **Tech:** Golang, Kubernetes, Docker, Docker Compose, AWS, Amazon EKS, Grafana, Loki, Prometheus, Shell scripting/Bash, Visual Studio Code Remote - Containers, gRPC, Protocol Buffers, Kafka, Redpanda Kafka, GitLab.
 
-### Software Engineer (Remote), [Paymentsense Limited](https://www.paymentsense.com), London, UK - 07/2021–10/2021
+### Software Engineer, [Paymentsense Limited](https://www.paymentsense.com), London, UK - 07/2021–10/2021
 
 I worked with Golang on `Connect-E` (<https://docs.connect.paymentsense.cloud/ConnectE/GettingStarted>).
 
 **Tech:** Golang with modules, Docker, Docker Compose, TypeScript, GCP, Google Cloud Datastore, Google Cloud Big Query, Google Cloud Pub / Sub.
 
-### Software Engineer (Remote), [IBM](https://www.ibm.com/uk/en/), Winchester, UK - 09/2020–04/2021
+### Software Engineer, [IBM](https://www.ibm.com/uk/en/), Winchester, UK - 09/2020–04/2021
 
 I worked on IBM Cloud as Software Engineer on the IKS Cluster (IBM Cloud™ Kubernetes Service) team as Cloud Software Engineer / Golang Engineer. IKS is effectively something like AWS, GCP or Azure, see [IBM Cloud](https://cloud.ibm.com/).
 
