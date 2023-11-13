@@ -55,7 +55,7 @@ The figures I mentioned above are not set in stone and I am willing to listen to
 
 ### Work locations considered
 
-A fully remote role with a UK or US company.
+A fully remote role, ideally, with a UK or US company.
 
 ### Any visa restrictions – if applicable (ILR, Tier 2, Dependant visa etc)
 
