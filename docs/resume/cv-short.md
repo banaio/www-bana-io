@@ -43,7 +43,7 @@ linkcolor: red
 
 | **Contact**                                                                                                   | **Web**                                                        |
 |:--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------:|
-| [+44-07960-045-281](tel:+44-07960-045-281)                                                                    | [https://github.com/mbana](https://github.com/mbana)           |
+| [+44-7960-045-281](tel:+44-7960-045-281)                                                                      | [https://github.com/mbana](https://github.com/mbana)           |
 | [jobs@bana.io](mailto:jobs@bana.io)                                                                           | [https://linkedin.com/in/mbana](https://linkedin.com/in/mbana) |
 | [https://stackoverflow.com/users/241993/mohamed-bana](https://stackoverflow.com/users/241993/mohamed-bana)    | [https://bana.io/blog](https://bana.io/blog)                   |
 
@@ -60,7 +60,7 @@ I am a highly skilled Software Engineer with over a decades worth of job experie
 
 ## Work Experience
 
-### Software Engineer and Director, [BanaIO Ltd.](https://bana.io), London, United Kingdom - 03/2017–Present
+### Software Engineer and Director, [BanaIO Ltd](https://bana.io), London, United Kingdom - 03/2017–Present
 
 Software Engineer and Director at BanaIO Ltd. Worked at several companies and projects:
 
@@ -72,7 +72,7 @@ Software Engineer and Director at BanaIO Ltd. Worked at several companies and pr
 * Root Capital LLP
 * Lloyds Banking Group
 
-Tech: Golang, Kubernetes, Docker, Docker Compose, Linux, Shell scripting/Bash, Google Cloud Platform (GCP) and Google Kubernetes Engine (GKE).
+Tech: Golang, Kubernetes, Docker, Docker Compose, Linux and Shell scripting/Bash.
 
 <!-- Tech: PostgreSQL, Postgres, Continuous Integration and Continuous Delivery (CI/CD), OpenAPI Specification (OAS), Swagger API, Google Cloud Platform (GCP), REST APIs, go, Linux, Golang, Go (Programming Language), Docker, Git, Google Cloud Platform and Kubernetes. -->
 
@@ -80,7 +80,7 @@ Tech: Golang, Kubernetes, Docker, Docker Compose, Linux, Shell scripting/Bash, G
 
 Worked on [`kusk-gateway`](https://docs.kusk.io/), a OpenAPI-driven API Gateway for Kubernetes. Links:
 
-* <https://kusk.kubeshop.io/> or <https://kusk.io>
+* <https://kusk.kubeshop.io/>
 * <https://github.com/kubeshop/kusk-gateway>
 
 Kusk is a Kubernetes API gateway powered by Envoy. The main difference with other API Gateways is that Kusk has native support for OpenAPI.
@@ -172,7 +172,7 @@ Projects:
 
 Tech: C++, STL, Boost, Visual Studio, Linux/Unix, GDB, DBX, Make, Configure, XML, XPath, CPPUnit, [Financial Information eXchange (FIX) protocol](https://en.wikipedia.org/wiki/Financial_Information_eXchange), [Geneos FIX plug-in](https://docs.itrsgroup.com/docs/geneos/5.1.0/Netprobe/trading_fix/fix.html), [Feed Latency Monitoring Plug-In](https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/market_data_monitoring/feedadapter_ug.html), [Latency Monitoring - Message Tracker FIX adapter](https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/latency_monitoring/message_tracker/fix_adapter.html), [Market Data Monitor](https://docs.itrsgroup.com/docs/geneos/5.2.0/Netprobe/market_data_monitoring/mdm_ug.html), [Geneos PATS-STATUS Plug-In](https://docs.itrsgroup.com/docs/geneos/5.1.0/Netprobe/trading_pats/pats-status.html), [Patsystem's Trading API](www.patsystems.com).
 
-### Software Engineer Internship, then Tester, Thomson Reuters. London, UK - 05-2009–11-2009
+### Software Engineer Intern, then Tester, Thomson Reuters. London, UK - 05-2009–11-2009
 
 #### C# Software Engineer
 
