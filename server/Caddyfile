@@ -1,7 +1,7 @@
 {
     debug
-    admin :8433
-    experimental_http3
+    # admin :8433
+    # experimental_http3
 }
 
 http://0.0.0.0:8080, http://localhost:8080 {

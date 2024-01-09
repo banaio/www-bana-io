@@ -12,3 +12,9 @@
 !./favicon.png
 !./favicon.svg
 ############
+
+#########
+# Shell #
+!shell/
+!./shell/
+#########

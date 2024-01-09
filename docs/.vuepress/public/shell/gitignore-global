@@ -1,0 +1,15 @@
+*~
+.ignore/
+.DS_Store
+
+# ./.tmp
+/.tmp
+
+./kusk-gateway-examples/
+./kusk-gateway-examples
+kusk-gateway-examples/
+kusk-gateway-examples/
+/kusk-gateway-examples
+/kusk-gateway-examples/
+
+depot.json

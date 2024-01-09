@@ -1,0 +1,315 @@
+# # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# # Initialization code that may require console input (password prompts, [y/n]
+# # confirmations, etc.) must go above this block; everything else may go below.
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
+
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH="${HOME}/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+#ZSH_THEME="robbyrussell"
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+
+# ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="agnoster"
+#ZSH_THEME="robbyrussell"
+
+#SOLARIZED_THEME="dark"
+#SOLARIZED_THEME="dark"
+#SOLARIZED_THEME="light"
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment one of the following lines to change the auto-update behavior
+# zstyle ':omz:update' mode disabled  # disable automatic updates
+# zstyle ':omz:update' mode auto      # update automatically without asking
+# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+
+# Uncomment the following line to change how often to auto-update (in days).
+# zstyle ':omz:update' frequency 13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+DISABLE_MAGIC_FUNCTIONS="true"
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# You can also set it to another string to have that shown instead of the default red dots.
+# e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
+# Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="[%F %T] "
+# HIST_STAMPS="%d/%m/%y %T "
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+  git
+  gitignore
+  git-lfs
+  colored-man-pages
+  command-not-found
+  sudo # press `esc` twice
+  # safe-paste
+  #dnf
+  #fd
+  ##yarn
+  ##npm
+  #rust
+  #golang
+  #docker
+  #docker-compose
+  #kubectl
+  #kubetail
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# https://www.soberkoder.com/better-zsh-history/
+# https://unix.stackexchange.com/questions/273861/unlimited-history-in-zsh
+export HISTFILESIZE=1000000000
+export HISTSIZE=1000000000
+export SAVEHIST=$HISTSIZE
+export HISTTIMEFORMAT="[%F %T] "
+
+# source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# # https://unix.stackexchange.com/a/575102/502442
+setopt inc_append_history_time # separate concurrent histories across shells until session closes
+unsetopt inc_append_history
+setopt no_share_history
+unsetopt share_history
+
+setopt HIST_EXPIRE_DUPS_FIRST # Expire duplicate entries first when trimming history.
+
+# Delete from cursor to beginning of line #
+# https://stackoverflow.com/questions/3483604/which-shortcut-in-zsh-does-the-same-as-ctrl-u-in-bash
+# https://stackoverflow.com/questions/3483604/which-shortcut-in-zsh-does-the-same-as-ctrl-u-in-bash/3483679#3483679
+bindkey \^U backward-kill-line
+
+# setopt INC_APPEND_HISTORY
+# setopt HIST_FIND_NO_DUPS
+# setopt HIST_IGNORE_ALL_DUPS
+# setopt HIST_SAVE_NO_DUPS       # Do not save duplicated command
+# setopt HIST_REDUCE_BLANKS      # Remove unnecessary blanks
+# setopt INC_APPEND_HISTORY_TIME # Append command to history file immediately after execution
+# setopt EXTENDED_HISTORY        # Record command start time
+# setopt HIST_EXPIRE_DUPS_FIRST  # Expire duplicate entries first when trimming history.
+###########################################
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+export LANG="en_GB.UTF-8"
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+alias zshconfig="code ~/.zshrc"
+
+#########
+# alias #
+#alias signal='flatpak run org.signal.Signal --use-tray-icon'
+
+alias copy="xclip -sel clip"
+alias paste="xclip -sel clip -o"
+# sudo dnf install xsel
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
+
+alias work-dir='cd /home/mbana/work/kubeshop.io/kusk-gateway/'
+alias dev-dir='cd /home/mbana/dev/'
+
+alias ls='ls --color=auto --group-directories-first -t'
+alias ll='ls --color=auto --group-directories-first --almost-all --human-readable -lt'
+# alias ls='exa'
+# alias ll='exa --classify --long --all --group --header -t=mod --time-style=iso --icons'
+# #alias lsd='lsd -AhFl --total-size --group-dirs first'
+
+alias mv='mv -v'
+alias rm='rm -v'
+alias cp='cp -v'
+
+alias ip='ip -color=auto'
+
+alias sudo_code='xhost +local: && sudo code --no-sandbox --user-data-dir=/root/.config/Code'
+
+# to prevent dnf using separate caches for user and root
+# alias dnf='dnf --cacheonly'
+#########
+
+#############
+# functions #
+function router_scan() {
+  # --random
+  sudo arp-scan --interface=wlo1 --localnet --verbose
+}
+
+function speed_test() {
+  pushd
+  cd /tmp
+  curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
+  popd
+}
+
+function s() {
+  sudo "$@"
+}
+
+function mdir() {
+  mkdir -p "$@" && cd "$@"
+}
+
+function search() {
+  find "${2:-/}" -iregex "${1}" 2>&1 | grep -v 'Permission denied'
+}
+
+# alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
+# https://snippets.slepko.co.uk/tag/bash/page/2/
+function cleanup_dsstore() {
+  # find . -name '*.DS_Store' -type f -ls -delete
+  find . -name '*.DS_Store' -type f -prune -exec rm -rf '{}' +
+}
+
+function cleanup_node_modules() {
+  find . -name "node_modules" -prune -exec rm -rf '{}' +
+}
+
+function disk_usage() {
+  # du -h -d 1 -a "$1" | sort -nr
+  du -h -d 1 -a "${1:-.}" | sort -hr
+}
+
+function github_clone_all() {
+  # gh repo list "${1}" --limit 9999 --json nameWithOwner | jq '.[]|.nameWithOwner' | xargs -n1 gh repo clone
+  # gh repo list "projectcontour" --limit 9999 --json sshUrl | jq '.[]|.sshUrl' | xargs -n1 git clone
+  gh repo list "${1}" --limit 9999 --json sshUrl | jq '.[]|.sshUrl' | xargs -n1 -I{} sh -c 'set -x; git clone --recurse-submodules {}'
+}
+#############
+
+########
+# PATH #
+if ! [[ "${PATH}" =~ "${HOME}/.local/bin:${HOME}/bin:${HOME}/.bin" ]]; then
+  PATH="${HOME}/.local/bin:${HOME}/bin:${HOME}/.bin:${PATH}"
+fi
+########
+
+##########
+# Golang #
+PATH="${HOME}/.local/go/bin:${PATH}"
+GOROOT="${HOME}/.local/go"
+GOPATH="${HOME}/go"
+# GOPATH="$(go env GOPATH)"
+PATH="${HOME}/.go/bin:${GOPATH}/bin:${GOROOT}/bin:${PATH}"
+##########
+
+########
+# Rust #
+PATH="${HOME}/.cargo/bin:${PATH}"
+# export CARGO_NET_GIT_FETCH_WITH_CLI=true
+#######
+
+############
+# NPM/Yarn #
+NPM_CONFIG_PREFIX="${HOME}/.npm-global/"
+PATH="${HOME}/.yarn-global/bin:${PATH}"
+PATH="${HOME}/.npm-global/bin:${PATH}"
+############
+
+# The next line updates PATH for Netlify's Git Credential Helper.
+test -f '/home/mbana/.config/netlify/helper/path.zsh.inc' && source '/home/mbana/.config/netlify/helper/path.zsh.inc'
+
+# export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+# gpgconf --launch gpg-agent
+
+source <(kubectl completion zsh)
+source <(minikube completion zsh)
+source <(yq shell-completion zsh)
+source <(stern --completion=zsh)
+source <(docker completion zsh)
+
+# #command -v kubecolor >/dev/null 2>&1 && alias kubectl="kubecolor"
+# # get zsh complete kubectl
+# source <(kubectl completion zsh)
+
+# alias kubectl=kubecolor
+# # make completion work with kubecolor
+# compdef kubecolor=kubectl
+
+# export DOCKER_BUILDKIT=1
+# https://minikube.sigs.k8s.io/docs/faq/#can-i-get-rid-of-the-emoji-in-minikubes-output
+# MINIKUBE_IN_STYLE=0
+# KIND_EXPERIMENTAL_PROVIDER="podman"
+
+# ########
+export PATH="${HOME}/bin/ngc-cli/:${PATH}"
+# ########
+
+# # Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

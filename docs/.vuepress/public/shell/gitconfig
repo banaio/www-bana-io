@@ -1,0 +1,80 @@
+[core]
+	excludesfile = ~/.gitignore-global
+	editor = code --wait --new-window
+	pager = cat
+	ignorecase = false
+	hideDotFiles = false
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[url "git@gitlab.com:"]
+	insteadOf = https://gitlab.com/
+[alias]
+	c = checkout
+	cb = checkout -b
+	cf = checkout --
+	cl = checkout -
+	cm = commit -m --signoff
+	d = diff
+	push-new = "!git push --set-upstream origin $(git branch --show-current)"
+	mod = "!git --no-pager diff --name-only"
+	mod-status = "!git --no-pager diff --name-status"
+	dc = diff --cached
+	s = status --branch
+	# s = status --short --branch
+	b = branch
+	bc = rev-parse --abbrev-ref HEAD
+	p = pull
+	r = reset HEAD
+	last = "!git --no-pager log -1 --color"
+	lg = "!git log --pretty='format:%C(yellow)commit %H%n%C(white)Author: %an <%ae>%nDate:   %ad%n%n%B%n' --color=always develop..\"$(git rev-parse --abbrev-ref HEAD)\""
+[color]
+	ui = true
+	advice = true
+	status = always
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "status"]
+	added = green bold ul
+	changed = yellow bold ul
+	untracked = magenta bold ul
+	unmerged = yellow reverse ul
+	branch = red bold ul
+[pull]
+	ff = only
+[merge]
+	tool = vscode
+#	verifySignatures = true
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Mohamed Bana
+	email = mohamed@bana.io
+ 	signingkey = 5BE6D988B9FE7972
+# [gpg]
+# 	program = gpg2
+[commit]
+ 	gpgSign = true
+[tag]
+	gpgSign = true
+[push]
+	gpgSign = if-asked
+# This next lines include Netlify's Git Credential Helper configuration in your Git configuration.
+[include]
+	path = /home/mbana/.config/netlify/helper/git-config
